@@ -1,0 +1,29 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.project {
+  margin-bottom: 75px;
+}
+
+.project-img {
+
+}
+
+.project-details {
+  font-family: "roboto-mono", monospace;
+  opacity: 0.5;
+}
+
+.project-number {
+  width: 85px;
+}
+
+.project-year {
+
+}
