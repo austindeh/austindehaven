@@ -2,10 +2,93 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description"          content="">
+    <meta name="keywords"             content="">
+    <meta property="og:type"          content="">
+    <meta property="og:url"           content="">
+    <meta property="og:title"         content="">
+    <meta property="og:description"   content="">
+    <meta property="og:image"         content="">
+
+    <link rel='stylesheet' href='/stylesheets/layout.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+  <body class="design-body">
+    <div class="landing">
+      <!-- Scroll down text !-->
+      <div class="snippetglitch textglitch3 scroll-down"></div>
+
+      <!-- Cover snippet starts !-->
+      <div class="snippetglitch" id="snippet">
+        <div class="textglitch1">
+          <span id="name" class="design-underlined">Austin DeHaven</span>
+        </div>
+
+        <div class="textglitch2">
+          <span class="selected-design" style="margin-right: 8px;">Designer</span>&<a class="design-underlined" href="/photography" style="margin-left: 8px;">Photographer</a>
+        </div>
+
+        <div class="textglitch3">
+          <span>Based in Los Angeles, CA.</span>
+        </div>
+
+       <!-- Where the Hidden Nav Buttons Start !-->
+        <div id="social-button">
+          <a class="design-underlined social-links social-links-margin" href="https://www.behance.net/AustinDeh">Behance</a>
+          <a class="design-underlined social-links social-links-margin" href="https://www.linkedin.com/in/austin-dehaven-a24756b4/">Linkedin</a>
+          <a class="design-underlined social-links" href="mailto:adehaven.designs@gmail.com">Contact</a>
+        </div>
+      </div>
+    </div>
+
+
+    <%
+    var projects = [
+      {
+        title: 'Disney Store Toybox',
+        year: 'Coming Soon',
+        src: 'Images/Home/Toybox-Cover-Kylo.jpg',
+      },
+
+      {
+        title: 'Alpinestars Adaptive Stretch',
+        year: '2016',
+        src: 'Images/Home/Alpinestars.jpg',
+      },
+
+      {
+        title: 'Made in LA',
+        year: '2016',
+        src: 'Images/Home/Made-In-LA.jpg',
+      },
+
+      {
+        title: 'Motoamerica',
+        year: '2015',
+        src: 'Images/Home/Motoamerica.jpg',
+      },
+
+      {
+        title: 'Ken Block Livery',
+        year: '2015',
+        src: 'Images/Home/Ken-Block.jpg',
+      },
+    ];
+    %>
+
+    <div class="projects">
+      <% projects.forEach(function(project, i) { %>
+        <%- include('partial/_project', { index: i+1, total: projects.length, title: project.title, year: project.year, src: project.src }) %>
+      <% }); %>
+    </div>
+
   </body>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="/javascript/index.js"></script>
 </html>

@@ -1,0 +1,168 @@
+/* Global Shit */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#name {
+  cursor: pointer;
+}
+
+.footer-text {
+  font-family: "bookmania",serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+
+/* Landing */
+
+@media screen and (max-width: 450px) {
+  .scroll-down {
+		padding-top: 50vh !important;
+		display: none;
+  }
+
+	.landing {
+  		height: 50vh !important;
+	}
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.scroll-down {
+  position: absolute;
+  padding-top: 90vh;
+  font-size: 11px;
+  top: 0;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+#snippet {
+  width: 100%;
+  position: relative;
+  font-family: "bookmania",serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.selected-design {
+	position: relative;
+}
+
+.selected-design:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	background-color: #181818;
+}
+
+.design-underlined {
+	position: relative;
+}
+
+.design-underlined:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+
+.design-underlined:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 2px;
+  left: 0;
+  background-color: #181818;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  transform-origin: 0% 100%
+}
+
+.design-underlined:hover:after {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: 0% 100%
+}
+
+
+/* Hidden Buttons */
+
+#social-button {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  font-family: "roboto-mono",monospace;
+  left: 0;
+}
+
+.social-links {
+  opacity: .5;
+  padding-bottom: 3px;
+}
+
+.social-links-margin {
+  margin-right: 40px;
+}
+
+.social-links:hover {
+   opacity: 1;
+}
+
+
+/* Projects */
+
+.project {
+  padding-top: 75px;
+}
+
+.project-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-family: "roboto-mono",monospace;
+  font-size: 11px;
+  width: 100%;
+  line-height: 7px;
+}
+
+.project-number {
+  opacity: .5;
+  padding-right: 20px;
+  width: 85px;
+}
+
+.project-title {
+  width: 100%;
+  letter-spacing: .5px
+}
+
+.project-year {
+  display: flex;
+  justify-content: flex-end;
+  opacity: .5;
+  width: 100px;
+}
