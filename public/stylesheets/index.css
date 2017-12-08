@@ -5,6 +5,15 @@ a {
   color: inherit;
 }
 
+#name {
+  cursor: pointer;
+}
+
+.footer-text {
+  font-family: "bookmania",serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
 
 
 /* Landing */
@@ -51,10 +60,6 @@ a {
 	position: relative;
 }
 
-.selected-photography {
-	position: relative;
-}
-
 .selected-design:before {
   content: '';
 	width: 100%;
@@ -63,16 +68,6 @@ a {
 	bottom: 2px;
 	height: 1px;
 	background-color: #181818;
-}
-
-.selected-photography:before {
-  content: '';
-	width: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 2px;
-	height: 1px;
-	background-color: #FFFFFF;
 }
 
 .design-underlined {
@@ -112,55 +107,18 @@ a {
   transform-origin: 0% 100%
 }
 
-.photography-underlined {
-	position: relative;
-}
-
-.photography-underlined:before {
-  content: '';
-	width: 100%;
-	position: absolute;
-	left: 0;
-	bottom: 2px;
-	height: 1px;
-	background-color: #646464;
-}
-
-.photography-underlined:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 2px;
-  left: 0;
-  background-color: #FFFFFF;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  transform-origin: 0% 100%
-}
-
-.photography-underlined:hover:after {
-	visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  transform-origin: 0% 100%
-}
-
 
 /* Hidden Buttons */
 
 #social-button {
   display: none;
   position: absolute;
+  font-size: 11px;
+  font-family: "roboto-mono",monospace;
   left: 0;
 }
 
 .social-links {
-  font-size: 11px;
-  font-family: "roboto-mono",monospace;
   opacity: .5;
   padding-bottom: 3px;
 }
@@ -176,86 +134,35 @@ a {
 
 /* Projects */
 
-.glitch-hover {
-  width: 100%;
+.project {
+  padding-top: 75px;
 }
 
-.project-info {
+.project-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
   font-family: "roboto-mono",monospace;
   font-size: 11px;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   line-height: 7px;
 }
 
 .project-number {
   opacity: .5;
+  padding-right: 20px;
   width: 85px;
-  padding: 0;
 }
 
-.project-name {
+.project-title {
   width: 100%;
-  padding: 0;
   letter-spacing: .5px
 }
 
 .project-year {
+  display: flex;
+  justify-content: flex-end;
   opacity: .5;
-}
-
-.archives {
-  width: 100%;
-}
-
-#divider-lines {
-	position: relative;
-}
-
-.divider-top {
-	padding-bottom: 20px;
-}
-
-.divider-bottom {
-	padding-top: 20px;
-}
-
-#divider-lines:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-	background-color: #e1e1e1;
-}
-
-#divider-lines:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  background-color: #181818;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-  transform-origin: 0% 100%
-}
-
-.archives:hover  #divider-lines:after {
-	visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  transform-origin: 0% 100%
-}
-
-.archives {
-	color: #181818;
-}
-
-.live-image {
-	cursor: pointer;
+  width: 100px;
 }

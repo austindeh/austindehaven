@@ -18,13 +18,3 @@
   max-width: 1170px;
   color: white;
 }
-
-#name {
-  cursor: pointer;
-}
-
-.footer-text {
-  font-family: "bookmania",serif;
-  font-size: 14pt;
-  letter-spacing: 1px;
-}
