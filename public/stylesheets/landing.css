@@ -1,0 +1,120 @@
+/* --- Landing Section --- */
+
+@media screen and (max-width: 450px) {
+  .scroll-down {
+		padding-top: 50vh !important;
+		display: none;
+  }
+
+	.landing {
+  		height: 50vh !important;
+	}
+}
+
+#name {
+  cursor: pointer;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.scroll-down {
+  font-family: "roboto-mono", monospace;
+  font-size: 11px;
+  position: absolute;
+  padding-top: 90vh;
+  font-size: 11px;
+  top: 0;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+#snippet {
+  width: 100%;
+  position: relative;
+  font-family: "bookmania",serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.selected {
+	position: relative;
+}
+
+.selected:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+	height: 1px;
+	background-color: #181818;
+}
+
+.underlined {
+	position: relative;
+}
+
+.underlined:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 6px;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+
+.underlined:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 6px;
+  left: 0;
+  background-color: #181818;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  transform-origin: 0% 100%
+}
+
+.underlined:hover:after {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: 0% 100%
+}
+
+
+/* --- Hidden Buttons --- */
+
+#social-button {
+  display: none;
+  position: absolute;
+  font-size: 11px;
+  font-family: "roboto-mono",monospace;
+  left: 0;
+}
+
+.social-links {
+  opacity: .5;
+  padding-bottom: 7px;
+}
+
+.social-links-margin {
+  margin-right: 40px;
+}
+
+.social-links:hover {
+   opacity: 1;
+}
