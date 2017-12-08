@@ -10,10 +10,10 @@ a {
 /* Landing */
 
 @media screen and (max-width: 450px) {
-    .scroll-down {
+  .scroll-down {
 		padding-top: 50vh !important;
 		display: none;
-    }
+  }
 
 	.landing {
   		height: 50vh !important;
@@ -222,11 +222,11 @@ a {
 }
 
 #divider-lines:before {
-  	content: "";
-  	position: absolute;
-  	width: 100%;
-  	height: 1px;
-  	left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
 	background-color: #e1e1e1;
 }
 
@@ -254,6 +254,7 @@ a {
 
 .archives {
 	color: #181818;
+}
 
 .live-image {
 	cursor: pointer;
