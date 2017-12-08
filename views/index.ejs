@@ -13,8 +13,10 @@
     <meta property="og:description"   content="">
     <meta property="og:image"         content="">
 
+    <link rel="stylesheet" href="https://use.typekit.net/bxp7lue.css">
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/index.css' />
+
   </head>
 
   <body class="design-body">
@@ -82,7 +84,7 @@
 
     <div class="projects">
       <% projects.forEach(function(project, i) { %>
-        <%- include('partial/_project', { index: i+1, total: projects.length, title: project.title, year: project.year, src: project.src }) %>
+        <%- include('partials/_project', { index: i+1, total: projects.length, title: project.title, year: project.year, src: project.src }) %>
       <% }); %>
     </div>
 
