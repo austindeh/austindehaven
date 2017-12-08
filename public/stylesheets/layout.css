@@ -5,21 +5,16 @@
   flex-direction: column;
   margin: auto;
   max-width: 1170px;
+  color: #181818;
 }
 
 .photography-body {
   background-color: #181818;
-}
-
-.design-body {
-  background-color: white;
-}
-
-
-.design-text {
-  color: #181818;
-}
-
-.photography-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1170px;
   color: white;
 }
