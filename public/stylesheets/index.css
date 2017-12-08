@@ -7,7 +7,7 @@ a {
 
 
 
-/* LANDING TEXT */
+/* Landing */
 
 @media screen and (max-width: 450px) {
     .scroll-down {
@@ -45,12 +45,6 @@ a {
   font-size: 14pt;
   letter-spacing: 1px;
   line-height: 35px;
-}
-
-.footer-text {
-  font-family: "bookmania",serif;
-  font-size: 14pt;
-  letter-spacing: 1px;
 }
 
 .selected-design {
@@ -118,11 +112,11 @@ a {
   transform-origin: 0% 100%
 }
 
-.underlined-photography {
+.photography-underlined {
 	position: relative;
 }
 
-.underlined-photography:before {
+.photography-underlined:before {
   content: '';
 	width: 100%;
 	position: absolute;
@@ -132,7 +126,7 @@ a {
 	background-color: #646464;
 }
 
-.underlined-photography:after {
+.photography-underlined:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -148,12 +142,15 @@ a {
   transform-origin: 0% 100%
 }
 
-.underlined-photography:hover:after {
+.photography-underlined:hover:after {
 	visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   transform-origin: 0% 100%
 }
+
+
+/* Hidden Buttons */
 
 #social-button {
   display: none;
@@ -176,12 +173,8 @@ a {
    opacity: 1;
 }
 
-#name {
-  cursor: pointer;
-}
 
-
-/* CASE STUDY CSS */
+/* Projects */
 
 .glitch-hover {
   width: 100%;
