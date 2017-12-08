@@ -1,3 +1,25 @@
+/* Global Shit */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* LANDING TEXT */
+
+@media screen and (max-width: 450px) {
+    .scroll-down {
+		padding-top: 50vh !important;
+		display: none;
+    }
+
+	.landing {
+  		height: 50vh !important;
+	}
+}
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -7,23 +29,240 @@
   width: 100%;
 }
 
-.project {
-  margin-bottom: 75px;
-}
-
-.project-img {
-
-}
-
-.project-details {
-  font-family: "roboto-mono", monospace;
+.scroll-down {
+  position: absolute;
+  padding-top: 90vh;
+  font-size: 11px;
+  top: 0;
   opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+#snippet {
+  width: 100%;
+  position: relative;
+  font-family: "bookmania",serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.footer-text {
+  font-family: "bookmania",serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+.selected-design {
+	position: relative;
+}
+
+.selected-photography {
+	position: relative;
+}
+
+.selected-design:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	background-color: #181818;
+}
+
+.selected-photography:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	background-color: #FFFFFF;
+}
+
+.underlined-design {
+	position: relative;
+}
+
+.underlined-design:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+
+.underlined-design:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 2px;
+  left: 0;
+  background-color: #181818;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  transform-origin: 0% 100%
+}
+
+.underlined-design:hover:after {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: 0% 100%
+}
+
+.underlined-photography {
+	position: relative;
+}
+
+.underlined-photography:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	height: 1px;
+	background-color: #646464;
+}
+
+.underlined-photography:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 2px;
+  left: 0;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  transform-origin: 0% 100%
+}
+
+.underlined-photography:hover:after {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: 0% 100%
+}
+
+#social-button {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.social-links {
+  font-size: 11px;
+  font-family: "roboto-mono",monospace;
+  opacity: .5;
+  padding-bottom: 3px;
+}
+
+.social-links-margin {
+  margin-right: 40px;
+}
+
+.social-links:hover {
+   opacity: 1;
+}
+
+#name {
+  cursor: pointer;
+}
+
+
+
+/* CASE STUDY CSS */
+
+.glitch-hover {
+  width: 100%;
+}
+
+.project-info {
+  font-family: "roboto-mono",monospace;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 7px;
 }
 
 .project-number {
+  opacity: .5;
   width: 85px;
+  padding: 0;
+}
+
+.project-name {
+  width: 100%;
+  padding: 0;
+  letter-spacing: .5px
 }
 
 .project-year {
+  opacity: .5;
+}
 
+.archives {
+  width: 100%;
+}
+
+#divider-lines {
+	position: relative;
+}
+
+.divider-top {
+	padding-bottom: 20px;
+}
+
+.divider-bottom {
+	padding-top: 20px;
+}
+
+#divider-lines:before {
+  	content: "";
+  	position: absolute;
+  	width: 100%;
+  	height: 1px;
+  	left: 0;
+	background-color: #e1e1e1;
+}
+
+#divider-lines:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background-color: #181818;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  transform-origin: 0% 100%
+}
+
+.archives:hover  #divider-lines:after {
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: 0% 100%
+}
+
+.archives {
+	color: #181818;
+
+.live-image {
+	cursor: pointer;
 }

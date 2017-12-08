@@ -16,12 +16,38 @@
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/index.css' />
   </head>
-  <body class="main-container">
+
+
+  <body class="design-body">
     <div class="landing">
-      <div class="glitch-text">
-        <span class="underline-text">Austin Dehaven</span>
+
+      <!-- This is the scroll down text !-->
+      <div class="snippetglitch textglitch3 scroll-down design-text"></div>
+
+      <!-- this is where the cover snippet starts !-->
+      <div class="snippetglitch design-text" id="snippet">
+        <div class="textglitch1">
+          <span id="name" class="underlined-design">Austin DeHaven</span>
+        </div>
+
+        <div class="textglitch2">
+          <span class="selected-design" style="margin-right: 8px;">Designer</span>&<a class="underlined-design design-text" href="/photography" style="margin-left: 8px;">Photographer</a>
+        </div>
+
+        <div class="textglitch3">
+          <span>Based in Los Angeles, CA.</span>
+        </div>
+
+        <!-- Where the Hidden Nav Buttons Start !-->
+        <div id="social-button">
+          <a class="underlined-design social-links social-links-margin design-text" href="https://www.behance.net/AustinDeh">Behance</a>
+          <a class="underlined-design social-links social-links-margin design-text" href="https://www.linkedin.com/in/austin-dehaven-a24756b4/">Linkedin</a>
+          <a class="underlined-design social-links design-text" href="mailto:adehaven.designs@gmail.com">Contact</a>
+        </div>
       </div>
     </div>
+
+
     <%
     var projects = [
       {
@@ -29,21 +55,25 @@
         year: '2017',
         src: 'Images/Home/Toybox-Cover-Kylo.jpg',
       },
+
       {
         title: 'Alpinestars Adaptive Stretch',
         year: '2016',
         src: 'Images/Home/Alpinestars.jpg',
       },
+
       {
         title: 'Made in LA',
         year: '2016',
         src: 'Images/Home/Made-In-LA.jpg',
       },
+
       {
         title: 'Motoamerica',
         year: '2015',
         src: 'Images/Home/Motoamerica.jpg',
       },
+
       {
         title: 'Ken Block Livery',
         year: '2015',
@@ -51,10 +81,16 @@
       },
     ];
     %>
+
     <div class="projects">
       <% projects.forEach(function(project, i) { %>
-        <%- include('_project', { index: i+1, total: projects.length, title: project.title, year: project.year, src: project.src }) %>
+        <%- include('partial/_project', { index: i+1, total: projects.length, title: project.title, year: project.year, src: project.src }) %>
       <% }); %>
     </div>
+
   </body>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/javascript/index.js"></script>
 </html>
