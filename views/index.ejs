@@ -17,11 +17,14 @@
     <link rel='stylesheet' href='/stylesheets/global.css' />
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/landing.css' />
+    <link rel='stylesheet' href='/stylesheets/footer.css' />
+    <link rel='stylesheet' href='/stylesheets/back-to-top.css' />
     <link rel='stylesheet' href='/stylesheets/index.css' />
 
   </head>
 
-  <body class="design-body">
+  <body class="body-width">
+    <!-- Landing Section !-->
     <div class="landing">
       <!-- Scroll down text !-->
       <div class="snippetglitch textglitch3 scroll-down"></div>
@@ -49,7 +52,7 @@
       </div>
     </div>
 
-
+    <!-- Projects Shit !-->
     <%
     var projects = [
       {
@@ -90,7 +93,7 @@
       <% }); %>
     </div>
 
-
+    <!-- Archives Section !-->
     <a id="archives" href="">
       <div class="divider-top divider-lines"></div>
       <div class="project-details">
@@ -101,9 +104,16 @@
       <div class="divider-bottom divider-lines"></div>
     </a>
 
+    <!-- Footer Block !-->
+    <%- include('partials/_footer') %>
+
+    <!-- Back to Top Button !-->
+    <%- include('partials/_back-to-top') %>
+
   </body>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="/javascript/index.js"></script>
+  <script src="/javascript/global.js"></script>
+  <script src="/javascript/landing.js"></script>
 </html>

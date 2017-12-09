@@ -1,0 +1,20 @@
+#footer {
+  display: flex;
+  width: 100vw;
+  background-color: #181818;
+  height: 300px;
+  margin-top: 75px;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.body-width {
+  width: 100%;
+}
+
+.footer-text {
+  font-family: bookmania, serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
