@@ -1,13 +1,16 @@
 // ===== Scroll to Top ====
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 720) {
-        $('#back-to-top').fadeIn(1000);
-    } else {
-        $('#back-to-top').fadeOut(1000);
-    }
-});
-$('#back-to-top').click(function() {
-    $('body, html').animate({
-        scrollTop : 0
-    }, 500);
-});
+$(function() {
+    $(window).scroll(function() {
+        if (window.scrollY > 720) {
+          $('#back-to-top').css("opacity", 0.5)
+        } else {
+          $('#back-to-top').css("opacity", 0)
+        }
+    })
+
+    $('#back-to-top').click(function() {
+        $(window).animate({
+            scrollTop : 0
+        }, 500);
+    });
+})

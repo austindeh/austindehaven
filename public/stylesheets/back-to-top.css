@@ -4,13 +4,14 @@
     bottom: 50px;
     right: 30px;
     width: 75px;
-    opacity: .5;
+    opacity: 0;
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     z-index: 3000;
+    transition: opacity .5s;
 }
 #back-to-top svg {
     fill: #999999;
