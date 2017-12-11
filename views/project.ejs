@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Austin Dehaven | Portfolio<</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -18,15 +18,13 @@
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/project-landing.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
-    <link rel='stylesheet' href='/stylesheets/back-to-top.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
-    <link rel='stylesheet' href='/stylesheets/index.css' />
-
   </head>
 
   <body class="body-width">
     <!-- Projects Landing !-->
-    <%- include('partials/_project-landing') %>
+    <%- include('partials/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
 
     <!-- Footer Block !-->
     <%- include('partials/_footer') %>

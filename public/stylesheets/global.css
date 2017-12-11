@@ -106,7 +106,7 @@ h5 {
   right: 5%;
   width: 60px;
   padding: 10px 0px;
-  opacity: 0.5;
+  opacity: 0;
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;

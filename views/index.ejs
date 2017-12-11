@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Austin Dehaven | Portfolio</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -18,54 +18,17 @@
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/landing.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
-    <link rel='stylesheet' href='/stylesheets/back-to-top.css' />
     <link rel='stylesheet' href='/stylesheets/index.css' />
 
   </head>
-
   <body class="body-width">
-
     <!-- Landing Section !-->
     <%- include('partials/_landing') %>
 
-    <!-- Projects Shit !-->
-    <%
-    var projects = [
-      {
-        title: 'Disney Store Toybox',
-        year: 'Coming Soon',
-        src: 'Images/Home/Toybox-Cover-Kylo.jpg',
-      },
-
-      {
-        title: 'Alpinestars Adaptive Stretch',
-        year: '2016',
-        src: 'Images/Home/Alpinestars.jpg',
-      },
-
-      {
-        title: 'Made in LA',
-        year: '2016',
-        src: 'Images/Home/Made-In-LA.jpg',
-      },
-
-      {
-        title: 'Motoamerica',
-        year: '2015',
-        src: 'Images/Home/Motoamerica.jpg',
-      },
-
-      {
-        title: 'Ken Block Livery',
-        year: '2015',
-        src: 'Images/Home/Ken-Block.jpg',
-      },
-    ];
-    %>
-
+    <!-- Project Thumbnails !-->
     <div class="projects">
       <% projects.forEach(function(project, i) { %>
-        <%- include('partials/_project', { index: i+1, total: projects.length, title: project.title, year: project.year, src: project.src }) %>
+        <%- include('partials/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
       <% }); %>
     </div>
 
@@ -73,9 +36,9 @@
     <a id="archives" href="">
       <div class="divider-top divider-lines"></div>
       <div class="project-details">
-        <span class="project-number">06 / 06</span>
+        <span class="project-number"><%- projects.length + 1 %> / <%- projects.length + 1 %></span>
         <span class="project-title">Archives - Coming Soon</span>
-        <span class="project-year">/2017</span>
+        <span class="project-year">2017</span>
       </div>
       <div class="divider-bottom divider-lines"></div>
     </a>
