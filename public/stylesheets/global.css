@@ -43,6 +43,10 @@ h5 {
   font-weight: 100;
 }
 
+img {
+  width: 100%;
+}
+
 /* --- Underlines --- */
 
 .selected {
