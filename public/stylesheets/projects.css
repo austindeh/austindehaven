@@ -69,3 +69,10 @@
   line-height: 2;
 }
 
+#footer .underlined:before {
+	background-color:#646464;
+}
+
+#footer .underlined:after {
+  background-color: white;
+}
