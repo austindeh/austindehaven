@@ -13,8 +13,8 @@ $(function() {
     $(window).scroll(checkScroll)
 
     $('#back-to-top').click(function() {
-        $(window).animate({
-            scrollY : 0
+        $("html, body").animate({
+            scrollTop: "0"
         }, 500);
     });
 })

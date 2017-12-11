@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Austin Dehaven | Portfolio<</title>
+    <title>Austin Dehaven | Portfolio</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -20,20 +20,19 @@
     <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
-
   <body class="body-width">
     <!-- Projects Landing !-->
     <%- include('partials/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
+    <!-- fancy stuff loading all the necessary images -->
 
     <!-- Footer Block !-->
-    <%- include('partials/_footer') %>
+    <%- include('partials/_footer', { href: '/', copy: 'Return to design work' }) %>
 
     <!-- Back to Top Button !-->
     <%- include('partials/_back-to-top') %>
 
   </body>
-
   <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="/javascript/global.js"></script>

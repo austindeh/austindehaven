@@ -10,7 +10,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     date: '2016',
     role: 'Art Direction, Photography, Design'
   }
-  res.render('project', { project: project })
+  res.render('project', { project: project, images: [] })
 });
 
 router.get('/made-in-la', function(req, res, next) {
