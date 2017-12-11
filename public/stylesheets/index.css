@@ -85,6 +85,8 @@
   transform-origin: 0% 100%
 }
 
+/* -- Footer Colors -- */
+
 #footer .underlined:before {
 	background-color:#646464;
 }

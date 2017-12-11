@@ -10,4 +10,8 @@ router.get('/photography', function(req, res, next) {
   res.render('photography', { title: 'Portfolio of Austin DeHaven' });
 });
 
+router.get('/motoamerica', function(req, res, next) {
+  res.render('motoamerica', { title: 'Portfolio of Austin DeHaven' });
+});
+
 module.exports = router;

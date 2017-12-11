@@ -2,3 +2,33 @@ body {
   background-color: #181818;
   color: white;
 }
+
+
+/* -- Landing Colors -- */
+
+.underlined:before {
+	background-color:#646464;
+}
+
+.underlined:after {
+  background-color: white;
+}
+
+.selected:before {
+	background-color: white;
+}
+
+/* -- Footer Colors -- */
+
+#footer {
+  background-color: white;
+  color: #181818;
+}
+
+#footer .underlined:before {
+	background-color:#e1e1e1;
+}
+
+#footer .underlined:after {
+  background-color: #181818;
+}
