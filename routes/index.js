@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Portfolio of Austin DeHaven' });
 });
 
+router.get('/photography', function(req, res, next) {
+  res.render('photography', { title: 'Portfolio of Austin DeHaven' });
+});
+
 module.exports = router;
