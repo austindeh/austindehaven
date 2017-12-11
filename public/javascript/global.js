@@ -1,4 +1,4 @@
-// ===== Scroll to Top ====
+// --- Scroll to Top ---
 $(function() {
     $(window).scroll(function() {
         if (window.scrollY > 720) {

@@ -47,11 +47,11 @@
 }
 
 .divider-top {
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 }
 
 .divider-bottom {
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 .divider-lines:before {
@@ -83,4 +83,12 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   transform-origin: 0% 100%
+}
+
+#footer .underlined:before {
+	background-color:#646464;
+}
+
+#footer .underlined:after {
+  background-color: white;
 }
