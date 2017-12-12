@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* const projects = [
+var projects = [
   {
     path: 'alpinestars-adaptive-stretch',
     title: 'Alpinestars Adaptive Stretch',
@@ -45,19 +45,35 @@ var router = express.Router();
 
 ]
 
-for (var i = 0; i < projects.length; i++) {
-  var project = project[i]
-  var nextLink, prevLink
+for (var i = 1; i < projects.length; i++) {
+  var j = i - 1;
+  var project = projects[j];
+  var nextProject = projects[i];
 
-  if (i === 0) {
-    prevLink = projects.length - 1
-  } else {
-    prevLink = i - i
-  }
-  router.get('/' + project.path, function(req, res, next) {
-    res.render('project', { project: project, images: [] })
+  var p = Object.assign({
+    prevProject: j === 0 ? projects[projects.length - 1].path : projects[j - 1].path,
+    nextProject: nextProject.path
+  }, project)
+
+  router.get('/' + p.path, function(req, res, next) {
+    res.render('project', { project: p, images: [] })
   });
-} */
+
+  console.log(p)
+
+  if (i === projects.length - 1) {
+    var pp = Object.assign({
+      prevProject: projects[j - 1].path,
+      nextProject: projects[0].path
+    }, nextProject)
+
+    router.get('/' + pp.path, function(req, res, next) {
+      res.render('project', { project: pp, images: [] })
+    });
+
+    console.log(pp)
+  }
+}
 
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
   var project = {
