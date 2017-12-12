@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const projects = [
+/* const projects = [
   {
     path: 'alpinestars-adaptive-stretch',
     title: 'Alpinestars Adaptive Stretch',
@@ -57,9 +57,9 @@ for (var i = 0; i < projects.length; i++) {
   router.get('/' + project.path, function(req, res, next) {
     res.render('project', { project: project, images: [] })
   });
-}
+} */
 
-/* router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
+router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
   var project = {
     title: 'Alpinestars Adaptive Stretch',
     body: 'For 2017 Alpinestars was launching a new gear set which implemented the use of new innovative stretch fabrics which promoted comfortable adaptive flexibility for the rider. I was tasked to come up with a concept and execution to show the functionality of the innovative new fabrics. The fabrics were in select key areas which helped increase rider comfort in certain positions while on the bike. While stretch fabrics are common among other brands, Alpinestars reinvented the way the gear worked with the rider. Our goal was to show this through simple and intriguing imagery.',
@@ -112,7 +112,6 @@ router.get('/archives', function(req, res, next) {
     role: ''
   }
   res.render('project', { project: project })
-}); */
-
+});
 
 module.exports = router;

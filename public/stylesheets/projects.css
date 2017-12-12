@@ -5,7 +5,12 @@
   font-size: 13px;
   color: #181818;
   padding-bottom: 4px;
-  margin-left: 10px;
+}
+
+#return-button span {
+  font-family: bookmania, serif;
+  font-size: 10pt;
+  margin-right: 5px;
 }
 
 #return-button {
@@ -76,3 +81,20 @@
 #footer .underlined:after {
   background-color: white;
 }
+
+/* -- Footer Colors -- */
+
+#footer {
+  background-color: white;
+  color: #181818;
+  margin: 0;
+}
+
+#footer .underlined:before {
+	background-color:#e1e1e1;
+}
+
+#footer .underlined:after {
+  background-color: #181818;
+}
+

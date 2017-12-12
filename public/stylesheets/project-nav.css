@@ -1,0 +1,28 @@
+#project-nav {
+  display: flex;
+  width: 100vw;
+  height: 220px;
+  font-family: bookmania, serif;
+  font-size: 11pt;
+  letter-spacing: 1px;
+  background-color: #181818;
+  color: white;
+  margin-top: 75px;
+}
+
+.project-nav-width {
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-nav .underlined:before {
+	background-color:#646464;
+}
+
+#project-nav .underlined:after {
+  background-color: white;
+}
+
+#project-nav a {
+  padding-bottom: 3px;
+}
