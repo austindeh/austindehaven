@@ -1,7 +1,14 @@
 /* --- Projects --- */
+.projects {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
 
 .project {
   display: block;
+  width: 100%;
   margin-top: 75px;
 }
 
@@ -15,6 +22,15 @@
   font-size: 11px;
   width: 100%;
   line-height: 7px;
+}
+
+.project-img {
+  /* display: none; */
+}
+
+.project-canvas {
+  width: 100%;
+  height: auto;
 }
 
 .project-number {

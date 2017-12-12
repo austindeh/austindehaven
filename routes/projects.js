@@ -62,7 +62,7 @@ router.get('/archives', function(req, res, next) {
     date: '',
     role: '',
     prevProject: 'ken-block',
-    nextProject: 'alpinestars-adaptive-strech',
+    nextProject: 'alpinestars-adaptive-stretch',
   }
   res.render('project', { project: project })
 });
