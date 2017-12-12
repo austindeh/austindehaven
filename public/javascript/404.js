@@ -26,7 +26,7 @@ $(function() {
         'display': 'flex',
     });
     $("body").keypress(function() {
-      window.location.href = "http://austindehaven.com";
+      window.location.href = "/";
     });
   });
 
