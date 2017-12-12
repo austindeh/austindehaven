@@ -27,7 +27,7 @@
     <!-- fancy stuff loading all the necessary images -->
 
     <!-- Project Nav -->
-    <%- include('partials/_project-nav', { href: '/', prev: 'Previous Project', next: 'Next Project' }) %>
+    <%- include('partials/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
 
     <!-- Footer Block -->
     <%- include('partials/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
