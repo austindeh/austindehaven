@@ -21,15 +21,18 @@
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body class="body-width">
-    <!-- Projects Landing !-->
+    <!-- Projects Landing -->
     <%- include('partials/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
     <!-- fancy stuff loading all the necessary images -->
 
-    <!-- Footer Block !-->
-    <%- include('partials/_footer', { href: '/', copy: 'Return to design work' }) %>
+    <!-- Project Nav -->
+    <%- include('partials/_project-nav', { href: '/', prev: 'Previous Project', next: 'Next Project' }) %>
 
-    <!-- Back to Top Button !-->
+    <!-- Footer Block -->
+    <%- include('partials/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+
+    <!-- Back to Top Button -->
     <%- include('partials/_back-to-top') %>
 
   </body>
