@@ -67,5 +67,4 @@ router.get('/archives', function(req, res, next) {
   res.render('project', { project: project })
 });
 
-
 module.exports = router;
