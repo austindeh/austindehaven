@@ -107,7 +107,7 @@ img {
   display: block;
   position: fixed;
   bottom: 5%;
-  right: 2.5%;
+  right: 0.5%;
   width: 60px;
   padding: 10px 0px;
   opacity: 0;
@@ -119,6 +119,12 @@ img {
   z-index: 3000;
   transition: opacity .5s;
   mix-blend-mode: difference;
+}
+
+@media (min-width: 768px) {
+  #back-to-top {
+    right: 2%;
+  }
 }
 
 #back-to-top svg {

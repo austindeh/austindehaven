@@ -24,17 +24,12 @@
 
   </head>
   <body class="body-width">
-    <!-- Landing Section !-->
     <%- include('partials/_landing') %>
-
-    <!-- Project Thumbnails !-->
     <div class="projects">
       <% projects.forEach(function(project, i) { %>
         <%- include('partials/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
       <% }); %>
     </div>
-
-    <!-- Archives Section !-->
     <a id="archives" href="">
       <div class="divider-top divider-lines"></div>
       <div class="project-details">
@@ -44,13 +39,8 @@
       </div>
       <div class="divider-bottom divider-lines"></div>
     </a>
-
-    <!-- Footer Block !-->
     <%- include('partials/_footer', { href: '/photography', copy: 'View photography work' }) %>
-
-    <!-- Back to Top Button !-->
     <%- include('partials/_back-to-top') %>
-
   </body>
   <%- include('partials/_dependencies') %>
   <script src="/javascript/global.js"></script>

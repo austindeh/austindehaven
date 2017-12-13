@@ -49,6 +49,10 @@ $(function() {
   // DOM ready...just in case.
   var body = $("body")
   var canvases = $('.project-canvas')
+  var images = $('.project-img')
+
+  var rafID = 0
+  var hovering = false
 
   // $('.project-img').each(function(i, ele) {
   //   var canvas = canvases[i]
@@ -58,15 +62,53 @@ $(function() {
 
   //   drawImageProp(ctx, ele, 0, 0, canvas.width, canvas.height);
 
-  //   $(ele).css('display', 'none')
-  //   // ctx.drawImage(ele, 0, 0, 1170, 626, 0, 0, canvas.width, canvas.height);
+  //   // $(ele).css('display', 'none')
+  //   ctx.drawImage(ele, 0, 0, 1170, 626, 0, 0, canvas.width, canvas.height);
   // })
 
+  function glitchCanvas(ele, i) {
+    var source = images[i]
+    var ctx = ele.getContext('2d')
 
-  // $(window).resize(function() {
-  //   canvases.each(function(i, ele) {
-  //     $(ele).css({width: '100%', height: 'auto' })
-  //   })
-  // })
+    // ctx.drawImage(source, 0, 0, 1170, 626, 0, 0, ele.width, ele.height);
+
+    glitch({
+      seed: Math.floor(Math.random() * 99),
+      quality: 25,
+      amount: Math.floor(Math.random() * 99)
+    }).fromImage(source).toImageData()
+    .then(function(img) {
+      ctx.putImageData(img, 0, 0)
+    })
+    .catch(function(err) {
+
+    })
+
+    if (hovering) {
+      rafID = requestAnimationFrame(function() { glitchCanvas(ele, i) })
+    }
+    else cancelAnimationFrame(rafID)
+  }
+
+  $('.project-canvas').each(function(i, ele) {
+    var image = images[i]
+    $(ele).css({width: image.width, height: image.height})
+
+    $(ele).hover(function() {
+      hovering = true
+      glitchCanvas(ele, i)
+      $(ele).css("opacity", 1)
+    }, function() {
+      hovering = false
+      $(ele).css("opacity", 0)
+    })
+  })
+
+  $(window).resize(function() {
+    canvases.each(function(i, ele) {
+      var image = images[i]
+      $(ele).css({width: image.width, height: image.height})
+    })
+  })
 
 })

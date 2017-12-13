@@ -9,7 +9,13 @@
 .project {
   display: block;
   width: 100%;
-  margin-top: 75px;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .project {
+    margin-top: 75px;
+  }
 }
 
 .project-details {
@@ -29,8 +35,16 @@
 }
 
 .project-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.project-canvas:hover {
+  opacity: 1;
 }
 
 .project-number {
@@ -47,7 +61,7 @@
   display: flex;
   justify-content: flex-end;
   opacity: .5;
-  width: 100px;
+  width: 115px;
 }
 
 
