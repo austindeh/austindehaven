@@ -54,27 +54,13 @@ $(function() {
   var rafID = 0
   var hovering = false
 
-  // $('.project-img').each(function(i, ele) {
-  //   var canvas = canvases[i]
-  //   var ctx = canvas.getContext('2d')
-
-  //   $(canvas).css('width', body.css('width'))
-
-  //   drawImageProp(ctx, ele, 0, 0, canvas.width, canvas.height);
-
-  //   // $(ele).css('display', 'none')
-  //   ctx.drawImage(ele, 0, 0, 1170, 626, 0, 0, canvas.width, canvas.height);
-  // })
-
   function glitchCanvas(ele, i) {
     var source = images[i]
     var ctx = ele.getContext('2d')
 
-    // ctx.drawImage(source, 0, 0, 1170, 626, 0, 0, ele.width, ele.height);
-
     glitch({
       seed: Math.floor(Math.random() * 99),
-      quality: 25,
+      quality: 50,
       amount: Math.floor(Math.random() * 99)
     }).fromImage(source).toImageData()
     .then(function(img) {
@@ -86,8 +72,7 @@ $(function() {
 
     if (hovering) {
       rafID = requestAnimationFrame(function() { glitchCanvas(ele, i) })
-    }
-    else cancelAnimationFrame(rafID)
+    } else cancelAnimationFrame(rafID)
   }
 
   $('.project-canvas').each(function(i, ele) {
