@@ -1,99 +1,102 @@
-function drawImageProp(ctx, img, x, y, w, h, offsetX, offsetY) {
-  if (arguments.length === 2) {
-      x = y = 0;
-      w = ctx.canvas.width;
-      h = ctx.canvas.height;
-  }
+// function drawImageProp(ctx, img, x, y, w, h, offsetX, offsetY) {
+//   if (arguments.length === 2) {
+//       x = y = 0;
+//       w = ctx.canvas.width;
+//       h = ctx.canvas.height;
+//   }
 
-  // default offset is center
-  offsetX = typeof offsetX === "number" ? offsetX : 0.5;
-  offsetY = typeof offsetY === "number" ? offsetY : 0.5;
+//   // default offset is center
+//   offsetX = typeof offsetX === "number" ? offsetX : 0.5;
+//   offsetY = typeof offsetY === "number" ? offsetY : 0.5;
 
-  // keep bounds [0.0, 1.0]
-  if (offsetX < 0) offsetX = 0;
-  if (offsetY < 0) offsetY = 0;
-  if (offsetX > 1) offsetX = 1;
-  if (offsetY > 1) offsetY = 1;
+//   // keep bounds [0.0, 1.0]
+//   if (offsetX < 0) offsetX = 0;
+//   if (offsetY < 0) offsetY = 0;
+//   if (offsetX > 1) offsetX = 1;
+//   if (offsetY > 1) offsetY = 1;
 
-  var iw = img.width,
-      ih = img.height,
-      r = Math.min(w / iw, h / ih),
-      nw = iw * r,   // new prop. width
-      nh = ih * r,   // new prop. height
-      cx, cy, cw, ch, ar = 1;
+//   var iw = img.width,
+//       ih = img.height,
+//       r = Math.min(w / iw, h / ih),
+//       nw = iw * r,   // new prop. width
+//       nh = ih * r,   // new prop. height
+//       cx, cy, cw, ch, ar = 1;
 
-  // decide which gap to fill
-  if (nw < w) ar = w / nw;
-  if (Math.abs(ar - 1) < 1e-14 && nh < h) ar = h / nh;  // updated
-  nw *= ar;
-  nh *= ar;
+//   // decide which gap to fill
+//   if (nw < w) ar = w / nw;
+//   if (Math.abs(ar - 1) < 1e-14 && nh < h) ar = h / nh;  // updated
+//   nw *= ar;
+//   nh *= ar;
 
-  // calc source rectangle
-  cw = iw / (nw / w);
-  ch = ih / (nh / h);
+//   // calc source rectangle
+//   cw = iw / (nw / w);
+//   ch = ih / (nh / h);
 
-  cx = (iw - cw) * offsetX;
-  cy = (ih - ch) * offsetY;
+//   cx = (iw - cw) * offsetX;
+//   cy = (ih - ch) * offsetY;
 
-  // make sure source rectangle is valid
-  if (cx < 0) cx = 0;
-  if (cy < 0) cy = 0;
-  if (cw > iw) cw = iw;
-  if (ch > ih) ch = ih;
+//   // make sure source rectangle is valid
+//   if (cx < 0) cx = 0;
+//   if (cy < 0) cy = 0;
+//   if (cw > iw) cw = iw;
+//   if (ch > ih) ch = ih;
 
-  // fill image in dest. rectangle
-  ctx.drawImage(img, cx, cy, cw, ch,  x, y, w, h);
-}
+//   // fill image in dest. rectangle
+//   ctx.drawImage(img, cx, cy, cw, ch,  x, y, w, h);
+// }
+
+
+
 
 $(function() {
   // DOM ready...just in case.
-  var body = $("body")
-  var canvases = $('.project-canvas')
-  var images = $('.project-img')
+  // var body = $("body")
+  // var canvases = $('.project-canvas')
+  // var images = $('.project-img')
 
-  var rafID = 0
-  var hovering = false
+  // var rafID = 0
+  // var hovering = false
 
-  function glitchCanvas(ele, i) {
-    var source = images[i]
-    var ctx = ele.getContext('2d')
+  // function glitchCanvas(ele, i) {
+  //   var source = images[i]
+  //   var ctx = ele.getContext('2d')
 
-    glitch({
-      seed: Math.floor(Math.random() * 99),
-      quality: 50,
-      amount: Math.floor(Math.random() * 99)
-    }).fromImage(source).toImageData()
-    .then(function(img) {
-      ctx.putImageData(img, 0, 0)
-    })
-    .catch(function(err) {
+  //   // glitch({
+  //   //   seed: Math.floor(Math.random() * 99),
+  //   //   quality: Math.floor(Math.random() * 99),
+  //   //   amount: Math.floor(Math.random() * 99)
+  //   // }).fromImage(source).toImageData()
+  //   // .then(function(img) {
+  //   //   ctx.putImageData(img, 0, 0)
+  //   // })
+  //   // .catch(function(err) {
 
-    })
+  //   // })
 
-    if (hovering) {
-      rafID = requestAnimationFrame(function() { glitchCanvas(ele, i) })
-    } else cancelAnimationFrame(rafID)
-  }
+  //   if (hovering) {
+  //     rafID = requestAnimationFrame(function() { glitchCanvas(ele, i) })
+  //   } else cancelAnimationFrame(rafID)
+  // }
 
-  $('.project-canvas').each(function(i, ele) {
-    var image = images[i]
-    $(ele).css({width: image.width, height: image.height})
+  // $('.project-canvas').each(function(i, ele) {
+  //   var image = images[i]
+  //   $(ele).css({width: image.width, height: image.height})
 
-    $(ele).hover(function() {
-      hovering = true
-      glitchCanvas(ele, i)
-      $(ele).css("opacity", 1)
-    }, function() {
-      hovering = false
-      $(ele).css("opacity", 0)
-    })
-  })
+  //   $(ele).hover(function() {
+  //     hovering = true
+  //     glitchCanvas(ele, i)
+  //     $(ele).css("opacity", 1)
+  //   }, function() {
+  //     hovering = false
+  //     $(ele).css("opacity", 0)
+  //   })
+  // })
 
-  $(window).resize(function() {
-    canvases.each(function(i, ele) {
-      var image = images[i]
-      $(ele).css({width: image.width, height: image.height})
-    })
-  })
+  // $(window).resize(function() {
+  //   canvases.each(function(i, ele) {
+  //     var image = images[i]
+  //     $(ele).css({width: image.width, height: image.height})
+  //   })
+  // })
 
 })
