@@ -5,7 +5,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var http = require("http");
+var https = require("https");
 
 var index = require('./routes/index');
 var projects = require('./routes/projects');
@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 setInterval(function() {
-  http.get(host);
+  https.get(host);
 }, 300000);
 
 // uncomment after placing your favicon in /public
