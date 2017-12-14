@@ -1,3 +1,4 @@
+require('dotenv').config()
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -11,13 +12,15 @@ var projects = require('./routes/projects');
 
 var app = express();
 
+var host = process.env.HOST
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// setInterval(function() {
-//   http.get("https://austindehaven.herokuapp.com");
-// }, 300000);
+setInterval(function() {
+  http.get(host);
+}, 300000);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
