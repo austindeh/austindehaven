@@ -1,20 +1,24 @@
-.design-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
+.body-width {
   max-width: 1170px;
-  color: #181818;
+  width: 100%;
+  margin: auto;
 }
 
-.photography-body {
-  background-color: #181818;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  max-width: 1170px;
-  color: white;
+@media (max-width: 1200px) and (min-width: 979px) {
+  .body-width {
+    max-width: 940px;
+  }
 }
+
+@media (max-width: 979px) and (min-width: 768px) {
+  .body-width {
+    max-width: 724px;
+  }
+}
+
+@media (max-width: 767px) {
+  .body-width {
+    width: 80%;
+  }
+}
+

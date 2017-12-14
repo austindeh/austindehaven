@@ -1,0 +1,100 @@
+/* -- Return Button -- */
+
+.return-button {
+  font-family: bookmania;
+  font-size: 13px;
+  color: #181818;
+  padding-bottom: 4px;
+}
+
+#return-button span {
+  font-family: bookmania, serif;
+  font-size: 10pt;
+  margin-right: 5px;
+}
+
+#return-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 15px;
+}
+
+/* -- Project Overview -- */
+
+#project-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: left;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.project-overview {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.project-overview-title {
+  font-family: bookmania;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.project-overview-body {
+  font-size: 11px;
+  font-family: roboto-mono;
+  line-height: 2.5;
+}
+
+.project-overview-details-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-overview-details-column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 60px;
+}
+
+.project-overview-subhead {
+  font-size: 11px;
+  font-family: roboto-mono;
+  opacity: 0.5;
+  line-height: 2;
+}
+
+.project-overview-value {
+  font-size: 14px;
+  font-family: bookmania;
+  line-height: 2;
+}
+
+#footer .underlined:before {
+	background-color:#646464;
+}
+
+#footer .underlined:after {
+  background-color: white;
+}
+
+/* -- Footer Colors -- */
+
+#footer {
+  background-color: white;
+  color: #181818;
+  margin: 0;
+}
+
+#footer .underlined:before {
+	background-color:#e1e1e1;
+}
+
+#footer .underlined:after {
+  background-color: #181818;
+}
+

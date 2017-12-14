@@ -1,0 +1,22 @@
+#footer {
+  display: flex;
+  width: 100vw;
+  background-color: #181818;
+  height: 325px;
+  margin-top: 75px;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-text {
+  font-family: bookmania, serif;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+.returnArrow {
+  padding-right: 5px;
+  font-family: bookmania, serif;
+  font-size: 14pt;
+}
