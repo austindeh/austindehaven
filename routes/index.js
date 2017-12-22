@@ -42,12 +42,12 @@ router.get('/', function(req, res, next) {
     },
 
   ];
-  
-  res.render('index', { projects: projects });
+
+  res.render('index', { projects: projects, route: 'index' });
 });
 
 router.get('/photography', function(req, res, next) {
-  res.render('photography', { });
+  res.render('photography', { route: 'photography' });
 });
 
 module.exports = router;

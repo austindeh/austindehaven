@@ -11,6 +11,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     role: 'Art Direction, Photography, Design',
     prevProject: 'archives',
     nextProject: 'made-in-la',
+
   }
   res.render('project', { project: project, images: [] })
 });
