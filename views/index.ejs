@@ -31,15 +31,7 @@
         <%- include('partials/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
       <% }); %>
     </div>
-    <a id="archives" href="">
-      <div class="divider-top divider-lines"></div>
-      <div class="project-details">
-        <span class="project-number">0<%- projects.length + 1 %> / 0<%- projects.length + 1 %></span>
-        <span class="project-title">Archives - Coming Soon</span>
-        <span class="project-year">2017</span>
-      </div>
-      <div class="divider-bottom divider-lines"></div>
-    </a>
+    <%- include('partials/archives', { href: ''}) %>
     <%- include('partials/_footer', { href: '/photography', copy: 'View photography work' }) %>
     <%- include('partials/_back-to-top') %>
   </body>
