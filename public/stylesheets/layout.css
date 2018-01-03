@@ -20,5 +20,9 @@
   .body-width {
     width: 80%;
   }
+  .project-details {
+    font-size: 9px;
+    line-height: 7px;
+  }
 }
 

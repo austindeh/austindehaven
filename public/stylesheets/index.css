@@ -201,7 +201,6 @@
   cursor: pointer;
   display: inline-block;
   position: relative;
-  font-size: inherit;
   z-index: 1;
 }
 
