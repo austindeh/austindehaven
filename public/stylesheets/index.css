@@ -156,28 +156,28 @@
 }
 
 #archives:hover .glitch-mask:nth-child(6) {
-  -webkit-animation: jitter-20-25-8 0.3s both;
-  animation: jitter-20-25-8 0.3s both;
+  -webkit-animation: jitter-20-25-8 infinite 0.3s both;
+  animation: jitter-20-25-8 infinite 0.3s both;
 }
 
 #archives:hover .glitch-mask:nth-child(5) {
-  -webkit-animation: jitter-20-24-8 0.3s both;
-  animation: jitter-20-24-8 0.3s both;
+  -webkit-animation: jitter-20-24-8 infinite 0.3s both;
+  animation: jitter-20-24-8 infinite 0.3s both;
 }
 
 #archives:hover .glitch-mask:nth-child(4) {
-  -webkit-animation: jitter-20-23-8 0.3s both;
-  animation: jitter-20-23-8 0.3s both;
+  -webkit-animation: jitter-20-23-8 infinite 0.3s both;
+  animation: jitter-20-23-8 infinite 0.3s both;
 }
 
 #archives:hover .glitch-mask:nth-child(3) {
-  -webkit-animation: jitter-20-22-8 0.3s both;
-  animation: jitter-20-22-8 0.3s both;
+  -webkit-animation: jitter-20-22-8 infinite 0.3s both;
+  animation: jitter-20-22-8 infinite 0.3s both;
 }
 
 #archives:hover .glitch-mask:nth-child(2) {
-  -webkit-animation: jitter-20-21-8 0.3s both;
-  animation: jitter-20-21-8 0.3s both;
+  -webkit-animation: jitter-20-21-8 infinite 0.3s both;
+  animation: jitter-20-21-8 infinite 0.3s both;
 }
 
 /* -- Footer Colors -- */
@@ -283,28 +283,28 @@
 }
 
 .project:hover .glitch-mask:nth-child(6) {
-  -webkit-animation: jitter-20-25-8 0.3s both;
-  animation: jitter-20-25-8 0.3s both;
+  -webkit-animation: jitter-20-25-8 infinite 0.3s both;
+  animation: jitter-20-25-8 infinite 0.3s both;
 }
 
 .project:hover .glitch-mask:nth-child(5) {
-  -webkit-animation: jitter-20-24-8 0.3s both;
-  animation: jitter-20-24-8 0.3s both;
+  -webkit-animation: jitter-20-24-8 infinite 0.3s both;
+  animation: jitter-20-24-8 infinite 0.3s both;
 }
 
 .project:hover .glitch-mask:nth-child(4) {
-  -webkit-animation: jitter-20-23-8 0.3s both;
-  animation: jitter-20-23-8 0.3s both;
+  -webkit-animation: jitter-20-23-8 infinite 0.3s both;
+  animation: jitter-20-23-8 infinite 0.3s both;
 }
 
 .project:hover .glitch-mask:nth-child(3) {
-  -webkit-animation: jitter-20-22-8 0.3s both;
-  animation: jitter-20-22-8 0.3s both;
+  -webkit-animation: jitter-20-22-8 infinite 0.3s both;
+  animation: jitter-20-22-8 infinite 0.3s both;
 }
 
 .project:hover .glitch-mask:nth-child(2) {
-  -webkit-animation: jitter-20-21-8 0.3s both;
-  animation: jitter-20-21-8 0.3s both;
+  -webkit-animation: jitter-20-21-8 infinite 0.3s both;
+  animation: jitter-20-21-8 infinite 0.3s both;
 }
 
 /* --- Glitch Text Keyframes --- */
@@ -489,7 +489,7 @@
   85% {
     -webkit-transform: translate(1.35px, 0px);
     transform: translate(1.35px, 0px);
-  }
+  }n
   80% {
     -webkit-transform: translate(1.6px, -0px);
     transform: translate(1.6px, 0px);
