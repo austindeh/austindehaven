@@ -31,7 +31,7 @@
 }
 
 .project-img {
-  /* display: none; */
+   /* display: none; */
 }
 
 .project-canvas {
@@ -66,6 +66,16 @@
 
 /* --- Archived Projects --- */
 
+#archives .project-details {
+  border: none;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+#archives:hover .project-details {
+  padding: 5px 10px;
+}
+
 #archives {
   width: 100%;
   color: #181818;
@@ -93,14 +103,14 @@
 	background-color: #e1e1e1;
 }
 
-.divider-lines:after {
+/* .divider-lines:after {
   content: "";
   position: absolute;
   width: 100%;
   height: 1px;
   left: 0;
   background-color: #181818;
-  visibility: hidden;
+  visibility: visible;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -109,10 +119,43 @@
 }
 
 #archives:hover  .divider-lines:after {
-	visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  transform-origin: 0% 100%
+  transform-origin: 0% 100%;
+} */
+
+#archives:hover .texthover {
+  -webkit-animation: fade-in 0.8s both;
+  animation: fade-in 0.8s both;
+}
+
+#archives:hover .glitch-mask {
+  display: block;
+}
+
+#archives:hover .glitch-mask:nth-child(6) {
+  -webkit-animation: jitter-20-25-8 0.3s both;
+  animation: jitter-20-25-8 0.3s both;
+}
+
+#archives:hover .glitch-mask:nth-child(5) {
+  -webkit-animation: jitter-20-24-8 0.3s both;
+  animation: jitter-20-24-8 0.3s both;
+}
+
+#archives:hover .glitch-mask:nth-child(4) {
+  -webkit-animation: jitter-20-23-8 0.3s both;
+  animation: jitter-20-23-8 0.3s both;
+}
+
+#archives:hover .glitch-mask:nth-child(3) {
+  -webkit-animation: jitter-20-22-8 0.3s both;
+  animation: jitter-20-22-8 0.3s both;
+}
+
+#archives:hover .glitch-mask:nth-child(2) {
+  -webkit-animation: jitter-20-21-8 0.3s both;
+  animation: jitter-20-21-8 0.3s both;
 }
 
 /* -- Footer Colors -- */
@@ -128,7 +171,7 @@
 
 /* --- Glitch Text Hover ---*/
 .glitch-btn {
-  color: black;
+  color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -208,36 +251,36 @@
   top: -100%;
 }
 
-.glitch-btn:hover .texthover {
+.project:hover .texthover {
   -webkit-animation: fade-in 0.8s both;
   animation: fade-in 0.8s both;
 }
 
-.glitch-btn:hover .glitch-mask {
+.project:hover .glitch-mask {
   display: block;
 }
 
-.glitch-btn:hover .glitch-mask:nth-child(6) {
+.project:hover .glitch-mask:nth-child(6) {
   -webkit-animation: jitter-20-25-8 0.3s both;
   animation: jitter-20-25-8 0.3s both;
 }
 
-.glitch-btn:hover .glitch-mask:nth-child(5) {
+.project:hover .glitch-mask:nth-child(5) {
   -webkit-animation: jitter-20-24-8 0.3s both;
   animation: jitter-20-24-8 0.3s both;
 }
 
-.glitch-btn:hover .glitch-mask:nth-child(4) {
+.project:hover .glitch-mask:nth-child(4) {
   -webkit-animation: jitter-20-23-8 0.3s both;
   animation: jitter-20-23-8 0.3s both;
 }
 
-.glitch-btn:hover .glitch-mask:nth-child(3) {
+.project:hover .glitch-mask:nth-child(3) {
   -webkit-animation: jitter-20-22-8 0.3s both;
   animation: jitter-20-22-8 0.3s both;
 }
 
-.glitch-btn:hover .glitch-mask:nth-child(2) {
+.project:hover .glitch-mask:nth-child(2) {
   -webkit-animation: jitter-20-21-8 0.3s both;
   animation: jitter-20-21-8 0.3s both;
 }
