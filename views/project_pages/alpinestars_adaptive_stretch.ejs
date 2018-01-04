@@ -23,7 +23,7 @@
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body class="body-width">
-    <%- include('../partials/Projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
     <img class="fullWidth spacingStandard" src="/images/projects/alpinestars_adaptive_stretch/01-alpinestars_adaptive_stretch-rearshot.jpg">
     <span class="sectionHeaders">Inspiration</span>
@@ -44,11 +44,11 @@
     </div>
 
 
-    <%- include('../partials/Projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
-    <%- include('../partials/Global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
-    <%- include('../partials/Global/_back-to-top') %>
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
 
   </body>
-  <%- include('../partials/Global/_dependencies') %>
+  <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
 </html>
