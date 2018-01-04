@@ -9,35 +9,35 @@ router.get('/', function(req, res, next) {
     {
       title: 'Disney Store Toybox',
       year: 'wip',
-      src: 'Images/Home/Toybox-Cover-Kylo.jpg',
+      src: 'images/Home/Toybox-Cover-Kylo.jpg',
       href: ''
     },
 
     {
       title: 'Alpinestars Adaptive Stretch',
       year: '2016',
-      src: 'Images/Home/Alpinestars.jpg',
+      src: 'images/Home/Alpinestars.jpg',
       href: '/project/alpinestars-adaptive-stretch'
     },
 
     {
       title: 'Made in LA',
       year: '2016',
-      src: 'Images/Home/Made-In-LA.jpg',
+      src: 'images/Home/Made-In-LA.jpg',
       href: '/project/made-in-la'
     },
 
     {
       title: 'Motoamerica',
       year: '2015',
-      src: 'Images/Home/Motoamerica.jpg',
+      src: 'images/Home/Motoamerica.jpg',
       href: '/project/motoamerica'
     },
 
     {
       title: 'Ken Block Livery',
       year: '2015',
-      src: 'Images/Home/Ken-Block.jpg',
+      src: 'images/Home/Ken-Block.jpg',
       href: '/project/ken-block'
     },
 
