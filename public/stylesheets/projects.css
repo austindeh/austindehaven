@@ -1,3 +1,8 @@
+body {
+  background-color: white;
+}
+
+
 /* -- Return Button -- */
 
 .return-button {
@@ -134,7 +139,7 @@
 /* -- Footer Colors -- */
 
 #footer {
-  background-color: white;
+  background-color: #f5f5f5;
   color: #181818;
   margin: 0;
 }
