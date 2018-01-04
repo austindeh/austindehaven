@@ -15,28 +15,20 @@
     <meta property="og:description"   content="">
     <meta property="og:image"         content="">
 
-
     <link rel="stylesheet" href="https://use.typekit.net/bxp7lue.css">
     <link rel='stylesheet' href='/stylesheets/global.css' />
     <link rel='stylesheet' href='/stylesheets/layout.css' />
-    <link rel='stylesheet' href='/stylesheets/landing.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
-    <link rel='stylesheet' href='/stylesheets/index.css' />
-
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body class="body-width">
-    <%- include('partials/Homepages/_landing') %>
-    <div class="projects">
-      <% projects.forEach(function(project, i) { %>
-        <%- include('partials/Homepages/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
-      <% }); %>
-    </div>
-    <%- include('partials/Homepages/archives', { href: ''}) %>
-    <%- include('partials/Global/_footer', { href: '/photography', copy: 'View photography work' }) %>
-    <%- include('partials/Global/_back-to-top') %>
+    <%- include('../partials/Projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+    <%- include('../partials/Projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/Global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/Global/_back-to-top') %>
+
   </body>
-  <%- include('partials/Global/_dependencies') %>
+  <%- include('../partials/Global/_dependencies') %>
   <script src="/javascript/global.js"></script>
-  <script src="/javascript/landing.js"></script>
-  <script src="/javascript/homepage.js"></script>
 </html>
