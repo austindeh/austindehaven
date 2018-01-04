@@ -25,17 +25,17 @@
 
   </head>
   <body class="body-width">
-    <%- include('partials/Homepages/_landing') %>
+    <%- include('partials/homepages/_landing') %>
     <div class="projects">
       <% projects.forEach(function(project, i) { %>
-        <%- include('partials/Homepages/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
+        <%- include('partials/homepages/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
       <% }); %>
     </div>
-    <%- include('partials/Homepages/_archives', { href: ''}) %>
-    <%- include('partials/Global/_footer', { href: '/photography', copy: 'View photography work' }) %>
-    <%- include('partials/Global/_back-to-top') %>
+    <%- include('partials/homepages/_archives', { href: ''}) %>
+    <%- include('partials/global/_footer', { href: '/photography', copy: 'View photography work' }) %>
+    <%- include('partials/global/_back-to-top') %>
   </body>
-  <%- include('partials/Global/_dependencies') %>
+  <%- include('partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
   <script src="/javascript/landing.js"></script>
   <script src="/javascript/homepage.js"></script>
