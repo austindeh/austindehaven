@@ -8,35 +8,39 @@
 
     <meta name="description"          content="">
     <meta name="keywords"             content="">
-    <meta name="theme-color"          content="black">
+    <meta name="theme-color"          content="white">
     <meta property="og:type"          content="">
     <meta property="og:url"           content="">
     <meta property="og:title"         content="">
     <meta property="og:description"   content="">
     <meta property="og:image"         content="">
 
-
     <link rel="stylesheet" href="https://use.typekit.net/bxp7lue.css">
     <link rel='stylesheet' href='/stylesheets/global.css' />
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/landing.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
-    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel='stylesheet' href='/stylesheets/back-to-top.css' />
+    <link rel='stylesheet' href='/stylesheets/photography.css' />
 
   </head>
   <body class="body-width">
-    <%- include('partials/_landing') %>
-    <div class="projects">
-      <% projects.forEach(function(project, i) { %>
-        <%- include('partials/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
-      <% }); %>
-    </div>
-    <%- include('partials/archives', { href: ''}) %>
-    <%- include('partials/_footer', { href: '/photography', copy: 'View photography work' }) %>
-    <%- include('partials/_back-to-top') %>
+
+    <%- include('partials/Homepages/_landing') %>
+
+    <!-- pull all images placed in images/photography -->
+    <!-- create an image sorting feature :: Client / Personal -->
+    <!-- Lazy load -->
+    <!-- Possibly add glitch hovers to images depending on server and cpu load? -->
+
+    <%- include('partials/Global/_footer', { href: '/', copy: 'Return to design work' }) %>
+
+    <%- include('partials/Global/_back-to-top') %>
+
   </body>
-  <%- include('partials/_dependencies') %>
+
+  <%- include('partials/Global/_dependencies') %>
   <script src="/javascript/global.js"></script>
   <script src="/javascript/landing.js"></script>
-  <script src="/javascript/homepage.js"></script>
+
 </html>
