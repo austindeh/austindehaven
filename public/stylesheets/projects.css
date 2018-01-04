@@ -28,7 +28,7 @@
   justify-content: flex-start;
   align-content: left;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: 100%;
 }
 
@@ -85,24 +85,48 @@
 
 /* -- Layout Styling -- */
 
-.project-landingImage {
-  
+.spacingStandard {
+  padding-bottom: 100px;
 }
 
-.project-fullWidth {
-
+.spacingSmall {
+  padding-bottom: 50px;
 }
 
-.project-gridWidth {
-
+.fullWidth {
+  width: 100vw;
 }
 
-.project-fourColumn {
-
+.column {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.project-twoColumn {
+.col-2 {
+  flex: auto;
+  max-width: 550px;
+  width: 100%;
+  padding: 20px;
+}
 
+.col-3 {
+  width: 33.33%;
+  margin: 5px;
+}
+
+.col-4 {
+  width: 25%;
+  margin: 5px;
+}
+
+.sectionHeaders {
+  display: flex;
+  width: 100%;
+  font-family: bookmania;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  line-height: 2;
+  padding-bottom: 50px;
 }
 
 
