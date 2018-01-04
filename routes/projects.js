@@ -13,7 +13,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     nextProject: 'made-in-la',
 
   }
-  res.render('project_pages/alpinestars-adaptive-stretch', { project: project, images: [] })
+  res.render('project_pages/alpinestars_adaptive_stretch', { project: project, images: [] })
 });
 
 router.get('/made-in-la', function(req, res, next) {
@@ -26,7 +26,7 @@ router.get('/made-in-la', function(req, res, next) {
     prevProject: 'alpinestars-adaptive-stretch',
     nextProject: 'motoamerica',
   }
-  res.render('project_pages/made-in-la', { project: project })
+  res.render('project_pages/made_in_la', { project: project })
 });
 
 router.get('/motoamerica', function(req, res, next) {
@@ -52,7 +52,7 @@ router.get('/ken-block', function(req, res, next) {
     prevProject: 'motoamerica',
     nextProject: 'archives',
   }
-  res.render('project_pages/ken-block', { project: project })
+  res.render('project_pages/ken_block', { project: project })
 });
 
 router.get('/archives', function(req, res, next) {
