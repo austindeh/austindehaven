@@ -2,6 +2,18 @@ body {
   background-color: white;
 }
 
+
+/* -- Layout Shit -- */
+@media (max-width: 767px) {
+  img {
+    width: 100vw;
+  }
+
+  .column img {
+    width: 100%;
+  }
+}
+
 /* -- Return Button -- */
 
 .return-button {
@@ -101,9 +113,12 @@ body {
   width: 100vw;
 }
 
+.grid {
+  margin-bottom: 10px;
+}
+
 .row {
   display: flex;
-  width: 100%;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -130,7 +145,8 @@ body {
 
 .sectionBody {
   width: 100%;
-  font-size: 10pt;
+  font-size: 7.75pt;
+  font-family: roboto-mono;
   letter-spacing: 1px;
   line-height: 2;
 
