@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Austin Dehaven | Portfolio</title>
+    <!-- made with love. -->
+    <title>Portfolio of Austin DeHaven</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -24,18 +25,22 @@
 
   </head>
   <body class="body-width">
-    <!-- Landing Section !-->
-    <%- include('partials/_landing') %>
+
+    <%- include('partials/homepages/_landing') %>
 
     <!-- pull all images placed in images/photography -->
+    <!-- create an image sorting feature :: Client / Personal -->
+    <!-- Lazy load -->
+    <!-- Possibly add glitch hovers to images depending on server and cpu load? -->
 
-    <!-- Footer Block !-->
-    <%- include('partials/_footer', { href: '/', copy: 'Return to design work' }) %>
+    <%- include('partials/global/_footer', { href: '/', copy: 'Return to design work' }) %>
 
-    <!-- Back to Top Button !-->
-    <%- include('partials/_back-to-top') %>
+    <%- include('partials/global/_back-to-top') %>
+
   </body>
-  <%- include('partials/_dependencies') %>
+
+  <%- include('partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
   <script src="/javascript/landing.js"></script>
+
 </html>

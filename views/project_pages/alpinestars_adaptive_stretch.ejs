@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- made with love. -->
+    <title>Portfolio of Austin DeHaven</title>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description"          content="">
+    <meta name="keywords"             content="">
+    <meta name="theme-color"          content="black">
+    <meta property="og:type"          content="">
+    <meta property="og:url"           content="">
+    <meta property="og:title"         content="">
+    <meta property="og:description"   content="">
+    <meta property="og:image"         content="">
+
+    <link rel="stylesheet" href="https://use.typekit.net/bxp7lue.css">
+    <link rel='stylesheet' href='/stylesheets/global.css' />
+    <link rel='stylesheet' href='/stylesheets/layout.css' />
+    <link rel='stylesheet' href='/stylesheets/footer.css' />
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+  </head>
+  <body class="body-width">
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
+    <img class="fullWidth spacingStandard" src="/images/projects/alpinestars_adaptive_stretch/01-alpinestars_adaptive_stretch-rearshot.jpg">
+    <p class="sectionHeader sectionCopy">Inspiration</p>
+    <img class="spacingStandard" src="/images/projects/alpinestars_adaptive_stretch/02-alpinestars_adaptive_stretch-inspiration.jpg">
+    <img class="fullWidth spacingStandard" src="/images/projects/alpinestars_adaptive_stretch/03-alpinestars_adaptive_stretch-barcia_whip.jpg">
+    <p class="sectionHeader sectionCopy">Photography</p>
+    <img class="spacingSmall" src="/images/projects/alpinestars_adaptive_stretch/04-alpinestars_adaptive_stretch-process_jersey.jpg">
+    <img class="spacingStandard" src="/images/projects/alpinestars_adaptive_stretch/05-alpinestars_adaptive_stretch-process_collage.jpg">
+    <p class="sectionHeader sectionCopy">Deliverables</p>
+    <img class="fullWidth spacingStandard" src="/images/projects/alpinestars_adaptive_stretch/06-alpinestars_adaptive_stretch-rearshot_final.jpg">
+    <div class="row spacingStandard">
+      <div class="column">
+        <img class="" src="/images/projects/alpinestars_adaptive_stretch/07-alpinestars_adaptive_stretch-glove_final.jpg">
+      </div>
+      <div class="column">
+        <img class="" src="/images/projects/alpinestars_adaptive_stretch/08-alpinestars_adaptive_stretch-stand_final.jpg">
+      </div>
+    </div>
+
+
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src="/javascript/global.js"></script>
+</html>

@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #f5f5f5;
   }
 
 table {
@@ -47,6 +48,19 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
+::selection {
+  background: black; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: black; /* Gecko Browsers */
+  color: white;
+}
+
 /* --- Underlines --- */
 
 .selected {
@@ -64,7 +78,8 @@ img {
 }
 
 .underlined {
-	position: relative;
+  position: relative;
+  z-index: 20;
 }
 
 .underlined:before {

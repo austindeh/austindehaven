@@ -11,8 +11,9 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     role: 'Art Direction, Photography, Design',
     prevProject: 'archives',
     nextProject: 'made-in-la',
+
   }
-  res.render('project', { project: project, images: [] })
+  res.render('project_pages/alpinestars_adaptive_stretch', { project: project, images: [] })
 });
 
 router.get('/made-in-la', function(req, res, next) {
@@ -25,7 +26,7 @@ router.get('/made-in-la', function(req, res, next) {
     prevProject: 'alpinestars-adaptive-stretch',
     nextProject: 'motoamerica',
   }
-  res.render('project', { project: project })
+  res.render('project_pages/made_in_la', { project: project })
 });
 
 router.get('/motoamerica', function(req, res, next) {
@@ -38,7 +39,7 @@ router.get('/motoamerica', function(req, res, next) {
     prevProject: 'made-in-la',
     nextProject: 'ken-block',
   }
-  res.render('project', { project: project })
+  res.render('project_pages/motoamerica', { project: project })
 });
 
 router.get('/ken-block', function(req, res, next) {
@@ -51,7 +52,7 @@ router.get('/ken-block', function(req, res, next) {
     prevProject: 'motoamerica',
     nextProject: 'archives',
   }
-  res.render('project', { project: project })
+  res.render('project_pages/ken_block', { project: project })
 });
 
 router.get('/archives', function(req, res, next) {
@@ -64,7 +65,7 @@ router.get('/archives', function(req, res, next) {
     prevProject: 'ken-block',
     nextProject: 'alpinestars-adaptive-stretch',
   }
-  res.render('project', { project: project })
+  res.render('project_pages/archives', { project: project })
 });
 
 module.exports = router;

@@ -5,12 +5,18 @@
 
       <!-- Cover snippet starts !-->
       <div class="snippetglitch" id="snippet">
-        <div class="textglitch1">
-          <span id="name" class="underlined">Austin DeHaven</span>
-        </div>
 
+        <div id="name" class="textglitch1">
+          <span class="underlined">Austin DeHaven</span>
+        </div>
         <div class="textglitch2">
-          <span class="selected" style="margin-right: 8px;">Designer</span>&<a class="underlined" href="/photography" style="margin-left: 8px;">Photographer</a>
+          <% if (locals.route === 'index') { %>
+            <span class="selected" style="margin-right: 8px;">Designer</span>&amp;<a class="underlined" href="/photography" style="margin-left: 8px;">Photographer</a>
+          <% } else { %>
+            <a class="underlined"  href="/" style="margin-right: 8px;">Designer</a>&amp;<span class="selected" style="margin-left: 8px;">Photographer</span>
+
+          <% } %>
+
         </div>
 
         <div class="textglitch3">

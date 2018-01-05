@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- made with love. -->
+    <title>Portfolio of Austin DeHaven</title>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description"          content="">
+    <meta name="keywords"             content="">
+    <meta name="theme-color"          content="black">
+    <meta property="og:type"          content="">
+    <meta property="og:url"           content="">
+    <meta property="og:title"         content="">
+    <meta property="og:description"   content="">
+    <meta property="og:image"         content="">
+
+    <link rel="stylesheet" href="https://use.typekit.net/bxp7lue.css">
+    <link rel='stylesheet' href='/stylesheets/global.css' />
+    <link rel='stylesheet' href='/stylesheets/layout.css' />
+    <link rel='stylesheet' href='/stylesheets/footer.css' />
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+  </head>
+  <body class="body-width">
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
+
+
+
+
+
+
+
+
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src="/javascript/global.js"></script>
+</html>
