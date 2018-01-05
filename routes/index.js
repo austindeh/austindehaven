@@ -4,7 +4,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
   // Project List
-  // Project : { title, year, src }
+  // Project : { title, year, src, link }
   var projects = [
     {
       title: 'Disney Store Toybox - Coming Soon',
