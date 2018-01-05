@@ -48,6 +48,15 @@ img {
   width: 100%;
 }
 
+::selection {
+  background: black; /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: black; /* Gecko Browsers */
+  color: white;
+}
+
 /* --- Underlines --- */
 
 .selected {

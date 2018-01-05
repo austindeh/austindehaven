@@ -26,11 +26,11 @@
   </head>
   <body class="body-width">
     <%- include('partials/homepages/_landing') %>
-    <div class="projects">
+    <!-- <div class="projects">
       <% projects.forEach(function(project, i) { %>
         <%- include('partials/homepages/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
       <% }); %>
-    </div>
+    </div> -->
     <%- include('partials/homepages/_archives', { href: ''}) %>
     <%- include('partials/global/_footer', { href: '/photography', copy: 'View photography work' }) %>
     <%- include('partials/global/_back-to-top') %>
