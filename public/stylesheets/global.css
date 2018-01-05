@@ -48,6 +48,10 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 ::selection {
   background: black; /* WebKit/Blink Browsers */
   color: white;

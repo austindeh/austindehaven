@@ -24,10 +24,15 @@
   </head>
   <body class="body-width">
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
+    
+
+
+
+
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
     <%- include('../partials/global/_back-to-top') %>
-
   </body>
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>

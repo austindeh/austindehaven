@@ -8,12 +8,14 @@
 @media (max-width: 1200px) and (min-width: 979px) {
   .body-width {
     max-width: 940px;
+    width: 100%;
   }
 }
 
 @media (max-width: 979px) and (min-width: 768px) {
   .body-width {
     max-width: 724px;
+    width: 100%;
   }
 }
 

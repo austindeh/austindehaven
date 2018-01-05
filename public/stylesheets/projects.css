@@ -2,7 +2,6 @@ body {
   background-color: white;
 }
 
-
 /* -- Return Button -- */
 
 .return-button {
@@ -102,36 +101,39 @@ body {
   width: 100vw;
 }
 
-.column {
+.row {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.col-2 {
-  flex: auto;
-  max-width: 550px;
   width: 100%;
-  padding: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
-.col-3 {
-  width: 33.33%;
-  margin: 5px;
+.column {
+  width: 100%;
+  margin: 10px;
 }
 
-.col-4 {
-  width: 25%;
-  margin: 5px;
-}
-
-.sectionHeaders {
-  display: flex;
+.sectionCopy {
   width: 100%;
   font-family: bookmania;
-  font-size: 14pt;
   letter-spacing: 1px;
   line-height: 2;
   padding-bottom: 50px;
+}
+
+.sectionHeader {
+  width: 100%;
+  font-size: 14pt;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.sectionBody {
+  width: 100%;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  line-height: 2;
+
 }
 
 
