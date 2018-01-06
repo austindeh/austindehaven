@@ -16,6 +16,7 @@ $(function() {
     ctx.drawImage(img, 0, 0, img.width, img.height)
     var data = canvas.toDataURL()
     setTimeout(function() {
+      console.log(data)
       $(ele).attr('src', data)
     }, 1000)
   })
