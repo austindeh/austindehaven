@@ -1,8 +1,8 @@
 var $images = $('.project-img')
 var $canvases = $('.project-canvas')
 
-var imgWidth= 920;
-var imgHeight= 600;
+var imgWidth= 100;
+var imgHeight= 100;
 var dataURL;
 
 $images.each(function (i, ele) {
