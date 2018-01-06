@@ -15,7 +15,9 @@ $(function() {
 
     ctx.drawImage(img, 0, 0, img.width, img.height)
     var data = canvas.toDataURL()
-    $(ele).attr('src', data)
+    setTimeout(function() {
+      $(ele).attr('src', data)
+    }, 1000)
   })
 
   $('.glitch-hover').mouseenter(function() {
