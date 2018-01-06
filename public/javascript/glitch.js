@@ -12,9 +12,9 @@ $(function() {
 
     canvas.width = img.width
     canvas.height = img.height
-
+    console.log(img, img.width, img.height)
     ctx.drawImage(img, 0, 0, img.width, img.height)
-    var data = canvas.toDataURL()
+    var data = canvas.toDataURL('image/png')
     setTimeout(function() {
       console.log(data)
       $(ele).attr('src', data)
