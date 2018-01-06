@@ -2,12 +2,12 @@
 
 var data
 var $glitchImgs = $('.glitch-hover')
-var canvas = document.createElement('canvas')
-var ctx = canvas.getContext('2d')
 
 $glitchImgs.each(function(i, ele) {
   var img = $(ele)[0]
   var src = $(ele).attr('src')
+  var canvas = document.createElement('canvas')
+  var ctx = canvas.getContext('2d')
 
   canvas.width = img.width
   canvas.height = img.height
