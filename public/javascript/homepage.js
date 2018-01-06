@@ -4,6 +4,18 @@ var $canvases = $('.project-canvas')
 var imgWidth= 920;
 var imgHeight= 600;
 
+$(window).resize(function() {
+  $canvases.each(function(i, ele) {
+    var image = $images[i]
+    var canvas = $(ele)[0]
+    var ctx = canvas.getContext('2d')
+    canvas.width = image.width
+    canvas.height = image.height
+    $(ele).css({width: image.width, height: image.height})
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  })
+})
+
 $images.each(function (i, ele) {
   var img = $(ele)[0]
   var canvas = $canvases[i]
