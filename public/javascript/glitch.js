@@ -11,12 +11,11 @@ $(function() {
     var ctx = canvas.getContext('2d')
 
     canvas.width = img.width
-    canvas.height = img.height || $(ele).parent().attr('height')
+    canvas.height = img.height || 626
     console.log(img, canvas.width, canvas.height)
     ctx.drawImage(img, 0, 0, img.width, img.height)
     var data = canvas.toDataURL('image/png', 1)
     setTimeout(function() {
-      console.log(data)
       $(ele).attr('src', data)
     }, 1000)
   })
