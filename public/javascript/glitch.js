@@ -1,7 +1,21 @@
 //******** GLITCH IMAGE HOVER ***********
 
-
 var data
+var $glitchImgs = $('.glitch-hover')
+var canvas = document.createElement('canvas')
+var ctx = canvas.getContext('2d')
+
+$glitchImgs.each(function(i, ele) {
+  var img = $(ele)[0]
+  var src = $(ele).attr('src')
+
+  canvas.width = img.width
+  canvas.height = img.height
+
+  ctx.drawImage(img, 0, 0, img.width, img.height)
+  var data = canvas.toDataURL()
+  $(ele).attr('src', data)
+})
 
 $('.glitch-hover').mouseenter(function() {
   var img, maxGlitch, offset;
