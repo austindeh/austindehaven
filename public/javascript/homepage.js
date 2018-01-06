@@ -1,3 +1,77 @@
+var $images = $('.project-img')
+var $canvases = $('.project-canvas')
+
+var imgWidth= 920;
+var imgHeight= 600;
+var dataURL;
+
+$images.each(function (i, ele) {
+  var img = $(ele)[0]
+  var canvas = $canvases[i]
+  var ctx = canvas.getContext('2d')
+  ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, imgWidth, imgHeight);
+  var dataURL = canvas.toDataURL(img.src, 1.0);
+
+  $(canvas).hover(function () {
+    var data
+
+    $('.glitch-hover').mouseenter(function () {
+      console.log('hi')
+      var img, maxGlitch, offset;
+      data = dataURL;
+      protectedOffset = 0;
+      fps = 24;
+      maxMaxGlitch = 500;
+      offset = 100;
+      minNoGlitchChance = 0.005;
+      maxGlitch = 10;
+      noGlitchChance = 0.7;
+
+      icount = 0;
+      protectedData = data.substring(0, protectedOffset);
+      noGlitchChanceStart = noGlitchChance * 10000;
+
+      window.glitchInterval = setInterval((function () {
+        var corrupted, glitch, i, j, p, ref;
+        corrupted = data;
+        icount = icount + 1;
+
+        if (maxGlitch < maxMaxGlitch) {
+          maxGlitch = maxGlitch * 1.01;
+        }
+        if (noGlitchChance > minNoGlitchChance) {
+          noGlitchChance = (noGlitchChanceStart - Math.pow(1.012, icount)) / 10000;
+        }
+        if (Math.random() > noGlitchChance) {
+          glitch = Math.round(Math.random() * maxGlitch);
+          for (i = j = 0, ref = glitch; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+            p = offset + Math.round(Math.random() * (corrupted.length - offset - 1));
+            corrupted = corrupted.substr(0, p) + corrupted.charAt(p + 1) + corrupted.charAt(p) + corrupted.substr(p + 2);
+          }
+        }
+        corruptedPatched = protectedData + corrupted.substring(protectedOffset, corrupted.length - 6) + "//2Q==";
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        ctx.drawImage(corruptedPatched, 0, 0, img.width, img.height, 0, 0, imgWidth, imgHeight);
+      }), 1000 / fps);
+
+    })
+
+  }, function () {
+    $('.glitch-hover').mouseleave(function () {
+      if (window.glitchInterval) {
+        clearInterval(window.glitchInterval)
+      }
+      canvas.width = imgWidth;
+      canvas.height = imgHeight;
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, imgWidth, imgHeight);
+    })
+
+  });
+})
+
+
+
 // function drawImageProp(ctx, img, x, y, w, h, offsetX, offsetY) {
 //   if (arguments.length === 2) {
 //       x = y = 0;
