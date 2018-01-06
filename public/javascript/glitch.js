@@ -4,21 +4,21 @@ var data
 var $glitchImgs = $('.glitch-hover')
 
 $(function() {
-  $glitchImgs.each(function(i, ele) {
-    var img = $(ele)[0]
-    var src = $(ele).attr('src')
-    var canvas = document.createElement('canvas')
-    var ctx = canvas.getContext('2d')
+  setTimeout(function() {
+    $glitchImgs.each(function(i, ele) {
+      var img = $(ele)[0]
+      var src = $(ele).attr('src')
+      var canvas = document.createElement('canvas')
+      var ctx = canvas.getContext('2d')
 
-    canvas.width = img.width
-    canvas.height = img.height || 626
-    console.log(img, canvas.width, canvas.height)
-    ctx.drawImage(img, 0, 0, img.width, img.height)
-    var data = canvas.toDataURL('image/png', 1)
-    setTimeout(function() {
+      canvas.width = img.width
+      canvas.height = img.height
+      console.log(img, img.width, img.height,  canvas.width, canvas.height)
+      ctx.drawImage(img, 0, 0, img.width, img.height)
+      var data = canvas.toDataURL('image/png', 1)
       $(ele).attr('src', data)
-    }, 1000)
-  })
+    })
+  }, 1000)
 
   $('.glitch-hover').mouseenter(function() {
     var img, maxGlitch, offset;
