@@ -168,6 +168,20 @@
   background-color: black;
 }
 
+.darkgray_bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #181818;
+}
+
+.white_bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
 .divider {
   height: 2px;
   background-color: #474747;

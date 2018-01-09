@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.footer {
+  width: 100%;
+}
+
 .footer-text {
   font-family: bookmania, serif;
   font-size: 14pt;
