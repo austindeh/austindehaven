@@ -9,6 +9,23 @@ body {
     width: 100vw;
   }
 
+  #project-overview .project-overview {
+    width: 100%;
+  }
+
+  .project-overview-details-row {
+    flex-direction: column;
+  }
+
+  .grid .row {
+    flex-direction: column;
+    margin: 0px -5px;
+  }
+
+  .row .column {
+    padding: 5px;
+  }
+
   .column img {
     width: 100%;
   }
@@ -119,13 +136,12 @@ body {
 
 .row {
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin: 0px -10px;
 }
 
 .column {
   width: 100%;
-  margin: 10px;
+  padding: 10px;
 }
 
 .sectionCopy {

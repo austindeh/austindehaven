@@ -25,7 +25,7 @@ $(function() {
     img = $(this);
     data = img.attr('src');
     protectedOffset = 0;
-    fps = 24;
+    fps = 15;
     maxMaxGlitch = 500;
     offset = 100;
     minNoGlitchChance = 0.005;

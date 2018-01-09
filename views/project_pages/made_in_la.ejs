@@ -20,9 +20,11 @@
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/audioplayer.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body class="body-width">
+    <%- include('../partials/projects/_audioplayer') %>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
     <img class="fullWidth spacingStandard" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
@@ -36,22 +38,22 @@
           <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
         </div>
         <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+          <img src="/images/projects/made_in_la/03-made_in_la-inspiration.jpg">
         </div>
         <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+          <img src="/images/projects/made_in_la/04-made_in_la-inspiration.jpg">
         </div>
       </div>
 
       <div class="row">
         <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+          <img src="/images/projects/made_in_la/05-made_in_la-inspiration.jpg">
         </div>
         <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+          <img src="/images/projects/made_in_la/06-made_in_la-inspiration.jpg">
         </div>
         <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+          <img src="/images/projects/made_in_la/07-made_in_la-inspiration.jpg">
         </div>
       </div>
     </div>
@@ -72,4 +74,5 @@
   </body>
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
+  <script src="/javascript/audioplayer.js"></script>
 </html>
