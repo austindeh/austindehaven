@@ -9,12 +9,12 @@
 .project {
   display: block;
   width: 100%;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
   .project {
-    margin-top: 75px;
+    margin-bottom: 75px;
   }
 }
 
@@ -97,7 +97,6 @@
 #archives {
   width: 100%;
   color: #181818;
-  margin-top: 75px;
 }
 
 .divider-lines {

@@ -22,8 +22,22 @@
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
-  <body class="body-width">
+  <body>
+    <div>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+    </div>
+
+    <img class="fullWidth" src="/images/projects/ken_block/01-ken_block-KB14-S1-01_@2x.jpg">
+    <div class="black_bg">
+      <img class="body-width" src="/images/projects/ken_block/05-ken_block-KB14-S5-01_@2x.jpg">
+    </div>
+    <img class="fullWidth" src="/images/projects/ken_block/03-ken_block-KB14-S3-01_@2x.jpg">
+    <img class="fullWidth" src="/images/projects/ken_block/04-ken_block-KB14-S4-01_@2x.jpg">
+    <img class="fullWidth" src="/images/projects/ken_block/05-ken_block-KB14-S5-01_@2x.jpg">
+    <img class="fullWidth" src="/images/projects/ken_block/06-ken_block-KB14-S6-01_@2x.jpg">
+    <img class="fullWidth" src="/images/projects/ken_block/07-ken_block-KB14-S7-01_@2x.jpg">
+
+
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
     <%- include('../partials/global/_back-to-top') %>

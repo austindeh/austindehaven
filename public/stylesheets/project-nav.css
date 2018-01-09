@@ -1,5 +1,6 @@
 #project-nav {
   display: flex;
+  justify-content: center;
   width: 100vw;
   height: 220px;
   font-family: bookmania, serif;

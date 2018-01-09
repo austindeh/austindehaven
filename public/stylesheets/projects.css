@@ -1,8 +1,5 @@
 /* -- Layout Shit -- */
 @media (max-width: 767px) {
-  img {
-    width: 100vw;
-  }
 
   #project-overview .project-overview {
     width: 100%;
@@ -123,7 +120,7 @@
 }
 
 .fullWidth {
-  width: 100vw;
+  width: 100%;
 }
 
 .grid {
@@ -162,6 +159,19 @@
   letter-spacing: 1px;
   line-height: 2;
 
+}
+
+.black_bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
+.divider {
+  height: 2px;
+  background-color: #474747;
+  width: 100vw;
 }
 
 
