@@ -1,12 +1,21 @@
-body {
-  background-color: white;
-}
-
-
 /* -- Layout Shit -- */
 @media (max-width: 767px) {
-  img {
-    width: 100vw;
+
+  #project-overview .project-overview {
+    width: 100%;
+  }
+
+  .project-overview-details-row {
+    flex-direction: column;
+  }
+
+  .grid .row {
+    flex-direction: column;
+    margin: 0px -5px;
+  }
+
+  .row .column {
+    padding: 5px;
   }
 
   .column img {
@@ -30,10 +39,11 @@ body {
 }
 
 #return-button {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* justify-content: flex-start; */
   width: 100%;
-  margin: 15px;
+  /* margin: 15px; */
+  padding-top: 40px;
 }
 
 /* -- Project Overview -- */
@@ -43,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-content: left;
-  margin-top: 100px;
+  margin-top: 75px;
   margin-bottom: 100px;
   width: 100%;
 }
@@ -110,7 +120,7 @@ body {
 }
 
 .fullWidth {
-  width: 100vw;
+  width: 100%;
 }
 
 .grid {
@@ -119,13 +129,12 @@ body {
 
 .row {
   display: flex;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin: 0px -10px;
 }
 
 .column {
   width: 100%;
-  margin: 10px;
+  padding: 10px;
 }
 
 .sectionCopy {
@@ -150,6 +159,33 @@ body {
   letter-spacing: 1px;
   line-height: 2;
 
+}
+
+.black_bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+}
+
+.darkgray_bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #181818;
+}
+
+.white_bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.divider {
+  height: 2px;
+  background-color: #474747;
+  width: 100vw;
 }
 
 

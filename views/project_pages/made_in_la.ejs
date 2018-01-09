@@ -20,45 +20,54 @@
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/audioplayer.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
-  <body class="body-width">
+  <body>
+    <%- include('../partials/projects/_audioplayer') %>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
     <img class="fullWidth spacingStandard" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
-    <div class="sectionCopy">
-      <p class="sectionHeader">Inspiration.</p>
-      <p class="sectionBody">Made in LA is a new Los Angeles based music group. Our mission for the Made in LA rebrand was very simple.</p>
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+
+    <div class="body-width">
+      <div class="sectionCopy">
+        <p class="sectionHeader">Inspiration.</p>
+        <p class="sectionBody">Made in LA is a new Los Angeles based music group. Our mission for the Made in LA rebrand was very simple.</p>
+      </div>
+      <div class="grid">
+        <div class="row">
+          <div class="column">
+            <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+          </div>
+          <div class="column">
+            <img src="/images/projects/made_in_la/03-made_in_la-inspiration.jpg">
+          </div>
+          <div class="column">
+            <img src="/images/projects/made_in_la/04-made_in_la-inspiration.jpg">
+          </div>
         </div>
-        <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
-        </div>
-        <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
+
+        <div class="row">
+          <div class="column">
+            <img src="/images/projects/made_in_la/05-made_in_la-inspiration.jpg">
+          </div>
+          <div class="column">
+            <img src="/images/projects/made_in_la/06-made_in_la-inspiration.jpg">
+          </div>
+          <div class="column">
+            <img src="/images/projects/made_in_la/07-made_in_la-inspiration.jpg">
+          </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
-        </div>
-        <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
-        </div>
-        <div class="column">
-          <img src="/images/projects/made_in_la/02-made_in_la-inspiration.jpg">
-        </div>
-      </div>
+      <img class="spacingStandard" src="/images/projects/made_in_la/08-made_in_la-sketching.jpg">
     </div>
 
-    <img class="spacingStandard" src="/images/projects/made_in_la/08-made_in_la-sketching.jpg">
     <img class="spacingStandard" src="/images/projects/made_in_la/09-made_in_la-macbook.jpg">
-    <img class="spacingStandard" src="/images/projects/made_in_la/10-made_in_la-logoEvolution.png">
+
+    <div class="body-width">
+      <img class="spacingStandard" src="/images/projects/made_in_la/10-made_in_la-logoEvolution.png">
+    </div>
+
     <img class="spacingStandard" src="/images/projects/made_in_la/11-made_in_la-logoOnBlack.jpg">
     <!-- <video class="spacingStandard" src="/images/projects/made_in_la/12-made_in_la-AboutYouVideo.mp4"> -->
     <img class="spacingSmall" src="/images/projects/made_in_la/13-made_in_la-vinyl.jpg">
@@ -72,4 +81,5 @@
   </body>
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
+  <script src="/javascript/audioplayer.js"></script>
 </html>

@@ -9,12 +9,12 @@
 .project {
   display: block;
   width: 100%;
-  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 768px) {
   .project {
-    margin-top: 75px;
+    margin-bottom: 75px;
   }
 }
 
@@ -31,14 +31,14 @@
 }
 
 .project-img {
-  /* display: none; */
+  opacity: 0;
 }
 
 .project-canvas {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0;
+  /* opacity: 0; */
   width: 100%;
   height: 100%;
 }
@@ -97,7 +97,6 @@
 #archives {
   width: 100%;
   color: #181818;
-  margin-top: 75px;
 }
 
 .divider-lines {
