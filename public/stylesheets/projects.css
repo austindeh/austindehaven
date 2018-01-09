@@ -1,8 +1,3 @@
-body {
-  background-color: white;
-}
-
-
 /* -- Layout Shit -- */
 @media (max-width: 767px) {
   img {
@@ -47,10 +42,11 @@ body {
 }
 
 #return-button {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* justify-content: flex-start; */
   width: 100%;
-  margin: 15px;
+  /* margin: 15px; */
+  padding-top: 40px;
 }
 
 /* -- Project Overview -- */
@@ -60,7 +56,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-content: left;
-  margin-top: 100px;
+  margin-top: 75px;
   margin-bottom: 100px;
   width: 100%;
 }
