@@ -1,6 +1,7 @@
 .body-width {
   max-width: 1170px;
   margin: auto;
+  width: 100%;
 }
 
 @media (max-width: 1200px) and (min-width: 979px) {
