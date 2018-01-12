@@ -21,12 +21,28 @@
     <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/archives.css' />
+
   </head>
   <body>
     <div class="body-width">
-      <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+      <div id="return-button">
+        <span>←</span><a class="underlined return-button" href="/">Return to design work </a>
+      </div>
+      <div id="project-overview">
+        <div class="project-overview">
+          <div class="project-overview-title">Archives </div>
+          <div class="project-overview-body">A collection of both client and personal work produced over the years.</div>
+        </div>
+      </div>
     </div>
 
+    
+    <div class="projects">
+      <% archive_project.forEach(function(archive_project, i) { %>
+        <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src, href: archive_project.href }) %>
+      <% }); %>
+    </div>
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
