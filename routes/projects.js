@@ -63,28 +63,24 @@ router.get('/archives', function(req, res, next) {
       title: 'Disney Store Toybox - Coming Soon',
       year: '2017',
       src: '../images/home/disney_toybox.jpg',
-      href: '',
     },
 
     {
       title: 'Disney Store Toybox - Coming Soon',
       year: '2017',
       src: '../images/home/disney_toybox.jpg',
-      href: '',
     },
 
     {
       title: 'Disney Store Toybox - Coming Soon',
       year: '2017',
       src: '../images/home/disney_toybox.jpg',
-      href: '',
     },
 
     {
       title: 'Disney Store Toybox - Coming Soon',
       year: '2017',
       src: '../images/home/disney_toybox.jpg',
-      href: '',
     }
 
     ];

@@ -37,10 +37,10 @@
       </div>
     </div>
 
-    
+
     <div class="projects">
       <% archive_project.forEach(function(archive_project, i) { %>
-        <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src, href: archive_project.href }) %>
+        <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src }) %>
       <% }); %>
     </div>
 
