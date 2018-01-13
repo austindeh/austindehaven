@@ -24,3 +24,14 @@
   font-family: bookmania, serif;
   font-size: 14pt;
 }
+
+@media (max-width: 768px) {
+
+  #footer {
+    height: 225px;
+  }
+
+  .footer {
+    width: 90%;
+  }
+}

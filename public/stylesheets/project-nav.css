@@ -1,7 +1,7 @@
 #project-nav {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 220px;
   font-family: bookmania, serif;
   font-size: 11pt;
@@ -26,4 +26,17 @@
 
 #project-nav a {
   padding-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+
+  #project-nav {
+    height: 150px;
+  }
+
+  .project-nav-width {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
 }

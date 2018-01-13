@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var archives = require('./archives');
 
 
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
@@ -56,16 +57,42 @@ router.get('/ken-block', function(req, res, next) {
 });
 
 router.get('/archives', function(req, res, next) {
-  var project = {
-    title: 'Archives',
-    body: '',
-    client: '',
-    date: '',
-    role: '',
-    prevProject: 'ken-block',
-    nextProject: 'alpinestars-adaptive-stretch',
-  }
-  res.render('project_pages/archives', { project: project })
+
+  var archive_project = [
+    {
+      title: 'Disney Store Toybox - Coming Soon',
+      year: '2017',
+      src: '../images/home/disney_toybox.jpg',
+    },
+
+    {
+      title: 'Disney Store Toybox - Coming Soon',
+      year: '2017',
+      src: '../images/home/disney_toybox.jpg',
+    },
+
+    {
+      title: 'Disney Store Toybox - Coming Soon',
+      year: '2017',
+      src: '../images/home/disney_toybox.jpg',
+    },
+
+    {
+      title: 'Disney Store Toybox - Coming Soon',
+      year: '2017',
+      src: '../images/home/disney_toybox.jpg',
+    }
+
+    ];
+
+
+    var project = {
+      prevProject: 'ken-block',
+      nextProject: 'alpinestars-adaptive-stretch',
+    }
+
+  console.log('asdf');
+  res.render('project_pages/archives', { archive_project: archive_project, project: project })
 });
 
 module.exports = router;

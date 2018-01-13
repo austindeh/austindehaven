@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <!-- made with love. -->
   <head>
-    <!-- made with love. -->
     <title>Portfolio of Austin DeHaven</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,9 +21,29 @@
     <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/archives.css' />
+
   </head>
-  <body class="body-width">
-    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+  <body>
+    <div class="body-width">
+      <div id="return-button">
+        <span>←</span><a class="underlined return-button" href="/">Return to design work </a>
+      </div>
+      <div id="project-overview">
+        <div class="project-overview">
+          <div class="project-overview-title">Archives </div>
+          <div class="project-overview-body">A collection of both client and personal work produced over the years.</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="projects body-width">
+      <% archive_project.forEach(function(archive_project, i) { %>
+        <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src }) %>
+      <% }); %>
+    </div>
+
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
     <%- include('../partials/global/_back-to-top') %>
@@ -31,4 +51,5 @@
   </body>
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
+  <script src="/javascript/fadein.js"></script>
 </html>

@@ -1,6 +1,7 @@
 .body-width {
   max-width: 1170px;
   margin: auto;
+  width: 100%;
 }
 
 @media (max-width: 1200px) and (min-width: 979px) {
@@ -19,7 +20,7 @@
 
 @media (max-width: 767px) {
   .body-width {
-    width: 80%;
+    width: 90%;
   }
   .project-details {
     font-size: 9px;
