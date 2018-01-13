@@ -1,21 +1,26 @@
+/* --- Landing --- */
+
+#project-overview {
+  margin-bottom: 50px;
+}
+
 /* --- Projects --- */
 .projects {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .project {
   display: block;
   width: 100%;
-  margin-bottom: 50px;
+  flex-basis: 50%;
+  padding-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .project {
-    margin-bottom: 75px;
-  }
+.project img {
+  width: 100%;
 }
 
 .project-details {
@@ -30,28 +35,6 @@
   line-height: 7px;
 }
 
-.project-img {
-  opacity: 0;
-}
-
-.project-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* opacity: 0; */
-  width: 100%;
-  height: 100%;
-}
-
-.project-canvas:hover {
-  opacity: 1;
-}
-
-.project-number {
-  opacity: .5;
-  width: 85px;
-}
-
 .project-title {
   width: 100%;
   letter-spacing: .5px
@@ -63,134 +46,37 @@
   opacity: .5;
 }
 
-
-/* --- Archived Projects --- */
-
-/* #archives:hover {
-  color: white;
+.project:nth-child(odd){
+  padding-right: 15px;
 }
 
-#archives:before {
-  content: "";
-  position: absolute;
-  background: #181818;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
-} */
-
-#archives:hover:before {
-  top: 0;
+.project:nth-child(even){
+  padding-left: 15px;
 }
 
-#archives .project-details {
-  transition: all ease .3s;
+/* --- Layout and Breakpoints ---*/
+
+@media (max-width: 768px) {
+
+  .project {
+    flex-basis: 100%;
+  }
+
+  .project:nth-child(odd){
+    padding-right: 0px;
+  }
+
+  .project:nth-child(even){
+    padding-left: 0px;
+  }
+
+
 }
 
-/* #archives:hover .project-details {
-  padding: 10px 20px;
-} */
-
-#archives {
-  width: 100%;
-  color: #181818;
-}
-
-.divider-lines {
-	position: relative;
-}
-
-.divider-top {
-	padding-bottom: 15px;
-}
-
-.divider-bottom {
-	padding-top: 15px;
-}
-
-.divider-lines:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-	background-color: #e1e1e1;
-}
-
-/* ---  DIVIDER LINE HOVERS
-
-.divider-lines:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  background-color: #181818;
-  visibility: visible;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-  transform-origin: 0% 100%
-}
-
-#archives:hover  .divider-lines:after {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  transform-origin: 0% 100%;
-}
-
---- */
-
-#archives:hover .texthover {
-  -webkit-animation: fade-in 0.8s both;
-  animation: fade-in 0.8s both;
-}
-
-#archives:hover .glitch-mask {
-  display: block;
-}
-
-#archives:hover .glitch-mask:nth-child(6) {
-  -webkit-animation: jitter-20-25-8 infinite 0.3s both;
-  animation: jitter-20-25-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(5) {
-  -webkit-animation: jitter-20-24-8 infinite 0.3s both;
-  animation: jitter-20-24-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(4) {
-  -webkit-animation: jitter-20-23-8 infinite 0.3s both;
-  animation: jitter-20-23-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(3) {
-  -webkit-animation: jitter-20-22-8 infinite 0.3s both;
-  animation: jitter-20-22-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(2) {
-  -webkit-animation: jitter-20-21-8 infinite 0.3s both;
-  animation: jitter-20-21-8 infinite 0.3s both;
-}
-
-/* -- Footer Colors -- */
-
-#footer .underlined:before {
-	background-color:#646464;
-}
-
-#footer .underlined:after {
-  background-color: white;
-}
 
 
 /* --- Glitch Text Hover ---*/
+
 .glitch-btn {
   color: inherit;
   -webkit-user-select: none;

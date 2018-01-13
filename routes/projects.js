@@ -87,8 +87,8 @@ router.get('/archives', function(req, res, next) {
 
 
     var project = {
-      prevProject: 'ken_block',
-      nextProject: 'alpinestars_adaptive_stretch',
+      prevProject: 'ken-block',
+      nextProject: 'alpinestars-adaptive-stretch',
     }
 
   console.log('asdf');

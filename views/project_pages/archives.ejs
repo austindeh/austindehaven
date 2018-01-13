@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <!-- made with love. -->
   <head>
-    <!-- made with love. -->
     <title>Portfolio of Austin DeHaven</title>
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -38,7 +38,7 @@
     </div>
 
 
-    <div class="projects">
+    <div class="projects body-width">
       <% archive_project.forEach(function(archive_project, i) { %>
         <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src }) %>
       <% }); %>
@@ -51,4 +51,5 @@
   </body>
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
+  <script src="/javascript/fadein.js"></script>
 </html>

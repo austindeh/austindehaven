@@ -27,3 +27,16 @@
 #project-nav a {
   padding-bottom: 3px;
 }
+
+@media (max-width: 768px) {
+
+  #project-nav {
+    height: 150px;
+  }
+
+  .project-nav-width {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
