@@ -103,14 +103,14 @@ $(window).scroll(function() {
   var skew = "skewY(" + scrolled + "deg)";
   var translate = 'translateY(-' + st + 'px)';
 
-  $('body').css('transform', skew + translate);
+  // $('body').css('transform', skew);
 
   // reset if stop scrolling
   clearTimeout($.data(this, "scrollCheck"));
   $.data(this, "scrollCheck", setTimeout(function() {
 
     scrolled = 0;
-    $('body').css('transform', 'skewY(0)' + translate);
+    // $('body').css('transform', 'skewY(0)');
 
   }, 100));
 
