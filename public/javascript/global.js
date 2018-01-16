@@ -8,6 +8,9 @@ function checkScroll() {
 }
 
 $(function() {
+    // Looks gross.
+    $("body").removeClass("ghost")
+
     checkScroll()
 
     $(window).scroll(checkScroll)
