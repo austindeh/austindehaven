@@ -32,3 +32,51 @@ body {
 #footer .underlined:after {
   background-color: #181818;
 }
+
+
+/* -- Layout -- */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 100px;
+}
+
+.project {
+  display: block;
+  width: 100%;
+  flex-basis: 50%;
+  padding-bottom: 20px;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project:nth-child(odd){
+  padding-right: 15px;
+}
+
+.project:nth-child(even){
+  padding-left: 15px;
+}
+
+/* --- Layout and Breakpoints ---*/
+
+@media (max-width: 768px) {
+
+  .project {
+    flex-basis: 100%;
+  }
+
+  .project:nth-child(odd){
+    padding-right: 0px;
+  }
+
+  .project:nth-child(even){
+    padding-left: 0px;
+  }
+
+
+}
