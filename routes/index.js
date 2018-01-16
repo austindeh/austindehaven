@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
   // Project : { title, year, src, link }
   var projects = [
     {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
+      title: 'Disney Store Toybox',
+      year: 'wip',
       src: 'images/home/disney_toybox.jpg',
       href: ''
     },
