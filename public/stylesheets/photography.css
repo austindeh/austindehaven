@@ -18,6 +18,16 @@ body {
 	background-color: white;
 }
 
+/* -- Lazy Load -- */
+
+img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
 
 /* -- Image Filtering -- */
 

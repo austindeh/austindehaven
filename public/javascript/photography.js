@@ -1,4 +1,4 @@
-jQuery('document').ready( function($) {
+$('document').ready( function($) {
   $('.filter-btn').on('click', function() {
       $('.filter-btn').removeClass('filter-selected selected').addClass('underlined');
       $(this).removeClass('underlined').addClass('filter-selected selected');
@@ -15,4 +15,12 @@ jQuery('document').ready( function($) {
           }
       });
   });
+});
+
+
+[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
 });
