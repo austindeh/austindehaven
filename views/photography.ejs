@@ -23,7 +23,7 @@
     <link rel='stylesheet' href='/stylesheets/photography.css' />
 
   </head>
-  <body class="ghost">
+  <body>
     <div class="body-width">
       <%- include('partials/homepages/_landing') %>
     </div>
@@ -32,7 +32,7 @@
       <div class="filter-bar">
 
         <div class="filter">
-          <a class="underlined filter-btn" href="#">All</a><span class="filter-divider">/</span><a class="underlined filter-btn" href="#">Personal</a><span class="filter-divider">/</span><a class="underlined filter-btn" href="#">Client</a>
+          <span class="underlined filter-btn  filter-selected" gallery-filter="all" >All</span><span class="filter-divider">/</span><span class="underlined filter-btn" gallery-filter="personal" >Personal</span><span class="filter-divider">/</span><span class="underlined filter-btn" gallery-filter="client" >Client</span>
         </div>
 
         <div class="filter-contact">
@@ -58,5 +58,6 @@
   <%- include('partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
   <script src="/javascript/landing.js"></script>
+  <script src="/javascript/photography.js"></script>
 
 </html>

@@ -19,7 +19,7 @@ body {
 }
 
 
-/* -- Image Filter Bar -- */
+/* -- Image Filtering -- */
 
 .filter-bar {
   display: flex;
@@ -50,15 +50,47 @@ body {
 .filter-btn {
   opacity: .5;
   padding-bottom: 7px;
+  cursor: pointer;
 }
 
 .filter-btn:hover {
    opacity: 1;
 }
 
+.filter-selected {
+  opacity: 1;
+}
+
 .filter-divider {
   margin: 0 20px;
 }
+
+
+
+/* -- Masonry Shit -- */
+
+.masonry { /* Masonry container */
+  column-count: 2;
+  padding: 0;
+  column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+}
+
+.masonry-item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .masonry {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+  }
+}
+
 
 /* -- Footer Colors -- */
 
@@ -76,33 +108,6 @@ body {
 }
 
 
-/* -- Layout -- */
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  margin-bottom: 100px;
-}
-
-.project {
-  display: block;
-  width: 100%;
-  flex-basis: 50%;
-  padding-bottom: 20px;
-}
-
-.project img {
-  width: 100%;
-}
-
-.project:nth-child(odd){
-  padding-right: 15px;
-}
-
-.project:nth-child(even){
-  padding-left: 15px;
-}
 
 /* --- Layout and Breakpoints ---*/
 
