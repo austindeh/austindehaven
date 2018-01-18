@@ -28,6 +28,23 @@
       <%- include('partials/homepages/_landing') %>
     </div>
 
+    <div class="body-width">
+      <div class="filter-bar">
+
+        <div class="filter">
+          <span class="underlined filter-btn  filter-selected" gallery-filter="all" >All</span><span class="filter-divider">/</span><span class="underlined filter-btn" gallery-filter="personal" >Personal</span><span class="filter-divider">/</span><span class="underlined filter-btn" gallery-filter="client" >Client</span>
+        </div>
+
+        <div class="filter-contact">
+          <span class="contact">Contact for available prints.</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="body-width projects">
+      <%- include('partials/homepages/_photography_images') %>
+    </div>
     <!-- pull all images placed in images/photography -->
     <!-- create an image sorting feature :: Client / Personal -->
     <!-- Lazy load -->
@@ -41,5 +58,6 @@
   <%- include('partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
   <script src="/javascript/landing.js"></script>
+  <script src="/javascript/photography.js"></script>
 
 </html>

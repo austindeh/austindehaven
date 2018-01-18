@@ -1,6 +1,10 @@
 /* -- Layout Shit -- */
 @media (max-width: 767px) {
 
+  .sectionCopy {
+    padding-bottom: 10px !important;
+  }
+
   #project-overview .project-overview {
     width: 100%;
   }

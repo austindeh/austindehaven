@@ -8,8 +8,8 @@ function checkScroll() {
 }
 
 $(function() {
-    checkScroll()
 
+    checkScroll()
     $(window).scroll(checkScroll)
 
     $('#back-to-top').click(function() {

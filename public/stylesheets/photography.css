@@ -18,6 +18,90 @@ body {
 	background-color: white;
 }
 
+/* -- Lazy Load -- */
+
+img {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
+/* -- Image Filtering -- */
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-contact {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 11px;
+  font-family: "roboto-mono",monospace;
+  margin-bottom: 25px !important;
+}
+
+.contact {
+  opacity: .5;
+  padding-bottom: 7px;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11px;
+  font-family: "roboto-mono",monospace;
+  margin-bottom: 25px !important;
+}
+
+.filter-btn {
+  opacity: .5;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+   opacity: 1;
+}
+
+.filter-selected {
+  opacity: 1;
+}
+
+.filter-divider {
+  margin: 0 20px;
+}
+
+
+
+/* -- Masonry Shit -- */
+
+.masonry { /* Masonry container */
+  column-count: 2;
+  padding: 0;
+  column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+}
+
+.masonry-item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .masonry {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+  }
+}
+
+
 /* -- Footer Colors -- */
 
 #footer {
@@ -31,4 +115,29 @@ body {
 
 #footer .underlined:after {
   background-color: #181818;
+}
+
+
+
+/* --- Layout and Breakpoints ---*/
+
+@media (max-width: 768px) {
+
+  .project {
+    flex-basis: 100%;
+  }
+
+  .project:nth-child(odd){
+    padding-right: 0px;
+  }
+
+  .project:nth-child(even){
+    padding-left: 0px;
+  }
+
+  .filter-contact {
+    display: none;
+  }
+
+
 }
