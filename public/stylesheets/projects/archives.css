@@ -61,3 +61,23 @@
   opacity: .5;
 }
 
+/* -- Layout Break Points -- */
+
+@media (max-width: 768px) {
+
+  .projects {
+    width: 90%;
+  }
+
+  .project {
+    flex-basis: 100%;
+  }
+  .project:nth-child(odd) {
+    padding-right: 0px;
+  }
+
+  .project:nth-child(even) {
+    padding-left: 0px;
+  }
+
+}
