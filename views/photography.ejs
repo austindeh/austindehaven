@@ -23,9 +23,23 @@
     <link rel='stylesheet' href='/stylesheets/photography.css' />
 
   </head>
-  <body>
+  <body class="ghost">
     <div class="body-width">
       <%- include('partials/homepages/_landing') %>
+    </div>
+
+    <div class="body-width">
+      <div class="filter-bar">
+
+        <div class="filter">
+          <a class="underlined filter-btn" href="#">All</a><span class="filter-divider">/</span><a class="underlined filter-btn" href="#">Personal</a><span class="filter-divider">/</span><a class="underlined filter-btn" href="#">Client</a>
+        </div>
+
+        <div class="filter-contact">
+          <span class="contact">Contact for available prints.</span>
+        </div>
+
+      </div>
     </div>
 
     <div class="body-width projects">

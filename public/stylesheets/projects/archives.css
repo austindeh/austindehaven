@@ -22,7 +22,13 @@
   padding-left: 15px;
 }
 
-/* TODO: move into shared project css for index.css and this page */
+#project-overview {
+  margin-bottom: 50px;
+}
+
+
+/* Project Details */
+
 .project-details {
   display: flex;
   align-items: center;
@@ -37,19 +43,6 @@
 
 .project-img {
   opacity: 0;
-}
-
-.project-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* opacity: 0; */
-  width: 100%;
-  height: 100%;
-}
-
-.project-canvas:hover {
-  opacity: 1;
 }
 
 .project-number {
@@ -67,46 +60,4 @@
   justify-content: flex-end;
   opacity: .5;
 }
-
-/* #archives:hover .project-details {
-  padding: 10px 20px;
-} */
-
-#archives {
-  width: 100%;
-  color: #181818;
-}
-
-.divider-lines {
-	position: relative;
-}
-
-.divider-top {
-	padding-bottom: 15px;
-}
-
-.divider-bottom {
-	padding-top: 15px;
-}
-
-.divider-lines:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-	background-color: #e1e1e1;
-}
-
-
-/* -- Footer Colors -- */
-
-#footer .underlined:before {
-	background-color:#646464;
-}
-
-#footer .underlined:after {
-  background-color: white;
-}
-
 
