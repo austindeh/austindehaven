@@ -49,7 +49,7 @@
 
 .project-number {
   opacity: .5;
-  width: 85px;
+  width: 100px;
 }
 
 .project-title {
@@ -60,6 +60,7 @@
 .project-year {
   display: flex;
   justify-content: flex-end;
+  width: 125px;
   opacity: .5;
 }
 
