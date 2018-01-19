@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
   var projects = [
     {
       title: 'Disney Store Toybox',
-      year: 'coming soon',
+      year: 'wip',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: ''
     },
