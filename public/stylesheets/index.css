@@ -58,8 +58,8 @@
 }
 
 .project-year {
-  display: flex;
-  justify-content: flex-end;
+  display: inline-block;
+  text-align: right;
   width: 125px;
   opacity: .5;
 }
