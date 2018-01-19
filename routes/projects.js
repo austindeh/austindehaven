@@ -10,7 +10,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     client: 'Alpinestars',
     date: '2016',
     role: 'Art Direction, Photography, Design',
-    prevProject: 'archives',
+    prevProject: 'ken-block',
     nextProject: 'made-in-la',
 
   }
@@ -51,7 +51,7 @@ router.get('/ken-block', function(req, res, next) {
     date: '2014',
     role: 'Illustration, Design',
     prevProject: 'motoamerica',
-    nextProject: 'archives',
+    nextProject: 'alpinestars-adaptive-stretch',
   }
   res.render('project_pages/ken_block', { project: project })
 });
@@ -64,24 +64,6 @@ router.get('/archives', function(req, res, next) {
       year: '2017',
       src: '../images/home/disney_toybox.jpg',
     },
-
-    {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
-    },
-
-    {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
-    },
-
-    {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
-    }
 
   ];
   var project = {
