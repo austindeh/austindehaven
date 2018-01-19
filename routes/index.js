@@ -20,9 +20,17 @@ router.get('/', function(req, res, next) {
   }
 
   var projects = [
+
     {
-      title: 'Disney Store Toybox',
-      year: 'wip',
+      title: 'Xbox One X',
+      year: 'coming soon',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
+      href: ''
+    },
+
+    {
+      title: 'Disney Toybox',
+      year: 'coming soon',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: ''
     },

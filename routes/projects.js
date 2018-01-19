@@ -10,7 +10,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     client: 'Alpinestars',
     date: '2016',
     role: 'Art Direction, Photography, Design',
-    prevProject: 'archives',
+    prevProject: 'ken-block',
     nextProject: 'made-in-la',
 
   }
@@ -46,12 +46,12 @@ router.get('/motoamerica', function(req, res, next) {
 router.get('/ken-block', function(req, res, next) {
   var project = {
     title: 'Ken Block x Hoonigan',
-    body: 'Made in LA is a new Los Angeles based music group. Our mission for the Made in LA rebrand was very simple. We wanted to not only mark the beginning of a new artist but also to tell their story through a timeless icon. My goal was to create something which would represent their music, style and personality in a visually pleasing way. Made in LA is minimal, independant, defined and more importantly, new.',
+    body: '2016 held an interesting year for Hoonigan; We were growing fast and gaining a lot of recognition in the motorsports industry. One of the highlights every year was releasing Ken Blocks new livery. The livery was an art piece that represented the brand and the team for the season and rolled over into all advertising for the year. Inspired by early generation 8-bit video games, zebra print, pop art and digital camo; the livery was a mashup that proved to stand out in a crowd.',
     client: 'Hoonigan',
     date: '2014',
     role: 'Illustration, Design',
     prevProject: 'motoamerica',
-    nextProject: 'archives',
+    nextProject: 'alpinestars-adaptive-stretch',
   }
   res.render('project_pages/ken_block', { project: project })
 });
@@ -64,24 +64,6 @@ router.get('/archives', function(req, res, next) {
       year: '2017',
       src: '../images/home/disney_toybox.jpg',
     },
-
-    {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
-    },
-
-    {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
-    },
-
-    {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
-    }
 
   ];
   var project = {

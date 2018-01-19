@@ -7,10 +7,21 @@
   padding: 150px 20%;
 }
 
-.experience_header {
+/* .experience_header {
   font-family: bebas-neue;
   font-size: 75pt;
   letter-spacing: 0px;
   line-height: 77px;
   padding-bottom: 10px;
+} */
+
+.experience-body {
+    font-size: 11px;
+    font-family: roboto-mono;
+    color: white;
+    line-height: 2.5;
+}
+
+.content-padding {
+  margin: 75px 0;
 }
