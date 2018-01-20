@@ -16,6 +16,23 @@
   .project {
     margin-bottom: 75px;
   }
+
+  .project-number {
+    opacity: .5;
+    width: 90px;
+  }
+
+  .project-title {
+    width: 100%;
+    letter-spacing: .5px
+  }
+
+  .project-year {
+    display: inline-block;
+    text-align: right;
+    width: 90px;
+    opacity: .5;
+  }
 }
 
 .project-details {
@@ -49,7 +66,7 @@
 
 .project-number {
   opacity: .5;
-  width: 80px;
+  width: 90px;
 }
 
 .project-title {
