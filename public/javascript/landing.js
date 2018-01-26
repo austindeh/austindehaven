@@ -7,8 +7,14 @@ $(window).scroll(function() {
 	  $(".scroll-down").css("opacity", 0)
 	} else {
 	  $(".scroll-down").css("opacity", 0.5)
-	}
+  }
 })
+
+$(".scroll-down").click(function() {
+  $("html, body").animate({
+    scrollTop: $( $('.project')).offset().top - 75
+  }, 500);
+});
 
 var t1 = new TimelineMax({repeat: -1,repeatDelay: 5.3})
 t1.to(".textglitch1", 0.1, {skewX:900,ease: Power4.easeInOut}).to(".textglitch1", 0.04, {skewX:0,ease: Power4.easeInOut})
