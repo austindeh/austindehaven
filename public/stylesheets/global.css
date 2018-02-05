@@ -251,36 +251,40 @@ p {
   animation: fade-in 0.8s both;
 }
 
+.glitch-btn:hover .glitch-mask,
 .project:hover .glitch-mask {
   display: block;
 }
 
+.glitch-btn:hover .glitch-mask:nth-child(6),
 .project:hover .glitch-mask:nth-child(6) {
   -webkit-animation: jitter-20-25-8 infinite 0.3s both;
   animation: jitter-20-25-8 infinite 0.3s both;
 }
 
+.glitch-btn:hover .glitch-mask:nth-child(5),
 .project:hover .glitch-mask:nth-child(5) {
   -webkit-animation: jitter-20-24-8 infinite 0.3s both;
   animation: jitter-20-24-8 infinite 0.3s both;
 }
 
+.glitch-btn:hover .glitch-mask:nth-child(4),
 .project:hover .glitch-mask:nth-child(4) {
   -webkit-animation: jitter-20-23-8 infinite 0.3s both;
   animation: jitter-20-23-8 infinite 0.3s both;
 }
 
+.glitch-btn:hover .glitch-mask:nth-child(3),
 .project:hover .glitch-mask:nth-child(3) {
   -webkit-animation: jitter-20-22-8 infinite 0.3s both;
   animation: jitter-20-22-8 infinite 0.3s both;
 }
 
+.glitch-btn:hover .glitch-mask:nth-child(2),
 .project:hover .glitch-mask:nth-child(2) {
   -webkit-animation: jitter-20-21-8 infinite 0.3s both;
   animation: jitter-20-21-8 infinite 0.3s both;
 }
-
-
 
 /* Animations */
 
