@@ -3,10 +3,10 @@
 
   var data
 
-  $('.glitch-hover').mouseenter(function() {
+  $('.project').mouseenter(function() {
     var img, maxGlitch, offset;
 
-    img = $(this);
+    img = $(this).find('.glitch-hover');
     data = img.attr('src');
     protectedOffset = 0;
     fps = 24;
@@ -47,11 +47,11 @@
   //******** START MOUSELEAVE  ***********
 
 
-  $('.glitch-hover').mouseleave(function() {
+  $('.project').mouseleave(function() {
     if(window.glitchInterval){
       clearInterval(window.glitchInterval)
     }
-    $(this).attr('src', data)
+    $(this).find('.glitch-hover').attr('src', data)
   })
   })(jQuery);
 
