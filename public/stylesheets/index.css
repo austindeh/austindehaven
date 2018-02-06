@@ -96,31 +96,6 @@
 	background-color: #e1e1e1;
 }
 
-/* ---  DIVIDER LINE HOVERS
-
-.divider-lines:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  background-color: #181818;
-  visibility: visible;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-  transform-origin: 0% 100%
-}
-
-#archives:hover  .divider-lines:after {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  transform-origin: 0% 100%;
-}
-
---- */
-
 #archives:hover .texthover {
   -webkit-animation: fade-in 0.8s both;
   animation: fade-in 0.8s both;
