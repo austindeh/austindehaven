@@ -1,7 +1,7 @@
 $(function() {
 
    var $template = $(
-      '<div class="error-popup"><div class="error-header"><div class="error-headline"> 404: This doesn\'t exist!</div><a class="error-close">✕</a></div><div class="error-body"><div class="error-icon"><img src="http://austindehaven.com/wp-content/uploads/2017/10/Windows-error-404.jpg"></div><div class="error-copy"><div class="error-message">How did you fuck this up?</div><a href="http://austindehaven.com" class="error-leave">Return</></div></div></div>'
+      '<div class="error-popup"><div class="error-header"><div class="error-headline"> 404: This doesn\'t exist!</div><a class="error-close">✕</a></div><div class="error-body"><div class="error-icon"><img src="/images/404/error_icon.jpg"></div><div class="error-copy"><div class="error-message">How did you fuck this up?</div><a href="http://austindehaven.com" class="error-leave">Return</></div></div></div>'
     ); // defines Div to inject
 
 
@@ -16,6 +16,7 @@ $(function() {
 
   // this is for the drag feature
     $(".error-popup, .desktop-icons").draggable({
+      start: bringtotop,
       containment: "window"
     });
 
@@ -32,19 +33,21 @@ $(function() {
 
   // bring to top on click
   var bringTop = 0
-    $(".error-popup").click(function() {
+    $(".error-popup").click(bringtotop);
+
+    function bringtotop() {
       bringTop++;
       $(this).css({"z-index": bringTop});
-    });
+    }
 
   // play audio file on page load
-  var audio = $('#error-sound') [0];
-    function play(){
-         audio.play();
-    }
+  var audio = new Audio('/images/404/windows-error.mp3');
+  audio.play();
 
   // close popup window on click of the close button
   $("body").on("click", ".error-close", function() {
+      const audio = new Audio('/images/404/windows-error.mp3');
+
       $(this).parents('div').hide();
       var clone = $template.clone(); // makes a copy
       audio.play();
