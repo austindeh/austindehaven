@@ -3,6 +3,21 @@ var router = express.Router();
 // var archives = require('./archives');
 
 
+router.get('/disney-toybox', function(req, res, next) {
+  var project = {
+    title: 'Disney Toybox',
+    body: 'Disney came to us asking to help come up with a new campaign focused around the release of their new toyline. The campaign was a relatively short timeline starting in early October and going live in mid November, just in time for the holidays. As the campaign was primarily going to be utilized around the holidays, we were coming up with creative ways to bring the characters and holidays to your house.',
+    client: 'Disney',
+    date: '2017',
+    role: 'Photography, Design, Animation',
+    prevProject: 'ken-block',
+    nextProject: 'alpinestars-adaptive-stretch',
+
+  }
+  res.render('project_pages/disney_toybox', { project: project, images: [] })
+});
+
+
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
   var project = {
     title: 'Alpinestars Adaptive Stretch',
@@ -10,7 +25,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     client: 'Alpinestars',
     date: '2016',
     role: 'Art Direction, Photography, Design',
-    prevProject: 'ken-block',
+    prevProject: 'disney-toybox',
     nextProject: 'made-in-la',
 
   }
@@ -51,7 +66,7 @@ router.get('/ken-block', function(req, res, next) {
     date: '2014',
     role: 'Illustration, Design',
     prevProject: 'motoamerica',
-    nextProject: 'alpinestars-adaptive-stretch',
+    nextProject: 'disney-toybox',
   }
   res.render('project_pages/ken_block', { project: project })
 });
