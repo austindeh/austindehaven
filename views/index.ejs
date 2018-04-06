@@ -28,7 +28,7 @@
   <body>
     <div class="body-width">
       <%- include('partials/homepages/_landing') %>
-      <div class="projects">
+      <div class="projects dis-dik">
         <% projects.forEach(function(project, i) { %>
           <%- include('partials/homepages/_project', { index: i+1, total: projects.length + 1, title: project.title, year: project.year, src: project.src, href: project.href }) %>
         <% }); %>

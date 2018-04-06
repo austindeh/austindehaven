@@ -15,7 +15,7 @@ $(window).scroll(function() {
 // Scroll down to project on scroll down button click
 $("#scroll-down").click(function() {
   $("html, body").animate({
-    scrollTop: $( $('.project')).offset().top - 75
+    scrollTop: $( $('.dis-dik')).offset().top - 75
   }, 500);
 });
 
