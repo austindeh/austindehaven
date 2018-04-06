@@ -25,42 +25,48 @@ router.get('/', function(req, res, next) {
       title: 'Xbox One X',
       year: 'coming soon',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
-      href: ''
+      href: '',
+      active: 'return false'
     },
 
     {
       title: 'Disney Toybox',
       year: 'coming soon',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
-      href: '/project/disney-toybox'
+      href: '/project/disney-toybox',
+      active: 'return false'
     },
 
     {
       title: 'Alpinestars Adaptive Stretch',
       year: '2016',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
-      href: '/project/alpinestars-adaptive-stretch'
+      href: '/project/alpinestars-adaptive-stretch',
+      active: 'return true'
     },
 
     {
       title: 'Made in LA',
       year: '2016',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
-      href: '/project/made-in-la'
+      href: '/project/made-in-la',
+      active: 'return true'
     },
 
     {
       title: 'Motoamerica',
       year: '2015',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
-      href: '/project/motoamerica'
+      href: '/project/motoamerica',
+      active: 'return true'
     },
 
     {
       title: 'Ken Block Livery',
       year: '2015',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
-      href: '/project/ken-block'
+      href: '/project/ken-block',
+      active: 'return true'
     },
 
   ];
