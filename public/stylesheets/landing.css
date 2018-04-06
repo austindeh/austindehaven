@@ -32,11 +32,11 @@
   bottom: 10vh;
   left: 0;
   height: 15px;
+  transition: opacity 0.4s;
 }
 
 .scroll-down {
   opacity: 0.5;
-  transition: opacity 0.4s;
 }
 
 .scroll-down:hover {
