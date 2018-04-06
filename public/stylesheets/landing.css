@@ -47,9 +47,9 @@
   width: 100%;
   position: relative;
   font-family: "bookmania",serif;
-  font-size: 14pt;
+  font-size: 16pt;
   letter-spacing: 1px;
-  line-height: 35px;
+  line-height: 40px;
 }
 
 
@@ -58,7 +58,7 @@
 #social-button {
   display: none;
   position: absolute;
-  font-size: 11px;
+  font-size: 12px;
   font-family: "roboto-mono",monospace;
   left: 0;
 }

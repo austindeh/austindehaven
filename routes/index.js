@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
       title: 'Disney Toybox',
       year: 'coming soon',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
-      href: ''
+      href: '/project/disney-toybox'
     },
 
     {
