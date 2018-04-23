@@ -20,11 +20,11 @@ $('document').ready( function($) {
 
       $('.masonry-item').each( function() {
           if (filter == 'all') {
-              $(this).fadeIn();
+              $(this).show();
           } else {
               $(this).hide();
               if ($(this).attr('gallery-category') == filter) {
-                  $(this).fadeIn();
+                  $(this).show();
               }
           }
       });

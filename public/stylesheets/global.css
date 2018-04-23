@@ -64,6 +64,23 @@ p {
   color: white;
 }
 
+/* Fade-in content on load */
+
+.fade-in--lazyload {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.fade-in--filter {
+  opacity: 1;
+  transform: translateY(100px);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
 /* --- Underlines --- */
 
 .selected {

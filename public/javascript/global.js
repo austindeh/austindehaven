@@ -1,3 +1,8 @@
+function inViewport(ele) {
+    const rect = ele.getBoundingClientRect()
+    return (rect.top >= 0 && rect.top <= window.innerHeight) && (rect.bottom >= 0)
+}
+
 // --- Scroll to Top ---
 function checkScroll() {
     if (window.scrollY > 720) {
@@ -5,13 +10,21 @@ function checkScroll() {
     } else {
         $('#back-to-top').css("opacity", 0)
     }
+
+
+    $(".fade-in").each(function(i, ele) {
+        if (inViewport(ele)) {
+            // remove the fade-in class
+            $(ele).removeClass('fade-in--lazyload')
+        }
+    })
 }
+
 
 $(function() {
 
     checkScroll()
     $(window).scroll(checkScroll)
-
     $('#back-to-top').click(function() {
         $("html, body").animate({
             scrollTop: "0"
