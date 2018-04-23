@@ -12,7 +12,7 @@ function checkScroll() {
     }
 
 
-    $(".fade-in").each(function(i, ele) {
+    $(".fade-in--lazyload").each(function(i, ele) {
         if (inViewport(ele)) {
             // remove the fade-in class
             $(ele).removeClass('fade-in--lazyload')
