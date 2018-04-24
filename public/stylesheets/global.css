@@ -74,13 +74,11 @@ p {
 .fade-in-filter {
   opacity: 1;
   transform: translateY(0px);
-  transition: all 2s;
 }
 
 .fade-out-filter {
   opacity: 0;
-  transform: translateY(100px);
-  transition: all 2s;
+  transform: translateY(50px);
 }
 
 /* --- Underlines --- */
