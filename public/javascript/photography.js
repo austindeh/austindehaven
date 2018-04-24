@@ -20,11 +20,11 @@ $('document').ready( function($) {
 
       $('.masonry-item').each( function() {
           if (filter == 'all') {
-              $(this).hide().addClass('fade-out-filter').show().removeClass('fade-out-filter').addClass('fade-in-filter');
+              $(this).show().removeClass('fade-out-filter').addClass('fade-in-filer');
           } else {
-              $(this).removeClass('fade-in-filter').addClass('fade-out-filter').hide();
+              $(this).hide().addClass('fade-out-filter')
               if ($(this).attr('gallery-category') == filter) {
-                $(this).hide().addClass('fade-out-filter').show().removeClass('fade-out-filter').addClass('fade-in-filter');
+                $(this).show().removeClass('fade-out-filter').addClass('fade-in-filer');
               }
           }
       });
