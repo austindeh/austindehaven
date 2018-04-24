@@ -6,7 +6,7 @@ $(function(){
         if (filter == $(this).attr('gallery-category')) {
             $(this).show();
         } else {
-            // $(this).hide();
+            $(this).hide();
         }
     });
   });
@@ -18,13 +18,15 @@ $('document').ready( function($) {
       $(this).removeClass('underlined').addClass('filter-selected selected');
       filter = $(this).attr('gallery-filter');
 
+      $('.masonry-item').hide().addClass('fade-out-filter');
+
       $('.masonry-item').each( function() {
           if (filter == 'all') {
-              $(this).show().removeClass('fade-out-filter').addClass('fade-in-filer');
+              $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
           } else {
-              $(this).hide().addClass('fade-out-filter')
+              $(this).hide().removeClass('fade-out-filter').addClass('fade-out-filter');
               if ($(this).attr('gallery-category') == filter) {
-                $(this).show().removeClass('fade-out-filter').addClass('fade-in-filer');
+                $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
               }
           }
       });
