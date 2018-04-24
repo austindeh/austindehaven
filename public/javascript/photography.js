@@ -4,9 +4,9 @@ $(function(){
     $('.masonry-item').each( function() {
 
         if (filter == $(this).attr('gallery-category')) {
-            $(this).fadeIn();
+            $(this).show();
         } else {
-            $(this).hide();
+            // $(this).hide();
         }
     });
   });
@@ -20,11 +20,11 @@ $('document').ready( function($) {
 
       $('.masonry-item').each( function() {
           if (filter == 'all') {
-              $(this).show();
+              $(this).removeClass('fade-out').addClass('fade-in--filter');
           } else {
-              $(this).hide();
+              $(this).removeClass('fade-in--filter').addClass('fade-out').hide();
               if ($(this).attr('gallery-category') == filter) {
-                  $(this).show();
+                $(this).show().removeClass('fade-out').addClass('fade-in--filter');
               }
           }
       });

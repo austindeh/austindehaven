@@ -73,12 +73,12 @@ p {
 
 .fade-in--filter {
   opacity: 1;
-  transform: translateY(100px);
+  transform: translateY(0px);
 }
 
 .fade-out {
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(100px);
 }
 
 /* --- Underlines --- */
