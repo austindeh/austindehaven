@@ -78,8 +78,8 @@ router.get('/photography', function(req, res, next) {
   res.render('photography', { route: 'photography' });
 });
 
-router.get('/Xbox', function(req, res, next) {
-  res.render('password_prompt', { route: 'Xbox' });
+router.get('/Xbox-Protected', function(req, res, next) {
+  res.render('password_prompt', { route: 'Xbox-Protected' });
 });
 
 module.exports = router;
