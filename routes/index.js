@@ -22,7 +22,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Xbox One X',
-      year: 'coming soon',
+      year: '2017',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
       href: '/gateway',
       active: 'return true'
@@ -30,7 +30,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Disney Toybox',
-      year: 'coming soon',
+      year: '2017',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
       active: 'return false'
