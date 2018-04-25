@@ -25,8 +25,8 @@ router.get('/', function(req, res, next) {
       title: 'Xbox One X',
       year: 'coming soon',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
-      href: '',
-      active: 'return false'
+      href: '/xbox-secure',
+      active: 'return true'
     },
 
     {
@@ -78,8 +78,8 @@ router.get('/photography', function(req, res, next) {
   res.render('photography', { route: 'photography' });
 });
 
-router.get('/Xbox-Protected', function(req, res, next) {
-  res.render('password_protect', { route: 'Xbox-Protected' });
+router.get('/xbox-secure', function(req, res, next) {
+  res.render('password_protect', { route: 'xbox-secure' });
 });
 
 module.exports = router;
