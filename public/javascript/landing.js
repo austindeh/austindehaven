@@ -103,17 +103,20 @@ class TextScramble {
   }
 }
 
-var GlitchShuffleDelay = 500;
-var phrases = ["⇃ Scroll Down  "]
 var el = document.querySelector(".scroll-down")
-var fx = new TextScramble(el)
 
-var counter = 0
-var next = function() {
-  fx.setText(phrases[counter]).then(function() {
-    setTimeout(next, 10000)
-  })
-  counter = (counter + 1) % phrases.length
+if (el) {
+  var fx = new TextScramble(el)
+  var GlitchShuffleDelay = 500;
+  var phrases = ["⇃ Scroll Down  "]
+  var counter = 0
+  var next = function() {
+    fx.setText(phrases[counter]).then(function() {
+      setTimeout(next, 10000)
+    })
+    counter = (counter + 1) % phrases.length
+  }
+
+  setTimeout(next, GlitchShuffleDelay);
 }
 
-setTimeout(next, GlitchShuffleDelay);

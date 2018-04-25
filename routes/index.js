@@ -9,13 +9,12 @@ router.get('/', function(req, res, next) {
   function base64Encode(file) {
     // read binary data
     try {
-    var bitmap = fs.readFileSync(file);
-
-    // convert binary data to base64 encoded string
-    return Buffer.from(bitmap).toString('base64');
+      var bitmap = fs.readFileSync(file);
+      // convert binary data to base64 encoded string
+      return Buffer.from(bitmap).toString('base64');
     }  catch (err) {
-    console.log(err)
-    throw err
+      console.log(err)
+      throw err
     }
   }
 
@@ -78,8 +77,8 @@ router.get('/photography', function(req, res, next) {
   res.render('photography', { route: 'photography' });
 });
 
-router.get('/xbox-secure', function(req, res, next) {
-  res.render('password_protect', { route: 'xbox-secure' });
+router.get('/gateway', function(req, res, next) {
+  res.render('password_protect', { });
 });
 
 module.exports = router;
