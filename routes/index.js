@@ -79,7 +79,7 @@ router.get('/photography', function(req, res, next) {
 });
 
 router.get('/Xbox-Protected', function(req, res, next) {
-  res.render('password_prompt', { route: 'Xbox-Protected' });
+  res.render('password_protect', { route: 'Xbox-Protected' });
 });
 
 module.exports = router;
