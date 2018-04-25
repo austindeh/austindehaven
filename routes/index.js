@@ -2,7 +2,7 @@ var fs = require('fs');
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
+router.get('/', function (req, res, next) {
   // Project List
   // Project : { title, year, src, link }
 
@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
       var bitmap = fs.readFileSync(file);
       // convert binary data to base64 encoded string
       return Buffer.from(bitmap).toString('base64');
-    }  catch (err) {
+    } catch (err) {
       console.log(err)
       throw err
     }
@@ -24,7 +24,7 @@ router.get('/', function(req, res, next) {
       title: 'Xbox One X',
       year: 'coming soon',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
-      href: '/xbox-secure',
+      href: '/gateway',
       active: 'return true'
     },
 
@@ -70,30 +70,35 @@ router.get('/', function(req, res, next) {
 
   ];
 
-  res.render('index', { projects: projects, route: 'index' });
+  res.render('index', {
+    projects: projects,
+    route: 'index'
+  });
 });
 
-router.get('/photography', function(req, res, next) {
-  res.render('photography', { route: 'photography' });
+router.get('/photography', function (req, res, next) {
+  res.render('photography', {
+    route: 'photography'
+  });
 });
 
-router.get('/gateway', function(req, res, next) {
-  res.render('password_protect', { });
+router.get('/gateway', function (req, res, next) {
+  res.render('password_protect', {});
 });
 
-router.post('/gateway', function(req, res, next) {
+router.post('/gateway', function (req, res, next) {
   var password = req.param('password');
+  var hiddenPath = req.param('path');
+  if (password !== 'ad2k18') {
+    // either redirect like you're doing
+    res.redirect('/gateway');
+    // or if this is going to be ajaxy and you want to actually show an error on that password form
+    //  res.send(400);
+  }
+  res.redirect('/project/motoamerica')
   console.log(password)
 
-  // TODO:
-  // if password === something
-  //    do something
-  // else
-  //    do something else
-
-  // this page if crafted carefully can take in a hidden input field from the front end
-  // to tell it where to go and be used as the gateway between any and all PW protected projects
-  res.render('password_protect', { });
+  res.render('password_protect', {});
 });
 
 module.exports = router;

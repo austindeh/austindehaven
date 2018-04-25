@@ -1,10 +1,10 @@
 $(function () {
-    $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter');
+    // $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter');
     filter = $('.filter-selected').attr('gallery-filter');
 
     $('.masonry-item').each(function () {
         if (filter == 'all' || $(this).attr('gallery-category') == filter) {
-            $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
+            $(this).show();
         } else {
             $(this).hide()
         }
@@ -29,7 +29,7 @@ $('document').ready(function ($) {
                     $(this).hide()
                 }
             });
-        }, 1000)
+        }, 500)
     });
 });
 

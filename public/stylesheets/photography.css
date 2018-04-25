@@ -18,19 +18,18 @@ body {
 }
 
 img {
-  transition: opacity 1s, transform 0.75s;
+  transition: opacity .5s, transform .5s;
 }
 
 /* -- Masonry Shit -- */
 
 .masonry {
   column-count: 2;
-  opacity: 1;
   padding: 0;
   column-gap: 20px;
   -moz-column-gap: 20px;
   -webkit-column-gap: 20px;
-  transform: translateY(0);
+  transition: opacity .5s, transform .5s;
 }
 
 .masonry-item {
@@ -56,7 +55,7 @@ img {
 
 .fade-out-filter {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(20px);
 }
 
 .filter-bar {
