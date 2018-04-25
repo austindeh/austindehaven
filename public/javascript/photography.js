@@ -1,12 +1,12 @@
 $(function () {
+    $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter');
     filter = $('.filter-selected').attr('gallery-filter');
 
     $('.masonry-item').each(function () {
-
-        if (filter == $(this).attr('gallery-category')) {
-            $(this).show();
+        if (filter == 'all' || $(this).attr('gallery-category') == filter) {
+            $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
         } else {
-            $(this).hide();
+            $(this).hide()
         }
     });
 });
@@ -14,22 +14,22 @@ $(function () {
 $('document').ready(function ($) {
 
     $('.filter-btn').on('click', function () {
-        $('.masonry-item').hide().addClass('fade-out-filter');
+        filter = $(this).attr('gallery-filter');
+        $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter');
 
         $('.filter-btn').removeClass('filter-selected selected').addClass('underlined');
         $(this).removeClass('underlined').addClass('filter-selected selected');
 
-        filter = $(this).attr('gallery-filter');
-        $('.masonry-item').each(function () {
-            if (filter == 'all') {
-                $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
-            } else {
-                $(this).hide().removeClass('fade-out-filter').addClass('fade-out-filter');
-                if ($(this).attr('gallery-category') == filter) {
+
+        setTimeout(() => {
+            $('.masonry-item').each(function () {
+                if (filter == 'all' || $(this).attr('gallery-category') == filter) {
                     $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
+                } else {
+                    $(this).hide()
                 }
-            }
-        });
+            });
+        }, 1000)
     });
 });
 

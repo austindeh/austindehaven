@@ -71,16 +71,6 @@ p {
   transform: translateY(100px);
 }
 
-.fade-in-filter {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.fade-out-filter {
-  opacity: 0;
-  transform: translateY(50px);
-}
-
 /* --- Underlines --- */
 
 .selected {

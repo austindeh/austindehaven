@@ -3,7 +3,6 @@ body {
   color: white;
 }
 
-
 /* -- Landing Colors -- */
 
 .underlined:before {
@@ -18,15 +17,47 @@ body {
 	background-color: white;
 }
 
-/* -- Lazy Load -- */
-
 img {
+  transition: opacity 1s, transform 0.75s;
+}
+
+/* -- Masonry Shit -- */
+
+.masonry {
+  column-count: 2;
   opacity: 1;
+  padding: 0;
+  column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
   transform: translateY(0);
-  transition: opacity 2s, transform 1s;
+}
+
+.masonry-item {
+  display: inline-block;
+  margin: 0 0 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .masonry {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+  }
 }
 
 /* -- Image Filtering -- */
+
+.fade-in-filter {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.fade-out-filter {
+  opacity: 0;
+  transform: translateY(50px);
+}
 
 .filter-bar {
   display: flex;
@@ -72,34 +103,6 @@ img {
   margin: 0 20px;
 }
 
-
-
-/* -- Masonry Shit -- */
-
-.masonry {
-  column-count: 2;
-  opacity: 1;
-  padding: 0;
-  column-gap: 20px;
-  -moz-column-gap: 20px;
-  -webkit-column-gap: 20px;
-  transform: translateY(0);
-  transition: opacity 2s, transform 1s;
-}
-
-.masonry-item {
-  display: inline-block;
-  margin: 0 0 20px;
-  width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  .masonry {
-      -moz-column-count: 1;
-      -webkit-column-count: 1;
-      column-count: 1;
-  }
-}
 
 
 /* -- Footer Colors -- */
