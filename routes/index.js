@@ -81,4 +81,19 @@ router.get('/gateway', function(req, res, next) {
   res.render('password_protect', { });
 });
 
+router.post('/gateway', function(req, res, next) {
+  var password = req.param('password');
+  console.log(password)
+
+  // TODO:
+  // if password === something
+  //    do something
+  // else
+  //    do something else
+
+  // this page if crafted carefully can take in a hidden input field from the front end
+  // to tell it where to go and be used as the gateway between any and all PW protected projects
+  res.render('password_protect', { });
+});
+
 module.exports = router;
