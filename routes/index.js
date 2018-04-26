@@ -1,10 +1,16 @@
 var fs = require('fs');
 var express = require('express');
+var projects = require('./projects');
 var router = express.Router();
 
 router.get('/', function (req, res, next) {
   // Project List
   // Project : { title, year, src, link }
+
+  var isCool = req.cookies.authenticated;
+  if (!isCool) {
+    return res.redirect('/gateway');
+  }
 
   function base64Encode(file) {
     // read binary data
@@ -76,30 +82,24 @@ router.get('/', function (req, res, next) {
   });
 });
 
-
 router.get('/photography', function (req, res, next) {
   res.render('photography', {
     route: 'photography'
   });
 });
 
-// router.get('/gateway', function (req, res, next) {
-//   res.render('password_protect', {});
-// });
+router.get('/gateway', function (req, res, next) {
+  res.render('password_protect', {});
+});
 
-// router.post('/gateway', function (req, res, next) {
-//   var password = req.param('password');
-//   var hiddenPath = req.param('path');
-//   if (password !== 'ad2k18') {
-//     // either redirect like you're doing
-//     res.redirect('/gateway');
-//     // or if this is going to be ajaxy and you want to actually show an error on that password form
-//     //  res.send(400);
-//   }
-//   res.redirect('/project/motoamerica')
-//   console.log(password)
+router.post('/gateway', function (req, res, next) {
+  var password = req.param('password');
 
-//   res.render('password_protect', {});
-// });
+  if (password !== 'ad2k18') {
+    res.redirect('/gateway');
+  }
+  res.cookie('authenticated', 'true');
+  res.redirect('/');
+});
 
 module.exports = router;
