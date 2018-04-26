@@ -95,7 +95,7 @@ router.get('/gateway', function (req, res, next) {
 router.post('/gateway', function (req, res, next) {
   var password = req.param('password');
 
-  if (password !== 'ad2k18') {
+  if (password.toLowerCase() !== 'ad2k18') {
     res.redirect('/gateway');
   }
   res.cookie('authenticated', 'true', );
