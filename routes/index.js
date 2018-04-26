@@ -24,7 +24,7 @@ router.get('/', function (req, res, next) {
       title: 'Xbox One X',
       year: '2017',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
-      href: '/gateway',
+      href: '/project/xbox-one-x',
       active: 'return true'
     },
 
@@ -33,7 +33,7 @@ router.get('/', function (req, res, next) {
       year: '2017',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
-      active: 'return false'
+      active: 'return true'
     },
 
     {
@@ -75,6 +75,7 @@ router.get('/', function (req, res, next) {
     route: 'index'
   });
 });
+
 
 router.get('/photography', function (req, res, next) {
   res.render('photography', {

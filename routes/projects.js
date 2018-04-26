@@ -3,6 +3,21 @@ var router = express.Router();
 // var archives = require('./archives');
 
 
+router.get('/xbox-one-x', function(req, res, next) {
+  var project = {
+    title: 'Every60Seconds.com - Case Study WIP',
+    body: 'Microsoft (in partnership with PepsiCo) wanted to build buzz around the launch of the new Xbox One X console by giving fans the chance to bid and win Xbox One X - every 60 seconds - before public sale. The core challenge was in designing a fair gameplay that deterred bots, cheaters, and sweeps junkies.',
+    client: 'Microsoft / PepsiCo',
+    date: '2017',
+    role: 'Design, Animation',
+    prevProject: 'ken-block',
+    nextProject: 'disney-toybox',
+
+  }
+  res.render('project_pages/xbox_one_x', { project: project, images: [] })
+});
+
+
 router.get('/disney-toybox', function(req, res, next) {
   var project = {
     title: 'Disney Toybox',
@@ -10,7 +25,7 @@ router.get('/disney-toybox', function(req, res, next) {
     client: 'Disney',
     date: '2017',
     role: 'Photography, Design, Animation',
-    prevProject: 'ken-block',
+    prevProject: 'xbox-one-x',
     nextProject: 'alpinestars-adaptive-stretch',
 
   }
