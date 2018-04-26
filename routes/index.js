@@ -98,7 +98,7 @@ router.post('/gateway', function (req, res, next) {
   if (password !== 'ad2k18') {
     res.redirect('/gateway');
   }
-  res.cookie('authenticated', 'true');
+  res.cookie('authenticated', 'true', );
   res.redirect('/');
 });
 
