@@ -25,7 +25,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 setInterval(function() {
-  https.get(host);
+  http.get(host);
 }, 300000);
 
 // uncomment after placing your favicon in /public
