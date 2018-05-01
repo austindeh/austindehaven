@@ -104,7 +104,7 @@ router.get('/ken-block', function(req, res, next) {
     date: '2014',
     role: 'Illustration, Design',
     prevProject: 'motoamerica',
-    nextProject: 'disney-toybox',
+    nextProject: 'archives',
   }
   res.render('project_pages/ken_block', { project: project })
 });
@@ -152,12 +152,12 @@ router.get('/archives', function(req, res, next) {
     },
     {
       title: 'Suzuki Xray',
-      year: 'Branding',
+      year: 'campaign',
       src: '../images/projects/archives/archives-xray.jpg',
     },
     {
       title: 'Suzuki GSXR-1000',
-      year: 'Branding',
+      year: 'campaign',
       src: '../images/projects/archives/archives-suzuki.jpg',
     },
     {
@@ -196,7 +196,7 @@ router.get('/archives', function(req, res, next) {
   ];
   var project = {
     prevProject: 'ken-block',
-    nextProject: 'alpinestars-adaptive-stretch',
+    nextProject: 'xbox-one-x',
   }
   res.render('project_pages/archives', { archive_project: archive_project, project: project })
 });
