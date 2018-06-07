@@ -33,7 +33,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Disney Toy Box',
       medium: 'Motion / Photography',
-      layout: 'project-col-8',
+      layout: 'project-col-6',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
       active: 'return false',
@@ -43,7 +43,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Alpinestars Adaptive Stretch',
       medium: 'Strategy / Photography',
-      layout: 'project-col-4',
+      layout: 'project-col-3',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
       href: '/project/alpinestars-adaptive-stretch',
       active: 'return true',
@@ -53,7 +53,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Motoamerica',
       medium: 'Branding / Advertising / Web / Illustration',
-      layout: 'project-col-4',
+      layout: 'project-col-3',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
       href: '/project/motoamerica',
       active: 'return true',
@@ -63,7 +63,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Made in LA',
       medium: 'Branding',
-      layout: 'project-col-8',
+      layout: 'project-col-6',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
       href: '/project/made-in-la',
       active: 'return true',

@@ -14,46 +14,46 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 150px;
 }
 
 .project-col-12 {
   width: 100%;
 }
 
-.project-col-8 {
-
+.project-col-6 {
   width: 55%;
-  margin: 0 5%;
+  margin: 0 5% 150px 5%;
 }
 
-.project-col-4 {
+.project-col-3 {
   width: 25%;
-  margin: 0 5%;
+  margin: 0 5% 150px 5%;
 }
 
 .project-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 0;
   font-family: "roboto-mono",monospace;
   font-weight: 400;
   font-size: 11px;
   line-height: 7px;
 }
 
-.project-number {
+.project-medium {
   opacity: .5;
   margin-right: 30px;
   margin-top: 3px;
+  line-height: 17px;
 }
 
 .project-title {
-  letter-spacing: .5px;
   margin-right: auto;
   font-size: 13px;
   font-family: roboto-mono;
   letter-spacing: 1px;
+  line-height: 17px;
 }
 
 .project-year {
@@ -166,11 +166,11 @@
 
 /* Media Tags */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .project {
-    margin-bottom: 75px;
+    margin-bottom: 150px;
   }
-}
+} */
 
 @media (max-width: 768px) {
 
