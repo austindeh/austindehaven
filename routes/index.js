@@ -23,55 +23,61 @@ router.get('/', function (req, res, next) {
     {
       title: 'Xbox One X',
       medium: 'Web / Motion',
-      year: '2017',
+      layout: 'project-col-8',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
       href: '',
-      active: 'return false'
+      active: 'return false',
+      year: '2017',
     },
 
     {
-      title: 'Disney Stores',
-      medium: 'Motion / Compositing / Photography / Advertising',
-      year: '2017',
+      title: 'Disney Toy Box',
+      medium: 'Motion / Photography',
+      layout: 'project-col-2',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
-      active: 'return false'
+      active: 'return false',
+      year: '2017',
     },
 
     {
       title: 'Alpinestars Adaptive Stretch',
-      medium: 'Strategy / Photography / Retouching / Advertising',
-      year: '2016',
+      medium: 'Strategy / Photography',
+      layout: 'project-col-8',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
       href: '/project/alpinestars-adaptive-stretch',
-      active: 'return true'
+      active: 'return true',
+      year: '2016',
     },
 
     {
       title: 'Made in LA',
       medium: 'Branding',
-      year: '2016',
+      layout: 'project-col-8',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
       href: '/project/made-in-la',
-      active: 'return true'
+      active: 'return true',
+      year: '2016',
     },
 
     {
       title: 'Motoamerica',
       medium: 'Branding / Advertising / Web / Illustration',
-      year: '2015',
+      layout: 'project-col-8',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
       href: '/project/motoamerica',
-      active: 'return true'
+      active: 'return true',
+      year: '2015',
     },
 
     {
       title: 'Ken Block Livery',
       medium: 'Branding / Illustration',
-      year: '2015',
+      layout: 'project-col-8',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
       href: '/project/ken-block',
-      active: 'return true'
+      active: 'return true',
+      year: '2015',
     },
 
   ];

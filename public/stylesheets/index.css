@@ -2,14 +2,22 @@
 .projects {
   width: 100%;
   display: flex;
-  align-items: stretch;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.project-8col {
-  display: block;
+.project img {
+  margin-bottom: 8px;
+}
+
+.project-col-8 {
+
   width: 64%;
   margin: 0 6.3% 45px 0;
+}
+
+.project-col-2 {
+  width: 29.7%;
+  margin: 0 0 45px;
 }
 
 .project-details {
@@ -25,12 +33,16 @@
 
 .project-number {
   opacity: .5;
-  margin-right: 30px
+  margin-right: 30px;
+  margin-top: 3px;
 }
 
 .project-title {
   letter-spacing: .5px;
   margin-right: auto;
+  font-size: 13px;
+  font-family: roboto-mono;
+  letter-spacing: 1px;
 }
 
 .project-year {
