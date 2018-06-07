@@ -171,12 +171,8 @@
     width: 100%;
     margin: 0 0 50px 0;
   }
-}
-
-@media (max-width: 768px) {
 
   .project-details {
     font-size: 11px;
   }
-
 }

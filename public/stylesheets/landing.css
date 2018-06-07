@@ -1,16 +1,5 @@
 /* --- Landing Section --- */
 
-@media screen and (max-width: 450px) {
-  .scroll-down {
-		padding-top: 50vh !important;
-		display: none;
-  }
-
-	.landing {
-  		height: 50vh !important;
-	}
-}
-
 #name {
   cursor: pointer;
 }
@@ -22,7 +11,7 @@
   justify-content: center;
   height: 90vh;
   width: 100%;
-  margin: 0 50px;
+  margin: 0 5%;
 }
 
 #scroll-down {
@@ -75,4 +64,18 @@
 
 .social-links:hover {
    opacity: 1;
+}
+
+
+@media screen and (max-width: 450px) {
+  .scroll-down {
+		padding-top: 50vh !important;
+		display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing {
+    margin: 0;
+  }
 }
