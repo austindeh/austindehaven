@@ -22,7 +22,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Xbox One X',
-      medium: 'Web / Motion',
+      medium: 'Design / Motion',
       year: '2017',
       layout: 'project-col-12',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
@@ -32,7 +32,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Disney Toy Box',
-      medium: 'Motion / Photography',
+      medium: 'Design / Motion / Photography',
       year: '2017',
       layout: 'project-col-6',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
@@ -42,7 +42,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Alpinestars Adaptive Stretch',
-      medium: 'Advertising / Photography',
+      medium: 'Design / Photography',
       year: '2016',
       layout: 'project-col-3',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
@@ -52,7 +52,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Motoamerica',
-      medium: 'Branding / Web / Print',
+      medium: 'Design',
       year: '2015',
       layout: 'project-col-3',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
@@ -62,7 +62,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Made in LA',
-      medium: 'Branding',
+      medium: 'Design',
       year: '2016',
       layout: 'project-col-6',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
@@ -72,7 +72,7 @@ router.get('/', function (req, res, next) {
 
     {
       title: 'Ken Block Livery',
-      medium: 'Branding / Web/ Print',
+      medium: 'Design',
       year: '2015',
       layout: 'project-col-4',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
