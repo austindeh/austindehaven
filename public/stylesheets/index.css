@@ -9,19 +9,26 @@
   margin-bottom: 8px;
 }
 
+.project {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .project-col-12 {
   width: 100%;
 }
 
 .project-col-8 {
 
-  width: 64%;
-  margin: 0 6.3% 45px 0;
+  width: 55%;
+  margin: 0 5%;
 }
 
 .project-col-4 {
-  width: 29.7%;
-  margin: 0 0 45px;
+  width: 25%;
+  margin: 0 5%;
 }
 
 .project-details {
