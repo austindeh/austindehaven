@@ -51,6 +51,16 @@ router.get('/', function (req, res, next) {
     },
 
     {
+      title: 'Motoamerica',
+      medium: 'Branding / Advertising / Web / Illustration',
+      layout: 'project-col-4',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
+      href: '/project/motoamerica',
+      active: 'return true',
+      year: '2015',
+    },
+
+    {
       title: 'Made in LA',
       medium: 'Branding',
       layout: 'project-col-8',
@@ -61,11 +71,11 @@ router.get('/', function (req, res, next) {
     },
 
     {
-      title: 'Motoamerica',
-      medium: 'Branding / Advertising / Web / Illustration',
-      layout: 'project-col-8',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
-      href: '/project/motoamerica',
+      title: 'Ken Block Livery',
+      medium: 'Branding / Illustration',
+      layout: 'project-col-4',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
+      href: '/project/ken-block',
       active: 'return true',
       year: '2015',
     },
@@ -73,7 +83,17 @@ router.get('/', function (req, res, next) {
     {
       title: 'Ken Block Livery',
       medium: 'Branding / Illustration',
-      layout: 'project-col-8',
+      layout: 'project-col-4',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
+      href: '/project/ken-block',
+      active: 'return true',
+      year: '2015',
+    },
+
+    {
+      title: 'Ken Block Livery',
+      medium: 'Branding / Illustration',
+      layout: 'project-col-4',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
       href: '/project/ken-block',
       active: 'return true',

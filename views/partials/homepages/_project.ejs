@@ -1,6 +1,9 @@
 <a href="<%= locals.project.href %>" class="project <%= locals.project.layout %>"  onclick="<%= locals.project.active %>">
-  <img class="glitch-hover" alt='NO_SIGNAL.jpeg' src='<%= locals.project.src %>'>
-
+  <div class="glitch-hover" alt='NO_SIGNAL.jpeg'>
+    <div class="image" style="height: 500px;">
+      <div style="background-image: url('<%= locals.project.src %>'); height: 100%; background-position: 50% 50%;"></div>
+    </div>
+  </div>
 
   <div class="project-details">
     <div class="project-title glitch-btn">
