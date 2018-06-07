@@ -20,8 +20,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
+  margin: 0 50px;
 }
 
 #scroll-down {
@@ -46,8 +47,8 @@
 #snippet {
   width: 100%;
   position: relative;
-  font-family: "bookmania",serif;
-  font-size: 16pt;
+  font-family: "raleway",sans-serif;
+  font-size: 15pt;
   letter-spacing: 1px;
   line-height: 40px;
 }
@@ -65,7 +66,7 @@
 
 .social-links {
   opacity: .5;
-  padding-bottom: 7px;
+  padding-bottom: 1px;
 }
 
 .social-links-margin {

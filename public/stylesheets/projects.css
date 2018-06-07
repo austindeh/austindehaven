@@ -30,14 +30,14 @@
 /* -- Return Button -- */
 
 .return-button {
-  font-family: bookmania;
+  font-family: "raleway", sans-serif;
   font-size: 13px;
   color: #181818;
   padding-bottom: 4px;
 }
 
 #return-button span {
-  font-family: bookmania, serif;
+  font-family: "raleway", sans-serif;
   font-size: 10pt;
   margin-right: 5px;
 }
@@ -68,10 +68,11 @@
 }
 
 .project-overview-title {
-  font-family: bookmania;
+  font-family: "raleway", sans-serif;
   font-size: 14pt;
   letter-spacing: 1px;
   line-height: 35px;
+  margin-bottom: 15px;
 }
 
 .project-overview-body {
@@ -99,8 +100,8 @@
 }
 
 .project-overview-value {
-  font-size: 14px;
-  font-family: bookmania;
+  font-size: 11px;
+  font-family: "roboto-mono";
   line-height: 2;
 }
 
@@ -143,7 +144,7 @@
 
 .sectionCopy {
   width: 100%;
-  font-family: bookmania;
+  font-family: "raleway", sans-serif;
   letter-spacing: 1px;
   line-height: 2;
   padding-bottom: 50px;

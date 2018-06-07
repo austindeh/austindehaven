@@ -6,10 +6,10 @@
   flex-direction: column;
 }
 
-.project {
+.project-8col {
   display: block;
-  width: 100%;
-  margin-bottom: 50px;
+  width: 64%;
+  margin: 0 6.3% 45px 0;
 }
 
 .project-details {
