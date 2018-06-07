@@ -23,7 +23,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Xbox One X',
       medium: 'Web / Motion',
-      layout: 'project-col-8',
+      layout: 'project-col-12',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
       href: '',
       active: 'return false',
@@ -33,7 +33,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Disney Toy Box',
       medium: 'Motion / Photography',
-      layout: 'project-col-2',
+      layout: 'project-col-8',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
       active: 'return false',
@@ -43,7 +43,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Alpinestars Adaptive Stretch',
       medium: 'Strategy / Photography',
-      layout: 'project-col-8',
+      layout: 'project-col-4',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
       href: '/project/alpinestars-adaptive-stretch',
       active: 'return true',

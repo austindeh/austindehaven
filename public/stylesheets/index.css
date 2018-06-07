@@ -9,13 +9,17 @@
   margin-bottom: 8px;
 }
 
+.project-col-12 {
+  width: 100%;
+}
+
 .project-col-8 {
 
   width: 64%;
   margin: 0 6.3% 45px 0;
 }
 
-.project-col-2 {
+.project-col-4 {
   width: 29.7%;
   margin: 0 0 45px;
 }
