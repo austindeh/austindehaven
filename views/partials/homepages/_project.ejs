@@ -1,9 +1,6 @@
 <a href="<%= locals.project.href %>" class="project <%= locals.project.layout %>"  onclick="<%= locals.project.active %>">
-  <div class="glitch-hover" alt='NO_SIGNAL.jpeg'>
-    <div class="image" style="height: 500px;">
-      <div style="background-image: url('<%= locals.project.src %>'); height: 500px; background-position: 50% 50%; background-size: 100%;"></div>
-    </div>
-  </div>
+  <img class="glitch-hover" alt='NO_SIGNAL.jpeg' src='<%= locals.project.src %>'>
+
 
   <div class="project-details">
     <div class="project-title glitch-btn">
@@ -26,7 +23,6 @@
       <div class="glitch-mask"><span><%= locals.project.medium %></span></div>
     </div>
   </div>
-
 
     <!--
     <div class="project-year glitch-btn">
