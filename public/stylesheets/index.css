@@ -31,14 +31,19 @@
   margin: 0 5% 20vh 5%;
 }
 
-.project-35 {
-  width: 50%;
-  margin: 0 0% 20vh 5%;
-}
-
 .project-45 {
   width: 40%;
   margin: 0 5% 20vh 0%;
+}
+
+.project-40 {
+  width: 40%;
+  margin: 0 5% 20vh 5%;
+}
+
+.project-50 {
+  width: 50%;
+  margin: 0 0% 20vh 5%;
 }
 
 .project-details {

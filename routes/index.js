@@ -64,6 +64,46 @@ router.get('/', function (req, res, next) {
       title: 'Motoamerica',
       medium: 'Design',
       year: '2015',
+      layout: 'project-50',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
+      href: '/project/motoamerica',
+      active: 'return true',
+    },
+
+    {
+      title: 'Disney Toy Box',
+      medium: 'Design / Motion / Photography',
+      year: '2017',
+      layout: 'project-40',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
+      href: '/project/disney-toybox',
+      active: 'return false',
+    },
+
+    {
+      title: 'Alpinestars Adaptive Stretch',
+      medium: 'Design / Photography',
+      year: '2016',
+      layout: 'project-40',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
+      href: '/project/alpinestars-adaptive-stretch',
+      active: 'return true',
+    },
+
+    {
+      title: 'Made in LA',
+      medium: 'Design',
+      year: '2016',
+      layout: 'project-45',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
+      href: '/project/made-in-la',
+      active: 'return true',
+    },
+
+    {
+      title: 'Motoamerica',
+      medium: 'Design',
+      year: '2015',
       layout: 'project-35',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
       href: '/project/motoamerica',
