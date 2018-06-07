@@ -14,7 +14,7 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 20vh;
 }
 
 .project-col-12 {
@@ -23,12 +23,12 @@
 
 .project-col-6 {
   width: 55%;
-  margin: 0 5% 150px 5%;
+  margin: 0 5% 20vh 5%;
 }
 
 .project-col-3 {
   width: 25%;
-  margin: 0 5% 150px 5%;
+  margin: 0 5% 20vh 5%;
 }
 
 .project-details {
@@ -169,7 +169,7 @@
 @media (max-width: 768px) {
   .project {
     width: 100%;
-    margin: 0 0 50px 0;
+    margin: 0 0 5vh 0;
   }
 
   .project-details {
