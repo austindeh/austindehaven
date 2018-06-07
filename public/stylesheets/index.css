@@ -17,18 +17,28 @@
   margin-bottom: 20vh;
 }
 
-.project-col-12 {
+.project-100 {
   width: 100%;
 }
 
-.project-col-6 {
+.project-55 {
   width: 55%;
   margin: 0 5% 20vh 5%;
 }
 
-.project-col-3 {
+.project-25 {
   width: 25%;
   margin: 0 5% 20vh 5%;
+}
+
+.project-35 {
+  width: 50%;
+  margin: 0 0% 20vh 5%;
+}
+
+.project-45 {
+  width: 40%;
+  margin: 0 5% 20vh 0%;
 }
 
 .project-details {
