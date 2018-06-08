@@ -1,3 +1,10 @@
+document.body.className += ' fade-out';
+
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
+
 function inViewport(ele) {
     const rect = ele.getBoundingClientRect()
     return (rect.top >= 0 && rect.top <= window.innerHeight) && (rect.bottom >= 0)

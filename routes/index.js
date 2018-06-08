@@ -99,26 +99,7 @@ router.get('/', function (req, res, next) {
       href: '/project/made-in-la',
       active: 'return true',
     },
-
-    {
-      title: 'Motoamerica',
-      medium: 'Design',
-      year: '2015',
-      layout: 'project-35',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
-      href: '/project/motoamerica',
-      active: 'return true',
-    },
-
-    {
-      title: 'Ken Block Livery',
-      medium: 'Design',
-      year: '2015',
-      layout: 'project-100',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block.jpg'),
-      href: '/project/ken-block',
-      active: 'return true',
-    },
+    
   ];
 
   res.render('index', {
