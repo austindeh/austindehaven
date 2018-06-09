@@ -4,7 +4,7 @@
 
 
   $(window).scroll(function() {
-    $('.observer').filter(checkVisible).removeClass('.observer').addClass('observed');
+    $('.observer').filter(checkVisible).removeClass('.observer-scroll').addClass('observed');
 }).scroll();
 
 function checkVisible() {

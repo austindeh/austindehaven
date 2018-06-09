@@ -73,12 +73,15 @@ p {
 /* Animations */
 
 .observer {
+  display: flex;
   opacity: 0;
   transform: translateY(100px);
-  transition: all .5s ease-out;
+  transition: all .75s;
 }
 
 .observed {
+  width: 100%;
+  display: flex;
   opacity: 1;
   transform: translateY(0px);
 }
