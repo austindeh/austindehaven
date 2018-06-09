@@ -1,3 +1,14 @@
+/* Animation Delays */
+
+.observer:nth-child(even) {
+  transition-delay: 0s;
+}
+
+.observer:nth-child(odd) {
+  transition-delay: .25s;
+}
+
+
 /* --- Projects --- */
 .projects {
   width: 100%;
@@ -32,11 +43,11 @@
   margin-right: 0;
 }
 
-.project:nth-child(2) {
+.project:nth-child(2), .project:nth-child(6) {
   margin-left: 5%;
 }
 
-.project:nth-child(3) {
+.project:nth-child(3), .project:nth-child(7) {
   margin-right: 5%;
 }
 

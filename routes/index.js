@@ -83,22 +83,12 @@ router.get('/', function (req, res, next) {
     },
 
     {
-      title: 'Disney Toy Box',
-      medium: 'Design / Motion / Photography',
-      year: '2017',
-      classes: 'project-40 observer',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
-      href: '/project/disney-toybox',
-      active: 'return false',
-    },
-
-    {
-      title: 'Alpinestars Adaptive Stretch',
-      medium: 'Design / Photography',
-      year: '2016',
-      classes: 'project-40 observer',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
-      href: '/project/alpinestars-adaptive-stretch',
+      title: 'Ken Block',
+      medium: 'Design',
+      year: '2015',
+      classes: 'project-35 observer',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block-02.jpg'),
+      href: '/project/ken-block',
       active: 'return true',
     },
 
