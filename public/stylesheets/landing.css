@@ -51,10 +51,12 @@
   font-family: "roboto-mono",monospace;
   left: 0;
   opacity: 0;
+  visibility: hidden;
 }
 
 .social-links {
   opacity: 0;
+  visibility: hidden;
   padding-bottom: 1px;
   transform: translateY(20px);
   transition: all .5s;
@@ -62,6 +64,7 @@
 }
 
 .social-links-observed {
+  visibility: visible;
   transform: translateY(0px);
   opacity: 0.5;
   transition: all .5s;
