@@ -23,7 +23,7 @@ router.get('/', function (req, res, next) {
     {
       title: 'Xbox One X',
       medium: 'Design / Motion',
-      year: '2017',
+      year: '2018',
       classes: 'project-100',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
       href: '',
@@ -31,46 +31,58 @@ router.get('/', function (req, res, next) {
     },
 
     {
+      title: 'West Dermatology',
+      medium: 'Design',
+      year: '2018',
+      classes: 'project-35 observer',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-01.jpg'),
+      href: '/project/westderm',
+      active: 'return true',
+    },
+
+    {
       title: 'Disney Toy Box',
       medium: 'Design / Motion / Photography',
       year: '2017',
-      classes: 'project-55 observer',
+      classes: 'project-45 observer',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
       active: 'return false',
     },
 
+
     {
       title: 'Alpinestars Adaptive Stretch',
       medium: 'Design / Photography',
       year: '2016',
-      classes: 'project-25 observer',
+      classes: 'project-35 observer',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
       href: '/project/alpinestars-adaptive-stretch',
       active: 'return true',
     },
 
-    {
-      title: 'Made in LA',
-      medium: 'Design',
-      year: '2016',
-      classes: 'project-45 observer',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
-      href: '/project/made-in-la',
-      active: 'return true',
-    },
 
     {
       title: 'Motoamerica',
       medium: 'Design',
       year: '2015',
-      classes: 'project-50 observer',
+      classes: 'project-55 observer',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
       href: '/project/motoamerica',
       active: 'return true',
     },
 
     {
+      title: 'Made in LA',
+      medium: 'Design',
+      year: '2016',
+      classes: 'project-45 observer',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
+      href: '/project/made-in-la',
+      active: 'return true',
+    },
+
+    {
       title: 'Disney Toy Box',
       medium: 'Design / Motion / Photography',
       year: '2017',
@@ -90,15 +102,6 @@ router.get('/', function (req, res, next) {
       active: 'return true',
     },
 
-    {
-      title: 'Made in LA',
-      medium: 'Design',
-      year: '2016',
-      classes: 'project-45 observer',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
-      href: '/project/made-in-la',
-      active: 'return true',
-    },
 
   ];
 
