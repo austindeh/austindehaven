@@ -63,14 +63,11 @@ img {
   justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-.filter-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 20;
-    background: #181818;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: #181818;
 }
 
 .filter-contact {

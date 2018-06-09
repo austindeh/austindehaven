@@ -26,7 +26,8 @@
     <link rel='stylesheet' href='/stylesheets/photography.css' />
 
   </head>
-  <body class="observer">
+  <body>
+  <div class="observer">
     <div class="body-width">
       <%- include('partials/homepages/_landing') %>
     </div>
@@ -49,6 +50,7 @@
     <%- include('partials/global/_footer', { href: '/', copy: 'Return to design work' }) %>
 
     <%- include('partials/global/_back-to-top') %>
+  </div>
   </body>
 
   <%- include('partials/global/_dependencies') %>

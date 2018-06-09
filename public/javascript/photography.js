@@ -40,17 +40,3 @@ $('document').ready(function ($) {
         img.removeAttribute('data-src');
     };
 });
-
-
-// Fixed Filter bar
-
-window.onscroll = function() {fixedFilters()};
-var header = document.getElementById("filter-bar");
-var sticky = header.offsetTop;
-function fixedFilters() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("filter-sticky");
-  } else {
-    header.classList.remove("filter-sticky");
-  }
-}
