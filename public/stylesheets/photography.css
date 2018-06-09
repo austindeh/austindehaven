@@ -66,8 +66,9 @@ img {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  top: -1px; /* Needs to cascade for safari. Chrome is +1px and safari doesnt support -1px */
   width: 100%;
-  z-index: 20;
+  z-index: 1;
   background: #181818;
 }
 
