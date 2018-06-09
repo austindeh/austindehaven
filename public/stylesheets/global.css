@@ -147,8 +147,8 @@ p {
   display: block;
   position: fixed;
   bottom: 5%;
-  right: 0.5%;
-  width: 60px;
+  right: 8%;
+  width: 15px;
   padding: 10px 0px;
   opacity: 0;
   -webkit-transition: all 0.4s linear;
@@ -163,7 +163,7 @@ p {
 
 @media (min-width: 768px) {
   #back-to-top {
-    right: 2%;
+    right: 3%;
   }
 }
 
