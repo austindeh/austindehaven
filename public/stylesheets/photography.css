@@ -65,7 +65,7 @@ img {
   padding-bottom: 25px;
   position: sticky;
   position: -webkit-sticky;
-  top: -1;
+  top: 0;
   width: 100%;
   z-index: 20;
   background: #181818;
