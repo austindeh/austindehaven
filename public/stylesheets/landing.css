@@ -45,7 +45,7 @@
 /* --- Hidden Buttons --- */
 
 #social-button {
-  display: none;
+  display: flex;
   position: absolute;
   font-size: 12px;
   font-family: "roboto-mono",monospace;
@@ -53,8 +53,25 @@
 }
 
 .social-links {
-  opacity: .5;
+  opacity: 0;
   padding-bottom: 1px;
+  transform: translateY(20px);
+  transition: all .5s;
+  height: 30px;
+}
+
+.social-links-observed {
+  transform: translateY(0px);
+  opacity: 0.5;
+  transition: all .5s;
+}
+
+.social-links-observed:nth-child(2) {
+  transition-delay: .05s;
+}
+
+.social-links-observed:nth-child(3) {
+  transition-delay: .1s;
 }
 
 .social-links-margin {

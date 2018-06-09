@@ -1,6 +1,7 @@
 // Reveal social buttons on name click
 $("#name").click(function() {
-  $("#social-button").fadeToggle("fast", "swing")
+  // $("#social-button").fadeToggle("fast", "swing")
+  $(".social-links").toggleClass('social-links-observed');
 })
 
 // Hide scroll down button on scroll
