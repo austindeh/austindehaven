@@ -1,6 +1,6 @@
 // Reveal social buttons on name click
 $("#name").click(function() {
-  // $("#social-button").fadeToggle("fast", "swing")
+  $("#social-button").css("opacity", "1");
   $(".social-links").toggleClass('social-links-observed');
 })
 
