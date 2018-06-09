@@ -1,8 +1,23 @@
-document.body.className += ' fade-out';
+// $(document).ready(function() {
+//     $('.observer').removeClass('.observer').addClass('observed');
+//   });
 
-$(function() {
-    $('body').removeClass('fade-out');
-});
+
+  $(window).scroll(function() {
+    $('.observer').filter(checkVisible).removeClass('.observer').addClass('observed');
+}).scroll();
+
+function checkVisible() {
+    var elm = this;
+    var eval = eval || "visible";
+    var vpH = $(window).height(), // Viewport Height
+        st = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();
+
+    if (eval == "visible") return ((y < (vpH + st)) && (y > (st - elementHeight)));
+}
+
 
 
 function inViewport(ele) {

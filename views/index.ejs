@@ -28,7 +28,7 @@
 
   </head>
   <body>
-    <div class="body-width">
+    <div class="body-width observer">
       <%- include('partials/homepages/_landing') %>
       <div class="projects" data-scroll-target="true">
         <% projects.forEach(function(project, i) { %>
@@ -41,9 +41,8 @@
     <%- include('partials/global/_back-to-top') %>
   </body>
 
-  <script> 
   <%- include('partials/global/_dependencies') %>
-  <script src="/javascript/global.js"></script>
   <script src="/javascript/landing.js"></script>
+  <script src="/javascript/global.js"></script>
   <script src="/javascript/glitch.js"></script>
 </html>

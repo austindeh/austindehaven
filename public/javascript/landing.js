@@ -19,6 +19,7 @@ $("#scroll-down").click(function() {
   }, 500);
 });
 
+$( document ).ready(function() {
 // Glitch skewing on offest
 var t1 = new TimelineMax({repeat: -1,repeatDelay: 5.3})
 t1.to(".textglitch1", 0.1, {skewX:900,ease: Power4.easeInOut}).to(".textglitch1", 0.04, {skewX:0,ease: Power4.easeInOut})
@@ -120,3 +121,4 @@ if (el) {
   setTimeout(next, GlitchShuffleDelay);
 }
 
+});

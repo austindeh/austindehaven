@@ -70,11 +70,17 @@ p {
   color: white;
 }
 
-/* Fade-in content on load */
+/* Animations */
 
-.fade-in--lazyload {
+.observer {
   opacity: 0;
   transform: translateY(100px);
+  transition: all .5s ease-out;
+}
+
+.observed {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /* --- Underlines --- */
