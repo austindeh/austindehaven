@@ -33,46 +33,47 @@ $(function() {
 
 
 
+// use if (window.width > 500) {
+//     // Parallax
 
-// Parallax
+//     var controller = new ScrollMagic.Controller();
 
-var controller = new ScrollMagic.Controller();
+//     $('.parallax-1').each(function(){
 
-$('.parallax-1').each(function(){
+//         var randomY = Math.floor(Math.random() * 6) + '0%';
+//         var tween = new TimelineMax();
 
-    var randomY = Math.floor(Math.random() * 6) + '0%';
-    var tween = new TimelineMax();
+//         tween
+//             .from($(this), 1, {y: '25%', ease: Power0.easeNone})
+//         ;
 
-    tween
-        .from($(this), 1, {y: '25%', ease: Power0.easeNone})
-    ;
+//         var scene = new ScrollMagic.Scene({
+//             triggerElement: this,
+//             triggerHook: 1,
+//             duration: '150%',
+//         })
 
-    var scene = new ScrollMagic.Scene({
-        triggerElement: this,
-        triggerHook: 1,
-        duration: '150%',
-    })
-
-.setTween(tween)
-.addTo(controller);
-});
+//     .setTween(tween)
+//     .addTo(controller);
+//     });
 
 
-$('.parallax-2').each(function(){
+//     $('.parallax-2').each(function(){
 
-    var randomY = Math.floor(Math.random() * 6) + '0%';
-    var tween = new TimelineMax();
+//         var randomY = Math.floor(Math.random() * 6) + '0%';
+//         var tween = new TimelineMax();
 
-    tween
-        .from($(this), 1, {y: '-25%', ease: Power0.easeNone})
-    ;
+//         tween
+//             .from($(this), 1, {y: '-25%', ease: Power0.easeNone})
+//         ;
 
-    var scene = new ScrollMagic.Scene({
-        triggerElement: this,
-        triggerHook: 1,
-        duration: '150%',
-    })
+//         var scene = new ScrollMagic.Scene({
+//             triggerElement: this,
+//             triggerHook: 1,
+//             duration: '150%',
+//         })
 
-.setTween(tween)
-.addTo(controller);
-});
+//     .setTween(tween)
+//     .addTo(controller);
+//     });
+// }
