@@ -5,7 +5,7 @@
 }
 
 .observer:nth-child(odd) {
-  transition-delay: 0s;
+  transition-delay: 0.25s;
 }
 
 
