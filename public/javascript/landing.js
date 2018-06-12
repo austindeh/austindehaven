@@ -5,20 +5,20 @@ $("#name").click(function() {
 })
 
 // Hide scroll down button on scroll
-$(window).scroll(function() {
-	if (window.scrollY > 50) {
-	  $("#scroll-down").css("opacity", 0)
-	} else {
-	  $("#scroll-down").css("opacity", 1)
-  }
-})
+// $(window).scroll(function() {
+// 	if (window.scrollY > 50) {
+// 	  $("#scroll-down").css("opacity", 0)
+// 	} else {
+// 	  $("#scroll-down").css("opacity", 1)
+//   }
+// })
 
 // Scroll down to project on scroll down button click
-$("#scroll-down").click(function() {
-  $("html, body").animate({
-    scrollTop: $( $('[data-scroll-target]')).offset().top - 75
-  }, 500);
-});
+// $("#scroll-down").click(function() {
+//   $("html, body").animate({
+//     scrollTop: $( $('[data-scroll-target]')).offset().top - 75
+//   }, 500);
+// });
 
 $( document ).ready(function() {
 // Glitch skewing on offest
