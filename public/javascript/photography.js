@@ -1,5 +1,4 @@
 $(function () {
-    // $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter');
     filter = $('.filter-selected').attr('gallery-filter');
 
     $('.masonry-item').each(function () {

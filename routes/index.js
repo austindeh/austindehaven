@@ -107,23 +107,4 @@ router.get('/photography', function (req, res, next) {
   });
 });
 
-// router.get('/gateway', function (req, res, next) {
-//   res.render('password_protect', {});
-// });
-
-// router.post('/gateway', function (req, res, next) {
-//   var password = req.param('password');
-//   var hiddenPath = req.param('path');
-//   if (password !== 'ad2k18') {
-//     // either redirect like you're doing
-//     res.redirect('/gateway');
-//     // or if this is going to be ajaxy and you want to actually show an error on that password form
-//     //  res.send(400);
-//   }
-//   res.redirect('/project/motoamerica')
-//   console.log(password)
-
-//   res.render('password_protect', {});
-// });
-
 module.exports = router;

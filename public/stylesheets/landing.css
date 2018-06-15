@@ -13,7 +13,7 @@
   margin: 0 5%;
 }
 
-#scroll-down {
+/* #scroll-down {
   font-family: "roboto-mono", monospace;
   font-size: 12px;
   opacity: 1;
@@ -30,7 +30,7 @@
 
 .scroll-down:hover {
   opacity: 1;
-}
+} */
 
 #snippet {
   position: relative;
@@ -87,12 +87,12 @@
 }
 
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   .scroll-down {
-		padding-top: 50vh !important;
+		padding-top: 50vh;
 		display: none;
   }
-}
+} */
 
 @media (max-width: 768px) {
   .landing {

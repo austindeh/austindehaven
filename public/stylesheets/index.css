@@ -115,22 +115,6 @@
 
 /* --- Archived Projects --- */
 
-/* #archives:hover {
-  color: white;
-}
-
-#archives:before {
-  content: "";
-  position: absolute;
-  background: #181818;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
-} */
-
 #archives:hover:before {
   top: 0;
 }
@@ -138,10 +122,6 @@
 #archives .project-details {
   transition: all ease .3s;
 }
-
-/* #archives:hover .project-details {
-  padding: 10px 20px;
-} */
 
 #archives {
   width: 100%;
