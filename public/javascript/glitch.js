@@ -3,7 +3,7 @@
 
   var data
 
-  $('.project').mouseenter(function() {
+  $('.project-hover').mouseenter(function() {
     var img, maxGlitch, offset;
 
     img = $(this).find('.glitch-hover');
@@ -47,7 +47,7 @@
   //******** START MOUSELEAVE  ***********
 
 
-  $('.project').mouseleave(function() {
+  $('.project-hover').mouseleave(function() {
     if(window.glitchInterval){
       clearInterval(window.glitchInterval)
     }

@@ -28,6 +28,10 @@
   margin-bottom: 20vh;
 }
 
+.project-hover {
+  width: 100%;
+}
+
 .project:nth-child(even) {
   margin-left: 0;
   margin-right: 5%;
