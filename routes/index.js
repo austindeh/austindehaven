@@ -37,7 +37,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 observer parallax-1',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-01.jpg'),
       href: '/project/westderm',
-      active: 'return true',
+      active: 'return false',
     },
 
     {
@@ -58,7 +58,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 observer parallax-1',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
       href: '/project/alpinestars-adaptive-stretch',
-      active: 'return true',
+      active: 'return false',
     },
 
 
@@ -69,7 +69,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-55 observer parallax-2',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
       href: '/project/motoamerica',
-      active: 'return true',
+      active: 'return false',
     },
 
     {
@@ -79,7 +79,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-45 observer parallax-1',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
       href: '/project/made-in-la',
-      active: 'return true',
+      active: 'return false',
     },
 
     {
@@ -89,7 +89,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 observer parallax-2',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block-02.jpg'),
       href: '/project/ken-block',
-      active: 'return true',
+      active: 'return false',
     },
 
 
