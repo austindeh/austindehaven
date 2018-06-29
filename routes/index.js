@@ -26,8 +26,8 @@ router.get('/', function (req, res, next) {
       year: '2018',
       classes: 'project-100',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
-      href: '',
-      active: 'return false',
+      href: '/project/xbox-one-x',
+      active: 'return true',
     },
 
     {
@@ -37,7 +37,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 observer parallax-1',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-01.jpg'),
       href: '/project/westderm',
-      active: 'return false',
+      active: 'return true',
     },
 
     {
@@ -47,7 +47,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-45 observer parallax-2',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
       href: '/project/disney-toybox',
-      active: 'return false',
+      active: 'return true',
     },
 
 
@@ -58,7 +58,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 observer parallax-1',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
       href: '/project/alpinestars-adaptive-stretch',
-      active: 'return false',
+      active: 'return true',
     },
 
 
@@ -69,7 +69,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-55 observer parallax-2',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
       href: '/project/motoamerica',
-      active: 'return false',
+      active: 'return true',
     },
 
     {
@@ -79,7 +79,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-45 observer parallax-1',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
       href: '/project/made-in-la',
-      active: 'return false',
+      active: 'return true',
     },
 
     {
@@ -89,7 +89,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 observer parallax-2',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block-02.jpg'),
       href: '/project/ken-block',
-      active: 'return false',
+      active: 'return true',
     },
 
 

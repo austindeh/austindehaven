@@ -2,6 +2,7 @@
 
 #name {
   cursor: pointer;
+  width: 175px;
 }
 
 .landing {
@@ -71,11 +72,11 @@
 }
 
 .social-links-observed:nth-child(2) {
-  transition-delay: .05s;
+  transition-delay: .1s;
 }
 
 .social-links-observed:nth-child(3) {
-  transition-delay: .1s;
+  transition-delay: .15s;
 }
 
 .social-links-margin {

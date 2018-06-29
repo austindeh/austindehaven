@@ -3,6 +3,21 @@ var router = express.Router();
 // var archives = require('./archives');
 
 
+router.get('/xbox-one-x', function(req, res, next) {
+  var project = {
+    title: 'Every 60 Seconds',
+    body: 'Disney came to us asking to help come up with a new campaign focused around the release of their new toyline. The campaign was a relatively short timeline starting in early October and going live in mid November, just in time for the holidays. As the campaign was primarily going to be utilized around the holidays, we were coming up with creative ways to bring the characters and holidays to your house.',
+    client: 'Disney',
+    date: '2017',
+    role: 'Photography, Design, Animation',
+    prevProject: 'ken-block',
+    nextProject: 'disney-toybox',
+
+  }
+  res.render('project_pages/xbox_one_x', { project: project, images: [] })
+});
+
+
 router.get('/disney-toybox', function(req, res, next) {
   var project = {
     title: 'Disney Toybox',
@@ -10,7 +25,7 @@ router.get('/disney-toybox', function(req, res, next) {
     client: 'Disney',
     date: '2017',
     role: 'Photography, Design, Animation',
-    prevProject: 'ken-block',
+    prevProject: 'xbox-one-x',
     nextProject: 'alpinestars-adaptive-stretch',
 
   }

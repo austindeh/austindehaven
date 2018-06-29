@@ -23,11 +23,11 @@
     <link rel='stylesheet' href='/stylesheets/layout.css' />
     <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
-    <link rel='stylesheet' href='/stylesheets/audioplayer.css' />
+    <!-- <link rel='stylesheet' href='/stylesheets/audioplayer.css' /> !-->
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body>
-    <%- include('../partials/projects/_audioplayer') %>
+    <!-- <%- include('../partials/projects/_audioplayer') %> !-->
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
     <img class="fullWidth spacingStandard" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
@@ -88,5 +88,4 @@
   </body>
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
-  <script src="/javascript/audioplayer.js"></script>
 </html>

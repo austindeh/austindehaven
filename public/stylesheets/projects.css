@@ -194,11 +194,6 @@
   width: 100%;
 }
 
-video::-webkit-media-controls-panel {
-  background-color: #181818;
-}
-
-
 /* -- Footer Colors -- */
 
 #footer {
