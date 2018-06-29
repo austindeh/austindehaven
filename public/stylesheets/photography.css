@@ -24,25 +24,39 @@ img {
 /* -- Masonry Shit -- */
 
 .masonry {
-  column-count: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
-  column-gap: 20px;
-  -moz-column-gap: 20px;
-  -webkit-column-gap: 20px;
-  transition: opacity .5s, transform .5s;
+}
+
+.masonry-col {
+  width: 48.75%;
+}
+
+.masonry-col:nth-child(1) {
+  margin-right: 1.25%;
+}
+
+.masonry-col:nth-child(2) {
+  margin-left: 1.25%;
 }
 
 .masonry-item {
-  display: inline-block;
-  margin: 0 0 20px;
-  width: 100%;
+  margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 768px) {
-  .masonry {
-      -moz-column-count: 1;
-      -webkit-column-count: 1;
-      column-count: 1;
+@media (max-width: 768px) {
+  .masonry-col {
+    width: 100%;
+  }
+
+  .masonry-col:nth-child(1) {
+    margin-right: 0%;
+  }
+  
+  .masonry-col:nth-child(2) {
+    margin-left: 0%;
   }
 }
 
