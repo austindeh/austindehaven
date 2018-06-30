@@ -40,13 +40,13 @@ function checkScroll() {
 
 $(function() {
     new Viewport()
-    checkScroll(
+    checkScroll()
 
     $('#back-to-top').click(function() {
       $('html, body').animate({
         scrollTop: '0'
       }, 500, 'swing')
-    }))
+    })
 
     $(window).scroll(checkScroll)
 });
@@ -65,7 +65,7 @@ $('.parallax-1').each(function(){
     var scene = new ScrollMagic.Scene({
         triggerElement: this,
         triggerHook: 1,
-        duration: '150%',
+        duration: '125%',
     })
 
 .setTween(tween)
@@ -78,12 +78,12 @@ $('.parallax-2').each(function(){
 
     tween
         .from($(this), 1, {y: '-20%', ease: Power0.easeNone})
-    ;
+    ;z
 
     var scene = new ScrollMagic.Scene({
         triggerElement: this,
         triggerHook: 1,
-        duration: '150%',
+        duration: '125%',
     })
 
 .setTween(tween)
