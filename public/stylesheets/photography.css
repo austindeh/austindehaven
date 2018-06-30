@@ -17,10 +17,6 @@ body {
 	background-color: white;
 }
 
-img {
-  transition: opacity .5s, transform .5s;
-}
-
 /* -- Masonry Shit -- */
 
 .masonry {

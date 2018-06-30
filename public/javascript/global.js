@@ -26,7 +26,7 @@ class Viewport {
   cb(entries) {
     entries.forEach(entry => {
       // TODO: make non magical
-      const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.1
+      const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.0
       console.log(entry.intersectionRatio, ratio)
 
       if (entry.intersectionRatio > ratio) {
