@@ -1,7 +1,7 @@
 <% project = locals.project %>
 
-<div class="<%= project.classes %> project observable">
-  <a class="<%= !project.active && 'project-disabled' %> project-hover" href="<%= project.active ? project.href : '#' %>">
+<div class="<%= project.classes %> project">
+  <a class="<%= !project.active && 'project-disabled' %> project-hover observable" href="<%= project.active ? project.href : '#' %>">
     <img class="glitch-hover" alt='NO_SIGNAL.jpg' src='<%= locals.project.src %>'>
 
     <div class="project-details">

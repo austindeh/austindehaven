@@ -1,12 +1,12 @@
 /* Animation Delays */
 
-.observable:nth-child(even) {
+/* .observable:nth-child(even) {
   transition-delay: 0s;
 }
 
 .observable:nth-child(odd) {
   transition-delay: 0.25s;
-}
+} */
 
 
 /* --- Projects --- */
@@ -25,6 +25,14 @@
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30vh;
+}
+
+.project:nth-child(7) {
+  margin-bottom: 20vh;
+}
+
+.project:nth-child(6) {
   margin-bottom: 20vh;
 }
 

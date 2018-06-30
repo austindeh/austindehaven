@@ -40,13 +40,52 @@ function checkScroll() {
 
 $(function() {
     new Viewport()
-    checkScroll()
+    checkScroll(
 
     $('#back-to-top').click(function() {
       $('html, body').animate({
         scrollTop: '0'
       }, 500, 'swing')
-    })
+    }))
 
     $(window).scroll(checkScroll)
-})
+});
+
+
+
+var controller = new ScrollMagic.Controller();
+
+$('.parallax-1').each(function(){
+    var tween = new TimelineMax();
+
+    tween
+        .from($(this), 1, {y: '5%', ease: Power0.easeNone})
+    ;
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 1,
+        duration: '150%',
+    })
+
+.setTween(tween)
+.addTo(controller);
+});
+
+
+$('.parallax-2').each(function(){
+    var tween = new TimelineMax();
+
+    tween
+        .from($(this), 1, {y: '-20%', ease: Power0.easeNone})
+    ;
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 1,
+        duration: '150%',
+    })
+
+.setTween(tween)
+.addTo(controller);
+});
