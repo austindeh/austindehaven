@@ -81,7 +81,7 @@ router.get('/ken-block', function(req, res, next) {
     date: '2014',
     role: 'Illustration, Design',
     prevProject: 'motoamerica',
-    nextProject: 'disney-toybox',
+    nextProject: 'archives',
   }
   res.render('project_pages/ken_block', { project: project })
 });
