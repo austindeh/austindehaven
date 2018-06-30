@@ -67,8 +67,7 @@ p {
 
 /* Animations */
 
-.observer {
-  display: flex;
+.observable {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity .75s, transform .75s;
@@ -76,10 +75,10 @@ p {
 
 .observed {
   width: 100%;
-  display: flex;
   opacity: 1;
   transform: translateY(0px);
 }
+
 
 /* --- Underlines --- */
 
@@ -153,7 +152,6 @@ p {
   transition: all 0.4s ease;
   z-index: 3000;
   transition: opacity .5s;
-  mix-blend-mode: difference;
 }
 
 @media (min-width: 768px) {

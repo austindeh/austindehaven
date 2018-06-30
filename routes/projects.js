@@ -90,15 +90,85 @@ router.get('/archives', function(req, res, next) {
 
   var archive_project = [
     {
-      title: 'Disney Store Toybox - Coming Soon',
-      year: '2017',
-      src: '../images/home/disney_toybox.jpg',
+      title: 'Doritos Heatwave',
+      year: 'website',
+      src: '../images/projects/archives/archives-heatwave.jpg',
+    },
+    {
+      title: 'WestDermatology.com',
+      year: 'website',
+      src: '../images/projects/archives/archives-westderm.jpg',
+    },
+    {
+      title: 'Hyatt Residence Club',
+      year: 'website',
+      src: '../images/projects/archives/archives-hyatt.jpg',
+    },
+    {
+      title: 'HP Science of Printing',
+      year: 'website',
+      src: '../images/projects/archives/archives-hpink.jpg',
+    },
+    {
+      title: 'Tostitos Cinco',
+      year: 'website',
+      src: '../images/projects/archives/archives-tostitos.jpg',
+    },
+    {
+      title: 'Alpinestars Protects',
+      year: 'campaign',
+      src: '../images/projects/archives/archives-febvre.jpg',
+    },
+    {
+      title: 'Alpinestars Protects',
+      year: 'campaign',
+      src: '../images/projects/archives/archives-continent.jpg',
+    },
+    {
+      title: 'Suzuki Xray',
+      year: 'campaign',
+      src: '../images/projects/archives/archives-xray.jpg',
+    },
+    {
+      title: 'Suzuki GSXR-1000',
+      year: 'campaign',
+      src: '../images/projects/archives/archives-suzuki.jpg',
+    },
+    {
+      title: 'Mitsubishi Owners Club',
+      year: 'Branding',
+      src: '../images/projects/archives/archives-mitsubishi.jpg',
+    },
+    {
+      title: 'Hoonigan C-bar Drip',
+      year: 'Branding',
+      src: '../images/projects/archives/archives-drip.jpg',
+    },
+    {
+      title: 'Hoonigan Hoonarchy',
+      year: 'Branding',
+      src: '../images/projects/archives/archives-hoonarchy.jpg',
+    },
+    {
+      title: 'Hoonigan blueprint',
+      year: 'illustration',
+      src: '../images/projects/archives/archives-blueprint.jpg',
+    },
+    {
+      title: 'High Performance Conditioning',
+      year: 'Branding',
+      src: '../images/projects/archives/archives-highperformance.jpg',
+    },
+    {
+      title: 'Hotchkis',
+      year: 'editorial',
+      src: '../images/projects/archives/archives-hotchkis.jpg',
     },
 
   ];
   var project = {
     prevProject: 'ken-block',
-    nextProject: 'alpinestars-adaptive-stretch',
+    nextProject: 'xbox-one-x',
   }
   res.render('project_pages/archives', { archive_project: archive_project, project: project })
 });

@@ -26,11 +26,11 @@
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
-    <video class="spacingStandard" width="100%" playsinline muted loop autoplay>
+    <video style="background-color: black;" class="spacingStandard observable" width="100%" playsinline muted loop autoplay>
       <source src="/images/projects/xbox/scorpio_header.mov">
     </video>
     <div class="body-width">
-      <video class="spacingStandard" width="100%" controls controlsList="nodownload">
+      <video class="spacingStandard observable" width="100%" controls controlsList="nodownload">
         <source src="/images/projects/xbox/scorpio_screencapture.mp4" type="video/mp4">
       </video>
 

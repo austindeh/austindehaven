@@ -1,10 +1,10 @@
 /* Animation Delays */
 
-.observer:nth-child(even) {
+.observable:nth-child(even) {
   transition-delay: 0s;
 }
 
-.observer:nth-child(odd) {
+.observable:nth-child(odd) {
   transition-delay: 0.25s;
 }
 
