@@ -71,7 +71,7 @@ p {
   display: flex;
   opacity: 0;
   transform: translateY(100px);
-  transition: all .75s;
+  transition: opacity .75s, transform .75s;
 }
 
 .observed {
