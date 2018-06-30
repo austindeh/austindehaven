@@ -78,7 +78,7 @@ $('.parallax-2').each(function(){
 
     tween
         .from($(this), 1, {y: '-20%', ease: Power0.easeNone})
-    ;z
+    ;
 
     var scene = new ScrollMagic.Scene({
         triggerElement: this,
