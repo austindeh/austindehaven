@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <!-- made with love. -->
+  <!-- Developed by Austin DeHaven -->
+  <head>
+    <%- include('../partials/global/_meta') %>
+
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/archives.css' />
+
+  </head>
+  <body>
+    <div class='body-width'>
+      <div id='return-button'>
+        <span>←</span><a class='underlined return-button' href='/'>Return to design work </a>
+      </div>
+      <div id='project-overview'>
+        <div class='project-overview'>
+          <div class='observable project-overview-title'>More Work</div>
+          <div class=' observable project-overview-body'>A collection of both client and personal work produced over the years that I have yet to make case studies for.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class='projects body-width'>
+      <% archive_project.forEach(function(archive_project, i) { %>
+        <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src }) %>
+      <% }); %>
+    </div>
+
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class='returnArrow'>←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src='/javascript/global.js'></script>
+</html>

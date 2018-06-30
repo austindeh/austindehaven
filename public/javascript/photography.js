@@ -1,41 +1,34 @@
-$(function () {
-    filter = $('.filter-selected').attr('gallery-filter');
+function loadImages() {
+    Array.from(document.querySelectorAll('img[data-src]')).map(img => {
+        img.setAttribute('src', img.getAttribute('data-src'))
+        img.onload = function() { img.removeAttribute('data-src') }
+    })
+}
 
+function filterImages(filter) {
     $('.masonry-item').each(function () {
-        if (filter == 'all' || $(this).attr('gallery-category') == filter) {
-            $(this).show();
+        if (filter == 'all' || $(this).attr('gallery-category') === filter) {
+            $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter')
         } else {
             $(this).hide()
         }
-    });
-});
+    })
+}
 
-$('document').ready(function ($) {
+$(function() {
+    let filter = $('.filter-selected').attr('gallery-filter')
+    loadImages()
+    filterImages(filter)
 
     $('.filter-btn').on('click', function () {
-        filter = $(this).attr('gallery-filter');
-        $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter');
+        filter = $(this).attr('gallery-filter')
 
-        $('.filter-btn').removeClass('filter-selected selected').addClass('underlined');
-        $(this).removeClass('underlined').addClass('filter-selected selected');
-
+        $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter')
+        $('.filter-btn').removeClass('filter-selected selected').addClass('underlined')
+        $(this).removeClass('underlined').addClass('filter-selected selected')
 
         setTimeout(() => {
-            $('.masonry-item').each(function () {
-                if (filter == 'all' || $(this).attr('gallery-category') == filter) {
-                    $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter');
-                } else {
-                    $(this).hide()
-                }
-            });
+            filterImages(filter)
         }, 500)
-    });
-});
-
-
-[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
-    img.setAttribute('src', img.getAttribute('data-src'));
-    img.onload = function () {
-        img.removeAttribute('data-src');
-    };
-});
+    })
+})

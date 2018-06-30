@@ -1,0 +1,5 @@
+<div class="projects" data-scroll-target="true">
+  <% locals.projects.forEach(function(project, i) { %>
+    <%- include('./_project', { project, index: i + 1, total: projects.length + 1 }) %>
+  <% }); %>
+</div>

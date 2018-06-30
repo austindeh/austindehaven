@@ -2,23 +2,18 @@
   <img class="glitch-hover" alt='NO_SIGNAL.jpeg' src='<%= locals.src %>'>
   <div class="project-details">
 
-
     <div class="project-title glitch-btn">
       <div class="texthover"><%= locals.title %></div>
-      <div class="glitch-mask"><span><%= locals.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.title %></span></div>
+      <% for (let i = 0; i < 5; i++) { %>
+        <div class="glitch-mask"><span><%= locals.title %></span></div>
+      <% } %>
     </div>
 
     <div class="project-year glitch-btn">
       <div class="texthover"><%= locals.year %></div>
-      <div class="glitch-mask"><span><%= locals.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.year %></span></div>
+      <% for (let i = 0; i < 5; i++) { %>
+        <div class="glitch-mask"><span><%= locals.year %></span></div>
+      <% } %>
     </div>
 
   </div>

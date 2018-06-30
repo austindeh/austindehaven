@@ -3,14 +3,10 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function (req, res, next) {
-  // Project List
-  // Project : { title, year, src, link }
 
   function base64Encode(file) {
-    // read binary data
     try {
       var bitmap = fs.readFileSync(file);
-      // convert binary data to base64 encoded string
       return Buffer.from(bitmap).toString('base64');
     } catch (err) {
       console.log(err)
@@ -19,79 +15,75 @@ router.get('/', function (req, res, next) {
   }
 
   var projects = [
-
     {
+      active: true,
+      // year: '2018',
       title: 'Xbox One X',
       medium: 'Design / Motion',
-      year: '2018',
-      classes: 'project-100 observable',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
+      classes: 'project-100',
       href: '/project/xbox-one-x',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
     },
 
     {
+      active: true,
+      // year: '2018',
       title: 'West Dermatology',
       medium: 'Design',
-      year: '2018',
-      classes: 'project-35 observable parallax-1',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-01.jpg'),
+      classes: 'project-35 parallax-1',
       href: '/project/westderm',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-01.jpg'),
     },
 
     {
+      active: true,
+      // year: '2017',
       title: 'Disney Toy Box',
       medium: 'Design / Motion / Photography',
-      year: '2017',
-      classes: 'project-45 observable parallax-2',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
+      classes: 'project-45 parallax-2',
       href: '/project/disney-toybox',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
     },
 
-
     {
+      active: true,
+      // year: '2016',
       title: 'Alpinestars Adaptive Stretch',
       medium: 'Design / Photography',
-      year: '2016',
-      classes: 'project-35 observable parallax-1',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
+      classes: 'project-35 parallax-1',
       href: '/project/alpinestars-adaptive-stretch',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
     },
 
-
     {
+      active: true,
+      // year: '2015',
       title: 'Motoamerica',
       medium: 'Design',
-      year: '2015',
-      classes: 'project-55 observable parallax-2',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
+      classes: 'project-55 parallax-2',
       href: '/project/motoamerica',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
     },
 
     {
+      active: true,
+      // year: '2016',
       title: 'Made in LA',
       medium: 'Design',
-      year: '2016',
-      classes: 'project-45 observable parallax-1',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
+      classes: 'project-45 parallax-1',
       href: '/project/made-in-la',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
     },
 
     {
+      active: true,
+      // year: '2015',
       title: 'Ken Block',
       medium: 'Design',
-      year: '2015',
-      classes: 'project-35 observable parallax-2',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block-02.jpg'),
+      classes: 'project-35 parallax-2',
       href: '/project/ken-block',
-      active: 'return true',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block-02.jpg'),
     },
-
 
   ];
 
@@ -102,7 +94,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/photography', function (req, res, next) {
-  res.render('photography', {
+  res.render('pages/photography', {
     route: 'photography'
   });
 });

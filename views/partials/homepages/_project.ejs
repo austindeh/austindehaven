@@ -1,40 +1,36 @@
-<div class="<%= locals.project.classes %> project">
+<% project = locals.project %>
 
-<a class="project-hover" href="<%= locals.project.href %>" onclick="<%= locals.project.active %>">
-  <img class="glitch-hover" alt='NO_SIGNAL.jpeg' src='<%= locals.project.src %>'>
+<div class="<%= project.classes %> project observable">
+  <a class="<%= !project.active && 'project-disabled' %> project-hover" href="<%= project.active ? project.href : '#' %>">
+    <img class="glitch-hover" alt='NO_SIGNAL.jpg' src='<%= locals.project.src %>'>
 
-
-  <div class="project-details">
-    <div class="project-title glitch-btn">
-      <div class="texthover"><%= locals.project.title %></div>
-      <div class="glitch-mask"><span><%= locals.project.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.title %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.title %></span></div>
+    <div class="project-details">
+      <div class="project-title glitch-btn">
+        <div class="texthover"><%= project.title %></div>
+        <% for (let i = 0; i < 5; i++) { %>
+          <div class="glitch-mask"><span><%= project.title %></span></div>
+        <% } %>
+      </div>
     </div>
-  </div>
 
-  <div class="project-details">
-    <div class="project-medium glitch-btn">
-      <div class="texthover"><%= locals.project.medium %></div>
-      <div class="glitch-mask"><span><%= locals.project.medium %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.medium %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.medium %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.medium %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.medium %></span></div>
+    <div class="project-details">
+      <div class="project-medium glitch-btn">
+        <div class="texthover"><%= project.medium %></div>
+        <% for (let i = 0; i < 5; i++) { %>
+          <div class="glitch-mask"><span><%= project.medium %></span></div>
+        <% } %>
+      </div>
     </div>
-  </div>
 
-  <!-- <div class="project-details">
-    <div class="project-medium glitch-btn">
-      <div class="texthover"><%= locals.project.year %></div>
-      <div class="glitch-mask"><span><%= locals.project.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.year %></span></div>
-      <div class="glitch-mask"><span><%= locals.project.year %></span></div>
-    </div>
-  </div> -->
-</a>
+    <!-- <div class="project-details">
+      <div class="project-medium glitch-btn">
+        <div class="texthover"><%= project.year %></div>
+        <div class="glitch-mask"><span><%= project.year %></span></div>
+        <div class="glitch-mask"><span><%= project.year %></span></div>
+        <div class="glitch-mask"><span><%= project.year %></span></div>
+        <div class="glitch-mask"><span><%= project.year %></span></div>
+        <div class="glitch-mask"><span><%= project.year %></span></div>
+      </div>
+    </div> -->
+  </a>
 </div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!-- made with love. -->
+<!-- Developed by Austin DeHaven -->
+  <head>
+    <%- include('../../partials/global/_meta') %>
+
+    <link rel='stylesheet' href='/stylesheets/photography.css' />
+
+  </head>
+  <body>
+    <div class='body-width'>
+      <%- include('../../partials/homepages/_landing') %>
+    </div>
+
+    <div id='filter-bar' class='body-width filter-bar observable'>
+        <div class='filter'>
+          <span class='underlined filter-btn' gallery-filter='all' >All</span><span class='filter-divider'>/</span><span class='underlined filter-btn filter-selected' gallery-filter='personal' >Personal</span><span class='filter-divider'>/</span><span class='underlined filter-btn' gallery-filter='client' >Client</span>
+        </div>
+        <div class='filter-contact'>
+          <span class='contact'>Contact for available prints.</span>
+        </div>
+    </div>
+
+    <div class='body-width projects'>
+      <%- include('_images') %>
+    </div>
+
+    <%- include('../../partials/global/_footer', { href: '/', copy: 'Return to design work' }) %>
+    <%- include('../../partials/global/_back-to-top') %>
+
+    <%- include('../../partials/global/_dependencies') %>
+    <script src='/javascript/global.js'></script>
+    <script src='/javascript/landing.js'></script>
+    <script src='/javascript/photography.js'></script>
+  </body>
+</html>
