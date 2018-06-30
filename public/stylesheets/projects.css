@@ -114,11 +114,11 @@
 /* -- Layout Styling -- */
 
 .spacingStandard {
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .spacingSmall {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .fullWidth {
@@ -131,7 +131,8 @@
 
 .row {
   display: flex;
-  margin: 0px -10px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .column {

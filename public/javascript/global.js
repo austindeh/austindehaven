@@ -1,14 +1,50 @@
-// Apply Fade In Animation
-$(window).scroll(function() {
-    $('.observer').filter((i, ele) => inViewport(ele)).removeClass('.observer-scroll').addClass('observed');
-}).scroll();
+// Viewport monitors any and all elements with the classname
+// 'observable' and when they enter the viewport they will transition
+// in based on class names
 
+const threshold = [0.0, 0.25, 0.5, 0.75, 1.0]
 
-//  Check Scroll
-function inViewport(ele) {
-    const rect = ele.getBoundingClientRect()
-    return (rect.top >= 0 && rect.top <= window.innerHeight) && (rect.bottom >= 0)
+class Viewport {
+  constructor(opts) {
+    this.observer = 'IntersectionObserver' in window
+    ? new IntersectionObserver(this.cb.bind(this), {
+        threshold
+    })
+    : console.error('upgrade your browser you tool.')
+
+    this.observables = Array.from(document.querySelectorAll('.observable'))
+
+    this.init()
+  }
+
+  init() {
+    this.observables.map(observable => {
+      this.observer.observe(observable)
+    })
+  }
+
+  cb(entries) {
+    entries.forEach(entry => {
+      // TODO: make non magical
+      const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.0
+      console.log(entry.intersectionRatio, ratio)
+
+      if (entry.intersectionRatio > ratio) {
+        this.observe(entry.target)
+      }
+    })
+  }
+
+  observe(target) {
+    if (target.classList.contains('observable') && !target.classList.contains('observed')) {
+      target.classList.add('observed')
+    //   this.observer.unobserve(target)
+    }
+  }
 }
+
+const viewport = new Viewport();
+
 
 
 // --- Scroll to Top ---
@@ -27,7 +63,7 @@ $(function() {
     $('#back-to-top').click(function() {
         $("html, body").animate({
             scrollTop: "0"
-        }, 500);
+        }, 500, "swing");
     });
 })
 

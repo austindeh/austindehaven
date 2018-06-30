@@ -29,39 +29,40 @@
 
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <video class="spacingStandard" width="100%" playsinline muted loop autoplay>
+    <video style="background-color: #181818;" class="spacingStandard observable" width="100%" playsinline muted loop autoplay>
       <source src="/images/projects/disney_toybox/lightsaber.mp4">
     </video>
 
-    <div class="body-width spacingStandard">
-      <span class="sectionCopy">Photoshoot</p>
-      <div class="project-overview-body">From the beginning our concept was to recreate typical family holiday scenes with the featured action figures. We really wanted to further support the emotional connection that many fans already have with the characters by bringing them into lifelike scenes. The challenges with the concept were maintaining the idea that they were in fact, just action figures without becoming too life-like.</div>
-        <img src="/images/projects/disney_toybox/photography-grid.jpg">
+    <div class="body-width">
+      <span class="sectionCopy observable">Photoshoot</p>
+      <div class="project-overview-body spacingSmall observable">From the beginning our concept was to recreate typical family holiday scenes with the featured action figures. We really wanted to further support the emotional connection that many fans already have with the characters by bringing them into lifelike scenes. The challenges with the concept were maintaining the idea that they were in fact, just action figures without becoming too life-like.</div>
     </div>
+    <img class="body-width observable spacingStandard" src="/images/projects/disney_toybox/photography-grid.jpg">
 
     <div class="body-width">
-      <p class="sectionHeader sectionCopy">Compositing</p>
-      <video class="spacingStandard" width="100%" controls muted loop controlsList="nodownload">
+      <p class="sectionHeader sectionCopy observable">Compositing</p>
+      <video class="spacingStandard observable" width="100%" controls muted loop controlsList="nodownload">
         <source src="/images/projects/disney_toybox/wip-compositing.mp4" type="video/mp4">
       </video>
     </div>
 
-    <img src="/images/projects/disney_toybox/disney-macbook.jpg">
+    <img class="observable spacingStandard" src="/images/projects/disney_toybox/disney-macbook.jpg">
 
     <div class="body-width">
-      <p class="sectionHeader sectionCopy">Animation</p>
-      <video class="spacingStandard" width="100%" controls muted loop controlsList="nodownload">
+      <p class="sectionHeader observable sectionCopy">Animation</p>
+      <video class="spacingStandard observable" width="100%" controls muted loop controlsList="nodownload">
         <source src="/images/projects/disney_toybox/wip-animation.mp4" type="video/mp4">
       </video>
     </div>
 
-    <img src="/images/projects/disney_toybox/disney-screens.jpg">
-    <img src="/images/projects/disney_toybox/disney-livingroom.jpg">
+    <div style="display: flex; flex-direction: column;" class="observable spacingStandard">
+      <img src="/images/projects/disney_toybox/disney-screens.jpg"><img src="/images/projects/disney_toybox/disney-livingroom.jpg">
+    </div>
 
     <div class="body-width spacingStandard">
-      <p class="sectionHeader sectionCopy">Final Products</p>
+      <p class="sectionHeader observable sectionCopy">Final Products</p>
       <div class="grid">
-        <div class="row">
+        <div class="row observable">
           <div class="column">
             <video class="" width="100%" controls controlsList="nodownload">
               <source src="/images/projects/disney_toybox/snowball-final.mp4" type="video/mp4">
@@ -80,7 +81,7 @@
         </div>
       </div>
       <div class="grid">
-        <div class="row">
+        <div class="row observable">
           <div class="column">
             <video class="" width="100%" controls controlsList="nodownload">
               <source src="/images/projects/disney_toybox/final-football.mp4" type="video/mp4">
@@ -115,7 +116,7 @@
 
     </div>
 
-    <img src="/images/projects/disney_toybox/disney-characters.jpg">
+    <img class="observable" src="/images/projects/disney_toybox/disney-characters.jpg">
 
 
 
