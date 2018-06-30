@@ -24,7 +24,7 @@ router.get('/', function (req, res, next) {
       title: 'Xbox One X',
       medium: 'Design / Motion',
       year: '2018',
-      classes: 'project-100',
+      classes: 'project-100 observable',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
       href: '/project/xbox-one-x',
       active: 'return true',
