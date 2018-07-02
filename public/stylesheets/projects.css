@@ -73,9 +73,10 @@
 }
 
 .project-overview-body {
-  font-size: 11px;
-  font-family: roboto-mono;
+  font-size: 12px;
+  font-family: "raleway", sans-serif;
   line-height: 2.5;
+  letter-spacing: 1.25px;
 }
 
 .project-overview-details-row {
@@ -90,16 +91,17 @@
 }
 
 .project-overview-subhead {
-  font-size: 11px;
-  font-family: roboto-mono;
+  font-size: 12px;
+  font-family: "roboto-mono";
   opacity: 0.5;
   line-height: 2;
 }
 
 .project-overview-value {
-  font-size: 11px;
-  font-family: "roboto-mono";
+  font-size: 12px;
+  font-family: "raleway", sans-serif;
   line-height: 2;
+  letter-spacing: 1.25px;
 }
 
 #footer .underlined:before {
