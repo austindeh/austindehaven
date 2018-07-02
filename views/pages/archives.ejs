@@ -5,9 +5,9 @@
   <head>
     <%- include('../partials/global/_meta') %>
 
-    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
-    <link rel='stylesheet' href='/stylesheets/projects.css' />
-    <link rel='stylesheet' href='/stylesheets/projects/archives.css' />
+    <link rel='stylesheet' href='../stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='../stylesheets/projects.css' />
+    <link rel='stylesheet' href='../stylesheets/projects/archives.css' />
 
   </head>
   <body>
@@ -30,7 +30,7 @@
     </div>
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
-    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class='returnArrow'>←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
     <%- include('../partials/global/_back-to-top') %>
 
   </body>
