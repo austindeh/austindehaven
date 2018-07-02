@@ -3,7 +3,7 @@
   padding: 0 7vw;
   margin: auto;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 @media (max-width: 1200px) and (min-width: 979px) {
