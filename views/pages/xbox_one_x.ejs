@@ -3,29 +3,14 @@
   <!-- made with love. -->
   <!-- Developed by Austin DeHaven -->
   <head>
-    <%- include('../partials/global/_analytics') %>
-    <title>Portfolio of Austin DeHaven</title>
-    <meta name="charset" content="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%- include('../partials/global/_meta') %>
 
-    <meta name="description"          content="">
-    <meta name="keywords"             content="">
-    <meta name="theme-color"          content="black">
-    <meta property="og:type"          content="">
-    <meta property="og:url"           content="">
-    <meta property="og:title"         content="">
-    <meta property="og:description"   content="">
-    <meta property="og:image"         content="">
-
-    <link rel="stylesheet" href="https://use.typekit.net/bxp7lue.css">
-    <link rel='stylesheet' href='/stylesheets/global.css' />
-    <link rel='stylesheet' href='/stylesheets/layout.css' />
-    <link rel='stylesheet' href='/stylesheets/footer.css' />
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
     <video style="background-color: black;" class="spacingStandard observable" width="100%" playsinline muted loop autoplay>
       <source src="/images/projects/xbox/scorpio_header.mov">
     </video>

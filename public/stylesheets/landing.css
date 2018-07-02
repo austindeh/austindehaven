@@ -11,7 +11,8 @@
   align-items: flex-start;
   justify-content: center;
   height: 85vh;
-  margin: 0 5%;
+  padding: 0 5%;
+  overflow-x: hidden;
 }
 
 /* #scroll-down {
