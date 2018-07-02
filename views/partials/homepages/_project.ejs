@@ -1,36 +1,30 @@
 <% project = locals.project %>
 
-<div class="<%= project.classes %> project observable">
-  <a class="<%= !project.active && 'project-disabled' %> project-hover" href="<%= project.active ? project.href : '#' %>">
+<div class="<%= project.classes %> project">
+  <a class="<%= !project.active && 'project-disabled' %> project-hover observable" href="<%= project.active ? project.href : '#' %>">
     <img class="glitch-hover" alt='NO_SIGNAL.jpg' src='<%= locals.project.src %>'>
 
-    <div class="project-details">
-      <div class="project-title glitch-btn">
-        <div class="texthover"><%= project.title %></div>
-        <% for (let i = 0; i < 5; i++) { %>
-          <div class="glitch-mask"><span><%= project.title %></span></div>
-        <% } %>
-      </div>
+    <div class="project-title glitch-btn">
+      <div class="texthover"><%= project.title %></div>
+      <% for (let i = 0; i < 5; i++) { %>
+        <div class="glitch-mask"><span><%= project.title %></span></div>
+      <% } %>
     </div>
 
-    <div class="project-details">
-      <div class="project-medium glitch-btn">
-        <div class="texthover"><%= project.medium %></div>
-        <% for (let i = 0; i < 5; i++) { %>
-          <div class="glitch-mask"><span><%= project.medium %></span></div>
-        <% } %>
-      </div>
+    <div class="project-category glitch-btn">
+      <div class="texthover"><%= project.category %></div>
+      <% for (let i = 0; i < 5; i++) { %>
+        <div class="glitch-mask"><span><%= project.category %></span></div>
+      <% } %>
     </div>
 
-    <!-- <div class="project-details">
-      <div class="project-medium glitch-btn">
+  <!--<div class="project-medium glitch-btn">
         <div class="texthover"><%= project.year %></div>
         <div class="glitch-mask"><span><%= project.year %></span></div>
         <div class="glitch-mask"><span><%= project.year %></span></div>
         <div class="glitch-mask"><span><%= project.year %></span></div>
         <div class="glitch-mask"><span><%= project.year %></span></div>
         <div class="glitch-mask"><span><%= project.year %></span></div>
-      </div>
-    </div> -->
+      </div>-->
   </a>
 </div>
