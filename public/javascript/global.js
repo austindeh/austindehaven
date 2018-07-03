@@ -17,7 +17,7 @@ class Viewport {
 
   cb(entries) {
     entries.forEach(entry => {
-      const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.0
+      const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.1
 
       if (entry.intersectionRatio > ratio) {
         this.observe(entry.target)
@@ -54,41 +54,43 @@ $(function() {
 
 
 
+if(window.innerWidth >= 479) {
+  
+  // --- Parallax ---
+  var controller = new ScrollMagic.Controller();
 
-// --- Parallax ---
-var controller = new ScrollMagic.Controller();
+  $('.parallax-1').each(function(){
+      var tween = new TimelineMax();
 
-$('.parallax-1').each(function(){
-    var tween = new TimelineMax();
+      tween
+          .from($(this), 1, {y: '5%', ease: Power0.easeNone})
+      ;
 
-    tween
-        .from($(this), 1, {y: '5%', ease: Power0.easeNone})
-    ;
+      var scene = new ScrollMagic.Scene({
+          triggerElement: this,
+          triggerHook: 1,
+          duration: '125%',
+      })
 
-    var scene = new ScrollMagic.Scene({
-        triggerElement: this,
-        triggerHook: 1,
-        duration: '125%',
-    })
-
-.setTween(tween)
-.addTo(controller);
-});
+  .setTween(tween)
+  .addTo(controller);
+  });
 
 
-$('.parallax-2').each(function(){
-    var tween = new TimelineMax();
+  $('.parallax-2').each(function(){
+      var tween = new TimelineMax();
 
-    tween
-        .from($(this), 1, {y: '-20%', ease: Power0.easeNone})
-    ;
+      tween
+          .from($(this), 1, {y: '-20%', ease: Power0.easeNone})
+      ;
 
-    var scene = new ScrollMagic.Scene({
-        triggerElement: this,
-        triggerHook: 1,
-        duration: '125%',
-    })
+      var scene = new ScrollMagic.Scene({
+          triggerElement: this,
+          triggerHook: 1,
+          duration: '125%',
+      })
 
-.setTween(tween)
-.addTo(controller);
-});
+  .setTween(tween)
+  .addTo(controller);
+  });
+}

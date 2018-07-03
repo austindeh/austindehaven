@@ -160,5 +160,8 @@ body {
     display: none;
   }
 
+  .filter-bar {
+    justify-content: center;
+  }
 
 }
