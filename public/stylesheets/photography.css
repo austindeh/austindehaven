@@ -27,19 +27,19 @@ body {
 }
 
 .masonry-col {
-  width: 48.75%;
+  width: 49%;
 }
 
 .masonry-col:nth-child(1) {
-  margin-right: 1.25%;
+  margin-right: 1%;
 }
 
 .masonry-col:nth-child(2) {
-  margin-left: 1.25%;
+  margin-left: 1%;
 }
 
-.masonry-item {
-  margin-bottom: 5%;
+.masonry-col img {
+  margin-bottom: 3%;
 }
 
 @media (max-width: 768px) {
@@ -85,21 +85,15 @@ body {
 .filter-contact {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
-.contact {
+.filter-contact .h4 {
   opacity: .5;
-  padding-bottom: 7px;
-}
-
-.filter {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .filter-btn {
   opacity: .5;
-  /* padding-bottom: 7px; */
   cursor: pointer;
   margin-bottom: 5px;
 }

@@ -10,7 +10,6 @@
 .project-nav-width {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 #project-nav .underlined:before {
@@ -30,6 +29,5 @@
   .project-nav-width {
     display: flex;
     justify-content: space-between;
-    width: 90%;
   }
 }

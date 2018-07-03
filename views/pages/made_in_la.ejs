@@ -4,22 +4,16 @@
   <!-- Developed by Austin DeHaven -->
   <head>
     <%- include('../partials/global/_meta') %>
-
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
-    <!-- <link rel='stylesheet' href='/stylesheets/audioplayer.css' /> !-->
     <link rel='stylesheet' href='/stylesheets/projects.css' />
   </head>
   <body>
-    <!-- <%- include('../partials/projects/_audioplayer') %> !-->
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="fullWidth spacingStandard observable" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
+    <img class="full-width spacing-standard observable" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
 
     <div class="body-width">
-      <div class="sectionCopy">
-        <p class="sectionHeader observable">Inspiration.</p>
-        <p class="sectionBody observable">Made in LA is a new Los Angeles based music group. Our mission for the Made in LA rebrand was very simple.</p>
-      </div>
+
       <div class="grid">
         <div class="row">
           <div class="column observable">
@@ -45,23 +39,18 @@
           </div>
         </div>
       </div>
-      <img class="spacingStandard observable" src="/images/projects/made_in_la/08-made_in_la-sketching.jpg">
-    </div>
-
-    <img class="spacingStandard observable" src="/images/projects/made_in_la/09-made_in_la-macbook.jpg">
-
-    <div class="body-width">
-      <img class="spacingStandard observable" src="/images/projects/made_in_la/10-made_in_la-logoEvolution.png">
-      <video class="spacingStandard observable" width="100%" controls controlsList="nodownload">
+      <img class="spacing-standard observable" src="/images/projects/made_in_la/08-made_in_la-sketching.jpg">
+      <img class="spacing-standard observable" src="/images/projects/made_in_la/09-made_in_la-macbook.jpg">
+    
+      <img class="spacing-standard observable" src="/images/projects/made_in_la/10-made_in_la-logoEvolution.png">
+      <video class="spacing-standard observable" width="100%" controls controlsList="nodownload">
         <source src="/images/projects/made_in_la/12-made_in_la-AboutYouVideo.mp4" type="video/mp4">
-    </video>
-
+      </video>
     </div>
 
-    <img class="spacingStandard observable" src="/images/projects/made_in_la/11-made_in_la-logoOnBlack.jpg">
-    <!-- <video class="spacingStandard" src="/images/projects/made_in_la/12-made_in_la-AboutYouVideo.mp4"> -->
-    <img class="spacingSmall observable" src="/images/projects/made_in_la/13-made_in_la-vinyl.jpg">
-    <img class="fullWidth observable" src="/images/projects/made_in_la/14-made_in_la-BWPortrait.jpg">
+    <img class="full-width spacing-standard observable" src="/images/projects/made_in_la/11-made_in_la-logoOnBlack.jpg">
+    <img class="full-width spacing-small observable" src="/images/projects/made_in_la/13-made_in_la-vinyl.jpg">
+    <img class="full-width observable" src="/images/projects/made_in_la/14-made_in_la-BWPortrait.jpg">
 
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>

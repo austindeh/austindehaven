@@ -80,6 +80,38 @@
 
 /* -- Layout Styling -- */
 
+
+p {
+  width: 70%;
+  text-align: center;
+}
+
+p, .h2 {
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.divider {
+  height: 1px;
+  background-color: #3b3b3b;
+}
+
+.black {
+  width: 100%;
+  background-color: #000000;
+}
+
+.dark {
+  width: 100%;
+  background-color: #181818;
+}
+
+.light {
+  width: 100%;
+  background-color: white;
+}
+
 .spacing-large {
   margin-bottom: 120px;
 }
@@ -107,6 +139,34 @@
   padding: 10px;
 }
 
+
+
+/*  -- Video Options --  */
+
+video::-webkit-media-controls-play-button {
+  display: none;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+
+video::-webkit-media-controls-current-time-display {
+  display: none;
+}
+
+video::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
 /* -- Footer Colors -- */
 
 #footer {
@@ -121,5 +181,9 @@
 
 #footer .underlined:after {
   background-color: #181818;
+}
+
+#footer .h2 {
+  margin: 0;
 }
 
