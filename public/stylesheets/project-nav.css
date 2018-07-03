@@ -3,9 +3,6 @@
   justify-content: center;
   width: 100%;
   height: 220px;
-  font-family: "raleway", sans-serif;
-  font-size: 11pt;
-  letter-spacing: 1px;
   background-color: #181818;
   color: white;
 }
@@ -13,7 +10,6 @@
 .project-nav-width {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 #project-nav .underlined:before {
@@ -22,10 +18,6 @@
 
 #project-nav .underlined:after {
   background-color: white;
-}
-
-#project-nav a {
-  padding-bottom: 3px;
 }
 
 @media (max-width: 768px) {
@@ -37,6 +29,5 @@
   .project-nav-width {
     display: flex;
     justify-content: space-between;
-    width: 90%;
   }
 }

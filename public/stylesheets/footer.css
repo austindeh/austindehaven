@@ -13,16 +13,12 @@
   width: 100%;
 }
 
-.footer-text {
-  font-family: "raleway", sans-serif;
-  font-size: 14pt;
-  letter-spacing: 1px;
+.footer span {
+  padding-left: 5px;
 }
 
 .returnArrow {
   padding-right: 5px;
-  font-family: "raleway", sans-serif;
-  font-size: 14pt;
 }
 
 @media (max-width: 768px) {

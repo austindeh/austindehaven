@@ -2,7 +2,7 @@
 
 #name {
   cursor: pointer;
-  width: 175px;
+  width: 200px;
 }
 
 .landing {
@@ -10,36 +10,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 85vh;
+  height: 100vh;
   padding: 0 5%;
   overflow-x: hidden;
 }
 
-/* #scroll-down {
-  font-family: "roboto-mono", monospace;
-  font-size: 12px;
-  opacity: 1;
-  position: absolute;
-  bottom: 10vh;
-  left: 0;
-  height: 15px;
-  transition: opacity 0.4s;
-}
-
-.scroll-down {
-  opacity: 0.5;
-}
-
-.scroll-down:hover {
-  opacity: 1;
-} */
-
 #snippet {
   position: relative;
-  font-family: "raleway",sans-serif;
-  font-size: 15pt;
-  letter-spacing: 1px;
-  line-height: 40px;
   width: 100%;
 }
 
@@ -49,9 +26,8 @@
 #social-button {
   display: flex;
   position: absolute;
-  font-size: 12px;
-  font-family: "roboto-mono",monospace;
   left: 0;
+  padding-top: 20px;
   opacity: 0;
   visibility: hidden;
 }
@@ -62,7 +38,7 @@
   padding-bottom: 1px;
   transform: translateY(20px);
   transition: all .5s;
-  height: 30px;
+  line-height: 15px;
 }
 
 .social-links-observed {
@@ -88,13 +64,6 @@
    opacity: 1;
 }
 
-
-/* @media screen and (max-width: 450px) {
-  .scroll-down {
-		padding-top: 50vh;
-		display: none;
-  }
-} */
 
 @media (max-width: 768px) {
   .landing {

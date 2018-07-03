@@ -6,30 +6,32 @@
     <%- include('../partials/global/_meta') %>
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
-    <link rel='stylesheet' href='/stylesheets/projects/ken_block.css' />
+
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="fullWidth observable" src="/images/projects/ken_block/01-ken_block-KB14-S1-01_@2x.jpg">
-    <div class="black_bg">
-      <img class="content_spacing body-width" src="/images/projects/ken_block/05-ken_block-KB14-S5-01_@2x.jpg">
-    </div>
-    <img class="fullWidth" src="/images/projects/ken_block/03-ken_block-KB14-S3-01_@2x.jpg">
+    <img class="observable" src="/images/projects/ken_block/01-ken_block-KB14-S1-01_@2x.jpg">
 
-    <div class="white_bg">
-      <div class="fullWidth">
-        <img class="spacingSmall" src="/images/projects/ken_block/04-ken_block-KB14-S4-01_@2x.jpg">
+    <div class="black">
+      <img class="body-width spacing-small" src="/images/projects/ken_block/05-ken_block-KB14-S5-01_@2x.jpg">
+    </div>
+
+    <img src="/images/projects/ken_block/03-ken_block-KB14-S3-01_@2x.jpg">
+
+    <div class="light">
+      <div class="full-width">
+        <img class="spacing-small" src="/images/projects/ken_block/04-ken_block-KB14-S4-01_@2x.jpg">
       </div>
     </div>
 
-    <div class="white_bg spacingSmall">
+    <div class="light">
       <div class="body-width">
-        <img class="fullWidth" src="/images/projects/ken_block/06-ken_block-KB14-S6-01_@2x.jpg">
+        <img class="full-width spacing-small" src="/images/projects/ken_block/06-ken_block-KB14-S6-01_@2x.jpg">
       </div>
     </div>
 
-    <img class="fullWidth" src="/images/projects/ken_block/07-ken_block-KB14-S7-01_@2x.jpg">
+    <img src="/images/projects/ken_block/07-ken_block-KB14-S7-01_@2x.jpg">
 
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
@@ -37,6 +39,7 @@
     <%- include('../partials/global/_back-to-top') %>
 
   </body>
+  
   <%- include('../partials/global/_dependencies') %>
   <script src="/javascript/global.js"></script>
 </html>

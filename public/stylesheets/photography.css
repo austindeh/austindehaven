@@ -27,19 +27,19 @@ body {
 }
 
 .masonry-col {
-  width: 48.75%;
+  width: 49%;
 }
 
 .masonry-col:nth-child(1) {
-  margin-right: 1.25%;
+  margin-right: 1%;
 }
 
 .masonry-col:nth-child(2) {
-  margin-left: 1.25%;
+  margin-left: 1%;
 }
 
-.masonry-item {
-  margin-bottom: 5%;
+.masonry-col img {
+  margin-bottom: 3%;
 }
 
 @media (max-width: 768px) {
@@ -85,25 +85,15 @@ body {
 .filter-contact {
   display: flex;
   justify-content: flex-start;
-  font-size: 11px;
-  font-family: "roboto-mono",monospace;
+  align-items: center;
 }
 
-.contact {
+.filter-contact .h4 {
   opacity: .5;
-  padding-bottom: 7px;
-}
-
-.filter {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 11px;
-  font-family: "roboto-mono",monospace;
 }
 
 .filter-btn {
   opacity: .5;
-  /* padding-bottom: 7px; */
   cursor: pointer;
   margin-bottom: 5px;
 }
@@ -113,7 +103,18 @@ body {
 }
 
 .filter-selected {
+  position: relative;
   opacity: 1;
+}
+
+.filter-selected:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	height: 1px;
+	background-color: white;
 }
 
 .filter-divider {

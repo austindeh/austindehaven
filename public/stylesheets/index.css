@@ -84,20 +84,19 @@
 
 
 .project-title {
-  margin-right: auto;
-  font-size: 14px;
-  font-family: "raleway";
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 10px 0;
+  font-weight: 500;
 }
 
 .project-category {
   display: flex;
-  font-family: "raleway";
-  font-size: 12px;
   opacity: .5;
-  letter-spacing: 1.25px;
+}
+
+
+/* --- Archived Projects --- */
+
+#archives {
+  width: 100%;
 }
 
 .project-archive {
@@ -106,32 +105,16 @@
   align-items: center;
 }
 
-
-/* --- Archived Projects --- */
-
-#archives:hover:before {
-  top: 0;
-}
-
-#archives .project-details {
-  transition: all ease .3s;
-}
-
-#archives {
-  width: 100%;
-  color: #181818;
-}
-
 .divider-lines {
 	position: relative;
 }
 
 .divider-top {
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 .divider-bottom {
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .divider-lines:before {
@@ -141,40 +124,6 @@
   height: 1px;
   left: 0;
 	background-color: #e1e1e1;
-}
-
-#archives:hover .texthover {
-  -webkit-animation: fade-in 0.8s both;
-  animation: fade-in 0.8s both;
-}
-
-#archives:hover .glitch-mask {
-  display: block;
-}
-
-#archives:hover .glitch-mask:nth-child(6) {
-  -webkit-animation: jitter-20-25-8 infinite 0.3s both;
-  animation: jitter-20-25-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(5) {
-  -webkit-animation: jitter-20-24-8 infinite 0.3s both;
-  animation: jitter-20-24-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(4) {
-  -webkit-animation: jitter-20-23-8 infinite 0.3s both;
-  animation: jitter-20-23-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(3) {
-  -webkit-animation: jitter-20-22-8 infinite 0.3s both;
-  animation: jitter-20-22-8 infinite 0.3s both;
-}
-
-#archives:hover .glitch-mask:nth-child(2) {
-  -webkit-animation: jitter-20-21-8 infinite 0.3s both;
-  animation: jitter-20-21-8 infinite 0.3s both;
 }
 
 /* -- Footer Colors -- */

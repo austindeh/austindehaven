@@ -17,7 +17,7 @@
       </div>
       <div id='project-overview'>
         <div class='project-overview'>
-          <div class='observable project-overview-title'>More Work</div>
+          <div class='h1 observable project-overview-title'>More Work</div>
           <div class=' observable project-overview-body'>A collection of both client and personal work produced over the years that I have yet to make case studies for.</div>
         </div>
       </div>
@@ -25,7 +25,7 @@
 
     <div class='projects body-width'>
       <% archive_project.forEach(function(archive_project, i) { %>
-        <%- include('../partials/projects/_archive_project', { title: archive_project.title, year: archive_project.year, src: archive_project.src }) %>
+        <%- include('../partials/projects/_archive_project', { title: archive_project.title, category: archive_project.category, src: archive_project.src }) %>
       <% }); %>
     </div>
 

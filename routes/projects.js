@@ -87,77 +87,77 @@ router.get('/archives', function(req, res, next) {
   var archive_project = [
     {
       title: 'Doritos Heatwave',
-      year: 'website',
+      category: 'website',
       src: '../images/projects/archives/archives-heatwave.jpg',
     },
     {
       title: 'WestDermatology.com',
-      year: 'website',
+      category: 'website',
       src: '../images/projects/archives/archives-westderm.jpg',
     },
     {
       title: 'Hyatt Residence Club',
-      year: 'website',
+      category: 'website',
       src: '../images/projects/archives/archives-hyatt.jpg',
     },
     {
       title: 'HP Science of Printing',
-      year: 'website',
+      category: 'website',
       src: '../images/projects/archives/archives-hpink.jpg',
     },
     {
       title: 'Tostitos Cinco',
-      year: 'website',
+      category: 'website',
       src: '../images/projects/archives/archives-tostitos.jpg',
     },
     {
       title: 'Alpinestars Protects',
-      year: 'campaign',
+      category: 'campaign',
       src: '../images/projects/archives/archives-febvre.jpg',
     },
     {
       title: 'Alpinestars Protects',
-      year: 'campaign',
+      category: 'campaign',
       src: '../images/projects/archives/archives-continent.jpg',
     },
     {
       title: 'Suzuki Xray',
-      year: 'campaign',
+      category: 'campaign',
       src: '../images/projects/archives/archives-xray.jpg',
     },
     {
       title: 'Suzuki GSXR-1000',
-      year: 'campaign',
+      category: 'campaign',
       src: '../images/projects/archives/archives-suzuki.jpg',
     },
     {
       title: 'Mitsubishi Owners Club',
-      year: 'Branding',
+      category: 'Branding',
       src: '../images/projects/archives/archives-mitsubishi.jpg',
     },
     {
       title: 'Hoonigan C-bar Drip',
-      year: 'Branding',
+      category: 'Branding',
       src: '../images/projects/archives/archives-drip.jpg',
     },
     {
       title: 'Hoonigan Hoonarchy',
-      year: 'Branding',
+      category: 'Branding',
       src: '../images/projects/archives/archives-hoonarchy.jpg',
     },
     {
       title: 'Hoonigan blueprint',
-      year: 'illustration',
+      category: 'illustration',
       src: '../images/projects/archives/archives-blueprint.jpg',
     },
     {
       title: 'High Performance Conditioning',
-      year: 'Branding',
+      category: 'Branding',
       src: '../images/projects/archives/archives-highperformance.jpg',
     },
     {
       title: 'Hotchkis',
-      year: 'editorial',
+      category: 'editorial',
       src: '../images/projects/archives/archives-hotchkis.jpg',
     },
   ];
