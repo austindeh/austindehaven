@@ -147,13 +147,9 @@
     margin-bottom: 5vh;
   }
 
-  .project:nth-child(even) {
+  .project:nth-child(n) {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .project:nth-child(odd) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 10vh;
   }
 }

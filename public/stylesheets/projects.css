@@ -42,8 +42,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: left;
-  margin-top: 100px;
-  margin-bottom: 120px;
+  margin-top: 8vh;
+  margin-bottom: 12vh;
   width: 100%;
 }
 
@@ -112,16 +112,12 @@ p, .h2 {
   background-color: white;
 }
 
-.spacing-large {
-  margin-bottom: 120px;
-}
-
 .spacing-standard {
-  margin-bottom: 100px;
+  margin-bottom: 10vh;
 }
 
 .spacing-small {
-  margin-bottom: 50px;
+  margin-bottom: 4vh;
 }
 
 .full-width {

@@ -68,5 +68,6 @@
 @media (max-width: 768px) {
   .landing {
     margin: 0;
+    height: 60vh;
   }
 }
