@@ -10,13 +10,13 @@ if(window.innerWidth >= 479) {
 
       img = $(this).find('.glitch-hover');
       data = img.attr('src');
-      protectedOffset = 50;
+      protectedOffset = 0;
       fps = 24;
-      maxMaxGlitch = 500;
-      offset = 10;
-      minNoGlitchChance = 0.005;
-      maxGlitch = .6;
-      noGlitchChance = 1;
+      maxMaxGlitch = 0;
+      offset = 5;
+      minNoGlitchChance = 1.0;
+      maxGlitch = 1;
+      noGlitchChance = 2;
 
       icount = 0;
       protectedData = data.substring(0, protectedOffset);
