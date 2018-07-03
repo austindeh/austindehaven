@@ -10,17 +10,17 @@ if(window.innerWidth >= 479) {
 
       img = $(this).find('.glitch-hover');
       data = img.attr('src');
-      protectedOffset = 0;
+      protectedOffset = 50;
       fps = 24;
       maxMaxGlitch = 500;
-      offset = 100;
+      offset = 10;
       minNoGlitchChance = 0.005;
-      maxGlitch = 10;
-      noGlitchChance = 0.7;
+      maxGlitch = .6;
+      noGlitchChance = 1;
 
       icount = 0;
       protectedData = data.substring(0, protectedOffset);
-      noGlitchChanceStart = noGlitchChance * 10000;
+      noGlitchChanceStart = noGlitchChance * 1;
 
       window.glitchInterval = setInterval((function() {
         var corrupted, glitch, i, j, p, ref;

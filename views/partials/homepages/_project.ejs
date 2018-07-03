@@ -1,4 +1,4 @@
-<% project = locals.project %>
+<!-- <% project = locals.project %>
 
 <div class="<%= project.classes %> project">
   <a class="<%= !project.active && 'project-disabled' %> project-hover observable" href="<%= project.active ? project.href : '#' %>">
@@ -16,6 +16,25 @@
       <% for (let i = 0; i < 5; i++) { %>
         <div class="glitch-mask"><span><%= project.category %></span></div>
       <% } %>
+    </div>
+  </a>
+</div> !-->
+
+
+<% project = locals.project %>
+
+<div class="<%= project.classes %> project">
+  <a class="<%= !project.active && 'project-disabled' %> project-hover observable" href="<%= project.active ? project.href : '#' %>">
+    <img class="glitch-hover" alt='NO_SIGNAL.jpg' src='<%= locals.project.src %>'>
+
+    <div class="project-title glitch-btn">
+      <div class="texthover"><%= project.title %></div>
+        <div class="glitch-mask"><span><%= project.title %></span></div>
+    </div>
+
+    <div class="h4 project-category glitch-btn">
+      <div class="texthover"><%= project.category %></div>
+        <div class="glitch-mask"><span><%= project.category %></span></div>
     </div>
   </a>
 </div>
