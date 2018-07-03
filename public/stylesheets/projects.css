@@ -1,10 +1,6 @@
 /* -- Layout Shit -- */
 @media (max-width: 767px) {
 
-  .sectionCopy {
-    padding-bottom: 10px !important;
-  }
-
   #project-overview .project-overview {
     width: 100%;
   }
@@ -46,21 +42,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: left;
-  margin-top: 75px;
-  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 120px;
   width: 100%;
 }
 
 .project-overview {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   width: 70%;
 }
 
 .project-overview-title {
   margin-bottom: 15px;
-}
-
-.project-overview-body {
+  font-weight: 500;
 }
 
 .project-overview-details-row {
@@ -80,6 +74,7 @@
 
 .project-overview-value {
   letter-spacing: 1.25px;
+  font-weight: 500;
 }
 
 

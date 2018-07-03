@@ -27,7 +27,7 @@
   display: flex;
   position: absolute;
   left: 0;
-  padding-top: 10px;
+  padding-top: 20px;
   opacity: 0;
   visibility: hidden;
 }
@@ -38,6 +38,7 @@
   padding-bottom: 1px;
   transform: translateY(20px);
   transition: all .5s;
+  line-height: 15px;
 }
 
 .social-links-observed {

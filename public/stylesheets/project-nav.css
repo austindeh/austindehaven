@@ -21,10 +21,6 @@
   background-color: white;
 }
 
-#project-nav a {
-  padding-bottom: 3px;
-}
-
 @media (max-width: 768px) {
 
   #project-nav {

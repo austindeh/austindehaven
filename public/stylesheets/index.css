@@ -84,8 +84,7 @@
 
 
 .project-title {
-  margin-right: auto;
-  margin: 10px 0;
+  font-weight: 500;
 }
 
 .project-category {
@@ -93,17 +92,17 @@
   opacity: .5;
 }
 
-.project-archive {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-}
-
 
 /* --- Archived Projects --- */
 
 #archives {
   width: 100%;
+}
+
+.project-archive {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 
 .divider-lines {

@@ -73,37 +73,33 @@ p {
 
 body, .body {
   font-family: "raleway", sans-serif;
-  font-size: 12px;
-  letter-spacing: 1.25px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
 }
 
 h1, .h1 {
   font-size: 20px;
-  font-weight: 400;
   letter-spacing: 1.25px;
-  line-height: 45px;
+  line-height: 40px;
 }
 
 h2, .h2 {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
   letter-spacing: 1.25px;
+  line-height: 20px;
 }
 
 h3, .h3 {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
   letter-spacing: 1.25px;
+  line-height: 18px;
 }
 
 h4, .h4 {
   font-size: 12px;
   letter-spacing: 1.25px;
-}
-
-h5, .h5 {
-  font-size: 12px;
-  letter-spacing: 1.25px;
+  line-height: 16px;
 }
 
 

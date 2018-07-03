@@ -1,19 +1,12 @@
 <a href="<%= locals.href %>" class="project observable">
-  <img class="glitch-hover" alt='NO_SIGNAL.jpeg' src='<%= locals.src %>'>
-  <div class="project-details">
+  <img class="" alt='NO_SIGNAL.jpeg' src='<%= locals.src %>'>
 
-    <div class="project-title glitch-btn">
+    <div class="project-title">
       <div class="texthover"><%= locals.title %></div>
-      <% for (let i = 0; i < 5; i++) { %>
-        <div class="glitch-mask"><span><%= locals.title %></span></div>
-      <% } %>
     </div>
 
-    <div class="project-year glitch-btn">
-      <div class="texthover"><%= locals.year %></div>
-      <% for (let i = 0; i < 5; i++) { %>
-        <div class="glitch-mask"><span><%= locals.year %></span></div>
-      <% } %>
+    <div class="project-category h4">
+      <div class="texthover"><%= locals.category %></div>
     </div>
 
   </div>
