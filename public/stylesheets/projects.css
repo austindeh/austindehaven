@@ -29,17 +29,9 @@
 
 /* -- Return Button -- */
 
-.return-button {
-  font-family: "raleway", sans-serif;
-  font-size: 13px;
-  color: #181818;
-  padding-bottom: 4px;
-}
-
 #return-button span {
-  font-family: "raleway", sans-serif;
-  font-size: 10pt;
   margin-right: 5px;
+  padding-bottom: 4px;
 }
 
 #return-button {
@@ -65,18 +57,10 @@
 }
 
 .project-overview-title {
-  font-family: "raleway", sans-serif;
-  font-size: 14pt;
-  letter-spacing: 1px;
-  line-height: 35px;
   margin-bottom: 15px;
 }
 
 .project-overview-body {
-  font-size: 12px;
-  font-family: "raleway", sans-serif;
-  line-height: 2.5;
-  letter-spacing: 1.25px;
 }
 
 .project-overview-details-row {
@@ -91,44 +75,30 @@
 }
 
 .project-overview-subhead {
-  font-size: 12px;
-  font-family: "roboto-mono";
-  opacity: 0.5;
-  line-height: 2;
+  opacity: .5;
 }
 
 .project-overview-value {
-  font-size: 12px;
-  font-family: "raleway", sans-serif;
-  line-height: 2;
   letter-spacing: 1.25px;
-}
-
-#footer .underlined:before {
-	background-color:#646464;
-}
-
-#footer .underlined:after {
-  background-color: white;
 }
 
 
 /* -- Layout Styling -- */
 
-.spacingStandard {
+.spacing-large {
+  margin-bottom: 120px;
+}
+
+.spacing-standard {
   margin-bottom: 100px;
 }
 
-.spacingSmall {
+.spacing-small {
   margin-bottom: 50px;
 }
 
-.fullWidth {
+.full-width {
   width: 100%;
-}
-
-.grid {
-  margin-bottom: 10px;
 }
 
 .row {
@@ -140,61 +110,6 @@
 .column {
   width: 100%;
   padding: 10px;
-}
-
-.sectionCopy {
-  width: 100%;
-  font-family: "raleway", sans-serif;
-  letter-spacing: 1px;
-  line-height: 2;
-  padding-bottom: 50px;
-}
-
-.sectionHeader {
-  width: 100%;
-  font-size: 14pt;
-  letter-spacing: 1px;
-  line-height: 2;
-}
-
-.sectionBody {
-  width: 100%;
-  font-size: 7.75pt;
-  font-family: roboto-mono;
-  letter-spacing: 1px;
-  line-height: 2;
-
-}
-
-.black_bg {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: black;
-}
-
-.darkgray_bg {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #181818;
-}
-
-.white_bg {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: white;
-}
-
-.divider {
-  height: 2px;
-  background-color: #474747;
-  width: 100%;
-}
-
-.video {
-  width: 100%;
 }
 
 /* -- Footer Colors -- */

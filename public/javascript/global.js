@@ -33,6 +33,7 @@ class Viewport {
   }
 }
 
+
 // --- Scroll to Top ---
 function checkScroll() {
     $('#back-to-top').css('opacity', window.scrollY > 720 ? 0.5 : 0)
@@ -53,6 +54,8 @@ $(function() {
 
 
 
+
+// --- Parallax ---
 var controller = new ScrollMagic.Controller();
 
 $('.parallax-1').each(function(){

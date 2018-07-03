@@ -85,8 +85,6 @@ body {
 .filter-contact {
   display: flex;
   justify-content: flex-start;
-  font-size: 11px;
-  font-family: "roboto-mono",monospace;
 }
 
 .contact {
@@ -97,8 +95,6 @@ body {
 .filter {
   display: flex;
   justify-content: flex-end;
-  font-size: 11px;
-  font-family: "roboto-mono",monospace;
 }
 
 .filter-btn {

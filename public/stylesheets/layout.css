@@ -1,21 +1,17 @@
 .body-width {
-  /* max-width: 1170px; */
   padding: 0 7vw;
   margin: auto;
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 @media (max-width: 1200px) and (min-width: 979px) {
   .body-width {
-    /* max-width: 940px; */
     width: 100%;
   }
 }
 
 @media (max-width: 979px) and (min-width: 768px) {
   .body-width {
-    /* max-width: 724px; */
     width: 100%;
   }
 }
@@ -23,10 +19,6 @@
 @media (max-width: 767px) {
   .body-width {
     width: 100%;
-  }
-  .project-details {
-    font-size: 9px;
-    line-height: 7px;
   }
 }
 

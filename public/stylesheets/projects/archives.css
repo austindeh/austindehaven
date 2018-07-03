@@ -34,11 +34,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px 0;
-  font-family: "roboto-mono",monospace;
-  font-weight: 400;
-  font-size: 11px;
   width: 100%;
-  line-height: 7px;
 }
 
 .project-img {
