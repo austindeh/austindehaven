@@ -103,7 +103,18 @@ body {
 }
 
 .filter-selected {
+  position: relative;
   opacity: 1;
+}
+
+.filter-selected:before {
+  content: '';
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	height: 1px;
+	background-color: white;
 }
 
 .filter-divider {

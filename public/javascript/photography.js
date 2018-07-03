@@ -24,8 +24,8 @@ $(function() {
         filter = $(this).attr('gallery-filter')
 
         $('img').removeClass('fade-in-filter').addClass('fade-out-filter')
-        $('.filter-btn').removeClass('filter-selected selected').addClass('underlined')
-        $(this).removeClass('underlined').addClass('filter-selected selected')
+        $('.filter-btn').removeClass('filter-selected').addClass('underlined')
+        $(this).removeClass('underlined').addClass('filter-selected')
 
         setTimeout(() => {
             filterImages(filter)
