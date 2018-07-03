@@ -6,7 +6,7 @@ function loadImages() {
 }
 
 function filterImages(filter) {
-    $('.masonry-item').each(function () {
+    $('img').each(function () {
         if (filter == 'all' || $(this).attr('gallery-category') === filter) {
             $(this).show().removeClass('fade-out-filter').addClass('fade-in-filter')
         } else {
@@ -23,7 +23,7 @@ $(function() {
     $('.filter-btn').on('click', function () {
         filter = $(this).attr('gallery-filter')
 
-        $('.masonry-item').removeClass('fade-in-filter').addClass('fade-out-filter')
+        $('img').removeClass('fade-in-filter').addClass('fade-out-filter')
         $('.filter-btn').removeClass('filter-selected selected').addClass('underlined')
         $(this).removeClass('underlined').addClass('filter-selected selected')
 
