@@ -78,31 +78,31 @@ body, .body {
 }
 
 h1, .h1 {
-  font-size: 16pt;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.25px;
   line-height: 45px;
 }
 
 h2, .h2 {
-  font-size: 14pt;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 1.25px;
 }
 
 h3, .h3 {
-  font-size: 12pt;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 1.25px;
 }
 
 h4, .h4 {
-  font-size: 12pt;
+  font-size: 12px;
   letter-spacing: 1.25px;
 }
 
 h5, .h5 {
-  font-size: 12pt;
+  font-size: 12px;
   letter-spacing: 1.25px;
 }
 
