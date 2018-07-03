@@ -12,15 +12,15 @@ if(window.innerWidth >= 479) {
       data = img.attr('src');
       protectedOffset = 0;
       fps = 24;
-      maxMaxGlitch = 500;
-      offset = 100;
-      minNoGlitchChance = 0.005;
-      maxGlitch = 10;
-      noGlitchChance = 0.7;
+      maxMaxGlitch = 0;
+      offset = 5;
+      minNoGlitchChance = 1.0;
+      maxGlitch = 1;
+      noGlitchChance = 2;
 
       icount = 0;
       protectedData = data.substring(0, protectedOffset);
-      noGlitchChanceStart = noGlitchChance * 10000;
+      noGlitchChanceStart = noGlitchChance * 1;
 
       window.glitchInterval = setInterval((function() {
         var corrupted, glitch, i, j, p, ref;
