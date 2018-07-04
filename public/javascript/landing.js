@@ -39,7 +39,7 @@ $(window).scroll(function() {
 	if (window.scrollY > 50) {
 	  $("#scroll-down").css("opacity", 0)
 	} else {
-	  $("#scroll-down").css("opacity", 1)
+	  $("#scroll-down").css("opacity", 0.5)
   }
 })
 
@@ -47,7 +47,7 @@ $(window).scroll(function() {
 $("#scroll-down").click(function() {
   $("html, body").animate({
     scrollTop: $( $('[data-scroll-target]')).offset().top - 75
-  }, 500);
+  }, 500, "swing");
 });
 
 
@@ -113,7 +113,7 @@ var el = document.querySelector(".scroll-down")
 if (el) {
   var fx = new TextScramble(el)
   var GlitchShuffleDelay = 500;
-  var phrases = ["⇃ Scroll Down  "]
+  var phrases = ["↓ Scroll Down  "]
   var counter = 0
   var next = function() {
     fx.setText(phrases[counter]).then(function() {
