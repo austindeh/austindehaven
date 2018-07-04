@@ -20,6 +20,11 @@
   width: 100%;
 }
 
+#scroll-down {
+  position: absolute;
+  bottom: 5vh;
+}
+
 
 /* --- Hidden Buttons --- */
 
