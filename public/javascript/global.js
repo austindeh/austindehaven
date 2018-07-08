@@ -54,7 +54,7 @@ $(function() {
 
 
 
-if(window.innerWidth >= 479) {
+if(window.innerWidth >= 768) {
   
   // --- Parallax ---
   var controller = new ScrollMagic.Controller();

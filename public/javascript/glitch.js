@@ -1,4 +1,4 @@
-if(window.innerWidth >= 479) {
+if(window.innerWidth >= 768) {
 
   (function($) {
     //******** GLITCH IMAGE HOVER ***********
