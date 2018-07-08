@@ -22,7 +22,8 @@ router.get('/', function (req, res, next) {
       category: 'Design / Motion',
       classes: 'project-100',
       href: '/project/xbox-one-x',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/every60sec.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/xbox-desktop.jpg'),
+      mobile: '/images/home/xbox-mobile.jpg',
     },
 
     {
@@ -32,7 +33,8 @@ router.get('/', function (req, res, next) {
       category: 'Design',
       classes: 'project-35 parallax-1',
       href: '/project/westderm',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-01.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop.jpg'),
+      mobile: '/images/home/westderm-mobile.jpg',
     },
 
     {
@@ -42,17 +44,8 @@ router.get('/', function (req, res, next) {
       category: 'Design / Motion / Photography',
       classes: 'project-45 parallax-2',
       href: '/project/disney-toybox',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney_toybox.jpg'),
-    },
-
-    {
-      active: true,
-      // year: '2016',
-      title: 'Alpinestars Adaptive Stretch',
-      category: 'Design / Photography',
-      classes: 'project-35 parallax-1',
-      href: '/project/alpinestars-adaptive-stretch',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars_adaptive_stretch.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney-desktop.jpg'),
+      mobile: '/images/home/disney-mobile.jpg',
     },
 
     {
@@ -60,19 +53,21 @@ router.get('/', function (req, res, next) {
       // year: '2015',
       title: 'Motoamerica',
       category: 'Design',
-      classes: 'project-55 parallax-2',
+      classes: 'project-55 parallax-1',
       href: '/project/motoamerica',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop.jpg'),
+      mobile: '/images/home/motoamerica-mobile.jpg',
     },
 
     {
       active: true,
       // year: '2016',
-      title: 'Made in LA',
-      category: 'Design',
-      classes: 'project-45 parallax-1',
-      href: '/project/made-in-la',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/made_in_la.jpg'),
+      title: 'Alpinestars Adaptive Stretch',
+      category: 'Design / Photography',
+      classes: 'project-35 parallax-2',
+      href: '/project/alpinestars-adaptive-stretch',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars-desktop.jpg'),
+      mobile: '/images/home/alpinestars-mobile.jpg',
     },
 
     {
@@ -80,11 +75,22 @@ router.get('/', function (req, res, next) {
       // year: '2015',
       title: 'Ken Block',
       category: 'Design',
-      classes: 'project-35 parallax-2',
+      classes: 'project-35 parallax-1',
       href: '/project/ken-block',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/ken_block-02.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/kenblock-desktop.jpg'),
+      mobile: '/images/home/kenblock-mobile.jpg',
     },
 
+    {
+      active: true,
+      // year: '2016',
+      title: 'Made in LA',
+      category: 'Design',
+      classes: 'project-45 parallax-2',
+      href: '/project/made-in-la',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/madeinla-desktop.jpg'),
+      mobile: '/images/home/madeinla-mobile.jpg',
+    },
   ];
 
   res.render('index', {

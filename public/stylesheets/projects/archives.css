@@ -1,17 +1,19 @@
 
 .projects {
-  width: 100%;
   display: flex;
-  align-items: stretch;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 100px;
 }
 
 .project {
   display: block;
-  width: 100%;
-  flex-basis: 50%;
-  padding-bottom: 30px;
+  width: 50%;
+  margin-bottom: 5vh;
+}
+
+.project:nth-child(even) {
+  transition-delay: .15s;
 }
 
 .project:nth-child(odd) {
@@ -62,12 +64,13 @@
 @media (max-width: 768px) {
 
   .projects {
-    width: 90%;
+    margin-bottom: 0;
   }
 
   .project {
-    flex-basis: 100%;
+    width: 100%;
   }
+  
   .project:nth-child(odd) {
     padding-right: 0px;
   }

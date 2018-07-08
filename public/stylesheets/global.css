@@ -16,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   opacity: 1;
-  transition: opacity 1s ease-in-out;
 }
 
 table {
@@ -59,7 +58,7 @@ p {
 .observable {
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity .75s, transform .75s;
+  transition: opacity .75s, transform 1s;
 }
 
 .observed {
