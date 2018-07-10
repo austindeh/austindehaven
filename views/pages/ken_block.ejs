@@ -11,28 +11,29 @@
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="observable" src="/images/projects/ken_block/01-ken_block-KB14-S1-01_@2x.jpg">
+    <div class="observable">
+      <img src="/images/projects/ken_block/01-ken_block-KB14-S1-01_@2x.jpg">
 
-    <div class="black">
-      <img class="body-width spacing-small" src="/images/projects/ken_block/05-ken_block-KB14-S5-01_@2x.jpg">
-    </div>
-
-    <img src="/images/projects/ken_block/03-ken_block-KB14-S3-01_@2x.jpg">
-
-    <div class="light">
-      <div class="full-width">
-        <img class="spacing-small" src="/images/projects/ken_block/04-ken_block-KB14-S4-01_@2x.jpg">
+      <div class="black">
+        <img class="body-width spacing-small" src="/images/projects/ken_block/05-ken_block-KB14-S5-01_@2x.jpg">
       </div>
-    </div>
 
-    <div class="light">
-      <div class="body-width">
-        <img class="full-width spacing-small" src="/images/projects/ken_block/06-ken_block-KB14-S6-01_@2x.jpg">
+      <img src="/images/projects/ken_block/03-ken_block-KB14-S3-01_@2x.jpg">
+
+      <div class="light">
+        <div class="full-width">
+          <img class="spacing-small" src="/images/projects/ken_block/04-ken_block-KB14-S4-01_@2x.jpg">
+        </div>
       </div>
+
+      <div class="light">
+        <div class="body-width">
+          <img class="full-width spacing-small" src="/images/projects/ken_block/06-ken_block-KB14-S6-01_@2x.jpg">
+        </div>
+      </div>
+
+      <img src="/images/projects/ken_block/07-ken_block-KB14-S7-01_@2x.jpg">
     </div>
-
-    <img src="/images/projects/ken_block/07-ken_block-KB14-S7-01_@2x.jpg">
-
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
