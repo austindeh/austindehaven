@@ -23,6 +23,23 @@
   }
 }
 
+/* .project-sticky {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+  background-color: #f6f6f6;
+  z-index: 10;
+}
+
+.project-stick-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
 /* -- Return Button -- */
 
 #return-button span {
@@ -31,11 +48,34 @@
 }
 
 #return-button {
-  width: 100%;
   padding-top: 40px;
 }
 
+/* Contact Button */
+
+#contact-button {
+  position: fixed;
+  top: 40px;
+  right: 1.5%;
+  z-index: 2;
+}
+
+#contact-button a {
+  color: #929192;
+  transition: color .25s;
+}
+
+#contact-button a:hover {
+  color: #181818;
+}
+
 /* -- Project Overview -- */
+
+.project-top {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
 
 #project-overview {
   display: flex;
