@@ -152,6 +152,11 @@ p, .h2 {
   background-color: white;
 }
 
+.green {
+  width: 100%;
+  background-color: #009e93;
+}
+
 .spacing-standard {
   margin-bottom: 10vh;
 }

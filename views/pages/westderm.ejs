@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <!-- made with love. -->
+  <!-- Developed by Austin DeHaven -->
+  <head>
+    <%- include('../partials/global/_meta') %>
+
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+  </head>
+  <body>
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
+    <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-01.jpg">
+    <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-02.png">
+    
+    <div class="body-width">
+        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-03.jpg">
+        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-04.jpg">
+        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-05.jpg">
+        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-06.jpg">
+    </div>
+
+    <img class="full-width observable" src="/images/projects/westderm/westderm-07.jpg">
+    
+    <div class="green">
+      <video class="body-width spacing-standard observable" width="100%" controls controlsList="nodownload">
+        <source src="/images/projects/westderm/westderm-08.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <img class="full-width observable" src="/images/projects/westderm/westderm-10.jpg">
+        
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src="/javascript/global.js"></script>
+</html>
