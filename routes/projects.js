@@ -103,9 +103,9 @@ router.get('/archives', function(req, res, next) {
       src: '../images/projects/archives/archives-heatwave.jpg',
     },
     {
-      title: 'WestDermatology.com',
+      title: 'Camera Control',
       category: 'website',
-      src: '../images/projects/archives/archives-westderm.jpg',
+      src: '../images/projects/archives/archives-cameracontrol.jpg',
     },
     {
       title: 'Hyatt Residence Club',
@@ -121,6 +121,11 @@ router.get('/archives', function(req, res, next) {
       title: 'Tostitos Cinco',
       category: 'website',
       src: '../images/projects/archives/archives-tostitos.jpg',
+    },
+    {
+      title: 'Cheetos Win What You See',
+      category: 'website',
+      src: '../images/projects/archives/archives-wwys.jpg',
     },
     {
       title: 'Alpinestars Protects',
