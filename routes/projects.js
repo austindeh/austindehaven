@@ -23,7 +23,7 @@ router.get('/westderm', function(req, res, next) {
     role: 'Design',
     prevProject: 'xbox-one-x',
     nextProject: 'disney-toybox',
-    body: 'Disney came to us asking to help come up with a new campaign focused around the release of their new toyline. The campaign was a relatively short timeline starting in early October and going live in mid November, just in time for the holidays. As the campaign was primarily going to be utilized around the holidays, we were coming up with creative ways to bring the characters and holidays to your house.',
+    body: 'West Dermatology had an interesting problem to solve: How do we have a corporate brand trickle down to many individual brands all under the same roof. This project presented many unique UX challenges but also design challenges. Given the scale of the site, we had to come up with creative ways to gain efficiencies in the design process. One of those was moving over to sketch for design and implementing a design system that would essentially allow us to dynamically update content and build new pages out faster than we ever could traditionally using photoshop. You can view the site <a href="westdermatology.com"><b>here</b></a>',
   }
   res.render('pages/westderm', { project: project, images: [] })
 });
