@@ -55,7 +55,7 @@ p {
 
 /* Animations */
 
-/* .observable {
+.observable {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity .4s, transform .5s;
@@ -64,52 +64,6 @@ p {
 .observed {
   opacity: 1;
   transform: translateY(0px);
-} */
-
-.observable {
-  display: inline-block;
-  position: relative;
-  overflow-x: hidden;
-  animation: img-appear 1.5s;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes img-appear {
-  from {
-   opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-.observed::after {
-  content:'';
-  position: absolute;
-  background: white;
-  top: 0;
-  left: -50px;
-  bottom: 0;
-  right: 0;
-  transform: translateX(-100%);
-  animation: box-slide 1.5s;
-}
-
-@keyframes box-slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 
 
