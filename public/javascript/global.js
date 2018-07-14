@@ -1,3 +1,15 @@
+$(document).ready(function() {
+
+  $('a').click(function(event) {
+    event.preventDefault();
+    newLocation = this.href;
+    $('body').fadeOut(750, newpage);
+  });
+  function newpage() {  
+    window.location = newLocation;
+  }
+});
+
 class Viewport {
   constructor(opts) {
     this.observer = new IntersectionObserver(this.cb.bind(this), {
@@ -94,3 +106,16 @@ if(window.innerWidth >= 768) {
   .addTo(controller);
   });
 }
+
+
+
+// Project Navbar
+var prev = 0;
+var $window = $(window);
+var nav = $('.project-navigation');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass('project-navigation-hidden', scrollTop > prev);
+  prev = scrollTop;
+});
