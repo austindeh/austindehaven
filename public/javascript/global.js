@@ -1,4 +1,4 @@
-//Fade on Link Click
+//Fade in / out page
 $(function() {
   $('a').click(function(event) {
     event.preventDefault();
