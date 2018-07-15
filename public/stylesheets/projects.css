@@ -25,23 +25,23 @@
 
 /* -- Project Navigation -- */
 
-.project-navigation {
+#project-navigation {
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(245,245,245,0.95);
+  background-color: rgba(245,245,245, 0.95);
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 80px;
   z-index: 2;
-  transition: transform .75s;
+  transition: top .75s;
   transition-delay: .1s;
 }
 
-.project-navigation-hidden {
+#project-navigation-hidden {
   transform: translateY(-80px);
 }
 

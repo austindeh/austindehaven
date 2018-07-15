@@ -10,17 +10,6 @@ $(function() {
   }
 });
 
-
-// LazyLoad Testing
-$('img').Lazy({
-  scrollDirection: 'vertical',
-  effect: 'fadeOut',
-  visibleOnly: true,
-  onError: function(element) {
-      console.log('error loading ' + element.data('src'));
-  }
-});
-
 // IO
 class Viewport {
   constructor(opts) {
@@ -118,16 +107,3 @@ if(window.innerWidth >= 768) {
   .addTo(controller);
   });
 }
-
-
-
-// Project Navbar
-var prev = 0;
-var $window = $(window);
-var nav = $('.project-navigation');
-
-$window.on('scroll', function(){
-  var scrollTop = $window.scrollTop();
-  nav.toggleClass('project-navigation-hidden', scrollTop > prev);
-  prev = scrollTop;
-});
