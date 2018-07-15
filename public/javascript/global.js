@@ -10,6 +10,17 @@ $(function() {
   }
 });
 
+
+// LazyLoad Testing
+$('img').Lazy({
+  scrollDirection: 'vertical',
+  effect: 'fadeOut',
+  visibleOnly: true,
+  onError: function(element) {
+      console.log('error loading ' + element.data('src'));
+  }
+});
+
 // IO
 class Viewport {
   constructor(opts) {
