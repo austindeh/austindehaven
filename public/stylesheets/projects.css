@@ -49,21 +49,6 @@
   margin-left: 7vw;
 }
 
-#return-button svg {
-  height: 15px;
-  overflow: visible;
-}
-
-svg .arrow-tail {
-  transition: transform .5s;
-}
-
-svg:hover .arrow-tail {
-  transform: scaleX(1.2);
-  transform-origin: 0% 50%;
-  transition: transform .5s;
-}
-
 #contact-button {
   margin-right: 7vw;
   color: #181818;
