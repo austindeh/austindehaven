@@ -1,3 +1,16 @@
+//Fade in / out page
+$(function() {
+  $('a').click(function(event) {
+    event.preventDefault();
+    newLocation = this.href;
+    $('body').fadeOut(500, newpage);
+  });
+  function newpage() {  
+    window.location = newLocation;
+  }
+});
+
+// IO
 class Viewport {
   constructor(opts) {
     this.observer = new IntersectionObserver(this.cb.bind(this), {

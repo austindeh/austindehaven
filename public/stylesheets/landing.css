@@ -13,7 +13,6 @@
   height: 100vh;
   padding: 0 5%;
   overflow-x: hidden;
-  transition: height .5s;
 }
 
 #snippet {
@@ -26,7 +25,7 @@
   bottom: 5vh;
   left: 5%;
   opacity: .5;
-  transition: opacity .5s;
+  /* transition: opacity .5s; */
 }
 
 #scroll-down:hover {
