@@ -2,6 +2,7 @@
 
 #back-to-top {
     display: block;
+    cursor: pointer;
     position: fixed;
     bottom: 5%;
     right: 8%;

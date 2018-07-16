@@ -37,9 +37,9 @@ t4.to(".snippetglitch", 0.1, {skewX:700,ease: Power4.easeInOut})
 // Hide scroll down button on scroll
 $(window).scroll(function() {
 	if (window.scrollY > 50) {
-	  $("#scroll-down").css("opacity", 0)
+    $("#scroll-down").fadeOut(500)
 	} else {
-	  $("#scroll-down").css("opacity", 0.5)
+    $("#scroll-down").fadeIn(500)
   }
 })
 
@@ -47,7 +47,7 @@ $(window).scroll(function() {
 $("#scroll-down").click(function() {
   $("html, body").animate({
     scrollTop: $( $('[data-scroll-target]')).offset().top - 75
-  }, 500, "swing");
+  }, 1250, "swing");
 });
 
 

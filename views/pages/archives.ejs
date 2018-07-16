@@ -12,9 +12,16 @@
   </head>
   <body>
     <div class='body-width'>
-      <div id='return-button'>
-        <span>←</span><a class='underlined return-button' href='/'>Return to design work </a>
+    
+      <div id="project-navigation">
+        <div id="return-button">
+          <a href="/" class="underlined" href="<%= locals.href %>">Return to design work</a>
+        </div>
+        <div class="" id="contact-button">
+          <a class="underlined" target="_blank" href="mailto:adehaven.designs@gmail.com">Contact</a>
+        </div>
       </div>
+
       <div id='project-overview'>
         <div class='project-overview'>
           <div class='h1 observable project-overview-title'>More Work</div>
@@ -35,5 +42,6 @@
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src='/javascript/project-page.js'></script>
   <script src='/javascript/global.js'></script>
 </html>
