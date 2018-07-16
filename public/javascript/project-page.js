@@ -1,15 +1,5 @@
 // Project Navbar
-// var prev = 0;
-// var $window = $(window);
-// var nav = $('.project-navigation');
-
-// $window.on('scroll', function(){
-//   var scrollTop = $window.scrollTop();
-//   nav.toggleClass('project-navigation-hidden', scrollTop > prev);
-//   prev = scrollTop;
-// });
-
-var lastScrollTop = 0;
+var lastScrollTop = 1;
 
 window.addEventListener("scroll", function(){  
    var st = window.pageYOffset || document.documentElement.scrollTop + '10px';  
@@ -20,6 +10,5 @@ window.addEventListener("scroll", function(){
    }
    lastScrollTop = st;
 }, false);
-
 
 
