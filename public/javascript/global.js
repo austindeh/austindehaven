@@ -50,7 +50,7 @@ class Viewport {
 
 window.addEventListener('load', function() {
   new Viewport()
-})
+});
 
 
 // --- Scroll to Top ---
