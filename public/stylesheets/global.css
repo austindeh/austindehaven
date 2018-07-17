@@ -57,7 +57,11 @@ p {
 .observable {
   opacity: 0;
   transform: translateY(100px);
-  transition: opacity .4s, transform .5s;
+  transition: opacity 1.5s, transform .5s;
+}
+
+.observable-delay {
+  transition-delay: 1s;
 }
 
 .observed {
