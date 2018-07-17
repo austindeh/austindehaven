@@ -1,3 +1,5 @@
+
+
 //Fade in / out page
 $(function() {
   $('a').click(function(event) {
@@ -46,6 +48,10 @@ class Viewport {
   }
 }
 
+window.addEventListener('load', function() {
+  new Viewport()
+})
+
 
 // --- Scroll to Top ---
 function checkScroll() {
@@ -53,7 +59,6 @@ function checkScroll() {
 }
 
 $(function() {
-    new Viewport()
     checkScroll()
 
     $('#back-to-top').click(function() {
