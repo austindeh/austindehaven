@@ -23,33 +23,40 @@
   }
 }
 
-/* -- Return Button -- */
+/* -- Project Navigation -- */
+
+#project-navigation {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(245,245,245, 0.95);
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  transition: top .75s;
+  transition-delay: .1s;
+}
+
+#project-navigation-hidden {
+  transform: translateY(-80px);
+}
+
+#return-button {
+  margin-left: 7vw;
+}
+
+#contact-button {
+  margin-right: 7vw;
+  color: #181818;
+}
 
 #return-button span {
   margin-right: 5px;
   padding-bottom: 4px;
-}
-
-#return-button {
-  padding-top: 40px;
-}
-
-/* Contact Button */
-
-#contact-button {
-  position: fixed;
-  top: 40px;
-  right: 1.5%;
-  z-index: 2;
-}
-
-#contact-button a {
-  color: #929192;
-  transition: color .25s;
-}
-
-#contact-button a:hover {
-  color: #181818;
 }
 
 /* -- Project Overview -- */
@@ -65,14 +72,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: left;
-  margin-top: 8vh;
+  margin-top: 15vh;
   margin-bottom: 12vh;
   width: 100%;
 }
 
 .project-overview {
   margin-bottom: 25px;
-  width: 70%;
+  width: 65%;
 }
 
 .project-overview-title {
