@@ -60,10 +60,6 @@ p {
   transition: opacity 1.5s, transform .5s;
 }
 
-.observable-delay {
-  transition-delay: 1s;
-}
-
 .observed {
   opacity: 1;
   transform: translateY(0px);
