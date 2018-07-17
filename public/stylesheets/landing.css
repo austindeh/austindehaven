@@ -24,7 +24,7 @@
   position: absolute;
   bottom: 5vh;
   left: 5%;
-  opacity: .5;  
+  opacity: .5;
 }
 
 #scroll-down:hover {
@@ -48,7 +48,7 @@
   visibility: hidden;
   padding-bottom: 1px;
   transform: translateY(20px);
-  transition: all .5s;
+  transition: opacity .5s, transform .5s;
   line-height: 15px;
 }
 
@@ -56,7 +56,7 @@
   visibility: visible;
   transform: translateY(0px);
   opacity: 0.5;
-  transition: all .5s;
+  transition: opacity .5s, transform .5s;
 }
 
 .social-links-observed:nth-child(2) {
@@ -80,7 +80,6 @@
   .landing {
     margin: 0;
     height: 60vh;
-    transition: height .5s;
   }
 
   #scroll-down {
