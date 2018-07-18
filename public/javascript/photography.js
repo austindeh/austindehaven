@@ -1,10 +1,3 @@
-function loadImages() {
-    Array.from(document.querySelectorAll('img[data-src]')).map(img => {
-        img.setAttribute('src', img.getAttribute('data-src'))
-        img.onload = function() { img.removeAttribute('data-src') }
-    })
-}
-
 function filterImages(filter) {
     $('img').each(function () {
         if (filter == 'all' || $(this).attr('gallery-category') === filter) {
@@ -17,7 +10,6 @@ function filterImages(filter) {
 
 $(function() {
     let filter = $('.filter-selected').attr('gallery-filter')
-    loadImages()
     filterImages(filter)
 
     $('.filter-btn').on('click', function () {

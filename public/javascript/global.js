@@ -1,7 +1,6 @@
 class Viewport {
   constructor(opts) {
 
-    // main observer
     this.observer = new IntersectionObserver(this.cb.bind(this), {
       threshold: [0.0, 0.25, 0.5, 0.75, 1.0]
     })
@@ -23,12 +22,13 @@ class Viewport {
     })
 
     this.lazies.map(observable => {
-      this.observer.observe(observable)
+      this.lazyObserver.observe(observable)
     })
   }
 
   preload(entries) {
     entries.forEach(entry => {
+      console.log(entry.intersectionRatio);
       if (entry.intersectionRatio > 0) {
         let target = entry.target
         target.setAttribute('src', target.getAttribute('data-src'))
@@ -39,8 +39,6 @@ class Viewport {
 
   cb(entries) {
     entries.forEach(entry => {
-      // const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.1
-      // console.log(entry, entry.intersectionRatio)
       if (entry.intersectionRatio > 0) {
         this.observe(entry.target, entry.intersectionRatio)
       }
@@ -55,8 +53,6 @@ class Viewport {
     if (target.nodeName === 'VIDEO') {
       ratio <= 0.25 && !target.paused ? target.pause() : target.play()
     }
-
-    // this.observer.unobserve(target)
   }
 }
 
