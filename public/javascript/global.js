@@ -1,9 +1,17 @@
 class Viewport {
   constructor(opts) {
+
+    // main observer
     this.observer = new IntersectionObserver(this.cb.bind(this), {
       threshold: [0.0, 0.25, 0.5, 0.75, 1.0]
     })
 
+    this.lazyObserver = new IntersectionObserver(this.preload.bind(this), {
+      rootMargin: '150px 0px',
+      threshold: [0.0, 0.25, 0.5, 0.75, 1.0]
+    })
+
+    this.lazies = Array.from(document.querySelectorAll('.lazy'))
     this.observables = Array.from(document.querySelectorAll('.observable'))
 
     this.init()
@@ -12,6 +20,20 @@ class Viewport {
   init() {
     this.observables.map(observable => {
       this.observer.observe(observable)
+    })
+
+    this.lazies.map(observable => {
+      this.observer.observe(observable)
+    })
+  }
+
+  preload(entries) {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        let target = entry.target
+        target.setAttribute('src', target.getAttribute('data-src'))
+        this.lazyObserver.unobserve(target)
+      }
     })
   }
 
@@ -97,5 +119,7 @@ $(function() {
 });
 
 window.addEventListener('load', function() {
-  new Viewport()
+  if (('IntersectionObserver' in window)) {
+    new Viewport()
+  }
 });
