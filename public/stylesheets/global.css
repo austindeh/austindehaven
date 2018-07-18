@@ -60,15 +60,16 @@ p {
 }
 
 .observed {
-  opacity: 1;
   animation: move 1s forwards;
 }
 
 @keyframes move {
   from {
+    opacity: 0;
     transform: translateY(100px);
   }
   to {
+    opacity: 1;
     transform: translateY(0px)
   }
 }
