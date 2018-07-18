@@ -2,12 +2,12 @@ class Viewport {
   constructor(opts) {
 
     this.observer = new IntersectionObserver(this.cb.bind(this), {
-      threshold: [0.0, 0.25, 0.5, 0.75, 1.0]
+      threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
     })
 
     this.lazyObserver = new IntersectionObserver(this.preload.bind(this), {
-      rootMargin: '150px 0px',
-      threshold: [0.0, 0.25, 0.5, 0.75, 1.0]
+      rootMargin: '200px 0px',
+      threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
     })
 
     this.lazies = Array.from(document.querySelectorAll('.lazy'))
@@ -47,8 +47,11 @@ class Viewport {
 
   observe(target, ratio) {
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
-      target.classList.add('observed')
+      setTimeout(function() {
+        target.classList.add('observed')
+      }, 100);
     }
+
 
     if (target.nodeName === 'VIDEO') {
       ratio <= 0.25 && !target.paused ? target.pause() : target.play()
@@ -116,6 +119,6 @@ $(function() {
 
 window.addEventListener('load', function() {
   if (('IntersectionObserver' in window)) {
-    new Viewport()
+    new Viewport();
   }
 });

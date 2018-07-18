@@ -11,27 +11,27 @@
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-01a.jpg">
-    <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-02.png">
+    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-01a.jpg">
+    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-02.png">
     
     <div class="body-width">
-        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-03.jpg">
-        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-04.jpg">
-        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-05.jpg">
-        <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-06.jpg">
+        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-03.jpg">
+        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-04.jpg">
+        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-05.jpg">
+        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-06.jpg">
     </div>
 
-    <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-07.jpg">
+    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-07.jpg">
     
     <div class="">
-        <video class="body-width spacing-standard observable" width="100%" preload="none" controls controlsList="nodownload">
+        <video class="body-width spacing-standard observable" width="100%" preload="none" muted controls controlsList="nodownload">
             <source src="/images/projects/westderm/westderm-08.mp4" type="video/mp4">
         </video>
     </div>
 
-    <img class="full-width spacing-standard observable" src="/images/projects/westderm/westderm-09.jpg">
-    <img class="body-width spacing-standard observable" src="/images/projects/westderm/westderm-10.gif">
-    <img class="full-width observable" src="/images/projects/westderm/westderm-11.jpg">
+    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-09.jpg">
+    <img class="lazy body-width spacing-standard observable" data-src="/images/projects/westderm/westderm-10.gif">
+    <img class="lazy full-width observable" data-src="/images/projects/westderm/westderm-11.jpg">
         
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
