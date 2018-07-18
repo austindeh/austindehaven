@@ -48,7 +48,7 @@
   visibility: hidden;
   padding-bottom: 1px;
   transform: translateY(20px);
-  transition: opacity .5s, transform .5s;
+  transition: all .5s;
   line-height: 15px;
 }
 
@@ -56,7 +56,7 @@
   visibility: visible;
   transform: translateY(0px);
   opacity: 0.5;
-  transition: opacity .5s, transform .5s;
+  transition: all .5s;
 }
 
 .social-links-observed:nth-child(2) {
