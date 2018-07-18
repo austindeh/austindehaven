@@ -47,9 +47,7 @@ class Viewport {
 
   observe(target, ratio) {
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
-      setTimeout(function() {
         target.classList.add('observed')
-      }, 200);
     }
 
 
