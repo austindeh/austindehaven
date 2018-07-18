@@ -49,7 +49,7 @@ class Viewport {
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
       setTimeout(function() {
         target.classList.add('observed')
-      }, 100);
+      }, 200);
     }
 
 
