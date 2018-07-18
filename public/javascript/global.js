@@ -1,18 +1,3 @@
-
-
-//Fade in / out page
-$(function() {
-  $('a').click(function(event) {
-    event.preventDefault();
-    newLocation = this.href;
-    $('body').fadeOut(500, newpage);
-  });
-  function newpage() {  
-    window.location = newLocation;
-  }
-});
-
-// IO
 class Viewport {
   constructor(opts) {
     this.observer = new IntersectionObserver(this.cb.bind(this), {
@@ -32,83 +17,85 @@ class Viewport {
 
   cb(entries) {
     entries.forEach(entry => {
-      const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.1
-
-      if (entry.intersectionRatio > ratio) {
-        this.observe(entry.target)
+      // const ratio = entry.boundingClientRect.height > entry.rootBounds.height ? 0 : 0.1
+      // console.log(entry, entry.intersectionRatio)
+      if (entry.intersectionRatio > 0) {
+        this.observe(entry.target, entry.intersectionRatio)
       }
     })
   }
 
-  observe(target) {
+  observe(target, ratio) {
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
       target.classList.add('observed')
-      this.observer.unobserve(target)
     }
+
+    if (target.nodeName === 'VIDEO') {
+      ratio <= 0.25 && !target.paused ? target.pause() : target.play()
+    }
+
+    // this.observer.unobserve(target)
   }
 }
+
+function checkScroll() {
+  $('#back-to-top').css('opacity', window.scrollY > 720 ? 0.5 : 0)
+}
+
+// Document.Ready
+$(function() {
+  checkScroll()
+
+  if(window.innerWidth >= 768) {
+
+    // --- Parallax ---
+    var controller = new ScrollMagic.Controller();
+
+    $('.parallax-1').each(function(){
+        var tween = new TimelineMax();
+
+        tween.from($(this), 1, {y: '5%', ease: Power0.easeNone});
+
+        var scene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 1,
+            duration: '125%',
+        }).setTween(tween).addTo(controller);
+    });
+
+
+    $('.parallax-2').each(function(){
+        var tween = new TimelineMax();
+
+        tween.from($(this), 1, {y: '-20%', ease: Power0.easeNone});
+
+        var scene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 1,
+            duration: '125%',
+        }).setTween(tween).addTo(controller);
+    });
+  }
+
+  $(window).scroll(checkScroll);
+
+  $('#back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: '0'
+    }, 500, 'swing');
+  });
+
+  $('a').click(function(event) {
+    event.preventDefault();
+    newLocation = this.href;
+
+    $('body').fadeOut(500, function() {
+      window.location = newLocation;
+    });
+  });
+
+});
 
 window.addEventListener('load', function() {
   new Viewport()
 });
-
-
-// --- Scroll to Top ---
-function checkScroll() {
-    $('#back-to-top').css('opacity', window.scrollY > 720 ? 0.5 : 0)
-}
-
-$(function() {
-    checkScroll()
-
-    $('#back-to-top').click(function() {
-      $('html, body').animate({
-        scrollTop: '0'
-      }, 500, 'swing')
-    })
-
-    $(window).scroll(checkScroll)
-});
-
-
-
-if(window.innerWidth >= 768) {
-  
-  // --- Parallax ---
-  var controller = new ScrollMagic.Controller();
-
-  $('.parallax-1').each(function(){
-      var tween = new TimelineMax();
-
-      tween
-          .from($(this), 1, {y: '5%', ease: Power0.easeNone})
-      ;
-
-      var scene = new ScrollMagic.Scene({
-          triggerElement: this,
-          triggerHook: 1,
-          duration: '125%',
-      })
-
-  .setTween(tween)
-  .addTo(controller);
-  });
-
-
-  $('.parallax-2').each(function(){
-      var tween = new TimelineMax();
-
-      tween
-          .from($(this), 1, {y: '-20%', ease: Power0.easeNone})
-      ;
-
-      var scene = new ScrollMagic.Scene({
-          triggerElement: this,
-          triggerHook: 1,
-          duration: '125%',
-      })
-
-  .setTween(tween)
-  .addTo(controller);
-  });
-}
