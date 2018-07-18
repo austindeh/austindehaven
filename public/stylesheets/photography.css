@@ -58,13 +58,13 @@ body {
 
 /* -- Image Filtering -- */
 
-.observable {
+/* .observable {
   transition: opacity .75s, transform 1s;
 }
 
 .observed {
   transition: opacity .75s, transform 1s;
-}
+} */
 
 .filter-bar {
   display: flex;
