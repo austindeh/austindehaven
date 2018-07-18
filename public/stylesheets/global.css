@@ -56,13 +56,21 @@ p {
 
 .observable {
   opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 1s, transform 1s;
+  transition: opacity 1s;
 }
 
 .observed {
   opacity: 1;
-  transform: translateY(0px);
+  animation: move 1s forwards;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px)
+  }
 }
 
 
