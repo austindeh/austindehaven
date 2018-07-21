@@ -1,21 +1,34 @@
-// if (screen.width < 768) {
-//   $('.lazy').each(function() {
-//     $(this).attr("src", $(this).attr("src") + "-mobile.jpg");
-//   });
-// }
+if (screen.width < 768) {
+  $('.lazy').each(function() {
+    $(this).attr("src", $(this).attr("src") + "-mobile.jpg");
+  });
+}
 
-// else if(screen.width > 768 && screen.width < 1400) {
-//   $('.lazy').each(function() {
-//     $(this).attr("src", $(this).attr("src") + "-desktop.jpg");
-//   });
-// }
+else if(screen.width > 768 && screen.width < 1400) {
+  $('.lazy').each(function() {
+    $(this).attr("src", $(this).attr("src") + "-desktop.jpg");
+  });
+}
 
-// else {
-//   $('.lazy').each(function() {
-//     $(this).attr("src", $(this).attr("src") + "-hd.jpg");
-//   });
-// }
+else {
+  $('.lazy').each(function() {
+    $(this).attr("src", $(this).attr("src") + "-hd.jpg");
+  });
+}
 
+var mediasrc = function () {
+  if (screen.width < 768) {
+    return "-mobile.jpg";
+  }
+
+  else if(screen.width > 768 && screen.width < 1400) {
+    return "-desktop.jpg";
+  }
+
+  else {
+    return "-hd.jpg";
+  }
+}
 
 class Viewport {
   constructor(opts) {
@@ -49,8 +62,11 @@ class Viewport {
     entries.forEach(entry => {
       console.log(entry.intersectionRatio);
       if (entry.intersectionRatio > 0) {
-        let target = entry.target
-        target.setAttribute('src', target.getAttribute('data-src'))
+        const target = entry.target
+        const dataSrc = target.getAttribute('data-src')
+        const src = dataSrc.indexOf('.gif') === -1 ? dataSrc + mediasrc() : dataSrc
+        
+        target.setAttribute('src', src)
         this.lazyObserver.unobserve(target)
       }
     })
