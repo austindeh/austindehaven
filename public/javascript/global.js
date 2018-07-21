@@ -1,16 +1,16 @@
-var mediasrc = function () {
-  if (screen.width < 768) {
-    return "-mobile.jpg";
-  }
+// var mediasrc = function () {
+//   if (screen.width < 768) {
+//     return "-mobile.jpg";
+//   }
 
-  else if(screen.width > 768 && screen.width < 1400) {
-    return ".jpg";
-  }
+//   else if(screen.width > 768 && screen.width < 1400) {
+//     return ".jpg";
+//   }
 
-  else {
-    return "-hd.jpg";
-  }
-}
+//   else {
+//     return "-hd.jpg";
+//   }
+// }
 
 class Viewport {
   constructor(opts) {
@@ -40,20 +40,32 @@ class Viewport {
     })
   }
 
+  // preload(entries) {
+  //   entries.forEach(entry => {
+  //     console.log(entry.intersectionRatio);
+  //     if (entry.intersectionRatio > 0) {
+  //       const target = entry.target
+  //       const dataSrc = target.getAttribute('data-src')
+  //       const src = dataSrc.indexOf('.gif') === -1 ? dataSrc + mediasrc() : dataSrc
+
+  //       target.setAttribute('src', src)
+  //       this.lazyObserver.unobserve(target)
+  //     }
+  //   })
+  // }
+
   preload(entries) {
     entries.forEach(entry => {
       console.log(entry.intersectionRatio);
       if (entry.intersectionRatio > 0) {
-        const target = entry.target
-        const dataSrc = target.getAttribute('data-src')
-        const src = dataSrc.indexOf('.gif') === -1 ? dataSrc + mediasrc() : dataSrc
-
-        target.setAttribute('src', src)
+        let target = entry.target
+        target.setAttribute('src', target.getAttribute('data-src'))
         this.lazyObserver.unobserve(target)
       }
     })
   }
 
+  
   cb(entries) {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
