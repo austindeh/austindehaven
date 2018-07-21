@@ -1,28 +1,10 @@
-if (screen.width < 768) {
-  $('.lazy').each(function() {
-    $(this).attr("src", $(this).attr("src") + "-mobile.jpg");
-  });
-}
-
-else if(screen.width > 768 && screen.width < 1400) {
-  $('.lazy').each(function() {
-    $(this).attr("src", $(this).attr("src") + "-desktop.jpg");
-  });
-}
-
-else {
-  $('.lazy').each(function() {
-    $(this).attr("src", $(this).attr("src") + "-hd.jpg");
-  });
-}
-
 var mediasrc = function () {
   if (screen.width < 768) {
     return "-mobile.jpg";
   }
 
   else if(screen.width > 768 && screen.width < 1400) {
-    return "-desktop.jpg";
+    return ".jpg";
   }
 
   else {
@@ -65,7 +47,7 @@ class Viewport {
         const target = entry.target
         const dataSrc = target.getAttribute('data-src')
         const src = dataSrc.indexOf('.gif') === -1 ? dataSrc + mediasrc() : dataSrc
-        
+
         target.setAttribute('src', src)
         this.lazyObserver.unobserve(target)
       }
