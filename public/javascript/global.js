@@ -1,3 +1,22 @@
+// if (screen.width < 768) {
+//   $('.lazy').each(function() {
+//     $(this).attr("src", $(this).attr("src") + "-mobile.jpg");
+//   });
+// }
+
+// else if(screen.width > 768 && screen.width < 1400) {
+//   $('.lazy').each(function() {
+//     $(this).attr("src", $(this).attr("src") + "-desktop.jpg");
+//   });
+// }
+
+// else {
+//   $('.lazy').each(function() {
+//     $(this).attr("src", $(this).attr("src") + "-hd.jpg");
+//   });
+// }
+
+
 class Viewport {
   constructor(opts) {
 
