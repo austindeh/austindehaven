@@ -67,10 +67,12 @@ p {
   from {
     opacity: 0;
     transform: translateY(100px);
+    filter: blur(3px);
   }
   to {
     opacity: 1;
-    transform: translateY(0px)
+    transform: translateY(0px);
+    filter: blur(0px);
   }
 }
 
