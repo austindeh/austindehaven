@@ -57,24 +57,25 @@ p {
 .observable {
   opacity: 0;
   transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .observed {
-  animation: move 1s forwards;
+  /* animation: move 1s forwards; */
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-@keyframes move {
+/* @keyframes move {
   from {
     opacity: 0;
     transform: translateY(100px);
-    filter: blur(3px);
   }
   to {
     opacity: 1;
     transform: translateY(0px);
-    filter: blur(0px);
   }
-}
+} */
 
 
 /* --- Font Stuff --- */
