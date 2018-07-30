@@ -130,7 +130,7 @@ $(function() {
   $('#back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: '0'
-    }, 500, 'swing');
+    }, 1250, 'swing');
   });
 
   $('a').click(function(event) {

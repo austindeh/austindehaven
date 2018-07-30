@@ -12,3 +12,14 @@ window.addEventListener("scroll", function(){
 }, false);
 
 
+$('.carousel').each(function(){
+    var width = $(this).width();
+  });
+
+Draggable.create('.carousel-items', {
+    type: 'x',
+    bounds: '.carousel',
+    // throwProps: true,
+    edgeResistance: 0.75,
+    dragResistance: -2,
+});

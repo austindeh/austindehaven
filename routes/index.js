@@ -29,11 +29,11 @@ router.get('/', function (req, res, next) {
     {
       active: true,
       // year: '2018',
-      title: 'West Dermatology',
+      title: 'Fhitting Room',
       category: 'Design',
       classes: 'project-35 parallax-1',
       href: '/project/westderm',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fhittingroom-desktop.jpg'),
       mobile: '/images/home/westderm-mobile.jpg',
     },
 
@@ -50,13 +50,13 @@ router.get('/', function (req, res, next) {
 
     {
       active: true,
-      // year: '2015',
-      title: 'Motoamerica',
+      // year: '2018',
+      title: 'West Dermatology',
       category: 'Design',
       classes: 'project-55 parallax-1',
-      href: '/project/motoamerica',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop.jpg'),
-      mobile: '/images/home/motoamerica-mobile.jpg',
+      href: '/project/westderm',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop-v2.jpg'),
+      mobile: '/images/home/westderm-mobile.jpg',
     },
 
     {
@@ -73,14 +73,15 @@ router.get('/', function (req, res, next) {
     {
       active: true,
       // year: '2015',
-      title: 'Ken Block',
+      title: 'Motoamerica',
       category: 'Design',
       classes: 'project-35 parallax-1',
-      href: '/project/ken-block',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/kenblock-desktop.jpg'),
-      mobile: '/images/home/kenblock-mobile.jpg',
+      href: '/project/motoamerica',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop.jpg'),
+      mobile: '/images/home/motoamerica-mobile.jpg',
     },
 
+    
     {
       active: true,
       // year: '2016',
@@ -90,6 +91,17 @@ router.get('/', function (req, res, next) {
       href: '/project/made-in-la',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/madeinla-desktop.jpg'),
       mobile: '/images/home/madeinla-mobile.jpg',
+    },
+
+    {
+      active: true,
+      // year: '2015',
+      title: 'Ken Block',
+      category: 'Design',
+      classes: 'project-35 parallax-1',
+      href: '/project/ken-block',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/kenblock-desktop.jpg'),
+      mobile: '/images/home/kenblock-mobile.jpg',
     },
   ];
 

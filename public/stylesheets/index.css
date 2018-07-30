@@ -22,11 +22,7 @@
   filter: grayscale(0%);
 }
 
-.project:nth-child(7) {
-  margin-bottom: 20vh;
-}
-
-.project:nth-child(6) {
+.project:last-child {
   margin-bottom: 20vh;
 }
 
