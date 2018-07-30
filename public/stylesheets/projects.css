@@ -62,7 +62,7 @@
 /* -- Project Overview -- */
 
 .project-top {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -223,14 +223,14 @@ video::-webkit-media-controls-time-remaining-display {
 .carousel {
   overflow-x: hidden;
   align-items: flex-start;
-  /* width: 100%; */
-  border: solid red;
+  width: 100%;
+  /* border: solid red; */
 }
 
 .carousel-items {
   display: inline-flex;
   align-items: center;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
   margin: 15vh 20vw;
   transition: all 2s;
   transition-timing-function: cubic-bezier(0.12, 0.8, 0.28, 0.96);
