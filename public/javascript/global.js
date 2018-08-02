@@ -149,3 +149,8 @@ window.addEventListener('load', function() {
     new Viewport();
   }
 });
+
+
+$('.video').each(function(){
+  this.onpause = this.removeEventListener('IntersectionObserver');
+});

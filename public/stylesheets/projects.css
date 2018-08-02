@@ -112,13 +112,11 @@
 
 
 p {
-  width: 70%;
-  text-align: center;
+  text-align: left;
 }
 
-p, .h2 {
+.h1 {
   font-weight: 500;
-  margin-bottom: 25px;
   text-align: left;
 }
 
@@ -151,8 +149,20 @@ p, .h2 {
   margin-bottom: 10vh;
 }
 
+.spacing-large {
+  margin-bottom: 15vh;
+}
+
 .spacing-small {
   margin-bottom: 4vh;
+}
+
+.spacing-copy {
+  margin-bottom: 2vh;
+}
+
+.copy-width {
+  width: 45vw;
 }
 
 .full-width {
@@ -220,26 +230,35 @@ video::-webkit-media-controls-time-remaining-display {
 }
 
 /* -- Carousel -- */
-.carousel {
-  overflow-x: hidden;
-  align-items: flex-start;
-  width: 100%;
-  /* border: solid red; */
-}
 
-.carousel-items {
-  display: inline-flex;
+.carousel-cell {
+  display: flex;
   align-items: center;
-  flex-wrap: nowrap;
-  margin: 15vh 20vw;
-  transition: all 2s;
-  transition-timing-function: cubic-bezier(0.12, 0.8, 0.28, 0.96);
+  flex-direction: row;
+  min-height: 100%;
+}
+  
+.carousel-cell img {
+  margin-right: 7vw;
+  margin-left: 7vw;
+  min-height: 100%;
+  min-width: 38vw;
+  max-width: 55vw;
 }
 
-.carousel-items img {
-  margin-right: 10vw;
-}
-
-.carousel-items img:first-child {
-  margin-left: 10vw;
+.carousel .observed {
+    animation: move 0;
+    animation: move-left 1s forwards;
+  }
+  
+  @keyframes move-left {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 }

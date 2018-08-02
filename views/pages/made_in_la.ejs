@@ -6,29 +6,14 @@
     <%- include('../partials/global/_meta') %>
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
     <img class="full-width spacing-standard observable" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
 
-
-    <div class="carousel">
-      <div class="carousel-items">
-        <img target="slide" src="//unsplash.it/500">
-        <img target="slide" src="//unsplash.it/300">
-        <img target="slide" src="//unsplash.it/400">
-        <img target="slide" src="//unsplash.it/200">
-        <img target="slide" src="//unsplash.it/400">
-        <img target="slide" src="//unsplash.it/500">
-        <img target="slide" src="//unsplash.it/200">
-        <img target="slide" src="//unsplash.it/300">
-      </div>
-    </div>
-
     <div class="body-width">
-
-
       <div class="grid">
         <div class="row">
           <div class="column observable">
@@ -74,6 +59,7 @@
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>
