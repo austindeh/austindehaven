@@ -81,7 +81,8 @@ class Viewport {
 
 
     if (target.nodeName === 'VIDEO') {
-      ratio <= 0.25 && !target.paused ? target.pause() : target.play()
+      ratio <= 0.1 && !target.paused ? target.pause() : target.play();
+      console.log('play/pause');
     }
   }
 }
