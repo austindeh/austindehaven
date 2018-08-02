@@ -78,7 +78,7 @@
 }
 
 .project-overview {
-  margin-bottom: 25px;
+  margin-bottom: 4vh;
   width: 65%;
 }
 
@@ -178,6 +178,17 @@ p {
 .column {
   width: 100%;
   padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .spacing-large {
+    margin-bottom: 10vh;
+  }
+
+  .copy-width {
+    padding: 0 7vw;
+    width: 100%;
+  }
 }
 
 

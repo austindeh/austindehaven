@@ -84,21 +84,21 @@ p {
 body, .body {
   font-family: "raleway", sans-serif;
   font-size: 14px;
-  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (2560 - 320)));
+  font-size: calc(12px + (15 - 12) * ((100vw - 320px) / (2560 - 320)));
   letter-spacing: 1.5px;
   line-height: 30px;
 }
 
 h1, .h1 {
   font-size: 20px;
-  font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (2560 - 320)));
+  font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (2560 - 320)));
   letter-spacing: 1.25px;
   line-height: calc(35px + (45 - 35) * ((100vw - 320px) / (2560 - 320)));
 }
 
 h2, .h2 {
   font-size: 18px;
-  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (2560 - 320)));
+  font-size: calc(16px + (19 - 16) * ((100vw - 320px) / (2560 - 320)));
   letter-spacing: 1.25px;
   line-height: 20px;
 }

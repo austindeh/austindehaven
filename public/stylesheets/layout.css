@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.body-width-small {
+  padding: 0 15vw;
+}
+
 @media (max-width: 1200px) and (min-width: 979px) {
 }
 
@@ -11,5 +15,8 @@
 }
 
 @media (max-width: 767px) {
+  .body-width-small {
+    padding: 0 7vw;
+  }
 }
 
