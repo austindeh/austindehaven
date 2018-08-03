@@ -34,7 +34,7 @@ router.get('/', function (req, res, next) {
       classes: 'project-35 parallax-1',
       href: '/project/fhitting-room',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fhittingroom-desktop.jpg'),
-      mobile: '/images/home/westderm-mobile.jpg',
+      mobile: '/images/home/fhittingroom-desktop.jpg',
     },
 
     {
