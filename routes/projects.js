@@ -10,22 +10,22 @@ router.get('/xbox-one-x', function(req, res, next) {
     body: 'Microsoft (in partnership with PepsiCo) wanted to build buzz around the launch of the new Xbox One X console by giving fans the chance to bid and win Xbox One X - every 60 seconds - before public sale. The core challenge was in designing a fair gameplay that deterred bots, cheaters, and sweeps junkies.',
     role: 'Design, Animation',
     prevProject: 'ken-block',
-    nextProject: 'westderm',
+    nextProject: 'fhitting-room',
   }
   res.render('pages/xbox_one_x', { project: project, images: [] })
 });
 
-router.get('/westderm', function(req, res, next) {
+router.get('/fhitting-room', function(req, res, next) {
   var project = {
     date: '2018',
-    client: 'West Dermatology',
-    title: 'westdermatology.com',
-    role: 'Design',
+    client: 'Fhitting Room',
+    title: 'fhittingroom.com',
+    role: 'Creative Lead, Front-end',
     prevProject: 'xbox-one-x',
     nextProject: 'disney-toybox',
     body: 'West Dermatology had an interesting problem to solve: How do we have a corporate brand trickle down to many individual brands all under the same roof. This project presented many unique UX challenges but also design challenges. Given the scale of the site, we had to come up with creative ways to gain efficiencies in the design process. One of those was moving over to sketch for design and implementing a design system that would essentially allow us to dynamically update content and build new pages out faster than we ever could traditionally using photoshop. You can view the site <a href="westdermatology.com"><b>here</b></a>',
   }
-  res.render('pages/westderm', { project: project, images: [] })
+  res.render('pages/fhitting_room', { project: project, images: [] })
 });
 
 router.get('/disney-toybox', function(req, res, next) {
@@ -34,13 +34,25 @@ router.get('/disney-toybox', function(req, res, next) {
     client: 'Disney',
     title: 'Disney Toybox',
     role: 'Photography, Design, Animation',
-    prevProject: 'westderm',
-    nextProject: 'alpinestars-adaptive-stretch',
+    prevProject: 'fhitting-room',
+    nextProject: 'westderm',
     body: 'Disney came to us asking to help come up with a new campaign focused around the release of their new toyline. The campaign was a relatively short timeline starting in early October and going live in mid November, just in time for the holidays. As the campaign was primarily going to be utilized around the holidays, we were coming up with creative ways to bring the characters and holidays to your house.',
   }
   res.render('pages/disney_toybox', { project: project, images: [] })
 });
 
+router.get('/westderm', function(req, res, next) {
+  var project = {
+    date: '2018',
+    client: 'West Dermatology',
+    title: 'westdermatology.com',
+    role: 'Design Lead, Front-end',
+    prevProject: 'disney-toybox',
+    nextProject: 'alpinestars-adaptive-stretch',
+    body: 'West Dermatology had an interesting problem to solve: How do we have a corporate brand trickle down to many individual brands all under the same roof. This project presented many unique UX challenges but also design challenges. Given the scale of the site, we had to come up with creative ways to gain efficiencies in the design process. One of those was moving over to sketch for design and implementing a design system that would essentially allow us to dynamically update content and build new pages out faster than we ever could traditionally using photoshop. You can view the site <a href="westdermatology.com"><b>here</b></a>',
+  }
+  res.render('pages/westderm', { project: project, images: [] })
+});
 
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
   var project = {
@@ -48,11 +60,24 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
     client: 'Alpinestars',
     title: 'Alpinestars Adaptive Stretch',
     role: 'Art Direction, Photography, Design',
-    prevProject: 'disney-toybox',
-    nextProject: 'made-in-la',
+    prevProject: 'westderm',
+    nextProject: 'motoamerica',
     body: 'For 2017 Alpinestars was launching a new gear set which implemented the use of new innovative stretch fabrics which promoted comfortable adaptive flexibility for the rider. I was tasked to come up with a concept and execution to show the functionality of the innovative new fabrics. The fabrics were in select key areas which helped increase rider comfort in certain positions while on the bike. While stretch fabrics are common among other brands, Alpinestars reinvented the way the gear worked with the rider. Our goal was to show this through simple and intriguing imagery.',
   }
   res.render('pages/alpinestars_adaptive_stretch', { project: project, images: [] })
+});
+
+router.get('/motoamerica', function(req, res, next) {
+  var project = {
+    date: '2015',
+    title: 'Motoamerica',
+    client: 'Motoamerica',
+    prevProject: 'alpinestars-adaptive-stretch',
+    nextProject: 'made-in-la',
+    role: 'Art Direction, Branding, Design',
+    body: 'It was an honor to be able to influence a sport I love so much through my art and design. Coming from a strong racing heritage and successful racing career it seemed to be a perfect fit for me to help with the start of the new Pro American Motorcycle Championship. I was given a lot of freedom in this project creatively and had the opportunity to really push my capabilities as a designer. This project was completed over the course of nearly a year and involved everything from logo development, brand identity, sales & media decks, at track collateral, business collateral, print advertising, web advertising, websites, and supporting logos.',
+  }
+  res.render('pages/motoamerica', { project: project })
 });
 
 router.get('/made-in-la', function(req, res, next) {
@@ -61,24 +86,11 @@ router.get('/made-in-la', function(req, res, next) {
     title: 'Made In LA',
     client: 'Made In LA',
     role: 'Art Direction, Design',
-    prevProject: 'alpinestars-adaptive-stretch',
-    nextProject: 'motoamerica',
+    prevProject: 'motoamerica',
+    nextProject: 'ken-block',
     body: 'Made in LA is a new Los Angeles based music group. Our mission for the Made in LA rebrand was very simple. We wanted to not only mark the beginning of a new artist but also to tell their story through a timeless icon. My goal was to create something which would represent their music, style and personality in a visually pleasing way. Made in LA is minimal, independant, defined and more importantly, new.',
   }
   res.render('pages/made_in_la', { project: project })
-});
-
-router.get('/motoamerica', function(req, res, next) {
-  var project = {
-    date: '2015',
-    title: 'Motoamerica',
-    client: 'Motoamerica',
-    prevProject: 'made-in-la',
-    nextProject: 'ken-block',
-    role: 'Art Direction, Branding, Design',
-    body: 'It was an honor to be able to influence a sport I love so much through my art and design. Coming from a strong racing heritage and successful racing career it seemed to be a perfect fit for me to help with the start of the new Pro American Motorcycle Championship. I was given a lot of freedom in this project creatively and had the opportunity to really push my capabilities as a designer. This project was completed over the course of nearly a year and involved everything from logo development, brand identity, sales & media decks, at track collateral, business collateral, print advertising, web advertising, websites, and supporting logos.',
-  }
-  res.render('pages/motoamerica', { project: project })
 });
 
 router.get('/ken-block', function(req, res, next) {
@@ -87,8 +99,8 @@ router.get('/ken-block', function(req, res, next) {
     title: 'Ken Block x Hoonigan',
     client: 'Hoonigan',
     role: 'Illustration, Design',
-    prevProject: 'motoamerica',
-    nextProject: 'archives',
+    prevProject: 'made-in-la',
+    nextProject: 'xbox-one-x',
     body: '2016 held an interesting year for Hoonigan; We were growing fast and gaining a lot of recognition in the motorsports industry. One of the highlights every year was releasing Ken Blocks new livery. The livery was an art piece that represented the brand and the team for the season and rolled over into all advertising for the year. Inspired by early generation 8-bit video games, zebra print, pop art and digital camo; the livery was a mashup that proved to stand out in a crowd.',
   }
   res.render('pages/ken_block', { project: project })

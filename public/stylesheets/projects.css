@@ -197,6 +197,7 @@ p {
 
 video::-webkit-media-controls-play-button {
   display: none;
+  width: 50px;
 }
 
 video::-webkit-media-controls-volume-slider {
