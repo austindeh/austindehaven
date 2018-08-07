@@ -1,0 +1,30 @@
+.parallax-section {
+    display: flex;
+    align-items: center;
+}
+
+.parallax-1 img {
+    top: 0;
+    left: 0;
+    width: 35vw;
+}
+
+.parallax-2 img {
+    top: -50px;
+    left: -30px;
+    width: 35vw;
+}
+
+@media (max-width: 762px) {
+    .parallax-1 img {
+        top: 0;
+        left: 7vw;
+        width: 46vw;
+    }
+    
+    .parallax-2 img {
+        top: -20px;
+        left: -20px;
+        width: 46vw;
+    } 
+}

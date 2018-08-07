@@ -7,6 +7,8 @@
 
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/xbox.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
@@ -15,12 +17,62 @@
       <source src="/images/projects/xbox/scorpio_header.webm" type="video/webm">
       <source src="/images/projects/xbox/scorpio_header.mp4" type="video/mp4">
     </video>
-    <div class="body-width">
-      <video class="spacing-standard observable" width="100%" preload="none" playsinline controls controlsList="nodownload">
-        <source src="/images/projects/xbox/scorpio_screencapture.webm" type="video/webm">
-        <source src="/images/projects/xbox/scorpio_screencapture.mp4" type="video/mp4">
-      </video>
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Planning out the UX.</p>
+      <p class="observable body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+    
+    <div class="body-width-small spacing-large parallax-section">
+      <div class="parallax-1"> <img class="lazy observable" data-src="/images/projects/xbox/parallax-phone.jpg"> </div>
+      <div class="parallax-2"> <img class="lazy observable" data-src="/images/projects/xbox/parallax-xbox.jpg"> </div>
+    </div>
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Planning out the UX.</p>
+      <p class="observable body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="">
+      <img class="lazy spacing-large observable" data-src="/images/projects/xbox/03-wireframes.jpg">
+    </div>
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Planning out the UX.</p>
+      <p class="observable body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- IMG Here !-->
+
+    <div class="copy-width spacing-large">
+      <p class="observable body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- VIDEO Here !-->
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Planning out the UX.</p>
+      <p class="observable body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- VIDEO Here !-->
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Planning out the UX.</p>
+      <p class="observabl e body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- IMG Here !-->
+    <!-- IMG Here !-->
+
+    <div class="full-width carousel spacing-standard">
+      <div class="carousel-cell observable"><img src="/images/projects/westderm/carousel-2.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/westderm/carousel-3.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/westderm/carousel-4.jpg"></img></div>
+    </div>
+
+
+
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
@@ -28,6 +80,7 @@
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>
