@@ -26,6 +26,24 @@
     color: white;
 }
 
+
+.carousel-cell {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100%;
+    cursor: move;
+  }
+    
+  .carousel-cell img {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    min-height: 100%;
+    width: 55vw;
+  }
+
+
+
 @media (max-width: 762px) {
     .parallax-1 img {
         top: 0;
