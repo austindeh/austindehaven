@@ -65,7 +65,7 @@ class Viewport {
     })
   }
 
-  
+
   cb(entries) {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
@@ -139,6 +139,7 @@ $(function() {
     newLocation = this.href;
 
     $('body').fadeOut(500, function() {
+      $('body').css({ display: 'flex' })
       window.location = newLocation;
     });
   });
