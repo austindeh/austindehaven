@@ -15,6 +15,17 @@
     width: 35vw;
 }
 
+.bump {
+    margin-top: -50vh;
+    padding-top: 50vh;
+    background-color: #212121;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 @media (max-width: 762px) {
     .parallax-1 img {
         top: 0;
