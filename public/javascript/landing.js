@@ -2,6 +2,7 @@
 $("#name").click(function() {
   $("#social-button").css("opacity", "1");
   $(".social-links").toggleClass('social-links-observed');
+  $("#name span").toggleClass('underlined').toggleClass('selected');
 })
 
 window.addEventListener('load', function() {
