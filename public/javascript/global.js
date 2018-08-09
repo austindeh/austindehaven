@@ -93,6 +93,7 @@ function checkScroll() {
 
 // Document.Ready
 $(function() {
+  $('body').css({ display: 'flex' })
   checkScroll()
 
   if(window.innerWidth >= 768) {
@@ -139,7 +140,6 @@ $(function() {
     newLocation = this.href;
 
     $('body').fadeOut(500, function() {
-      $('body').css({ display: 'flex' })
       window.location = newLocation;
     });
   });
