@@ -139,8 +139,8 @@ $(function() {
     newLocation = this.href;
 
     $('body').fadeOut(500, function() {
-      $('body').css({ display: 'flex' })
       window.location = newLocation;
+      $('body').setTimeout(500).css({ display: 'flex' })
     });
   });
 

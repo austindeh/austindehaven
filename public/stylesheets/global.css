@@ -55,6 +55,11 @@ p {
 
 /* Animations */
 
+.fadeout {
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
 .observable {
   opacity: 0;
   /* transform: translateY(100px);
