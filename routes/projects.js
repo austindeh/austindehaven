@@ -6,7 +6,7 @@ router.get('/xbox-one-x', function(req, res, next) {
   var project = {
     date: '2017',
     client: 'Microsoft / Pepsi',
-    title: 'Every 60 Seconds - Case Study WIP',
+    title: 'Every 60 Seconds',
     body: 'Microsoft (in partnership with PepsiCo) wanted to build buzz around the launch of the new Xbox One X console by giving fans the chance to bid and win Xbox One X - every 60 seconds - before public sale. The core challenge was in designing a fair gameplay that deterred bots, cheaters, and sweeps junkies.',
     role: 'Design, Animation',
     prevProject: 'ken-block',
