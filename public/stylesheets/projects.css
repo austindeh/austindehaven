@@ -267,7 +267,7 @@ video::-webkit-media-controls-time-remaining-display {
   @keyframes move-left {
     from {
       opacity: 0;
-      transform: translateX(100px);
+      transform: translateX(150px);
     }
     to {
       opacity: 1;
