@@ -12,6 +12,12 @@
 //   }
 // }
 
+window.onpageshow = function(event) {
+  if (event.persisted) {
+      $('body').css({ display: 'flex' });
+  }
+};
+
 class Viewport {
   constructor(opts) {
 
@@ -93,7 +99,6 @@ function checkScroll() {
 
 // Document.Ready
 $(function() {
-  $('body').css({ display: 'flex' })
   checkScroll()
 
   if(window.innerWidth >= 768) {
