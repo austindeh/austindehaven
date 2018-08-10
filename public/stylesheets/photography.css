@@ -58,13 +58,18 @@ body {
 
 /* -- Image Filtering -- */
 
-/* .masonry .observable {
+.masonry-col .observable {
   transition: opacity .75s, transform 1s;
+  opacity: 0;
+  transform: translateY(100px);
 }
 
-.masonry .observed {
+.masonry-col .observed {
   transition: opacity .75s, transform 1s;
-} */
+  animation: none;
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 .filter-bar {
   display: flex;
