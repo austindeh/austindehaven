@@ -10,7 +10,7 @@ class Viewport {
   constructor(opts) {
 
     this.observer = new IntersectionObserver(this.cb.bind(this), {
-      threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
+      threshold: [0.05, 0.25, 0.5, 0.75, 1.0]
     })
 
     this.lazyObserver = new IntersectionObserver(this.preload.bind(this), {
@@ -36,7 +36,6 @@ class Viewport {
 
   preload(entries) {
     entries.forEach(entry => {
-      console.log(entry.intersectionRatio);
       if (entry.intersectionRatio > 0) {
         let target = entry.target
         target.setAttribute('src', target.getAttribute('data-src'))
@@ -48,7 +47,8 @@ class Viewport {
   
   cb(entries) {
     entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
+      console.log(entry)
+      if (entry.intersectionRatio > 0) { 
         this.observe(entry.target, entry.intersectionRatio)
       }
     })
@@ -56,7 +56,8 @@ class Viewport {
 
   observe(target, ratio) {
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
-        target.classList.add('observed')
+      target.classList.add('observed');
+      this.observer.unobserve(target);
     }
 
 
