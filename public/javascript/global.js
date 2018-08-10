@@ -7,10 +7,20 @@
 //     return ".jpg";
 //   }
 
+//   else if( ) {
+    
+//   }
+
 //   else {
 //     return "-hd.jpg";
 //   }
 // }
+
+window.onpageshow = function(event) {
+  if (event.persisted) {
+      $('body').css({ display: 'flex' });
+  }
+};
 
 class Viewport {
   constructor(opts) {
@@ -65,7 +75,7 @@ class Viewport {
     })
   }
 
-  
+
   cb(entries) {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
@@ -81,7 +91,8 @@ class Viewport {
 
 
     if (target.nodeName === 'VIDEO') {
-      ratio <= 0.25 && !target.paused ? target.pause() : target.play()
+      ratio <= 0.1 && !target.paused ? target.pause() : target.play();
+      console.log('play/pause');
     }
   }
 }
@@ -130,7 +141,7 @@ $(function() {
   $('#back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: '0'
-    }, 500, 'swing');
+    }, 1250, 'swing');
   });
 
   $('a').click(function(event) {
@@ -148,4 +159,9 @@ window.addEventListener('load', function() {
   if (('IntersectionObserver' in window)) {
     new Viewport();
   }
+});
+
+
+$('.video').each(function(){
+  this.onpause = this.removeEventListener('IntersectionObserver');
 });

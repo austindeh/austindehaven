@@ -2,6 +2,7 @@
 $("#name").click(function() {
   $("#social-button").css("opacity", "1");
   $(".social-links").toggleClass('social-links-observed');
+  $("#name span").toggleClass('underlined').toggleClass('selected');
 })
 
 window.addEventListener('load', function() {
@@ -35,13 +36,15 @@ t4.to(".snippetglitch", 0.1, {skewX:700,ease: Power4.easeInOut})
 
 
 // Hide scroll down button on scroll
-$(window).scroll(function() {
-	if (window.scrollY > 50) {
-    $("#scroll-down").fadeOut(500)
-	} else {
-    $("#scroll-down").fadeIn(500)
-  }
-})
+if(window.innerWidth >= 768) {
+  $(window).scroll(function() {
+    if (window.scrollY > 50) {
+      $("#scroll-down").fadeOut(500)
+    } else {
+      $("#scroll-down").fadeIn(500)
+    }
+  })
+}
 
 // Scroll down to project on scroll down button click
 $("#scroll-down").click(function() {

@@ -6,14 +6,14 @@
     <%- include('../partials/global/_meta') %>
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="full-width spacing-standard observable" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
+    <img class="full-width spacing-large observable" src="/images/projects/made_in_la/01-made_in_la-intro.jpg">
 
     <div class="body-width">
-
       <div class="grid">
         <div class="row">
           <div class="column observable">
@@ -39,16 +39,19 @@
           </div>
         </div>
       </div>
-      <img class="spacing-standard observable" src="/images/projects/made_in_la/08-made_in_la-sketching.jpg">
-      <img class="spacing-standard observable" src="/images/projects/made_in_la/09-made_in_la-macbook.jpg">
+      <img class="spacing-large observable" src="/images/projects/made_in_la/08-made_in_la-sketching.jpg">
+      <img class="spacing-large observable" src="/images/projects/made_in_la/09-made_in_la-macbook.jpg">
     
-      <img class="spacing-standard observable" src="/images/projects/made_in_la/10-made_in_la-logoEvolution.png">
-      <video class="spacing-standard observable" width="100%" preload="none" playsinline controls controlsList="nodownload">
-        <source src="/images/projects/made_in_la/12-made_in_la-AboutYouVideo.mp4" type="video/mp4">
-      </video>
+      <img class="spacing-large observable" src="/images/projects/made_in_la/10-made_in_la-logoEvolution.png">
+      
+      <div class="observable">
+        <video class="spacing-large" width="100%" poster="/images/projects/made_in_la/video-poster.jpg" preload="none" playsinline controls controlsList="nodownload">
+          <source src="/images/projects/made_in_la/12-made_in_la-AboutYouVideo.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
 
-    <img class="full-width spacing-standard observable" src="/images/projects/made_in_la/11-made_in_la-logoOnBlack.jpg">
+    <img class="full-width spacing-large observable" src="/images/projects/made_in_la/11-made_in_la-logoOnBlack.jpg">
     <img class="full-width spacing-small observable" src="/images/projects/made_in_la/13-made_in_la-vinyl.jpg">
     <img class="full-width observable" src="/images/projects/made_in_la/14-made_in_la-BWPortrait.jpg">
 
@@ -59,6 +62,7 @@
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>

@@ -7,30 +7,55 @@
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
     <link rel='stylesheet' href='/stylesheets/projects/alpinestars_adaptive_stretch.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
 
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="observable spacing-standard" src="/images/projects/alpinestars_adaptive_stretch/01-alpinestars_adaptive_stretch-rearshot.jpg">
+    <img class="observable spacing-large" src="/images/projects/alpinestars_adaptive_stretch/01-alpinestars_adaptive_stretch-rearshot.jpg">
 
-    <div class="body-width">
-      <p class="h2 observable spacing-small">Inspiration</p>
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">What direction should we go?</p>
+      <p class="observable body">Starting the project we did a creative audit to see what other brands were doing and determine the visual language that best showcased the new technology.</p>
     </div>
 
-    <div class="body-width">
-      <img class="spacing-standard observable" src="/images/projects/alpinestars_adaptive_stretch/02-alpinestars_adaptive_stretch-inspiration.jpg">
+    <div class="body-width-small">
+      <img class="spacing-large observable" src="/images/projects/alpinestars_adaptive_stretch/02-alpinestars_adaptive_stretch-inspiration.jpg">
     </div>
 
-    <img class="observable spacing-standard" src="/images/projects/alpinestars_adaptive_stretch/03-alpinestars_adaptive_stretch-barcia_whip.jpg">
+    <img class="observable spacing-large" src="/images/projects/alpinestars_adaptive_stretch/03-alpinestars_adaptive_stretch-barcia_whip.jpg">
+
+    <div class="copy-width spacing-standard">
+      <p class="observable h1 spacing-copy">In the studio.</p>
+      <p class="observable body">Jumping into the studio we had a list of styles we wanted to execute on. We really wanted to display the process riders go through from when they put their gear on, to the ritual before they got on their bike, as well as the forces they endure while riding.</p>
+    </div>
+
+    <!-- This is the collage section as a carousel !-->
+    <div class="full-width carousel spacing-large">
+      <div class="carousel-cell observable"><img src="/images/projects/alpinestars_adaptive_stretch/carousel-1.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/alpinestars_adaptive_stretch/carousel-2.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/alpinestars_adaptive_stretch/carousel-3.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/alpinestars_adaptive_stretch/carousel-4.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/alpinestars_adaptive_stretch/carousel-5.jpg"></img></div>
+    </div>
+
 
     <div class="body-width">
-      <p class="h2 observable spacing-small">Photography</p>
-      <img class="spacingSmall observable" src="/images/projects/alpinestars_adaptive_stretch/04-alpinestars_adaptive_stretch-process_jersey.jpg">
-      <img class="spacing-standard observable" src="/images/projects/alpinestars_adaptive_stretch/05-alpinestars_adaptive_stretch-process_collage.jpg">
-      <p class="h2 observable spacing-small">Deliverables</p>
+      <video class="spacing-large observable" width="100%" preload="none" nocontrols playsinline muted loop controlsList="nodownload">
+        <source src="/images/projects/alpinestars_adaptive_stretch/collection-video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Building out the campaign.</p>
+      <p class="observable body">Once we clipped and retouched the photos we moved into photoshop to execute on our vision. Knowing the gear uses fabrics that stretch in key areas, we wanted to play with the idea of the fabric stretching in a dramatic and intriguing way. </p>
+    </div>
+
+    <div class="body-width spacing-large">
       <img class="observable" src="/images/projects/alpinestars_adaptive_stretch/06-alpinestars_adaptive_stretch-rearshot_final.jpg">
-      <div class="row spacing-standard">
+      <div class="row">
         <div class="column">
           <img class="observable" src="/images/projects/alpinestars_adaptive_stretch/07-alpinestars_adaptive_stretch-glove_final.jpg">
         </div>
@@ -40,13 +65,13 @@
       </div>
     </div>
 
-
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
     <%- include('../partials/global/_back-to-top') %>
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>

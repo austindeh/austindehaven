@@ -6,45 +6,70 @@
     <%- include('../partials/global/_meta') %>
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
   </head>
   <body>
 
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <video style="background-color: #181818;" class="spacing-standard observable" width="100%" playsinline muted loop autoplay>
+    <video style="background-color: #181818;" class="spacing-large observable" width="100%" playsinline muted loop autoplay>
       <source src="/images/projects/disney_toybox/lightsaber.webm#t=0.1" type="video/webm">
       <source src="/images/projects/disney_toybox/lightsaber.mp4#t=0.1" type="video/mp4">
       <source src="/images/projects/disney_toybox/lightsaber.ogg#t=0.1" type="video/ogg">
     </video>
 
-    <div class="body-width">
-      <p class="observable h2 spacing-small">Photoshoot</p>
+    <div class="copy-width spacing-standard">
+      <p class="observable h1 spacing-copy">In the studio.</p>
+      <p class="observable body">One of the challenges we had while planning this project was shooting the toys without knowing exactly what scenes they would be used in. This forced us to be very methodical with how we lit the toys. We needed to ensure that the photos were usable in many different scenarios. With that in mind, we also shot baseline photos with as flat lighting as possible. So in the scenario where one of the shots isn't working well in a scene, we were able to hand paint different lighting onto the toys.</p>
     </div>
 
-    <img class="lazy body-width observable spacing-standard" data-src="/images/projects/disney_toybox/photography-grid.jpg">
+    <div class="full-width carousel spacing-standard">
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-thor.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-buzz.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-woody.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-kylo.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-turntable.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-ironman.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/disney_toybox/carousel-shooting.jpg"></img></div>
+    </div>
 
-    <div class="body-width">
-      <p class="observable h2 spacing-small">Compositing</p>
-      <video class="spacing-standard observable" width="100%"  preload="none" controls playsinline muted loop controlsList="nodownload">
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Building the scenes out in Photoshop.</p>
+      <p class="observable body">Once we had the environments and characters selected for each scene we moved over to compositing. Each toy was then retouched and placed into a fully composite environment. Atmosphere and props were added to each scene to make the characters feel life-like.</p>
+    </div>
+
+
+    <div class="body-width-small">
+      <video class="spacing-large observable" width="100%"  preload="none" nocontrols playsinline muted loop controlsList="nodownload">
         <source src="/images/projects/disney_toybox/compositing.mp4" type="video/mp4">
       </video>
     </div>
 
-    <img class="lazy observable spacing-standard" data-src="/images/projects/disney_toybox/disney-macbook.jpg">
+    <img class="lazy observable spacing-large" data-src="/images/projects/disney_toybox/disney-macbook.jpg">
 
-    <div class="body-width">
-      <p class="observable h2 spacing-small">Animation</p>
-      <video class="spacing-standard observable" width="100%" preload="none" controls playsinline muted loop controlsList="nodownload">
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Bringing the scenes to life with motion.</p>
+      <p class="observable body">Animation was then incorporated into the composites really bringing the scenes to life. We re-created atmosphere as well as generated dynamic lighting to give the scenes more depth. This gives the audience a better sense of the environment these characters are living in. Particles and effects were then added to the scene to display the characters personalities. One of the challenges was ensuring that all of these effects seemlessly looped in the final product.</p>
+    </div>
+
+    <div class="body-width-small">
+      <video class="spacing-large observable" width="100%" preload="none" nocontrols playsinline muted loop controlsList="nodownload">
         <source src="/images/projects/disney_toybox/animation.mp4" type="video/mp4">
       </video>
     </div>
 
-    <div style="display: flex; flex-direction: column;" class="observable spacing-standard">
-      <img class="lazy" data-src="/images/projects/disney_toybox/disney-screens.jpg"><img class="lazy" data-src="/images/projects/disney_toybox/disney-livingroom.jpg">
+    <div class="observable spacing-large">
+      <img class="lazy" data-src="/images/projects/disney_toybox/disney-livingroom.jpg">
     </div>
 
-    <div class="body-width spacing-standard">
-      <p class="observable h2 spacing-small">Final Products</p>
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Putting them out in the wild.</p>
+      <p class="observable body">We were able to create 12 different scenes in just under 4 weeks from planning to delivery. The campaign lasted 4 months spanning over the holiday season. Some of the scenes were displayed in stores as well as in Time Square on the Disney Store billboard.</p>
+    </div>
+
+    <img class="lazy observable spacing-small" data-src="/images/projects/disney_toybox/disney-screens.jpg">
+
+    <div class="body-width spacing-large">
       <div class="grid">
         <div class="row observable">
           <div class="column">
@@ -85,7 +110,7 @@
       </div>
     </div>
 
-    <img class="observable" src="/images/projects/disney_toybox/disney-characters.jpg">
+    <img src="/images/projects/disney_toybox/disney-characters.jpg">
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
@@ -94,6 +119,7 @@
   </body>
 
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>

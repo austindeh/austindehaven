@@ -7,31 +7,66 @@
 
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-01a.jpg">
-    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-02.png">
+    <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-01a.jpg">
     
-    <div class="body-width">
-        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-03.jpg">
-        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-04.jpg">
-        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-05.jpg">
-        <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-06.jpg">
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Planning out the UX.</p>
+      <p class="observable body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
-    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-07.jpg">
+    <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-02.jpg">
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Establishing a design language.</p>
+      <p class="observable body">In starting to experiment with look and feel, we began establishing a design language which would help set the foundations for the site. Since the site is on such a large scale, it was very important to make sure these rules were executed on to maintain consistency throughout all of the pages. This design language was then interpreted as a style guide which was used both for the design and dev teams.</p>
+    </div>
     
+    <div class="body-width-small">
+        <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-03.jpg">
+        <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-04.jpg">
+        <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-05.jpg">
+        <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-06.jpg">
+    </div>
+
+    <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-07.jpg">
+    
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Building a modular design system.</p>
+      <p class="observable body">Since we had such a vast amount of pages to build in a short time frame, we needed to rethink the way we built websites. Simplifying our design language and finding efficiencies was critical in the process of this project. Traditionally using photoshop we had to build each page out separately, constantly re-opening and closing documents in order to reuse previously designed elements. Migrating over to sketch relieved a lot of these difficulties by allowing us to establish global rules as well as gave us the ability to build reusable components much more efficiently. As a result, we were able to build an extensive modular component library, enabling us to build and edit pages themselves faster then we ever would have previously.</p>
+    </div>
+
     <div class="">
-        <video class="body-width spacing-standard observable" width="100%" preload="none" playsinline muted controls controlsList="nodownload">
+        <video class="body-width-small spacing-large observable" width="100%" preload="none" playsinline muted nocontrols controlsList="nodownload">
             <source src="/images/projects/westderm/westderm-08.mp4" type="video/mp4">
         </video>
     </div>
 
-    <img class="lazy full-width spacing-standard observable" data-src="/images/projects/westderm/westderm-09.jpg">
-    <img class="lazy body-width spacing-standard observable" data-src="/images/projects/westderm/westderm-10.gif">
-    <img class="lazy full-width observable" data-src="/images/projects/westderm/westderm-11.jpg">
+    
+      <div class="copy-width spacing-large">
+        <p class="observable h1 spacing-copy">Dynamic content.</p>
+        <p class="observable body">West Dermatology needed a way to house and display multiple brands operating under them. And since each brand offers different services, we needed to create a network of brand microsites with customizeable content, each with their own unique user flow. We created a custom CMS to help manage content. Utilizing the modular compenent library we designed, this allowed them to expand and adapt different pages to each brands specific needs in an easy and efficient way.</p>
+      </div>
+
+    <img class="lazy full-width spacing-large observable" data-src="/images/projects/westderm/westderm-09.jpg">
+    <img class="lazy body-width-small spacing-large observable" data-src="/images/projects/westderm/westderm-10.gif">
+
+    <div class="copy-width spacing-standard">
+        <p class="observable h1 spacing-copy">Community.</p>
+        <p class="observable body">As a result of creating this network of brands, we ultimately gave every office and more importantly every individual a voice. This is bringing the organization closer together and allowing each person to have a spotlight. We've helped build a community within an organization, strengthening relationships between each individual nationwide.</p>
+      </div>
+
+    <div class="full-width carousel spacing-standard">
+      <div class="carousel-cell observable"><img src="/images/projects/westderm/carousel-2.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/westderm/carousel-3.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/westderm/carousel-4.jpg"></img></div>
+    </div>
+
+    <img class="lazy full-width" data-src="/images/projects/westderm/westderm-11.jpg">
         
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
@@ -39,6 +74,7 @@
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>

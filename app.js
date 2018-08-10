@@ -13,12 +13,12 @@ var index = require('./routes/index');
 var projects = require('./routes/projects');
 
 var app = express();
+var router = express.Router()
 
 var host = process.env.HOST
 
 // Add Favicon
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -36,6 +36,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/project', projects);
+
+
+// Validate Users
+router.get('/gateway', function (req, res, next) {
+  res.render('password_protect', {});
+});
+
+router.post('/gateway', function (req, res, next) {
+  var password = req.param('password');
+
+  if (password.toLowerCase() !== 'ad2k18') {
+    res.redirect('/gateway');
+  }
+  res.cookie('authenticated', 'true', );
+  res.redirect('/');
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
