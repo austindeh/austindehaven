@@ -1,3 +1,31 @@
+.xbox-site-video {
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 15vh 0;
+}
+
+.macbook {
+    display: flex;
+    max-width: 70vw;
+    margin: auto 0;
+}
+
+.image-position {
+    width: 100%;
+    height: 100%;
+}
+
+.video-position {
+    position: absolute;
+    top: 5%;
+    left: 10.5%;
+    width: 79%;
+    height: 78%;
+    z-index: 1;
+}
+
 .parallax-section {
     display: flex;
     align-items: center;
@@ -56,4 +84,8 @@
         left: -20px;
         width: 46vw;
     } 
+    
+    .xbox-site-video {
+        padding: 7vh 0;
+    }
 }

@@ -7,6 +7,10 @@
 //     return ".jpg";
 //   }
 
+//   else if( ) {
+    
+//   }
+
 //   else {
 //     return "-hd.jpg";
 //   }
