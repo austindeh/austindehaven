@@ -58,11 +58,11 @@ body {
 
 /* -- Image Filtering -- */
 
-/* .observable {
+/* .masonry .observable {
   transition: opacity .75s, transform 1s;
 }
 
-.observed {
+.masonry .observed {
   transition: opacity .75s, transform 1s;
 } */
 

@@ -1,3 +1,9 @@
+window.onpageshow = function(event) {
+  if (event.persisted) {
+      $('body').css({ display: 'flex' });
+  }
+};
+
 // var mediasrc = function () {
 //   if (screen.width < 768) {
 //     return "-mobile.jpg";
@@ -7,20 +13,10 @@
 //     return ".jpg";
 //   }
 
-//   else if( ) {
-    
-//   }
-
 //   else {
 //     return "-hd.jpg";
 //   }
 // }
-
-window.onpageshow = function(event) {
-  if (event.persisted) {
-      $('body').css({ display: 'flex' });
-  }
-};
 
 class Viewport {
   constructor(opts) {
@@ -75,7 +71,7 @@ class Viewport {
     })
   }
 
-
+  
   cb(entries) {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
@@ -91,8 +87,7 @@ class Viewport {
 
 
     if (target.nodeName === 'VIDEO') {
-      ratio <= 0.1 && !target.paused ? target.pause() : target.play();
-      console.log('play/pause');
+      ratio <= 0.25 && !target.paused ? target.pause() : target.play()
     }
   }
 }
