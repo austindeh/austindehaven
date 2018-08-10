@@ -1,22 +1,14 @@
-window.onpageshow = function(event) {
-  if (event.persisted) {
-      $('body').css({ display: 'flex' });
-  }
-};
-
-// var mediasrc = function () {
-//   if (screen.width < 768) {
-//     return "-mobile.jpg";
+// window.onpageshow = function (event) {
+//   if (event.persisted) {
+//       window.location.reload();
 //   }
+// };
 
-//   else if(screen.width > 768 && screen.width < 1400) {
-//     return ".jpg";
+// window.onpageshow = function(event) {
+//   if (event.persisted) {
+//       $('body').css({ display: 'flex' });
 //   }
-
-//   else {
-//     return "-hd.jpg";
-//   }
-// }
+// };
 
 class Viewport {
   constructor(opts) {
@@ -45,20 +37,6 @@ class Viewport {
       this.lazyObserver.observe(observable)
     })
   }
-
-  // preload(entries) {
-  //   entries.forEach(entry => {
-  //     console.log(entry.intersectionRatio);
-  //     if (entry.intersectionRatio > 0) {
-  //       const target = entry.target
-  //       const dataSrc = target.getAttribute('data-src')
-  //       const src = dataSrc.indexOf('.gif') === -1 ? dataSrc + mediasrc() : dataSrc
-
-  //       target.setAttribute('src', src)
-  //       this.lazyObserver.unobserve(target)
-  //     }
-  //   })
-  // }
 
   preload(entries) {
     entries.forEach(entry => {
