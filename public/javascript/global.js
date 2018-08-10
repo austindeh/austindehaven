@@ -1,14 +1,10 @@
-// window.onpageshow = function (event) {
-//   if (event.persisted) {
-//       window.location.reload();
-//   }
-// };
-
-// window.onpageshow = function(event) {
-//   if (event.persisted) {
-//       $('body').css({ display: 'flex' });
-//   }
-// };
+if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+  window.onpageshow = function(event) {
+    if (event.persisted) {
+        $('body').css({ display: 'flex' });
+    }
+  };
+}
 
 class Viewport {
   constructor(opts) {
@@ -132,9 +128,4 @@ window.addEventListener('load', function() {
   if (('IntersectionObserver' in window)) {
     new Viewport();
   }
-});
-
-
-$('.video').each(function(){
-  this.onpause = this.removeEventListener('IntersectionObserver');
 });
