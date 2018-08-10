@@ -30,7 +30,7 @@ class Viewport {
     })
 
     this.lazyObserver = new IntersectionObserver(this.preload.bind(this), {
-      rootMargin: '200px 0px',
+      rootMargin: '500px 0px',
       threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
     })
 
