@@ -70,6 +70,18 @@
     width: 55vw;
   }
 
+  .team {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .team .col {
+      padding: 10vh 5vw;
+  }
+
 
 
 @media (max-width: 762px) {
@@ -87,5 +99,11 @@
     
     .xbox-site-video {
         padding: 7vh 0;
+    }
+
+    .team .col {
+        padding: 5vh 7vw;
+        padding-left: 0;
+        width: 100%;
     }
 }
