@@ -66,7 +66,7 @@ class Viewport {
 
   preload(entries) {
     entries.forEach(entry => {
-      console.log(entry.intersectionRatio);
+      console.log(entry.intersectionRatio, 'lazy load');
       if (entry.intersectionRatio > 0) {
         let target = entry.target
         target.setAttribute('src', target.getAttribute('data-src'))
@@ -85,8 +85,11 @@ class Viewport {
   }
 
   observe(target, ratio) {
+    console.log('observed');
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
         target.classList.add('observed')
+        this.observer.unobserve(target)
+
     }
 
 
