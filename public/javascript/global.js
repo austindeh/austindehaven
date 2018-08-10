@@ -1,3 +1,9 @@
+window.onpageshow = function(event) {
+  if (event.persisted) {
+      $('body').css({ display: 'flex' });
+  }
+};
+
 // var mediasrc = function () {
 //   if (screen.width < 768) {
 //     return "-mobile.jpg";
@@ -7,20 +13,10 @@
 //     return ".jpg";
 //   }
 
-//   else if( ) {
-    
-//   }
-
 //   else {
 //     return "-hd.jpg";
 //   }
 // }
-
-window.onpageshow = function(event) {
-  if (event.persisted) {
-      $('body').css({ display: 'flex' });
-  }
-};
 
 class Viewport {
   constructor(opts) {
@@ -30,7 +26,7 @@ class Viewport {
     })
 
     this.lazyObserver = new IntersectionObserver(this.preload.bind(this), {
-      rootMargin: '500px 0px',
+      rootMargin: '200px 0px',
       threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
     })
 
@@ -66,7 +62,7 @@ class Viewport {
 
   preload(entries) {
     entries.forEach(entry => {
-      console.log(entry.intersectionRatio, 'lazy load');
+      console.log(entry.intersectionRatio);
       if (entry.intersectionRatio > 0) {
         let target = entry.target
         target.setAttribute('src', target.getAttribute('data-src'))
@@ -75,7 +71,7 @@ class Viewport {
     })
   }
 
-
+  
   cb(entries) {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
@@ -85,17 +81,13 @@ class Viewport {
   }
 
   observe(target, ratio) {
-    console.log('observed');
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
         target.classList.add('observed')
-        this.observer.unobserve(target)
-
     }
 
 
     if (target.nodeName === 'VIDEO') {
-      ratio <= 0.1 && !target.paused ? target.pause() : target.play();
-      console.log('play/pause');
+      ratio <= 0.25 && !target.paused ? target.pause() : target.play()
     }
   }
 }
