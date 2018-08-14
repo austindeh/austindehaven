@@ -117,6 +117,20 @@
   }
 
 
+  .green-bar {
+    background: linear-gradient(to right, #4AD215, #BBFC5C);
+    background-size: 400% 400%;
+    height: 20px;
+    width: 100%;
+    animation: gradient-loop 10s infinite;
+  }
+  
+  @keyframes gradient-loop { 
+      0%{background-position: 0% 50%}
+      50%{background-position: 100% 50%}
+      100%{background-position: 0% 50%}
+  }
+
 
 @media (max-width: 762px) {
     .parallax-1 img {

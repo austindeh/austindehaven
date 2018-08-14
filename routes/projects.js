@@ -19,7 +19,7 @@ router.get('/fhitting-room', function(req, res, next) {
   var project = {
     date: '2018',
     client: 'Fhitting Room',
-    title: 'fhittingroom.com',
+    title: 'Fhitting Room',
     role: 'Creative Lead, Front-end',
     prevProject: 'xbox-one-x',
     nextProject: 'disney-toybox',
