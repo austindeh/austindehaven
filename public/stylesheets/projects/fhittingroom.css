@@ -133,16 +133,21 @@
 
 
 @media (max-width: 762px) {
+
+    .parallax-section {
+        flex-wrap: wrap;
+    }
+
     .parallax-1 img {
         top: 0;
-        left: 0vw;
-        width: 66vw;
+        left: 0;
+        width: 100%;
     }
     
     .parallax-2 img {
-        top: 60px;
-        left: -80px;
-        width: 36vw;
+        top: 0;
+        left: 0;
+        width: 100%;
     } 
     
     .xbox-site-video {

@@ -23,7 +23,7 @@ router.get('/fhitting-room', function(req, res, next) {
     role: 'Creative Lead, Front-end',
     prevProject: 'xbox-one-x',
     nextProject: 'disney-toybox',
-    body: 'West Dermatology had an interesting problem to solve: How do we have a corporate brand trickle down to many individual brands all under the same roof. This project presented many unique UX challenges but also design challenges. Given the scale of the site, we had to come up with creative ways to gain efficiencies in the design process. One of those was moving over to sketch for design and implementing a design system that would essentially allow us to dynamically update content and build new pages out faster than we ever could traditionally using photoshop. You can view the site <a href="westdermatology.com"><b>here</b></a>',
+    body: 'Fhitting Room tasked us to design and develop a new responsive web platform, replacing their existing website. The goal was to design a more intuitive and functional experience for guests and members alike while looking to better promote the brand’s value proposition. We worked directly with the Fhitting Room team to create a digital journey expanding and engaging more consumers, ultimately growing awareness for Fhitting Room.',
   }
   res.render('pages/fhitting_room', { project: project, images: [] })
 });
