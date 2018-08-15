@@ -7,14 +7,73 @@
 
     <link rel='stylesheet' href='/stylesheets/project-nav.css' />
     <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/fhittingroom.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
+
   </head>
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <video style="background-color: black;" class="spacing-standard observable" width="100%" playsinline muted loop autoplay>
-      <source src="/images/projects/xbox/scorpio_header.webm" type="video/webm">
-      <source src="/images/projects/xbox/scorpio_header.mp4" type="video/mp4">
-    </video>
+    <div class="hero observable spacing-large">
+      <img src="/images/projects/fhitting_room/hero.jpg" />
+    </div>
+
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Aesthetics.</p>
+      <p class="observable body">A good portion of the site’s aesthetic took inspiration from the Xbox One X launch video, but we also pulled inspiration from all kinds of existing design patterns in the gaming comunity. This includes things like heads up displays, dashboard, etc.</p>
+    </div>
+
+    <div class="body-width-small spacing-large observable parallax-section">
+      <div class="parallax-1"> <img class="lazy" data-src="/images/projects/fhitting_room/parallax-1.jpg"> </div>
+      <div class="parallax-2"> <img class="lazy" data-src="/images/projects/fhitting_room/parallax-2.jpg"> </div>
+    </div>
+
+    <div style="margin-top: 10vh;" class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Aesthetics.</p>
+      <p class="observable body">A good portion of the site’s aesthetic took inspiration from the Xbox One X launch video, but we also pulled inspiration from all kinds of existing design patterns in the gaming comunity. This includes things like heads up displays, dashboard, etc.</p>
+    </div>
+
+    <div class="site-video observable spacing-large">
+      <div class="macbook">
+        <img class="image-position" src="/images/projects/fhitting_room/macbook.png" />
+        <video class="video-position" width="100%" playsinline muted loop autoplay>
+          <source src="/images/projects/fhitting_room/screencapture.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Aesthetics.</p>
+      <p class="observable body">A good portion of the site’s aesthetic took inspiration from the Xbox One X launch video, but we also pulled inspiration from all kinds of existing design patterns in the gaming comunity. This includes things like heads up displays, dashboard, etc.</p>
+    </div>
+
+    <img class="lazy observable spacing-large" data-src="/images/projects/fhitting_room/fr_modules.jpg" />
+
+    <div class="site-video observable">
+      <div class="macbook">
+        <img class="image-position" src="/images/projects/fhitting_room/macbook.png" />
+        <video class="video-position" width="100%" playsinline muted loop autoplay>
+          <source src="/images/projects/fhitting_room/animation.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="copy-width spacing-large">
+        <p class="observable h1 spacing-copy">Aesthetics.</p>
+        <p class="observable body">A good portion of the site’s aesthetic took inspiration from the Xbox One X launch video, but we also pulled inspiration from all kinds of existing design patterns in the gaming comunity. This includes things like heads up displays, dashboard, etc.</p>
+    </div>
+
+
+    <div class="full-width carousel spacing-large">
+      <div class="carousel-cell observable"><img src="/images/projects/fhitting_room/1.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/fhitting_room/2.jpg"></img></div>
+      <div class="carousel-cell observable"><img src="/images/projects/fhitting_room/3.jpg"></img></div>
+    </div>
+
+    <img class="lazy full-width" data-src="/images/projects/fhitting_room/fr_screens.jpg">
+
 
     <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
     <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
@@ -22,6 +81,7 @@
 
   </body>
   <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
   <script src="/javascript/project-page.js"></script>
   <script src="/javascript/global.js"></script>
 </html>

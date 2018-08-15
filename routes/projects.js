@@ -10,7 +10,7 @@ router.get('/xbox-one-x', function(req, res, next) {
     body: 'Microsoft (in partnership with PepsiCo) wanted to build buzz around the launch of the new Xbox One X console by giving fans the chance to bid and win Xbox One X - every 60 seconds - before public sale. The core challenge was in designing a fair gameplay that deterred bots, cheaters, and sweeps junkies.',
     role: 'Design, Animation',
     prevProject: 'ken-block',
-    nextProject: 'disney-toybox',
+    nextProject: 'fhitting-room',
   }
   res.render('pages/xbox_one_x', { project: project, images: [] })
 });
@@ -19,7 +19,7 @@ router.get('/fhitting-room', function(req, res, next) {
   var project = {
     date: '2018',
     client: 'Fhitting Room',
-    title: 'fhittingroom.com',
+    title: 'Fhitting Room',
     role: 'Creative Lead, Front-end',
     prevProject: 'xbox-one-x',
     nextProject: 'disney-toybox',
@@ -34,7 +34,7 @@ router.get('/disney-toybox', function(req, res, next) {
     client: 'Disney',
     title: 'Disney Toybox',
     role: 'Photography, Design, Animation',
-    prevProject: 'xbox-one-x',
+    prevProject: 'fhitting-room',
     nextProject: 'westderm',
     body: 'Disney came to us asking to help come up with a new campaign focused around the release of their new toyline. The campaign was a relatively short timeline starting in early October and going live in mid November, just in time for the holidays. As the campaign was primarily going to be utilized around the holidays, we were coming up with creative ways to bring the characters and holidays to your house.',
   }

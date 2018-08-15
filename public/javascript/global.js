@@ -14,7 +14,7 @@ class Viewport {
     })
 
     this.lazyObserver = new IntersectionObserver(this.preload.bind(this), {
-      rootMargin: '200px 0px',
+      rootMargin: '500px 0px',
       threshold: [0.1, 0.25, 0.5, 0.75, 1.0]
     })
 
@@ -47,7 +47,6 @@ class Viewport {
   
   cb(entries) {
     entries.forEach(entry => {
-      console.log(entry)
       if (entry.intersectionRatio > 0) { 
         this.observe(entry.target, entry.intersectionRatio)
       }
@@ -57,7 +56,6 @@ class Viewport {
   observe(target, ratio) {
     if (target.classList.contains('observable') && !target.classList.contains('observed')) {
       target.classList.add('observed');
-      this.observer.unobserve(target);
     }
 
 
