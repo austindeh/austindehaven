@@ -66,7 +66,7 @@ class Viewport {
 }
 
 function checkScroll() {
-  $('#back-to-top').css('opacity', window.scrollY > 720 ? 0.5 : 0)
+  $('#back-to-top').css('opacity', window.scrollY > 720 ? 1 : 0)
 }
 
 // Document.Ready

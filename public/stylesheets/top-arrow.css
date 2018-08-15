@@ -8,14 +8,14 @@
     right: 8%;
     width: 15px;
     padding: 10px 0px;
-    opacity: 0;
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    /* opacity: 0; */
+    -webkit-transition: transform 0.4s linear;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
     z-index: 3000;
-    transition: opacity .5s;
+    /* transition: opacity .5s; */
   }
   
   @media (min-width: 768px) {
@@ -26,19 +26,19 @@
   
   #back-to-top svg {
     fill: #999999;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -ms-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
   }
   
-  #back-to-top:hover {
+  /* #back-to-top:hover {
     opacity: 1;
-  }
+  } */
   
   #back-to-top:hover svg {
-    fill: #CCC;
+    /* fill: #CCC; */
     transform: translateY(-50%);
-    opacity: 1;
+    /* opacity: 1; */
   }
