@@ -20,7 +20,7 @@ router.get('/fhitting-room', function(req, res, next) {
     date: '2018',
     client: 'Fhitting Room',
     title: 'Fhitting Room',
-    role: 'Creative Lead, Front-end',
+    role: 'Design Lead, Front-end',
     prevProject: 'xbox-one-x',
     nextProject: 'disney-toybox',
     body: 'Fhitting Room tasked us to design and develop a new responsive web platform, replacing their existing website. The goal was to design a more intuitive and functional experience for guests and members alike while looking to better promote the brand’s value proposition. We worked directly with the Fhitting Room team to create a digital journey expanding and engaging more consumers, ultimately growing awareness for Fhitting Room.',
@@ -74,7 +74,7 @@ router.get('/motoamerica', function(req, res, next) {
     client: 'Motoamerica',
     prevProject: 'alpinestars-adaptive-stretch',
     nextProject: 'made-in-la',
-    role: 'Art Direction, Branding, Design',
+    role: 'Design lead, Branding, Illustration',
     body: 'It was an honor to be able to influence a sport I love so much through my art and design. Coming from a strong racing heritage and successful racing career it seemed to be a perfect fit for me to help with the start of the new Pro American Motorcycle Championship. I was given a lot of freedom in this project creatively and had the opportunity to really push my capabilities as a designer. This project was completed over the course of nearly a year and involved everything from logo development, brand identity, sales & media decks, at track collateral, business collateral, print advertising, web advertising, websites, and supporting logos.',
   }
   res.render('pages/motoamerica', { project: project })
@@ -85,7 +85,7 @@ router.get('/made-in-la', function(req, res, next) {
     date: '2016',
     title: 'Made In LA',
     client: 'Made In LA',
-    role: 'Art Direction, Design',
+    role: 'Design lead. Branding',
     prevProject: 'motoamerica',
     nextProject: 'ken-block',
     body: 'Made in LA is a new Los Angeles based music group. Our mission for the Made in LA rebrand was very simple. We wanted to not only mark the beginning of a new artist but also to tell their story through a timeless icon. My goal was to create something which would represent their music, style and personality in a visually pleasing way. Made in LA is minimal, independant, defined and more importantly, new.',

@@ -81,12 +81,12 @@ $(function() {
     $('.parallax-1').each(function(){
         var tween = new TimelineMax();
 
-        tween.from($(this), 1, {y: '5%', ease: Power0.easeNone});
+        tween.from($(this), 1, {y: '10%', ease: Power0.easeNone});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 1,
-            duration: '125%',
+            duration: '150%',
         }).setTween(tween).addTo(controller);
     });
 
@@ -94,12 +94,12 @@ $(function() {
     $('.parallax-2').each(function(){
         var tween = new TimelineMax();
 
-        tween.from($(this), 1, {y: '-20%', ease: Power0.easeNone});
+        tween.from($(this), 1, {y: '-25%', ease: Power0.easeNone});
 
         var scene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 1,
-            duration: '125%',
+            duration: '150%',
         }).setTween(tween).addTo(controller);
     });
   }
