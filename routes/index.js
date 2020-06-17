@@ -15,14 +15,26 @@ router.get('/', function (req, res, next) {
   }
 
   var projects = [
+
+    {
+      active: true,
+      // year: '2018',
+      title: 'Fair Adaptive Shopping',
+      category: 'Design / UX',
+      classes: 'project-100',
+      href: '/project/fair-shopping',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-desktop.jpg'),
+      mobile: '/images/home/xbox-mobile.jpg',
+    },
+
     {
       active: true,
       // year: '2018',
       title: 'Xbox One X',
       category: 'Design / Motion',
-      classes: 'project-100',
+      classes: 'project-45',
       href: '/project/xbox-one-x',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/xbox-desktop.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/projects/xbox/01-xbox.jpg'),
       mobile: '/images/home/xbox-mobile.jpg',
     },
 
