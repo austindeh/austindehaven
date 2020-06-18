@@ -7,7 +7,7 @@ router.get('/fair-shopping', function(req, res, next) {
     date: '2019',
     client: 'Fair',
     title: 'Fair Adaptive Shopping Experience',
-    body: 'Fair caters to a very broad and diversified customer base. While this is a good problem to have, it poses a lot of difficulties within the shopping experience. This includes vast complex flows as wells as decision fatigue and diffulcty finding relevant information. To solve this, we worked to create an ever-changing personalized shopping experience powered by our recommendation engine. The system allows for seamless changes within vehicle recommendations as well as the way information is presented catering to each individual customers needs. The logic organizes and updates personas with a weighted probability function to ensure that cohorts can be fluid.',
+    body: 'Fair caters to a very broad and diversified customer base. While this is a good problem to have, it poses a lot of difficulties within the shopping experience. This includes vast complex flows as wells as decision fatigue and difficulty finding relevant information. To solve this, we worked to create an ever-changing personalized shopping experience powered by our recommendation engine. The system allows for seamless changes within vehicle recommendations as well as the way information is presented catering to each individual customers needs. The logic organizes and updates personas with a weighted probability function to ensure that cohorts can be fluid.',
     role: 'Design & Strategy Lead',
     prevProject: 'ken-block',
     nextProject: 'fhitting-room',
