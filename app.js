@@ -46,8 +46,8 @@ router.get('/gateway', function (req, res, next) {
 router.post('/gateway', function (req, res, next) {
   var password = req.param('password');
 
-  if (password.toLowerCase() !== 'ad2k18') {
-    res.redirect('/gateway');
+  if (password.toLowerCase() !== 'ad2020') {
+    res.redirect('/');
   }
   res.cookie('authenticated', 'true', );
   res.redirect('/');

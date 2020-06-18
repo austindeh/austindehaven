@@ -15,14 +15,26 @@ router.get('/', function (req, res, next) {
   }
 
   var projects = [
+
+    {
+      active: false,
+      // year: '2018',
+      title: 'Coming Soon',
+      category: 'Design / UX',
+      classes: 'project-100',
+      href: '/project/fair-shopping',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-desktop.jpg'),
+      mobile: '/images/home/fair-mobile.jpg',
+    },
+
     {
       active: true,
       // year: '2018',
       title: 'Xbox One X',
       category: 'Design / Motion',
-      classes: 'project-100',
+      classes: 'project-45',
       href: '/project/xbox-one-x',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/xbox-desktop.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/projects/xbox/xbox-desktop.jpg'),
       mobile: '/images/home/xbox-mobile.jpg',
     },
 
@@ -36,6 +48,17 @@ router.get('/', function (req, res, next) {
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fhittingroom-desktop.jpg'),
       mobile: '/images/home/fhittingroom-desktop.jpg',
     },
+    
+    {
+      active: true,
+      // year: '2018',
+      title: 'West Dermatology',
+      category: 'Design / Front-end',
+      classes: 'project-35 parallax-1',
+      href: '/project/westderm',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop.jpg'),
+      mobile: '/images/home/westderm-mobile.jpg',
+    },
 
     {
       active: true,
@@ -46,17 +69,6 @@ router.get('/', function (req, res, next) {
       href: '/project/disney-toybox',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney-desktop.jpg'),
       mobile: '/images/home/disney-mobile.jpg',
-    },
-
-    {
-      active: true,
-      // year: '2018',
-      title: 'West Dermatology',
-      category: 'Design / Front-end',
-      classes: 'project-55 parallax-1',
-      href: '/project/westderm',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop-v2.jpg'),
-      mobile: '/images/home/westderm-mobile.jpg',
     },
 
     {
@@ -77,7 +89,7 @@ router.get('/', function (req, res, next) {
       category: 'Design',
       classes: 'project-35 parallax-1',
       href: '/project/motoamerica',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop.jpg'),
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop-v2.jpg'),
       mobile: '/images/home/motoamerica-mobile.jpg',
     },
 
