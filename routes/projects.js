@@ -4,15 +4,41 @@ var router = express.Router();
 
 router.get('/fair-shopping', function(req, res, next) {
   var project = {
-    date: '2019',
+    date: '2020',
     client: 'Fair',
     title: 'Fair Adaptive Shopping Experience',
-    body: 'Fair caters to a very broad and diversified customer base. While this is a good problem to have, it poses a lot of difficulties within the shopping experience. This includes vast complex flows as wells as decision fatigue and difficulty finding relevant information. To solve this, we worked to create an ever-changing personalized shopping experience powered by our recommendation engine. The system allows for seamless changes within vehicle recommendations as well as the way information is presented catering to each individual customers needs. The logic organizes and updates personas with a weighted probability function to ensure that cohorts can be fluid.',
+    body: 'Fair caters to a very broad and diversified customer base. While this is a good problem to have, it poses a lot of difficulties within the shopping experience. This includes vast and complex flows as well as decision fatigue and difficulty finding relevant information. To solve this, we worked to create an ever-changing personalized shopping experience powered by our recommendation engine. The system allows for seamless changes within vehicle recommendations as well as the way information is presented catering to each individual customers needs. The logic organizes and updates personas with a weighted probability function to ensure that cohorts can be fluid.',
     role: 'Design & Strategy Lead',
     prevProject: 'ken-block',
     nextProject: 'fhitting-room',
   }
   res.render('pages/fair_shopping', { project: project, images: [] })
+});
+
+router.get('/fair-web', function(req, res, next) {
+  var project = {
+    date: '2017',
+    client: 'Microsoft / Pepsi',
+    title: 'Every 60 Seconds',
+    body: 'Microsoft (in partnership with PepsiCo) wanted to build buzz around the launch of the new Xbox One X console by giving fans the chance to bid and win Xbox One X - every 60 seconds - before public sale. The core challenge was in designing a fair gameplay that deterred bots, cheaters, and sweeps junkies.',
+    role: 'Design, Animation',
+    prevProject: 'ken-block',
+    nextProject: 'fhitting-room',
+  }
+  res.render('pages/fair_web', { project: project, images: [] })
+});
+
+router.get('/Everest', function(req, res, next) {
+  var project = {
+    date: '2017',
+    client: 'Microsoft / Pepsi',
+    title: 'Every 60 Seconds',
+    body: 'Microsoft (in partnership with PepsiCo) wanted to build buzz around the launch of the new Xbox One X console by giving fans the chance to bid and win Xbox One X - every 60 seconds - before public sale. The core challenge was in designing a fair gameplay that deterred bots, cheaters, and sweeps junkies.',
+    role: 'Design, Animation',
+    prevProject: 'ken-block',
+    nextProject: 'fhitting-room',
+  }
+  res.render('pages/Everest', { project: project, images: [] })
 });
 
 router.get('/xbox-one-x', function(req, res, next) {
