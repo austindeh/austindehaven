@@ -28,6 +28,28 @@ router.get('/', function (req, res, next) {
     },
 
     {
+      active: false,
+      // year: '2018',
+      title: 'Coming Soon',
+      category: 'Design / UX',
+      classes: 'project-45',
+      href: '/',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-web.jpg'),
+      mobile: '/images/home/fair-web.jpg',
+    },
+
+    {
+      active: false,
+      // year: '2018',
+      title: 'Coming Soon',
+      category: 'Design / UX',
+      classes: 'project-35',
+      href: '/',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/everest.jpg'),
+      mobile: '/images/home/everest-mobile.jpg',
+    },
+
+    {
       active: true,
       // year: '2018',
       title: 'Xbox One X',
@@ -73,6 +95,17 @@ router.get('/', function (req, res, next) {
 
     {
       active: true,
+      // year: '2015',
+      title: 'Motoamerica',
+      category: 'Design',
+      classes: 'project-45 parallax-1',
+      href: '/project/motoamerica',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop.jpg'),
+      mobile: '/images/home/motoamerica-mobile.jpg',
+    },
+
+    {
+      active: true,
       // year: '2016',
       title: 'Alpinestars Adaptive Stretch',
       category: 'Design / Photography',
@@ -81,18 +114,6 @@ router.get('/', function (req, res, next) {
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars-desktop.jpg'),
       mobile: '/images/home/alpinestars-mobile.jpg',
     },
-
-    {
-      active: true,
-      // year: '2015',
-      title: 'Motoamerica',
-      category: 'Design',
-      classes: 'project-35 parallax-1',
-      href: '/project/motoamerica',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop-v2.jpg'),
-      mobile: '/images/home/motoamerica-mobile.jpg',
-    },
-
     
     {
       active: true,
