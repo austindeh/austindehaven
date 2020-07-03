@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
   var projects = [
 
     {
-      active: false,
+      active: true,
       // year: '2018',
       title: 'Coming Soon',
       category: 'Design / UX',
@@ -149,5 +149,19 @@ router.get('/photography', function (req, res, next) {
     route: 'photography'
   });
 });
+
+
+// router.post('/gateway', function(req, res, next) {
+//   var password = req.param('password');
+//   console.log(password)
+
+//   function isAuth(req, res) {
+//     if {
+//     }
+//     res.render('/');
+//   }
+
+//   res.render('password_protect', { });
+// });
 
 module.exports = router;
