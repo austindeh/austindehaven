@@ -34,10 +34,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
-app.use('/project', projects);
-
-
 // Validate Users
 router.get('/gateway', function (req, res, next) {
   res.render('password_protect', {});
@@ -53,6 +49,10 @@ router.post('/gateway', function (req, res, next) {
   res.redirect('/');
 });
 
+
+app.use(router);
+app.use('/project', projects);
+app.use('/', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
