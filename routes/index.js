@@ -19,7 +19,7 @@ router.get('/', function (req, res, next) {
     {
       active: true,
       // year: '2018',
-      title: 'Coming Soon',
+      title: 'Fair Adaptive Shopping',
       category: 'Design / UX',
       classes: 'project-100',
       href: '/project/fair-shopping',
@@ -150,18 +150,20 @@ router.get('/photography', function (req, res, next) {
   });
 });
 
+// Render gateway on secure project click
+router.get('/gateway', function (req, res, next) {
+  res.render('password_protect', {});
+});
 
-// router.post('/gateway', function(req, res, next) {
-//   var password = req.param('password');
-//   console.log(password)
+// Gateway Password Auth & Redirect on Auth Verification
+router.post('/gateway', function (req, res, next) {
+  var password = req.param('password');
 
-//   function isAuth(req, res) {
-//     if {
-//     }
-//     res.render('/');
-//   }
-
-//   res.render('password_protect', { });
-// });
+  if (password.toLowerCase() !== 'ad20') {
+    res.redirect('/gateway');
+  }
+  res.cookie('authenticated', 'true', );
+  res.redirect('/project/fair-shopping');
+});
 
 module.exports = router;

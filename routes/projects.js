@@ -3,6 +3,13 @@ var router = express.Router();
 // var archives = require('./archives');
 
 router.get('/fair-shopping', function(req, res, next) {
+
+  // Require Auth for view or redirect to gateway
+  var isAuth = req.cookies.authenticated;
+  if (!isAuth) {
+    return res.redirect('/gateway');
+  }
+
   var project = {
     date: 'Work in Progress',
     client: 'Fair',
@@ -16,6 +23,7 @@ router.get('/fair-shopping', function(req, res, next) {
 });
 
 router.get('/fair-web', function(req, res, next) {
+  
   var project = {
     date: '2017',
     client: 'Microsoft / Pepsi',
@@ -29,6 +37,7 @@ router.get('/fair-web', function(req, res, next) {
 });
 
 router.get('/Everest', function(req, res, next) {
+
   var project = {
     date: '2017',
     client: 'Microsoft / Pepsi',
@@ -41,7 +50,8 @@ router.get('/Everest', function(req, res, next) {
   res.render('pages/Everest', { project: project, images: [] })
 });
 
-router.get('/xbox-one-x', function(req, res, next) {
+router.get('/xbox-one-x', function(req, res, next) { 
+
   var project = {
     date: '2017',
     client: 'Microsoft / Pepsi',
@@ -55,6 +65,7 @@ router.get('/xbox-one-x', function(req, res, next) {
 });
 
 router.get('/fhitting-room', function(req, res, next) {
+
   var project = {
     date: '2018',
     client: 'Fhitting Room',
@@ -68,6 +79,7 @@ router.get('/fhitting-room', function(req, res, next) {
 });
 
 router.get('/disney-toybox', function(req, res, next) {
+
   var project = {
     date: '2017',
     client: 'Disney',
@@ -81,6 +93,7 @@ router.get('/disney-toybox', function(req, res, next) {
 });
 
 router.get('/westderm', function(req, res, next) {
+
   var project = {
     date: '2018',
     client: 'West Dermatology',
@@ -94,6 +107,7 @@ router.get('/westderm', function(req, res, next) {
 });
 
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
+
   var project = {
     date: '2016',
     client: 'Alpinestars',
@@ -107,6 +121,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
 });
 
 router.get('/motoamerica', function(req, res, next) {
+
   var project = {
     date: '2015',
     title: 'Motoamerica',
@@ -120,6 +135,7 @@ router.get('/motoamerica', function(req, res, next) {
 });
 
 router.get('/made-in-la', function(req, res, next) {
+
   var project = {
     date: '2016',
     title: 'Made In LA',
@@ -133,6 +149,7 @@ router.get('/made-in-la', function(req, res, next) {
 });
 
 router.get('/ken-block', function(req, res, next) {
+
   var project = {
     date: '2014',
     title: 'Ken Block x Hoonigan',
