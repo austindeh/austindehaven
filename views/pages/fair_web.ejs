@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <!-- made with love. -->
+  <!-- Developed by Austin DeHaven -->
+  <head>
+    <%- include('../partials/global/_meta') %>
+
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/fair-web.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
+  </head>
+  <body>
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
+    <img class="lazy full-width spacing-large observable" data-src="/images/projects/fair/banner-01.jpg">
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Dissecting our old site.</p>
+      <p class="observable body spacing-small">Our old website was large with a lot of unused code and content. So the first objective was doing a large audit to see what could be deprecated and what could be enhanced. Since our codebase had no gaurdrails and was touched by so many people it turned into ever-tangled code spaghetti. We decided our best course of action was to tear the whole thing down and rebuild it from the ground up in doing this we would redesign our homepage as well as add a marketplace.
+      </p>
+
+      <!-- image of old homepage (also add some examples of deprecated content maybe? Also need to talk about web relationship with app. Webview screens etc.) -->
+    </div>
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Dissecting our old site.</p>
+      <p class="observable body spacing-small">Our old website was large with a lot of unused code and content. So the first objective was doing a large audit to see what could be deprecated and what could be enhanced. Since our codebase had no guardrails and was touched by so many people it turned into ever-tangled code spaghetti. We decided our best course of action was to tear the whole thing down and rebuild it from the ground up in doing this we would redesign our homepage as well as add a marketplace.
+      </p>
+
+      <!--  -->
+    </div>
+
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <script src="/javascript/project-page.js"></script>
+  <script src="/javascript/global.js"></script>
+</html>

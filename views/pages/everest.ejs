@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <!-- made with love. -->
+  <!-- Developed by Austin DeHaven -->
+  <head>
+    <%- include('../partials/global/_meta') %>
+
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/fair-web.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
+  </head>
+  <body>
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+
+    <img class="lazy full-width spacing-large observable" data-src="/images/projects/everest/01-banner.jpg">
+
+    <div class="copy-width spacing">
+      <p class="observable h1 spacing-copy">Objectives & Market Research.</p>
+      <p class="observable body spacing-small">Our main objectives of the project was to create a service for both web and native that allowed boutique gyms and customers to create and manage class reservations, credits and account details. We wanted to create something that was accessible to everyone and make account management easy to understand. Our first task was to evaluate and understand the other tools that provide the same service. We wanted to know what worked well and what didnt in order to better cater to customers needs.
+      </p>
+    </div>
+    
+    <img class="lazy body-width spacing observable" data-src="/images/projects/everest/02-market_research.jpg">
+    <p class="observable copy-width spacing"><i>Below are some examples from a project I did for xponential which is an umbrella company for franchise gyms. We created a templated website powered by hubspot to manage gym marketing and class scheduling.
+    </i></p>
+    <img class="lazy body-width spacing-large observable" data-src="/images/projects/everest/03-market_research.jpg">
+
+    <div class="copy-width spacing">
+      <p class="observable h1 spacing-copy">Working with Cross-Platform Functionality.</p>
+      <p class="observable body spacing-small">One of the biggest challenges we encountered was creating the same seamless experience for both web and native environments. Since this was going to be used on web explicitly as a squarespace addon for launch we had a bunch of limitations we encountered that were different on both squarespace and native devices. Things like a bottom pinned navigation menu on web didnt work in iOS safari, but worked natively and on android devices.
+      </p>
+      <p class="observable copy-width spacing"><i>It's important to note that because at launch this is a squarespace, all of the screens within the reservation flows would be an iframe on web and a webview in app.
+      </i></p>
+    </div>  
+
+    <img class="lazy body-width spacing-large observable" data-src="/images/projects/everest/04-navigation.png">
+
+    <div class="copy-width spacing">
+      <p class="observable h1 spacing-copy">Creating the scheduler.</p>
+      <p class="observable body spacing-small">Because this is a service for 3rd party gyms we need to be cognizant of the variety of amount of classes and times they will be provided. So we needed to create something that was flexible for all scenarios and could work with all different types of class formats.
+      </p>
+    </div>
+    <img class="lazy body-width spacing observable" data-src="/images/projects/everest/05-scheduler.jpg">
+    <img class="lazy body-width spacing-large observable" data-src="/images/projects/everest/06-schedule_design.png">
+
+    <div class="copy-width spacing">
+      <p class="observable h1 spacing-copy">Utilizing Filters.</p>
+      <p class="observable body spacing-small">Since class amounts could vary from 1 - potentially infinite we need to create a robust filtering system that allows customers to find specific classes. We also wanted to add the ability for customers to see how full a class was prior to reservation. We opted to show users how many spots were left instead of units taken / capacity to show urgency while reserving. We also created a waitlist so customers could still tentatively reserve a class that was full in the event someone cancels. This gives gyms a robust way to manage supply & demand.
+    </p>
+    </div>
+
+    <img class="lazy body-width spacing-large observable" data-src="/images/projects/everest/07-schedule-filter.png">
+
+    <div class="copy-width spacing-small">
+      <p class="observable h1 spacing-copy">Onboarding & Reservation Flow.</p>
+      <p class="observable body spacing-small">One of the biggest complexities of the project was creating an onboarding flow that allowed users to purchase credits and reserve classes. As most other services require you to purchase credits prior to class reservation within a seperate flow, our goal was to allow users to do it all within one flow.  
+      </p>
+    </div>
+    <img class="lazy body-width spacing-large observable" data-src="/images/projects/everest/08-onboarding_flow.jpg">
+
+    <div class="body-width spacing-large">
+      <div class="grid">
+        <div class="row observable">
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-01.png">
+          </div>
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-02.png">
+          </div>
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-03.png">
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="row observable">
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-04.png">
+          </div>
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-05.png">
+          </div>
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-06.png">
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="row observable">
+          <div class="column">
+          </div>
+          <div class="column">
+            <img class="lazy spacing observable" data-src="/images/projects/everest/09-onboarding-07.png">
+          </div>
+          <div class="column">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copy-width spacing-large">
+      <p class="observable h1 spacing-copy">Next Steps</p>
+      <p class="observable body">Following V1 release we'll do some evaluation of user data to determine how the flows can be enhanced to reduce user fatigue. Our objective from the beginning was to create a service that allowed users to easily enroll in classes and manage their accounts.
+        <div class="column">
+        </br>
+        <p class="observable indent">• v1 - v2</br>
+                            v1 will be a hard coded plugin injected into squarespace with data tracking to evaluate oportunities to enhance the experience with v2. v2 will include a plugin UI which will be easier for 3rd party customers to integrate into their gyms website.
+                          </br>
+                          </br>
+        </p>
+
+        <p class="observable indent">• v2 - v3 </br>
+                          v2 will bring easier integrations into squarespace with a backend UI allowing admins to easily manage user profiles and plugin preferences. v3 will introduce a standalone app that integrates into the website and customers vendor account.
+                        </br>
+                        </br>
+        </p>
+      </div>
+      </p>
+      <p class="observable copy-width spacing" style="color: red;"><i><b>This project ran out of funding and was canceled post initial launch.
+      </b></i></p>
+    </div>
+
+
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <script src="/javascript/project-page.js"></script>
+  <script src="/javascript/global.js"></script>
+</html>
