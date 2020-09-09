@@ -39,7 +39,7 @@ router.get('/', function (req, res, next) {
     },
 
     {
-      active: true,
+      active: false,
       // year: '2018',
       title: 'Everest',
       category: 'Design / UX',
