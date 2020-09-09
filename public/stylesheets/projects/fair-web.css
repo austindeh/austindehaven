@@ -1,0 +1,124 @@
+.indent {
+    padding: 0 2vw;
+}
+
+.xbox-site-video {
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10vh 0;
+}
+
+.macbook {
+    display: flex;
+    max-width: 70vw;
+    margin: auto 0;
+}
+
+.image-position {
+    width: 100%;
+    height: 100%;
+}
+
+.video-position {
+    position: absolute;
+    top: 5%;
+    left: 10.5%;
+    width: 79%;
+    height: 78%;
+    z-index: 1;
+}
+
+.parallax-section {
+    display: flex;
+    align-items: center;
+}
+
+.parallax-1 img {
+    top: 0;
+    left: 0;
+    width: 35vw;
+}
+
+.parallax-2 img {
+    top: -50px;
+    left: -30px;
+    width: 35vw;
+}
+
+.bump {
+    margin-top: -50vh;
+    padding-top: 50vh;
+    background-color: #212121;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white-bg .copy-width {
+    margin: auto;
+    padding: 15vh 0;
+}
+
+
+.carousel-cell {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100%;
+    cursor: move;
+  }
+    
+  .carousel-cell img {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    min-height: 100%;
+    width: 55vw;
+  }
+
+  .team {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .team .col {
+      padding: 10vh 5vw;
+  }
+
+@media (max-width: 762px) {
+    .parallax-1 img {
+        top: 0;
+        left: 7vw;
+        width: 46vw;
+    }
+    
+    .parallax-2 img {
+        top: -20px;
+        left: -20px;
+        width: 46vw;
+    } 
+    
+    .xbox-site-video {
+        padding: 7vh 0;
+    }
+
+    .team .col {
+        padding: 5vh 7vw;
+        padding-left: 0;
+        width: 100%;
+    }
+}
