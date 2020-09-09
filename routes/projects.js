@@ -44,6 +44,12 @@ router.get('/fair-web', function(req, res, next) {
 
 router.get('/everest', function(req, res, next) {
 
+  // Require Auth for view or redirect to gateway
+  var isAuth = req.cookies.authenticated;
+  if (!isAuth) {
+    return res.redirect('/gateway');
+  }
+
   var project = {
     date: '2019',
     client: 'MGR',
