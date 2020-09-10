@@ -7,7 +7,7 @@ router.get('/fair-shopping', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
   }
 
   var project = {
@@ -22,27 +22,32 @@ router.get('/fair-shopping', function(req, res, next) {
   res.render('pages/fair_shopping', { project: project, images: [] })
 });
 
-router.get('/fair-web', function(req, res, next) {
+router.get('/fair-go', function(req, res, next) {
   
-   // Require Auth for view or redirect to gateway
-   var isAuth = req.cookies.authenticated;
-   if (!isAuth) {
-     return res.redirect('/gateway');
-   }
+    // Require Auth for view or redirect to gateway
+  var isAuth = req.cookies.authenticated;
+  if (!isAuth) {
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-go');
+  }
 
   var project = {
     date: '2019',
     client: 'Fair',
-    title: 'Fair.com',
-    body: 'Fair is a fast paced, fast growing startup with a large majority of resources being focused on the app instead of the web platform. Because of the exponential growth we were constantly battling persistent deprication problems within both the design system as well as codebase itself. To combat this we decided it was time for a full rebuild of the codebase along with a new homepage design as well as implementation of a marketplace on the web. The objective was to create something that could withstand the ever changing environment at fair and allow us to quickly implement changes as efficiently as possible.',
+    title: 'Fair Go',
+    body: '',
     role: 'Design & Strategy Lead',
     prevProject: 'fair-shopping',
     nextProject: 'everest',
   }
-  res.render('pages/fair_web', { project: project, images: [] })
+  res.render('pages/fair_go', { project: project, images: [] })
 });
 
 router.get('/everest', function(req, res, next) {
+   // Require Auth for view or redirect to gateway
+   var isAuth = req.cookies.authenticated;
+   if (!isAuth) {
+     return res.redirect('/gateway?redirect_to=%2Fproject%2Feverest');
+   }
 
   var project = {
     date: '2019',
