@@ -30,23 +30,23 @@ router.get('/', function (req, res, next) {
     {
       active: false,
       // year: '2018',
-      title: 'Fair.com',
+      title: 'Fair Go - Coming Soon',
       category: 'Design / UX',
       classes: 'project-45',
-      href: '/project/fair-web',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-web.jpg'),
-      mobile: '/images/home/fair-web.jpg',
+      href: '/project/fair-go',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fairgo-desktop.jpg'),
+      mobile: '/images/home/fairgo-desktop.jpg',
     },
 
     {
-      active: false,
+      active: true,
       // year: '2018',
       title: 'Everest',
       category: 'Design / UX',
       classes: 'project-35',
       href: '/project/everest',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/everest.jpg'),
-      mobile: '/images/home/everest-mobile.jpg',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/everest-desktop.jpg'),
+      mobile: '/images/home/everest-mobile-02.jpg',
     },
 
     {
@@ -78,8 +78,8 @@ router.get('/', function (req, res, next) {
       category: 'Design / Front-end',
       classes: 'project-35 parallax-1',
       href: '/project/westderm',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop.jpg'),
-      mobile: '/images/home/westderm-mobile.jpg',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop-03.jpg'),
+      mobile: '/images/home/westderm-mobile-02.jpg',
     },
 
     {
@@ -152,18 +152,26 @@ router.get('/photography', function (req, res, next) {
 
 // Render gateway on secure project click
 router.get('/gateway', function (req, res, next) {
-  res.render('password_protect', {});
+  res.render('password_protect', {redirect_to: req.query.redirect_to || ''});
 });
 
 // Gateway Password Auth & Redirect on Auth Verification
 router.post('/gateway', function (req, res, next) {
   var password = req.param('password');
+  var redirect_to = req.param('redirect_to');
 
   if (password.toLowerCase() !== 'ad20') {
-    res.redirect('/gateway');
+    // res.redirect('/gateway');
+    res.redirect(`/gateway?redirect_to=${redirect_to}`)
   }
+
   res.cookie('authenticated', 'true', );
-  res.redirect('/project/fair-shopping');
+
+  if (redirect_to) {
+    res.redirect(redirect_to);
+  } else {
+    res.redirect('/');
+  }
 });
 
 module.exports = router;
