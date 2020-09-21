@@ -7,15 +7,60 @@
   color: white;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.footer {
+/* .footer {
   width: 100%;
 }
 
 .footer span {
   padding-left: 5px;
+} */
+
+.credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  border-top: 1px solid #3b3b3b;
 }
+
+.credit .tiny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  font-size: 10px;
+}
+
+.copy-width-footer {
+  width: 45vw;
+}
+
+.full-width-footer {
+  width: 100%;
+}
+
+.body-width-footer {
+  padding: 0 7vw;
+  margin: auto;
+  width: 100%;
+}
+
+#footer .credit .underlined {
+	margin-left: 5px;
+}
+
+#footer .credit .underlined:before {
+	bottom: 7px;
+}
+
+#footer .credit .underlined:after {
+  bottom: 7px;
+}
+
 
 .returnArrow {
   padding-right: 5px;

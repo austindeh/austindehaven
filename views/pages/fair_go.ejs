@@ -13,7 +13,9 @@
   <body>
     <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
 
-    <img class="lazy full-width observable" data-src="/images/projects/fair/banner-01.jpg">
+    <video class="full-width observable" width="100%" playsinline muted loop autoplay>
+      <source src="/images/projects/fairgo/presentation-vid.mp4" type="video/mp4">
+    </video>
 
     <div class="white-bg">
       <div class="copy-width">
@@ -156,9 +158,54 @@
       </div>
     </div>
 
-    <div class="copy-width spacing-large">
-      <p class="observable h1 spacing-copy">Web Adaptation.</p>
-      <p class="observable body">Lorem Ipsum
+    <div class="grid body-width spacing-large">
+
+      <div class="row row-aligned observable">
+        <div class="column column-spacing">
+          <img class="lazy row-image" data-src="/images/projects/fairgo/phone-1.png">
+        </div>
+        <div class="column row-copy">
+          <p><b>Welcome Screen</b></p>
+          <p class="observable body spacing-small">Welcome screen’s are the main introduction to a user so we focused on creating a clean aesthetic and clear explanation of the app. This resulted in reduced drop offs and increased conversions.
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-aligned observable">
+        <div class="column row-copy column-spacing">
+          <p><b>Sign Contracts on Your Phone</b></p>
+          <p class="observable body spacing-small">Consumer research showed frustrations people have with signing endless paperwork at a dealership. Instead, we designed a one time signature requirement on the app, turning the hours into a moment. The contracts were saved in an accessible folder on the app, along with the insurance, payments and history.  
+          </p>
+        </div>
+        <div class="column">
+          <img class="lazy row-image" data-src="/images/projects/fairgo/phone-2.png">
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-aligned observable">
+        <div class="column column-spacing">
+          <img class="lazy row-image" data-src="/images/projects/fairgo/phone-3.png">
+        </div>
+        <div class="column">
+          <p><b>Pay on Your Phone</b></p>
+          <p class="observable body spacing-small">Seamless means simple and at your convenience. Making payments on the phone allowed drivers to earn money right away. Creating an auto-pay system on the app provided ease of mind for drivers’ to not be concerned with missing a payment. 
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-aligned observable">
+        <div class="column row-copy column-spacing">
+          <p><b>My Car - Active Subscription</b></p>
+          <p class="observable body spacing-small">This page was designed as a one stop shop for all users’ needs post activation. It contained a wallet for payments, contract and maintenance information, car features and linked everything to the user’s Uber account. With all the time saved, the user was able to drive for longer, increasing business for both the driver and Uber.
+          </p>
+        </div>
+        <div class="column">
+          <img class="lazy row-image" data-src="/images/projects/fairgo/phone-4.png">
+          </p>
+        </div>
+      </div>
+
     </div>
 
     <div class="copy-width spacing-large">

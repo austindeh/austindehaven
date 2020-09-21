@@ -20,6 +20,15 @@
     margin: auto 0;
 }
 
+@media (max-width: 767px) {
+    .row-image {
+        order: 1;
+    }
+    .row-copy {
+        order: 2;
+    }
+  }
+
 .column-spacing {
     padding-right: 3vw;
 }
@@ -108,6 +117,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.white-box {
+    background-color: white;
+    padding: 25px;
+    margin-right: 3vw;
 }
 
 .white-bg .copy-width {
