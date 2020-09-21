@@ -28,7 +28,7 @@ router.get('/', function (req, res, next) {
     },
 
     {
-      active: false,
+      active: true,
       // year: '2018',
       title: 'Fair Go - Coming Soon',
       category: 'Design / UX',
