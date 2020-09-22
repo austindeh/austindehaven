@@ -32,10 +32,10 @@ router.get('/fair-go', function(req, res, next) {
 
   var project = {
     date: '2019',
-    client: 'Fair',
+    client: 'Fair / Uber',
     title: 'Fair Go',
-    body: '',
-    role: 'Design & Strategy Lead',
+    body: 'Partnered with Uber to create a product that enables drivers’ to get a car in a seamless, convenient and accessible manner across the U.S. Since our customers were only rideshare drivers for Uber we worked closely with Uber team to create and experience that integrated directly with Uber and allowed customers to easily and quickly get a rideshare vehicle. The approach to the design was clean, minimal, and clear, resulting in an easy and friendly user experience.',
+    role: 'Design & Development',
     prevProject: 'fair-shopping',
     nextProject: 'everest',
   }

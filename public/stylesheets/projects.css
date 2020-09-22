@@ -175,6 +175,10 @@ p {
   margin-right: -10px;
 }
 
+.row-aligned {
+  align-items: center;;
+}
+
 .column {
   width: 100%;
   padding: 10px;
@@ -238,7 +242,15 @@ video::-webkit-media-controls-time-remaining-display {
 }
 
 #footer .h2 {
-  margin: 0;
+  /* margin: 0; */
+}
+
+#footer .credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid white;
 }
 
 /* -- Carousel -- */
