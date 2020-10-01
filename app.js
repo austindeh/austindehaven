@@ -37,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use(router);
 app.use('/project', projects);
 app.use('/', index);
+app.use('/secret', index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -54,6 +55,14 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+router.use(function (err, req, res, next) {
+  if (err) {
+    console.log('Error', err);
+  } else {
+    console.log('404')
+  }
 });
 
 module.exports = app;
