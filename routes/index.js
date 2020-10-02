@@ -150,8 +150,19 @@ router.get('/photography', function (req, res, next) {
   });
 });
 
+//
+//
+//
+// START
+// SECRET PAGE WITH ITS OWN PROJECT CASE STUDIES
 
 router.get('/secret', function (req, res, next) {
+  
+// Require Auth for view or redirect to gateway
+var isAuth = req.cookies.authenticated;
+if (!isAuth) {
+  return res.redirect('/gateway?redirect_to=%2Fsecret');
+}
 
   function base64Encode(file) {
     try {
@@ -163,15 +174,15 @@ router.get('/secret', function (req, res, next) {
     }
   }
 
-  var projects = [
+  var secret_projects = [
 
     {
       active: true,
       // year: '2018',
       title: 'Fair Adaptive Shopping',
-      category: 'Design / UX',
+      category: 'test',
       classes: 'project-100',
-      href: '/project/fair-shopping',
+      href: '/project/secret-fair-shopping',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-desktop.jpg'),
       mobile: '/images/home/fair-mobile.jpg',
     },
@@ -182,7 +193,7 @@ router.get('/secret', function (req, res, next) {
       title: 'Fair Go',
       category: 'Design / UX',
       classes: 'project-45',
-      href: '/project/fair-go',
+      href: '/project/secret-fair-go',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fairgo-desktop.jpg'),
       mobile: '/images/home/fairgo-desktop.jpg',
     },
@@ -193,7 +204,7 @@ router.get('/secret', function (req, res, next) {
       title: 'Everest',
       category: 'Design / UX',
       classes: 'project-35',
-      href: '/project/everest',
+      href: '/project/secret-everest',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/everest-desktop.jpg'),
       mobile: '/images/home/everest-mobile-02.jpg',
     },
@@ -204,20 +215,9 @@ router.get('/secret', function (req, res, next) {
       title: 'Xbox One X',
       category: 'Design / Motion',
       classes: 'project-45',
-      href: '/project/xbox-one-x',
+      href: '/project/secret-xbox-one-x',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/projects/xbox/xbox-desktop.jpg'),
       mobile: '/images/home/xbox-mobile.jpg',
-    },
-
-    {
-      active: true,
-      // year: '2018',
-      title: 'Fhitting Room',
-      category: 'Design / Front-end',
-      classes: 'project-35 parallax-1',
-      href: '/project/fhitting-room',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fhittingroom-desktop.jpg'),
-      mobile: '/images/home/fhittingroom-desktop.jpg',
     },
     
     {
@@ -226,69 +226,21 @@ router.get('/secret', function (req, res, next) {
       title: 'West Dermatology',
       category: 'Design / Front-end',
       classes: 'project-35 parallax-1',
-      href: '/project/westderm',
+      href: '/project/secret-westderm',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop-03.jpg'),
       mobile: '/images/home/westderm-mobile-02.jpg',
     },
-
-    {
-      active: true,
-      // year: '2017',
-      title: 'Disney Toy Box',
-      category: 'Design / Motion / Photography',
-      classes: 'project-45 parallax-2',
-      href: '/project/disney-toybox',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/disney-desktop.jpg'),
-      mobile: '/images/home/disney-mobile.jpg',
-    },
-
-    {
-      active: true,
-      // year: '2015',
-      title: 'Motoamerica',
-      category: 'Design',
-      classes: 'project-45 parallax-1',
-      href: '/project/motoamerica',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/motoamerica-desktop.jpg'),
-      mobile: '/images/home/motoamerica-mobile.jpg',
-    },
-
-    {
-      active: true,
-      // year: '2016',
-      title: 'Alpinestars Adaptive Stretch',
-      category: 'Design / Photography',
-      classes: 'project-35 parallax-2',
-      href: '/project/alpinestars-adaptive-stretch',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/alpinestars-desktop.jpg'),
-      mobile: '/images/home/alpinestars-mobile.jpg',
-    },
-    
-    {
-      active: true,
-      // year: '2016',
-      title: 'Made in LA',
-      category: 'Design',
-      classes: 'project-45 parallax-2',
-      href: '/project/made-in-la',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/madeinla-desktop.jpg'),
-      mobile: '/images/home/madeinla-mobile.jpg',
-    },
-
-    {
-      active: true,
-      // year: '2015',
-      title: 'Ken Block',
-      category: 'Design',
-      classes: 'project-35 parallax-1',
-      href: '/project/ken-block',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/kenblock-desktop.jpg'),
-      mobile: '/images/home/kenblock-mobile.jpg',
-    },
   ];
   res.render('secret', {
+    secret_projects: secret_projects,
   });
 });
+
+// SECRET PAGE WITH ITS OWN PROJECT CASE STUDIES
+// END
+// 
+// 
+//
 
 // Render gateway on secure project click
 router.get('/gateway', function (req, res, next) {

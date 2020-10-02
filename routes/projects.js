@@ -11,6 +11,7 @@ router.get('/fair-shopping', function(req, res, next) {
   }
 
   var project = {
+    href: '/',
     date: 'Work in Progress',
     client: 'Fair',
     title: 'Fair Adaptive Shopping Experience',
@@ -31,6 +32,7 @@ router.get('/fair-go', function(req, res, next) {
   }
 
   var project = {
+    href: '/',
     date: '2019',
     client: 'Fair / Uber',
     title: 'Fair Go',
@@ -50,6 +52,7 @@ router.get('/everest', function(req, res, next) {
    }
 
   var project = {
+    href: '/',
     date: '2019',
     client: 'MGR',
     title: 'Everest Fitness Scheduler',
@@ -64,6 +67,7 @@ router.get('/everest', function(req, res, next) {
 router.get('/xbox-one-x', function(req, res, next) { 
 
   var project = {
+    href: '/',
     date: '2017',
     client: 'Microsoft / Pepsi',
     title: 'Every 60 Seconds',
@@ -78,6 +82,7 @@ router.get('/xbox-one-x', function(req, res, next) {
 router.get('/fhitting-room', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2018',
     client: 'Fhitting Room',
     title: 'Fhitting Room',
@@ -92,6 +97,7 @@ router.get('/fhitting-room', function(req, res, next) {
 router.get('/disney-toybox', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2017',
     client: 'Disney',
     title: 'Disney Toybox',
@@ -106,6 +112,7 @@ router.get('/disney-toybox', function(req, res, next) {
 router.get('/westderm', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2018',
     client: 'West Dermatology',
     title: 'westdermatology.com',
@@ -120,6 +127,7 @@ router.get('/westderm', function(req, res, next) {
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2016',
     client: 'Alpinestars',
     title: 'Alpinestars Adaptive Stretch',
@@ -134,6 +142,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
 router.get('/motoamerica', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2015',
     title: 'Motoamerica',
     client: 'Motoamerica',
@@ -148,6 +157,7 @@ router.get('/motoamerica', function(req, res, next) {
 router.get('/made-in-la', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2016',
     title: 'Made In LA',
     client: 'Made In LA',
@@ -162,6 +172,7 @@ router.get('/made-in-la', function(req, res, next) {
 router.get('/ken-block', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2014',
     title: 'Ken Block x Hoonigan',
     client: 'Hoonigan',
@@ -259,6 +270,7 @@ router.get('/archives', function(req, res, next) {
   ];
 
   var project = {
+    href: '/',
     prevProject: 'ken-block',
     nextProject: 'xbox-one-x',
   }
