@@ -6,7 +6,7 @@ router.get('/secret-fair-shopping', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-fair-shopping');
   }
 
   var project = {
@@ -26,7 +26,7 @@ router.get('/secret-fair-go', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-fair-go');
   }
 
   var project = {
@@ -46,7 +46,7 @@ router.get('/secret-everest', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-everest');
   }
 
   var project = {
@@ -66,7 +66,7 @@ router.get('/secret-xbox-one-x', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-xbox-one-x');
   }
 
   var project = {
@@ -86,7 +86,7 @@ router.get('/secret-westderm', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-westderm');
   }
 
   var project = {

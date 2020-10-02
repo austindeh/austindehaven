@@ -4,12 +4,6 @@ var router = express.Router();
 
 router.get('/fair-shopping', function(req, res, next) {
 
-  // Require Auth for view or redirect to gateway
-  var isAuth = req.cookies.authenticated;
-  if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
-  }
-
   var project = {
     href: '/',
     date: 'Work in Progress',
@@ -45,11 +39,6 @@ router.get('/fair-go', function(req, res, next) {
 });
 
 router.get('/everest', function(req, res, next) {
-   // Require Auth for view or redirect to gateway
-   var isAuth = req.cookies.authenticated;
-   if (!isAuth) {
-     return res.redirect('/gateway?redirect_to=%2Fproject%2Feverest');
-   }
 
   var project = {
     href: '/',
