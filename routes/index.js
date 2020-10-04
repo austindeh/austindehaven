@@ -150,6 +150,98 @@ router.get('/photography', function (req, res, next) {
   });
 });
 
+//
+//
+//
+// START
+// SECRET PAGE WITH ITS OWN PROJECT CASE STUDIES
+
+router.get('/secret', function (req, res, next) {
+  
+// Require Auth for view or redirect to gateway
+var isAuth = req.cookies.authenticated;
+if (!isAuth) {
+  return res.redirect('/gateway?redirect_to=%2Fsecret');
+}
+
+  function base64Encode(file) {
+    try {
+      var bitmap = fs.readFileSync(file);
+      return Buffer.from(bitmap).toString('base64');
+    } catch (err) {
+      console.log(err)
+      throw err
+    }
+  }
+
+  var secret_projects = [
+
+    {
+      active: true,
+      // year: '2018',
+      title: 'Fair Adaptive Shopping',
+      category: 'Design / UX',
+      classes: 'project-100',
+      href: '/project/secret-fair-shopping',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-desktop.jpg'),
+      mobile: '/images/home/fair-mobile.jpg',
+    },
+
+    {
+      active: true,
+      // year: '2018',
+      title: 'Fair Go',
+      category: 'Design / UX',
+      classes: 'project-45',
+      href: '/project/secret-fair-go',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fairgo-desktop.jpg'),
+      mobile: '/images/home/fairgo-desktop.jpg',
+    },
+
+    {
+      active: true,
+      // year: '2018',
+      title: 'Audi MMI',
+      category: 'Design / UX',
+      classes: 'project-35',
+      href: '/project/secret-audi',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/audi-desktop.jpg'),
+      mobile: '/images/home/audi-mobile.jpg',
+    },
+
+    {
+      active: true,
+      // year: '2018',
+      title: 'Xbox One X',
+      category: 'Design / Motion',
+      classes: 'project-45',
+      href: '/project/secret-xbox-one-x',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/projects/xbox/xbox-desktop.jpg'),
+      mobile: '/images/home/xbox-mobile.jpg',
+    },
+    
+    {
+      active: true,
+      // year: '2018',
+      title: 'West Dermatology',
+      category: 'Design / Front-end',
+      classes: 'project-35 parallax-1',
+      href: '/project/secret-westderm',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop-03.jpg'),
+      mobile: '/images/home/westderm-mobile-02.jpg',
+    },
+  ];
+  res.render('secret', {
+    secret_projects: secret_projects,
+  });
+});
+
+// SECRET PAGE WITH ITS OWN PROJECT CASE STUDIES
+// END
+// 
+// 
+//
+
 // Render gateway on secure project click
 router.get('/gateway', function (req, res, next) {
   res.render('password_protect', {redirect_to: req.query.redirect_to || ''});

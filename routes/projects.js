@@ -4,20 +4,15 @@ var router = express.Router();
 
 router.get('/fair-shopping', function(req, res, next) {
 
-  // Require Auth for view or redirect to gateway
-  var isAuth = req.cookies.authenticated;
-  if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Ffair-shopping');
-  }
-
   var project = {
+    href: '/',
     date: 'Work in Progress',
     client: 'Fair',
     title: 'Fair Adaptive Shopping Experience',
     body: 'Fair caters to a very broad and diversified customer base. While this is a good problem to have, it poses a lot of difficulties within the shopping experience. This includes vast and complex flows as well as decision fatigue and difficulty finding relevant information. To solve this, we worked to create an ever-changing personalized shopping experience powered by our recommendation engine. The system allows for seamless changes within vehicle recommendations as well as the way information is presented catering to each individual customers needs. The logic organizes and updates personas with a weighted probability function to ensure that cohorts can be fluid.',
     role: 'Design & Strategy Lead',
     prevProject: 'ken-block',
-    nextProject: 'everest',
+    nextProject: 'fair-go',
   }
   res.render('pages/fair_shopping', { project: project, images: [] })
 });
@@ -31,6 +26,7 @@ router.get('/fair-go', function(req, res, next) {
   }
 
   var project = {
+    href: '/',
     date: '2019',
     client: 'Fair / Uber',
     title: 'Fair Go',
@@ -43,19 +39,15 @@ router.get('/fair-go', function(req, res, next) {
 });
 
 router.get('/everest', function(req, res, next) {
-   // Require Auth for view or redirect to gateway
-   var isAuth = req.cookies.authenticated;
-   if (!isAuth) {
-     return res.redirect('/gateway?redirect_to=%2Fproject%2Feverest');
-   }
 
   var project = {
+    href: '/',
     date: '2019',
     client: 'MGR',
     title: 'Everest Fitness Scheduler',
     body: 'MGR came to us looking for a way to create a scheduler that can be plugged into squarespace and used as a stand-alone app for private boutique gyms. They had used multiple different vendors previously. They frequently had problems where users didnt understand how to book and manage classes. They were having to consistently walk customers through the reservation process using up time and energy that could be allocated eslewhere. Our objective was to create something that allows both vendors and customers to easily create and manage reservations.',
     role: 'Design Lead',
-    prevProject: 'fair-shopping',
+    prevProject: 'fair-go',
     nextProject: 'xbox-one-x',
   }
   res.render('pages/everest', { project: project, images: [] })
@@ -64,6 +56,7 @@ router.get('/everest', function(req, res, next) {
 router.get('/xbox-one-x', function(req, res, next) { 
 
   var project = {
+    href: '/',
     date: '2017',
     client: 'Microsoft / Pepsi',
     title: 'Every 60 Seconds',
@@ -78,6 +71,7 @@ router.get('/xbox-one-x', function(req, res, next) {
 router.get('/fhitting-room', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2018',
     client: 'Fhitting Room',
     title: 'Fhitting Room',
@@ -92,6 +86,7 @@ router.get('/fhitting-room', function(req, res, next) {
 router.get('/disney-toybox', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2017',
     client: 'Disney',
     title: 'Disney Toybox',
@@ -106,6 +101,7 @@ router.get('/disney-toybox', function(req, res, next) {
 router.get('/westderm', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2018',
     client: 'West Dermatology',
     title: 'westdermatology.com',
@@ -120,6 +116,7 @@ router.get('/westderm', function(req, res, next) {
 router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2016',
     client: 'Alpinestars',
     title: 'Alpinestars Adaptive Stretch',
@@ -134,6 +131,7 @@ router.get('/alpinestars-adaptive-stretch', function(req, res, next) {
 router.get('/motoamerica', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2015',
     title: 'Motoamerica',
     client: 'Motoamerica',
@@ -148,6 +146,7 @@ router.get('/motoamerica', function(req, res, next) {
 router.get('/made-in-la', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2016',
     title: 'Made In LA',
     client: 'Made In LA',
@@ -162,6 +161,7 @@ router.get('/made-in-la', function(req, res, next) {
 router.get('/ken-block', function(req, res, next) {
 
   var project = {
+    href: '/',
     date: '2014',
     title: 'Ken Block x Hoonigan',
     client: 'Hoonigan',
@@ -259,6 +259,7 @@ router.get('/archives', function(req, res, next) {
   ];
 
   var project = {
+    href: '/',
     prevProject: 'ken-block',
     nextProject: 'xbox-one-x',
   }

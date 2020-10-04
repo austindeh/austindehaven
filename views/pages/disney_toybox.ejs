@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role }) %>
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role, href: project.href }) %>
 
     <video style="background-color: #181818;" class="spacing-large observable" width="100%" playsinline muted loop autoplay>
       <source src="/images/projects/disney_toybox/lightsaber.webm#t=0.1" type="video/webm">
