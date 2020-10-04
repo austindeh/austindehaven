@@ -12,7 +12,7 @@ router.get('/fair-shopping', function(req, res, next) {
     body: 'Fair caters to a very broad and diversified customer base. While this is a good problem to have, it poses a lot of difficulties within the shopping experience. This includes vast and complex flows as well as decision fatigue and difficulty finding relevant information. To solve this, we worked to create an ever-changing personalized shopping experience powered by our recommendation engine. The system allows for seamless changes within vehicle recommendations as well as the way information is presented catering to each individual customers needs. The logic organizes and updates personas with a weighted probability function to ensure that cohorts can be fluid.',
     role: 'Design & Strategy Lead',
     prevProject: 'ken-block',
-    nextProject: 'everest',
+    nextProject: 'fair-go',
   }
   res.render('pages/fair_shopping', { project: project, images: [] })
 });
@@ -47,7 +47,7 @@ router.get('/everest', function(req, res, next) {
     title: 'Everest Fitness Scheduler',
     body: 'MGR came to us looking for a way to create a scheduler that can be plugged into squarespace and used as a stand-alone app for private boutique gyms. They had used multiple different vendors previously. They frequently had problems where users didnt understand how to book and manage classes. They were having to consistently walk customers through the reservation process using up time and energy that could be allocated eslewhere. Our objective was to create something that allows both vendors and customers to easily create and manage reservations.',
     role: 'Design Lead',
-    prevProject: 'fair-shopping',
+    prevProject: 'fair-go',
     nextProject: 'xbox-one-x',
   }
   res.render('pages/everest', { project: project, images: [] })

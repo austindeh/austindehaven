@@ -180,7 +180,7 @@ if (!isAuth) {
       active: true,
       // year: '2018',
       title: 'Fair Adaptive Shopping',
-      category: 'test',
+      category: 'Design / UX',
       classes: 'project-100',
       href: '/project/secret-fair-shopping',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-desktop.jpg'),
@@ -201,12 +201,12 @@ if (!isAuth) {
     {
       active: true,
       // year: '2018',
-      title: 'Everest',
+      title: 'Audi MMI',
       category: 'Design / UX',
       classes: 'project-35',
-      href: '/project/secret-everest',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/everest-desktop.jpg'),
-      mobile: '/images/home/everest-mobile-02.jpg',
+      href: '/project/secret-audi',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/audi-desktop.jpg'),
+      mobile: '/images/home/audi-mobile.jpg',
     },
 
     {
