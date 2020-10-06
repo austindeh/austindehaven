@@ -22,10 +22,6 @@
   filter: grayscale(0%);
 }
 
-.project:last-child {
-  margin-bottom: 20vh;
-}
-
 .project-hover {
   width: 100%;
 }

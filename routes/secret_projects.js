@@ -54,7 +54,7 @@ router.get('/secret-audi', function(req, res, next) {
     date: '2019',
     client: 'Audi',
     title: 'Audi Multi Media Interface',
-    body: 'MGR came to us looking for a way to create a scheduler that can be plugged into squarespace and used as a stand-alone app for private boutique gyms. They had used multiple different vendors previously. They frequently had problems where users didnt understand how to book and manage classes. They were having to consistently walk customers through the reservation process using up time and energy that could be allocated eslewhere. Our objective was to create something that allows both vendors and customers to easily create and manage reservations.',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
     role: 'Design Lead',
     prevProject: 'secret-fair-go',
     nextProject: 'secret-xbox-one-x',
