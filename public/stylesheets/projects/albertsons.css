@@ -1,0 +1,96 @@
+.indent {
+    padding: 0 2vw;
+}
+
+.parallax-section {
+    display: flex;
+    align-items: center;
+}
+
+.parallax-1 img {
+    top: 0;
+    left: 0;
+    width: 35vw;
+}
+
+.parallax-2 img {
+    top: -50px;
+    left: -30px;
+    width: 35vw;
+}
+
+.bump {
+    margin-top: -50vh;
+    padding-top: 50vh;
+    background-color: #212121;
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+.white-bg {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white-bg .copy-width {
+    margin: auto;
+    padding: 15vh 0;
+}
+
+
+.carousel-cell {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100%;
+    cursor: move;
+  }
+    
+  .carousel-cell img {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    min-height: 100%;
+    width: 55vw;
+  }
+
+  .team {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .team .col {
+      padding: 10vh 5vw;
+  }
+  
+  .row {
+    align-items: center;
+    margin: 0;
+  }
+
+  .oversize {
+      font-size:
+  }
+
+@media (max-width: 762px) {
+    .parallax-1 img {
+        top: 0;
+        left: 7vw;
+        width: 46vw;
+    }
+    
+    .parallax-2 img {
+        top: -20px;
+        left: -20px;
+        width: 46vw;
+    } 
+}

@@ -34,15 +34,15 @@ router.get('/secret-albertsons', function(req, res, next) {
     date: '2021',
     client: 'Albertsons',
     title: 'Albertsons App',
-    body: 'Partnered with Uber to create a product that enables drivers’ to get a car in a seamless, convenient and accessible manner across the U.S. Since our customers were only rideshare drivers for Uber we worked closely with Uber team to create and experience that integrated directly with Uber and allowed customers to easily and quickly get a rideshare vehicle. The approach to the design was clean, minimal, and clear, resulting in an easy and friendly user experience.',
-    role: 'Design & Development',
+    body: 'Albertsons is one of the largest food and drug retailers in the US, feeding more than 15% of the US (49M customers), employing more than 270,000 people. They approached YML to help unify their outdated and disjointed digital ecosystem into a more cohesive, scalable experience.',
+    role: 'UX Lead',
     prevProject: 'secret-fair-shopping',
     nextProject: 'secret-audi',
   }
   res.render('pages/albertsons', { project: project, images: [] })
 });
 
-router.get('/champion', function(req, res, next) {
+router.get('/secret-champion', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
@@ -146,7 +146,7 @@ router.get('/secret-aaa', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
   if (!isAuth) {
-    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-westderm');
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-aaa');
   }
 
   var project = {

@@ -75,10 +75,10 @@ $(function() {
 
   if(window.innerWidth >= 768) {
 
-    var rect = $('.projects')[0].getBoundingClientRect();
+    var rect = $('body')[0].getBoundingClientRect();
     var mouse = {x: 0, y: 0, moved: false};
 
-    $(".body-width").mousemove(function(e) {
+    $("body").mousemove(function(e) {
       mouse.moved = true;
       mouse.x = e.clientX - rect.left;
       mouse.y = e.clientY - rect.top;
@@ -103,7 +103,7 @@ $(function() {
     }
 
     $(window).on('resize scroll', function(){
-      rect = $('.body-width')[0].getBoundingClientRect();
+      rect = $('body')[0].getBoundingClientRect();
     })
 
   //   // --- Parallax ---
