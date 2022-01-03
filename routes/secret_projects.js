@@ -22,6 +22,46 @@ router.get('/secret-fair-shopping', function(req, res, next) {
   res.render('pages/fair_shopping', { project: project, images: [] })
 });
 
+router.get('/secret-albertsons', function(req, res, next) {
+  // Require Auth for view or redirect to gateway
+  var isAuth = req.cookies.authenticated;
+  if (!isAuth) {
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-albertsons');
+  }
+
+  var project = {
+    href: '/secret',
+    date: '2021',
+    client: 'Albertsons',
+    title: 'Albertsons App',
+    body: 'Partnered with Uber to create a product that enables drivers’ to get a car in a seamless, convenient and accessible manner across the U.S. Since our customers were only rideshare drivers for Uber we worked closely with Uber team to create and experience that integrated directly with Uber and allowed customers to easily and quickly get a rideshare vehicle. The approach to the design was clean, minimal, and clear, resulting in an easy and friendly user experience.',
+    role: 'Design & Development',
+    prevProject: 'secret-fair-shopping',
+    nextProject: 'secret-audi',
+  }
+  res.render('pages/albertsons', { project: project, images: [] })
+});
+
+router.get('/champion', function(req, res, next) {
+  // Require Auth for view or redirect to gateway
+  var isAuth = req.cookies.authenticated;
+  if (!isAuth) {
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-champion');
+  }
+
+  var project = {
+    href: '/secret',
+    date: '2021',
+    client: 'Champion',
+    title: 'Champion.com',
+    body: 'Partnered with Uber to create a product that enables drivers’ to get a car in a seamless, convenient and accessible manner across the U.S. Since our customers were only rideshare drivers for Uber we worked closely with Uber team to create and experience that integrated directly with Uber and allowed customers to easily and quickly get a rideshare vehicle. The approach to the design was clean, minimal, and clear, resulting in an easy and friendly user experience.',
+    role: 'Design & Development',
+    prevProject: 'secret-fair-shopping',
+    nextProject: 'secret-audi',
+  }
+  res.render('pages/champion', { project: project, images: [] })
+});
+
 router.get('/secret-fair-go', function(req, res, next) {
   // Require Auth for view or redirect to gateway
   var isAuth = req.cookies.authenticated;
@@ -100,6 +140,26 @@ router.get('/secret-westderm', function(req, res, next) {
     body: 'West Dermatology had an interesting problem to solve: How do we have a corporate brand trickle down to many individual brands all under the same roof. This project presented many unique UX challenges but also design challenges. Given the scale of the site, we had to come up with creative ways to gain efficiencies in the design process. One of those was moving over to sketch for design and implementing a design system that would essentially allow us to dynamically update content and build new pages out faster than we ever could traditionally using photoshop. You can view the site <a href="westdermatology.com"><b>here</b></a>',
   }
   res.render('pages/westderm', { project: project, images: [] })
+});
+
+router.get('/secret-aaa', function(req, res, next) {
+  // Require Auth for view or redirect to gateway
+  var isAuth = req.cookies.authenticated;
+  if (!isAuth) {
+    return res.redirect('/gateway?redirect_to=%2Fproject%2Fsecret-westderm');
+  }
+
+  var project = {
+    href: '/secret',
+    date: '2021',
+    client: 'AAA',
+    title: 'AAA App',
+    role: 'Design Lead, Front-end',
+    prevProject: 'secret-xbox-one-x',
+    nextProject: 'secret-fair-shopping',
+    body: 'West Dermatology had an interesting problem to solve: How do we have a corporate brand trickle down to many individual brands all under the same roof. This project presented many unique UX challenges but also design challenges. Given the scale of the site, we had to come up with creative ways to gain efficiencies in the design process. One of those was moving over to sketch for design and implementing a design system that would essentially allow us to dynamically update content and build new pages out faster than we ever could traditionally using photoshop. You can view the site <a href="westdermatology.com"><b>here</b></a>',
+  }
+  res.render('pages/aaa', { project: project, images: [] })
 });
 
 module.exports = router;
