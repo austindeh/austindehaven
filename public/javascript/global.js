@@ -44,10 +44,10 @@ class Viewport {
     })
   }
 
-  
+
   cb(entries) {
     entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) { 
+      if (entry.intersectionRatio > 0) {
         this.observe(entry.target, entry.intersectionRatio)
       }
     })
@@ -65,9 +65,15 @@ class Viewport {
   }
 }
 
+function lerp(start, end, amt) {
+  return (1 - amt) * start + amt * end
+}
+
 function checkScroll() {
   $('#back-to-top').css('opacity', window.scrollY > 720 ? 1 : 0)
 }
+
+var mouse = { x: 0, y: 0, moved: false };
 
 // Document.Ready
 $(function() {
@@ -76,17 +82,16 @@ $(function() {
   if(window.innerWidth >= 768) {
 
     var rect = $('body')[0].getBoundingClientRect();
-    var mouse = {x: 0, y: 0, moved: false};
 
     $("body").mousemove(function(e) {
       mouse.moved = true;
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
+      mouse.x = e.clientX //- rect.left;
+      mouse.y = e.clientY //- rect.top;
     });
-    
+
 
     TweenLite.ticker.addEventListener('tick', function(){
-      if (mouse.moved){    
+      if (mouse.moved){
         parallaxIt(".parallax-1", -50);
         parallaxIt(".parallax-2", -30);
         parallaxIt(".parallax-3", -60);
