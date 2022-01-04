@@ -51,7 +51,7 @@ class VideoCursor {
       this.video.paused ? this.play() : this.pause()
     })
 
-    window.requestAnimationFrame(this.update.bind(this))
+    // window.requestAnimationFrame(this.update.bind(this))
   }
 
   cb(entries) {
@@ -114,7 +114,6 @@ class VideoCursor {
   update(time) {
     const { top, left } = this.$el.getBoundingClientRect()
 
-    // not sure why this isn't lerping, maybe requestAnimationFrame is happening too fast?
     this.cursorX = lerp(this.cursorX, mouse.x, .1)
     this.cursorY = lerp(this.cursorY, mouse.y, .1)
 
@@ -128,7 +127,7 @@ class VideoCursor {
       transform: `translate3d(${x}px, ${y}px, 0)`
     })
 
-    window.requestAnimationFrame(this.update.bind(this))
 
+    // window.requestAnimationFrame(this.update.bind(this))
   }
 }
