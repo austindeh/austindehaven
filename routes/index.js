@@ -188,10 +188,10 @@ if (!isAuth) {
     },
 
     {
-      active: true,
+      active: false,
       // year: '2018',
       title: 'Champion.com',
-      category: 'Design / UX',
+      category: 'Coming Soon ☹',
       classes: 'project-35 parallax-1',
       href: '/project/secret-champion',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/champion-desktop.jpg'),
@@ -201,12 +201,23 @@ if (!isAuth) {
     {
       active: true,
       // year: '2018',
-      title: 'Albertsons',
+      title: 'My Process - Flowcharts',
+      category: 'Presentations',
+      classes: 'project-35 parallax-1',
+      href: '/project/secret-flowcharts',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/flowcharts-desktop.jpg'),
+      mobile: '/images/home/westderm-mobile-02.jpg',
+    },
+    
+    {
+      active: true,
+      // year: '2018',
+      title: 'Audi MMI',
       category: 'Design / UX',
-      classes: 'project-35 parallax-3',
-      href: '/project/secret-albertsons',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/albertsons-desktop.jpg'),
-      mobile: '/images/home/albertsons-desktop.jpg',
+      classes: 'project-35 parallax-2',
+      href: '/project/secret-audi',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/audi-desktop.jpg'),
+      mobile: '/images/home/audi-mobile.jpg',
     },
 
     {
@@ -219,16 +230,16 @@ if (!isAuth) {
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fairgo-desktop.jpg'),
       mobile: '/images/home/fairgo-desktop.jpg',
     },
-
+    
     {
-      active: true,
+      active: false,
       // year: '2018',
-      title: 'Audi MMI',
-      category: 'Design / UX',
-      classes: 'project-35 parallax-2',
-      href: '/project/secret-audi',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/audi-desktop.jpg'),
-      mobile: '/images/home/audi-mobile.jpg',
+      title: 'Albertsons',
+      category: 'Coming Soon ☹',
+      classes: 'project-35 parallax-3',
+      href: '/project/secret-albertsons',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/albertsons-desktop.jpg'),
+      mobile: '/images/home/albertsons-desktop.jpg',
     },
 
     {
@@ -250,17 +261,6 @@ if (!isAuth) {
       classes: 'project-35 parallax-1',
       href: '/project/secret-westderm',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/westderm-desktop-03.jpg'),
-      mobile: '/images/home/westderm-mobile-02.jpg',
-    },
-
-    {
-      active: true,
-      // year: '2018',
-      title: 'AAA',
-      category: 'Design / Front-end',
-      classes: 'project-35 parallax-1',
-      href: '/project/secret-aaa',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/aaa-desktop.jpg'),
       mobile: '/images/home/westderm-mobile-02.jpg',
     },
   ];
@@ -285,7 +285,7 @@ router.post('/gateway', function (req, res, next) {
   var password = req.param('password');
   var redirect_to = req.param('redirect_to');
 
-  if (password.toLowerCase() !== 'ad20') {
+  if (password.toLowerCase() !== 'basic') {
     // res.redirect('/gateway');
     res.redirect(`/gateway?redirect_to=${redirect_to}`)
   }
