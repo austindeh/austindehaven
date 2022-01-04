@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <!-- made with love. -->
+  <!-- Developed by Austin DeHaven -->
+  <head>
+    <%- include('../partials/global/_meta') %>
+
+    <link rel='stylesheet' href='/stylesheets/project-nav.css' />
+    <link rel='stylesheet' href='/stylesheets/projects.css' />
+    <link rel='stylesheet' href='/stylesheets/projects/fair.css' />
+    <link rel='stylesheet' href='https://npmcdn.com/flickity@2/dist/flickity.css' />
+  </head>
+  <body>
+    <%- include('../partials/projects/_project-landing', { title: project.title, body: project.body, client: project.client, date: project.date, role: project.role, href: project.href }) %>
+
+    <div class="body-width spacing-large">
+      <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/662107245?h=9c71c0abe6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Flowcharts-workflow.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+
+    <%- include('../partials/projects/_project-nav', { prev: project.prevProject, next: project.nextProject }) %>
+    <%- include('../partials/global/_footer', { href: '/', arrow: '<span class="returnArrow">←</span>', copy: 'Return to design work' }) %>
+    <%- include('../partials/global/_back-to-top') %>
+
+  </body>
+  <%- include('../partials/global/_dependencies') %>
+  <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+  <script src="/javascript/project-page.js"></script>
+  <script src="/javascript/global.js"></script>
+</html>
