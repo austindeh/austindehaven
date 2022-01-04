@@ -19,6 +19,33 @@
     width: 35vw;
 }
 
+/*  -- Video Options --  */
+
+video::-webkit-media-controls-play-button {
+    display: block;
+    width: 50px;
+  }
+  
+  video::-webkit-media-controls-volume-slider {
+    display: block;
+  }
+  
+  video::-webkit-media-controls-mute-button {
+    display: block;
+  }
+  
+  video::-webkit-media-controls-timeline {
+    display: block;
+  }
+  
+  video::-webkit-media-controls-current-time-display {
+    display: block;
+  }
+  
+  video::-webkit-media-controls-time-remaining-display {
+    display: block;
+  }
+
 .bump {
     margin-top: -50vh;
     padding-top: 50vh;
@@ -31,19 +58,32 @@
 }
 
 
+.blue-bg {
+    background-color: #1172CD;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
 .white-bg {
     background-color: white;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: black;
 }
 
 .white-bg .copy-width {
     margin: auto;
-    padding: 15vh 0;
+    padding: 5vh 0;
 }
 
+.column-video video {
+    height: 40vh;
+}
 
 .carousel-cell {
     display: flex;
@@ -78,7 +118,7 @@
   }
 
   .oversize {
-      font-size:
+      font-size: 50px;
   }
 
 @media (max-width: 762px) {
