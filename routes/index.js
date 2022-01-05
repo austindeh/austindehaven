@@ -232,10 +232,10 @@ if (!isAuth) {
     },
     
     {
-      active: false,
+      active: true,
       // year: '2018',
       title: 'Albertsons',
-      category: 'Coming Soon ☹',
+      category: 'Design / UX',
       classes: 'project-35 parallax-3',
       href: '/project/secret-albertsons',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/albertsons-desktop.jpg'),
