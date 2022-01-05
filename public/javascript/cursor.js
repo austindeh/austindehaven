@@ -28,30 +28,11 @@ class VideoCursor {
 
     this.observer.observe(this.$el)
 
-    $(this.$el).hover(
-      e => {
-        if (!e.target.classList.contains('cursor')) {
-          this.show()
-        }
-      },
-      e => {
-        if (!e.target.classList.contains('cursor')) {
-          this.hide()
-        }
-      }
-    )
-
-    $(this.$el).mousemove(e => {
-      const { clientX: x, clientY: y } = e
-
-      this.update({ x, y })
-    })
-
     $(this.$cursor).click(() => {
       this.video.paused ? this.play() : this.pause()
     })
 
-    // window.requestAnimationFrame(this.update.bind(this))
+    this.update()
   }
 
   cb(entries) {
@@ -69,8 +50,6 @@ class VideoCursor {
     const bodyPadding = $('.body-width').innerWidth() - $('.body-width').width()
     const width = $(this.$el).width()
     const scale = 1 + bodyPadding / width
-
-    console.log(scale)
 
     this.$video.css({
       transform: `scale(${scale})`
@@ -93,15 +72,9 @@ class VideoCursor {
     this.updateText('Play')
   }
 
-  hide() {
+  show(bool = true) {
     $(this.$cursor).css({
-      opacity: 0
-    })
-  }
-
-  show() {
-    $(this.$cursor).css({
-      opacity: 1
+      opacity: +bool
     })
   }
 
@@ -112,22 +85,21 @@ class VideoCursor {
   }
 
   update(time) {
-    const { top, left } = this.$el.getBoundingClientRect()
+    const { x, y, width, height } = this.$el.getBoundingClientRect()
 
-    this.cursorX = lerp(this.cursorX, mouse.x, .1)
-    this.cursorY = lerp(this.cursorY, mouse.y, .1)
+    this.cursorX = lerp(this.cursorX, mouse.x, .2)
+    this.cursorY = lerp(this.cursorY, mouse.y, .2)
 
-    const x = this.cursorX - left - this.cursorWidth / 2
-    const y = this.cursorY - top - this.cursorHeight / 2
+    const tx = this.cursorX - x - this.cursorWidth / 2
+    const ty = this.cursorY - y - this.cursorHeight / 2
 
-    const text = this.video.paused ? 'Play' : 'Pause'
-    this.updateText(text)
+    this.updateText(this.video.paused ? 'Play' : 'Pause')
+    this.show(contains(mouse, { x, y, width, height }))
 
     $(this.$cursor).css({
-      transform: `translate3d(${x}px, ${y}px, 0)`
+      transform: `translate3d(${tx}px, ${ty}px, 0)`
     })
 
-
-    // window.requestAnimationFrame(this.update.bind(this))
+    requestAnimationFrame(this.update.bind(this))
   }
 }
