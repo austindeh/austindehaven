@@ -76,6 +76,11 @@ video::-webkit-media-controls-play-button {
     color: black;
 }
 
+.blue-bg .copy-width {
+    margin: auto;
+    padding: 5vh 0;
+}
+
 .white-bg .copy-width {
     margin: auto;
     padding: 5vh 0;
