@@ -181,23 +181,34 @@ if (!isAuth) {
       // year: '2018',
       title: 'Fair Adaptive Shopping',
       category: 'Design / UX',
-      classes: 'project-100',
+      classes: 'project-45 parallax-2',
       href: '/project/secret-fair-shopping',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fair-desktop.jpg'),
       mobile: '/images/home/fair-mobile.jpg',
     },
 
     {
-      active: true,
+      active: false,
       // year: '2018',
-      title: 'Fair Go',
-      category: 'Design / UX',
-      classes: 'project-45 parallax-1',
-      href: '/project/secret-fair-go',
-      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fairgo-desktop.jpg'),
-      mobile: '/images/home/fairgo-desktop.jpg',
+      title: 'Champion.com',
+      category: 'Coming Soon ☹',
+      classes: 'project-35 parallax-1',
+      href: '/project/secret-champion',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/champion-desktop.jpg'),
+      mobile: '/images/home/champion-desktop.jpg',
     },
 
+    {
+      active: true,
+      // year: '2018',
+      title: 'My Process - Flowcharts',
+      category: 'Presentations',
+      classes: 'project-35 parallax-1',
+      href: '/project/secret-flowcharts',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/flowcharts-desktop.jpg'),
+      mobile: '/images/home/westderm-mobile-02.jpg',
+    },
+    
     {
       active: true,
       // year: '2018',
@@ -212,9 +223,31 @@ if (!isAuth) {
     {
       active: true,
       // year: '2018',
+      title: 'Fair Go',
+      category: 'Design / UX',
+      classes: 'project-45 parallax-4',
+      href: '/project/secret-fair-go',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/fairgo-desktop.jpg'),
+      mobile: '/images/home/fairgo-desktop.jpg',
+    },
+    
+    {
+      active: true,
+      // year: '2018',
+      title: 'Albertsons',
+      category: 'Design / UX',
+      classes: 'project-35 parallax-3',
+      href: '/project/secret-albertsons',
+      src: 'data:image/jpeg;base64,' + base64Encode('public/images/home/albertsons-desktop.jpg'),
+      mobile: '/images/home/albertsons-desktop.jpg',
+    },
+
+    {
+      active: true,
+      // year: '2018',
       title: 'Xbox One X',
       category: 'Design / Motion',
-      classes: 'project-45 parallax-2',
+      classes: 'project-45 parallax-3',
       href: '/project/secret-xbox-one-x',
       src: 'data:image/jpeg;base64,' + base64Encode('public/images/projects/xbox/xbox-desktop.jpg'),
       mobile: '/images/home/xbox-mobile.jpg',
@@ -252,7 +285,7 @@ router.post('/gateway', function (req, res, next) {
   var password = req.param('password');
   var redirect_to = req.param('redirect_to');
 
-  if (password.toLowerCase() !== 'ad20') {
+  if (password.toLowerCase() !== 'basic') {
     // res.redirect('/gateway');
     res.redirect(`/gateway?redirect_to=${redirect_to}`)
   }

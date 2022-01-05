@@ -13,9 +13,9 @@ window.addEventListener("scroll", function(){
 
 
 var flkty = new Flickity( '.carousel', {
-    freeScroll: true,
-    freeScrollFriction: 0.05,
-    pageDots: false,
-    prevNextButtons: false, 
-    imagesLoaded: true,
+      freeScroll: true,
+      freeScrollFriction: 0.05,
+      pageDots: false,
+      prevNextButtons: false, 
+      imagesLoaded: true,
   })

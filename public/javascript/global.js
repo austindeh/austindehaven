@@ -44,10 +44,10 @@ class Viewport {
     })
   }
 
-  
+
   cb(entries) {
     entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) { 
+      if (entry.intersectionRatio > 0) {
         this.observe(entry.target, entry.intersectionRatio)
       }
     })
@@ -65,9 +65,15 @@ class Viewport {
   }
 }
 
+function lerp(start, end, amt) {
+  return (1 - amt) * start + amt * end
+}
+
 function checkScroll() {
   $('#back-to-top').css('opacity', window.scrollY > 720 ? 1 : 0)
 }
+
+var mouse = { x: 0, y: 0, moved: false };
 
 // Document.Ready
 $(function() {
@@ -75,33 +81,63 @@ $(function() {
 
   if(window.innerWidth >= 768) {
 
-    // --- Parallax ---
-    var controller = new ScrollMagic.Controller();
+    var rect = $('body')[0].getBoundingClientRect();
 
-    $('.parallax-1').each(function(){
-        var tween = new TimelineMax();
-
-        tween.from($(this), 1, {y: '10%', ease: Power0.easeNone});
-
-        var scene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 1,
-            duration: '75%',
-        }).setTween(tween).addTo(controller);
+    $("body").mousemove(function(e) {
+      mouse.moved = true;
+      mouse.x = e.clientX //- rect.left;
+      mouse.y = e.clientY //- rect.top;
     });
 
 
-    $('.parallax-2').each(function(){
-        var tween = new TimelineMax();
-
-        tween.from($(this), 1, {y: '-10%', ease: Power0.easeNone});
-
-        var scene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 1,
-            duration: '175%',
-        }).setTween(tween).addTo(controller);
+    TweenLite.ticker.addEventListener('tick', function(){
+      if (mouse.moved){
+        parallaxIt(".parallax-1", -50);
+        parallaxIt(".parallax-2", -30);
+        parallaxIt(".parallax-3", -60);
+        parallaxIt(".parallax-4", -40);
+      }
+      mouse.moved = false;
     });
+
+    function parallaxIt(target, movement) {
+      TweenMax.to(target, 0.5, {
+        x: (mouse.x - rect.width / 2) / rect.width * movement,
+        y: (mouse.y - rect.height / 2) / rect.height * movement
+      });
+    }
+
+    $(window).on('resize scroll', function(){
+      rect = $('body')[0].getBoundingClientRect();
+    })
+
+  //   // --- Parallax ---
+  //   var controller = new ScrollMagic.Controller();
+
+  //   $('.parallax-1').each(function(){
+  //       var tween = new TimelineMax();
+
+  //       tween.from($(this), 1, {y: '10%', ease: Power0.easeNone});
+
+  //       var scene = new ScrollMagic.Scene({
+  //           triggerElement: this,
+  //           triggerHook: 1,
+  //           duration: '75%',
+  //       }).setTween(tween).addTo(controller);
+  //   });
+
+
+  //   $('.parallax-2').each(function(){
+  //       var tween = new TimelineMax();
+
+  //       tween.from($(this), 1, {y: '-10%', ease: Power0.easeNone});
+
+  //       var scene = new ScrollMagic.Scene({
+  //           triggerElement: this,
+  //           triggerHook: 1,
+  //           duration: '175%',
+  //       }).setTween(tween).addTo(controller);
+  //   });
   }
 
   $(window).scroll(checkScroll);
