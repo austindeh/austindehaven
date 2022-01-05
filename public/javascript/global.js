@@ -73,6 +73,13 @@ function checkScroll() {
   $('#back-to-top').css('opacity', window.scrollY > 720 ? 1 : 0)
 }
 
+function contains (point, rect) {
+  const { x, y } = point
+
+  return rect.x <= x && x <= rect.x + rect.width &&
+         rect.y <= y && y <= rect.y + rect.height
+}
+
 var mouse = { x: 0, y: 0, moved: false };
 
 // Document.Ready
